@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class GeneratorBehaviour&lt;TRequest, TInput, TOutput, TPrompt, TEvent, TResult, TOptions, TSettings&gt; | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class GeneratorBehaviour&lt;TRequest, TInput, TOutput, TPrompt, TEvent, TResult, TOptions, TSettings&gt; | AI DevKit ">
+    
+    <meta name="description" content="Base class for AI components that generate output based on input. Handles configuration, queuing, streaming, and final output events.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8">
+
+
+
+  <h1 id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8" class="text-break">Class GeneratorBehaviour&lt;TRequest, TInput, TOutput, TPrompt, TEvent, TResult, TOptions, TSettings&gt;</h1>
+  <div class="markdown level0 summary"><p>Base class for AI components that generate output based on input.
+Handles configuration, queuing, streaming, and final output events.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">Object</span></div>
+    <div class="level2"><span class="xref">Component</span></div>
+    <div class="level3"><span class="xref">Behaviour</span></div>
+    <div class="level4"><span class="xref">MonoBehaviour</span></div>
+    <div class="level5"><a class="xref" href="Glitch9.AIDevKit.AIBehaviour.html">AIBehaviour</a></div>
+    <div class="level6"><span class="xref">GeneratorBehaviour&lt;TRequest, TInput, TOutput, TPrompt, TEvent, TResult, TOptions, TSettings&gt;</span></div>
+      <div class="level7"><a class="xref" href="Glitch9.AIDevKit.Generators.AudioIsolator.html">AudioIsolator</a></div>
+      <div class="level7"><a class="xref" href="Glitch9.AIDevKit.Generators.EmbeddingGenerator.html">EmbeddingGenerator</a></div>
+      <div class="level7"><a class="xref" href="Glitch9.AIDevKit.Generators.ImageGenerator.html">ImageGenerator</a></div>
+      <div class="level7"><a class="xref" href="Glitch9.AIDevKit.Generators.Moderator.html">Moderator</a></div>
+      <div class="level7"><a class="xref" href="Glitch9.AIDevKit.Generators.SpeechGenerator.html">SpeechGenerator</a></div>
+      <div class="level7"><a class="xref" href="Glitch9.AIDevKit.Generators.Transcriber.html">Transcriber</a></div>
+      <div class="level7"><a class="xref" href="Glitch9.AIDevKit.Generators.VideoGenerator.html">VideoGenerator</a></div>
+      <div class="level7"><a class="xref" href="Glitch9.AIDevKit.Generators.VoiceChanger.html">VoiceChanger</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Glitch9.AIDevKit.IErrorEventListener.html">IErrorEventListener</a></div>
+    <div><a class="xref" href="Glitch9.AIDevKit.IUsageEventListener.html">IUsageEventListener</a></div>
+    <div><a class="xref" href="Glitch9.IO.IUniTaskQueueEventListener.html">IUniTaskQueueEventListener</a></div>
+    <div><a class="xref" href="Glitch9.IO.Networking.RESTApi.IStreamVisitor-2.html">IStreamVisitor</a>&lt;TEvent, <a class="xref" href="Glitch9.AIDevKit.Generated-1.html">Generated</a>&lt;TResult&gt;&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIBehaviour.html#Glitch9_AIDevKit_AIBehaviour_onUsageReceived">AIBehaviour.onUsageReceived</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIBehaviour.html#Glitch9_AIDevKit_AIBehaviour_onError">AIBehaviour.onError</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIBehaviour.html#Glitch9_AIDevKit_AIBehaviour_LogLevel">AIBehaviour.LogLevel</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIBehaviour.html#Glitch9_AIDevKit_AIBehaviour_Logger">AIBehaviour.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIBehaviour.html#Glitch9_AIDevKit_AIBehaviour_IsProcessing">AIBehaviour.IsProcessing</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIBehaviour.html#Glitch9_AIDevKit_AIBehaviour_m_IsInitialized">AIBehaviour.m_IsInitialized</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIBehaviour.html#Glitch9_AIDevKit_AIBehaviour_m_IsTerminating">AIBehaviour.m_IsTerminating</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIBehaviour.html#Glitch9_AIDevKit_AIBehaviour_CancelAllRequests">AIBehaviour.CancelAllRequests()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIBehaviour.html#Glitch9_AIDevKit_AIBehaviour_CancelLastRequest">AIBehaviour.CancelLastRequest()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIBehaviour.html#Glitch9_AIDevKit_AIBehaviour_Start">AIBehaviour.Start()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIBehaviour.html#Glitch9_AIDevKit_AIBehaviour_OnDestroy">AIBehaviour.OnDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIBehaviour.html#Glitch9_AIDevKit_AIBehaviour_OnQueueStarted">AIBehaviour.OnQueueStarted()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIBehaviour.html#Glitch9_AIDevKit_AIBehaviour_OnQueueCompleted">AIBehaviour.OnQueueCompleted()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIBehaviour.html#Glitch9_AIDevKit_AIBehaviour_OnQueueCanceled">AIBehaviour.OnQueueCanceled()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIBehaviour.html#Glitch9_AIDevKit_AIBehaviour_OnQueueError_System_Exception_">AIBehaviour.OnQueueError(Exception)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIBehaviour.html#Glitch9_AIDevKit_AIBehaviour_OnError_System_Exception_">AIBehaviour.OnError(Exception)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIBehaviour.html#Glitch9_AIDevKit_AIBehaviour_OnUsageEvent_Glitch9_AIDevKit_UsageEvent_">AIBehaviour.OnUsageEvent(UsageEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIBehaviour.html#Glitch9_AIDevKit_AIBehaviour_OnErrorEvent_Glitch9_Event_System_Exception__">AIBehaviour.OnErrorEvent(Event&lt;Exception&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIBehaviour.html#Glitch9_AIDevKit_AIBehaviour_Enqueue_System_Func_Cysharp_Threading_Tasks_UniTask__">AIBehaviour.Enqueue(Func&lt;UniTask&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.IsInvoking()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.CancelInvoke()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.Invoke(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.InvokeRepeating(string, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.CancelInvoke(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.IsInvoking(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine_Auto(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StopCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopCoroutine(Coroutine)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StopCoroutine(string)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopAllCoroutines()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">MonoBehaviour.print(object)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.destroyCancellationToken</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.useGUILayout</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.didStart</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.didAwake</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.runInEditMode</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.enabled</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.isActiveAndEnabled</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponent(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.TryGetComponent(Type, out Component)</a>
+    </div>
+    <div>
+      <span class="xref">Component.TryGetComponent&lt;T&gt;(out T)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.GetComponent(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponentsInChildren&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type, List&lt;Component&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponents&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponents&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentIndex()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.CompareTag(string)</a>
+    </div>
+    <div>
+      <span class="xref">Component.CompareTag(TagHandle)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <span class="xref">Component.transform</span>
+    </div>
+    <div>
+      <span class="xref">Component.transformHandle</span>
+    </div>
+    <div>
+      <span class="xref">Component.gameObject</span>
+    </div>
+    <div>
+      <span class="xref">Component.tag</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetEntityId()</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetHashCode()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Transform, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, Vector3, Quaternion, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">Object.InstantiateAsync&lt;T&gt;(T, InstantiateParameters, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, InstantiateParameters, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">Object.InstantiateAsync&lt;T&gt;(T, Vector3, Quaternion, InstantiateParameters, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Vector3, Quaternion, InstantiateParameters, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;, InstantiateParameters, CancellationToken)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Scene)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, InstantiateParameters)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion, InstantiateParameters)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate(Object, Transform, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate&lt;T&gt;(T, Transform, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.Destroy(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Destroy(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.DestroyImmediate(Object, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyImmediate(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DontDestroyOnLoad(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.DestroyObject(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyObject(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindSceneObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeIncludingAssets(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectsOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsInactive, FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeAll(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <span class="xref">Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">Object.name</span>
+    </div>
+    <div>
+      <span class="xref">Object.hideFlags</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.Generators.html">Generators</a></h6>
+  <h6><strong>Assembly</strong>: Glitch9.AIDevKit.Agent.dll</h6>
+  <h5 id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class GeneratorBehaviour&lt;TRequest, TInput, TOutput, TPrompt, TEvent, TResult, TOptions, TSettings&gt; : AIBehaviour, IErrorEventListener, IUsageEventListener, IUniTaskQueueEventListener, IStreamVisitor&lt;TEvent, Generated&lt;TResult&gt;&gt; where TRequest : GenerativeRequest&lt;TRequest, TPrompt, TResult, TOptions&gt; where TPrompt : IPrompt where TResult : class where TOptions : IProviderRequestOptions where TSettings : GenerationSettings</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRequest</span></td>
+        <td><p>The provider-specific request type sent to the backend API.
+Must inherit <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html">GenerativeRequest&lt;TSelf, TPrompt, TResult, TOptions&gt;</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TInput</span></td>
+        <td><p>The raw input type accepted by this component (e.g. <code>string</code>, <code>AudioClip</code>).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOutput</span></td>
+        <td><p>The Unity-facing output type exposed via <a class="xref" href="Glitch9.AIDevKit.Generators.GeneratorBehaviour-8.html#Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_onOutput">onOutput</a> and <a class="xref" href="Glitch9.AIDevKit.Generators.GeneratorBehaviour-8.html#Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_onStream">onStream</a>
+(e.g. <code>string</code>, <code>AudioClip</code>, <code>Texture2D</code>).
+Produced by converting <code class="typeparamref">TResult</code> in <code>ConvertResultAsync</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TPrompt</span></td>
+        <td><p>The prompt wrapper type passed to the request. Must implement <a class="xref" href="Glitch9.AIDevKit.IPrompt.html">IPrompt</a>.
+(e.g. <code>Prompt</code>, <code>AudioPrompt</code>).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TEvent</span></td>
+        <td><p>The streamed chunk type emitted during streaming
+(e.g. <code>Delta&lt;IAudioChunk&gt;</code>, <code>TranscriptDelta</code>).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The raw result type returned by the API
+(e.g. <code>IAudioAsset</code>, <code>Transcript</code>). Must be a reference type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOptions</span></td>
+        <td><p>The request options interface used to configure the API call.
+Must implement <a class="xref" href="Glitch9.AIDevKit.IProviderRequestOptions.html">IProviderRequestOptions</a>
+(e.g. <code>IAudioRequestOptions</code>).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSettings</span></td>
+        <td><p>The serializable settings type used in the Unity Inspector.
+Must inherit <a class="xref" href="Glitch9.AIDevKit.GenerationSettings.html">GenerationSettings</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_onOutput.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Generators.GeneratorBehaviour%608.onOutput%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Foundation/Components/Abstractions/GeneratorBehaviour.cs/#L67">View Source</a>
+  </span>
+  <h4 id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_onOutput" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.onOutput">onOutput</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[FormerlySerializedAs(&quot;onGenerated&quot;)]
+[FormerlySerializedAs(&quot;onReceiveResponse&quot;)]
+[FormerlySerializedAs(&quot;onReceiveOutput&quot;)]
+[FormerlySerializedAs(&quot;output&quot;)]
+public UnityEvent&lt;TOutput&gt; onOutput</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEvent</span>&lt;TOutput&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_onStatusChanged.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Generators.GeneratorBehaviour%608.onStatusChanged%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Foundation/Components/Abstractions/GeneratorBehaviour.cs/#L69">View Source</a>
+  </span>
+  <h4 id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_onStatusChanged" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.onStatusChanged">onStatusChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent&lt;ResponseStatus&gt; onStatusChanged</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEvent</span>&lt;<a class="xref" href="Glitch9.AIDevKit.ResponseStatus.html">ResponseStatus</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_onStream.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Generators.GeneratorBehaviour%608.onStream%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Foundation/Components/Abstractions/GeneratorBehaviour.cs/#L68">View Source</a>
+  </span>
+  <h4 id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_onStream" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.onStream">onStream</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityStreamEvent&lt;TOutput&gt; onStream</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.UnityStreamEvent-1.html">UnityStreamEvent</a>&lt;TOutput&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_Api.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Generators.GeneratorBehaviour%608.Api%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Foundation/Components/Abstractions/GeneratorBehaviour.cs/#L73">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_Api_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.Api*"></a>
+  <h4 id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_Api" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.Api">Api</h4>
+  <div class="markdown level1 summary"><p>Selected AI model's provider API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Api Api { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Api.html">Api</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.AIDevKit.AIBehaviour.html#Glitch9_AIDevKit_AIBehaviour_Api">AIBehaviour.Api</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_CurrentRequest.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Generators.GeneratorBehaviour%608.CurrentRequest%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Foundation/Components/Abstractions/GeneratorBehaviour.cs/#L71">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_CurrentRequest_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.CurrentRequest*"></a>
+  <h4 id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_CurrentRequest" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.CurrentRequest">CurrentRequest</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TRequest CurrentRequest { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_Model.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Generators.GeneratorBehaviour%608.Model%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Foundation/Components/Abstractions/GeneratorBehaviour.cs/#L74">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_Model_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.Model*"></a>
+  <h4 id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_Model" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.Model">Model</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Model Model { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_ModelType.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Generators.GeneratorBehaviour%608.ModelType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Foundation/Components/Abstractions/GeneratorBehaviour.cs/#L75">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_ModelType_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.ModelType*"></a>
+  <h4 id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_ModelType" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.ModelType">ModelType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ModelType ModelType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ModelType.html">ModelType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_SaveFolderPath.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Generators.GeneratorBehaviour%608.SaveFolderPath%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Foundation/Components/Abstractions/GeneratorBehaviour.cs/#L87">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_SaveFolderPath_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.SaveFolderPath*"></a>
+  <h4 id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_SaveFolderPath" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.SaveFolderPath">SaveFolderPath</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SaveFolderPath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_SaveOutputs.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Generators.GeneratorBehaviour%608.SaveOutputs%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Foundation/Components/Abstractions/GeneratorBehaviour.cs/#L88">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_SaveOutputs_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.SaveOutputs*"></a>
+  <h4 id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_SaveOutputs" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.SaveOutputs">SaveOutputs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SaveOutputs { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_Settings.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Generators.GeneratorBehaviour%608.Settings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Foundation/Components/Abstractions/GeneratorBehaviour.cs/#L86">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_Settings_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.Settings*"></a>
+  <h4 id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_Settings" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.Settings">Settings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSettings Settings { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_Stream.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Generators.GeneratorBehaviour%608.Stream%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Foundation/Components/Abstractions/GeneratorBehaviour.cs/#L76">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_Stream_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.Stream*"></a>
+  <h4 id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_Stream" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.Stream">Stream</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Stream { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_Awake.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Generators.GeneratorBehaviour%608.Awake%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Foundation/Components/Abstractions/GeneratorBehaviour.cs/#L202">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_Awake_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.Awake*"></a>
+  <h4 id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_Awake" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.Awake">Awake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Awake()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.AIDevKit.AIBehaviour.html#Glitch9_AIDevKit_AIBehaviour_Awake">AIBehaviour.Awake()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_BuildRequest__1_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Generators.GeneratorBehaviour%608.BuildRequest(%601)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Foundation/Components/Abstractions/GeneratorBehaviour.cs/#L167">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_BuildRequest_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.BuildRequest*"></a>
+  <h4 id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_BuildRequest__1_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.BuildRequest(`1)">BuildRequest(TInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract TRequest BuildRequest(TInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TInput</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_Configure__7_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Generators.GeneratorBehaviour%608.Configure(%607)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Foundation/Components/Abstractions/GeneratorBehaviour.cs/#L108">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_Configure_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.Configure*"></a>
+  <h4 id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_Configure__7_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.Configure(`7)">Configure(TSettings)</h4>
+  <div class="markdown level1 summary"><p>Configures the generator with the specified parameters.
+It will overwrite the existing parameters including the serialized parameters.
+Overwritten parameters will not be saved(serialized).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Configure(TSettings settings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSettings</span></td>
+        <td><span class="parametername">settings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_ConvertEventAsync__4_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Generators.GeneratorBehaviour%608.ConvertEventAsync(%604)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Foundation/Components/Abstractions/GeneratorBehaviour.cs/#L165">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_ConvertEventAsync_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.ConvertEventAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_ConvertEventAsync__4_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.ConvertEventAsync(`4)">ConvertEventAsync(TEvent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract UniTask&lt;TOutput&gt; ConvertEventAsync(TEvent evt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TEvent</span></td>
+        <td><span class="parametername">evt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;TOutput&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_ConvertResultAsync__5_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Generators.GeneratorBehaviour%608.ConvertResultAsync(%605)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Foundation/Components/Abstractions/GeneratorBehaviour.cs/#L166">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_ConvertResultAsync_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.ConvertResultAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_ConvertResultAsync__5_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.ConvertResultAsync(`5)">ConvertResultAsync(TResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract UniTask&lt;TOutput&gt; ConvertResultAsync(TResult result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TResult</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;TOutput&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_Generate__1_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Generators.GeneratorBehaviour%608.Generate(%601)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Foundation/Components/Abstractions/GeneratorBehaviour.cs/#L115">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_Generate_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.Generate*"></a>
+  <h4 id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_Generate__1_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.Generate(`1)">Generate(TInput)</h4>
+  <div class="markdown level1 summary"><p>Generates output based on the provided input prompt.
+This method enqueues the generation task and triggers the onSendRequest event.
+It should be called to start the generation process.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Generate(TInput prompt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TInput</span></td>
+        <td><span class="parametername">prompt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_GenerateAsync__1_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Generators.GeneratorBehaviour%608.GenerateAsync(%601)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Foundation/Components/Abstractions/GeneratorBehaviour.cs/#L123">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_GenerateAsync_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.GenerateAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_GenerateAsync__1_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.GenerateAsync(`1)">GenerateAsync(TInput)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously generates output based on the provided input prompt.
+This method should be overridden in derived classes to implement the actual generation logic.
+It returns a UniTask that resolves to the generated output.
+The onReceiveGeneratedContent event is triggered with the generated output once the task completes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;Generated&lt;TResult&gt;&gt; GenerateAsync(TInput prompt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TInput</span></td>
+        <td><span class="parametername">prompt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.Generated-1.html">Generated</a>&lt;TResult&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_InitializeAsync.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Generators.GeneratorBehaviour%608.InitializeAsync%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Foundation/Components/Abstractions/GeneratorBehaviour.cs/#L98">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_InitializeAsync_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.InitializeAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_InitializeAsync" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.InitializeAsync">InitializeAsync()</h4>
+  <div class="markdown level1 summary"><p>Initialize the component asynchronously.
+This method must be called before using the component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override UniTask InitializeAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.AIDevKit.AIBehaviour.html#Glitch9_AIDevKit_AIBehaviour_InitializeAsync">AIBehaviour.InitializeAsync()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_OnComplete_Glitch9_AIDevKit_Generated__5__.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Generators.GeneratorBehaviour%608.OnComplete(Glitch9.AIDevKit.Generated%7B%605%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Foundation/Components/Abstractions/GeneratorBehaviour.cs/#L191">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_OnComplete_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.OnComplete*"></a>
+  <h4 id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_OnComplete_Glitch9_AIDevKit_Generated__5__" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.OnComplete(Glitch9.AIDevKit.Generated{`5})">OnComplete(Generated&lt;TResult&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnComplete(Generated&lt;TResult&gt; result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Generated-1.html">Generated</a>&lt;TResult&gt;</td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_OnDelta__4_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Generators.GeneratorBehaviour%608.OnDelta(%604)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Foundation/Components/Abstractions/GeneratorBehaviour.cs/#L185">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_OnDelta_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.OnDelta*"></a>
+  <h4 id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_OnDelta__4_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.OnDelta(`4)">OnDelta(TEvent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnDelta(TEvent evt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TEvent</span></td>
+        <td><span class="parametername">evt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_OnStatusChanged_Glitch9_AIDevKit_ResponseStatus_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Generators.GeneratorBehaviour%608.OnStatusChanged(Glitch9.AIDevKit.ResponseStatus)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Foundation/Components/Abstractions/GeneratorBehaviour.cs/#L209">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_OnStatusChanged_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.OnStatusChanged*"></a>
+  <h4 id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_OnStatusChanged_Glitch9_AIDevKit_ResponseStatus_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.OnStatusChanged(Glitch9.AIDevKit.ResponseStatus)">OnStatusChanged(ResponseStatus)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnStatusChanged(ResponseStatus status)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ResponseStatus.html">ResponseStatus</a></td>
+        <td><span class="parametername">status</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_StreamAsync__1_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Generators.GeneratorBehaviour%608.StreamAsync(%601)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Foundation/Components/Abstractions/GeneratorBehaviour.cs/#L156">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_StreamAsync_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.StreamAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Generators_GeneratorBehaviour_8_StreamAsync__1_" data-uid="Glitch9.AIDevKit.Generators.GeneratorBehaviour`8.StreamAsync(`1)">StreamAsync(TInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;IGenerativeStream&lt;TEvent, TResult&gt;&gt; StreamAsync(TInput input)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TInput</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.IGenerativeStream-2.html">IGenerativeStream</a>&lt;TEvent, TResult&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.IErrorEventListener.html">IErrorEventListener</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.IUsageEventListener.html">IUsageEventListener</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.IUniTaskQueueEventListener.html">IUniTaskQueueEventListener</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.IStreamVisitor-2.html">IStreamVisitor&lt;TDelta, TResult&gt;</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.Sheets.LocalizationExtensions.html#Glitch9_AIDevKit_Sheets_LocalizationExtensions_SetLocalizedAsset__2___0_System_String_System_Action___0___1__System_String_Glitch9_AIDevKit_Sheets_LocalizationOptions___1__">LocalizationExtensions.SetLocalizedAsset&lt;TComponent, TObject&gt;(TComponent, string, Action&lt;TComponent, TObject&gt;, string, LocalizationOptions&lt;TObject&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrEmpty__1___0_">ArrayExtensions.ToArrayOrEmpty&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrNull__1___0_">ArrayExtensions.ToArrayOrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDelta__1___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.ToDelta&lt;T&gt;(T, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDone__1___0_System_String_System_Int32_System_String_">EventExtensions.ToDone&lt;T&gt;(T, string, int, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToEvent__1___0_">EventExtensions.ToEvent&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_UpcastDelta__2___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.UpcastDelta&lt;T1, T2&gt;(T1, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.FallbackExtensions.html#Glitch9_FallbackExtensions_IsOr__2___0___1_">FallbackExtensions.IsOr&lt;TParent, TChild&gt;(TParent, TChild)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Files.FileExtensions.html#Glitch9_IO_Files_FileExtensions_ToFile__1___0_System_String_">FileExtensions.ToFile&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ResponseCastingExtensions.html#Glitch9_IO_Networking_RESTApi_ResponseCastingExtensions_GetResult__1___0_">ResponseCastingExtensions.GetResult&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.UnityObjectExtensions.html#Glitch9_UnityObjectExtensions_Find__1___0_System_String_">UnityObjectExtensions.Find&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.UnityObjectExtensions.html#Glitch9_UnityObjectExtensions_Find__2___1___0_System_String_">UnityObjectExtensions.Find&lt;T, TTarget&gt;(TTarget, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.UnityObjectExtensions.html#Glitch9_UnityObjectExtensions_Find__2___1___0_System_String_System_String_">UnityObjectExtensions.Find&lt;T, TTarget&gt;(TTarget, T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.UnityObjectExtensions.html#Glitch9_UnityObjectExtensions_GetChildIndex__1___0_">UnityObjectExtensions.GetChildIndex&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.UnityObjectExtensions.html#Glitch9_UnityObjectExtensions_GetOrAddComponentInChildren__2___1_System_String_">UnityObjectExtensions.GetOrAddComponentInChildren&lt;T, TV&gt;(TV, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_GetName_System_Object_">SystemExtensions.GetName(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.UnityObjectExtensions.html#Glitch9_UnityObjectExtensions_EncodeToBase64_UnityEngine_Object_">UnityObjectExtensions.EncodeToBase64(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.UnityObjectExtensions.html#Glitch9_UnityObjectExtensions_ToBytes_UnityEngine_Object_">UnityObjectExtensions.ToBytes(Object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Generators_GeneratorBehaviour_8.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Generators.GeneratorBehaviour%608%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Foundation/Components/Abstractions/GeneratorBehaviour.cs/#L48" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AI DevKit Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

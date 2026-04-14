@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Namespace Glitch9.AIDevKit.LMStudio | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Namespace Glitch9.AIDevKit.LMStudio | AI DevKit ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.LMStudio">
+
+  <h1 id="Glitch9_AIDevKit_LMStudio" data-uid="Glitch9.AIDevKit.LMStudio" class="text-break">Namespace Glitch9.AIDevKit.LMStudio</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">
+Classes
+</h3>
+      <h4><a class="xref" href="Glitch9.AIDevKit.LMStudio.LMStudioClient.html">LMStudioClient</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.LMStudio.LMStudioEphemeralMcp.html">LMStudioEphemeralMcp</a></h4>
+      <section><p>Inline (ephemeral) MCP server configuration for native LM Studio chat requests.
+Passed as the &quot;ephemeral_mcp&quot; field in the request body.
+Requires explicit opt-in via LMStudioSettings.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.LMStudio.LMStudioMcpServer.html">LMStudioMcpServer</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.LMStudio.LMStudioModelInfo.html">LMStudioModelInfo</a></h4>
+      <section><p>A single model entry from LM Studio's /v1/models endpoint.
+Follows the OpenAI model object format.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.LMStudio.LMStudioModelListResponse.html">LMStudioModelListResponse</a></h4>
+      <section><p>Response wrapper for GET /v1/models.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.LMStudio.LMStudioNativeChatRequest.html">LMStudioNativeChatRequest</a></h4>
+      <section><p>Request model for LM Studio native /api/v1/chat endpoint (Track B).
+Supports stateful chat via conversation_id and MCP tool integrations.
+IMPORTANT: Do NOT confuse with ChatCompletionRequest ??kept separate
+to avoid contaminating the unified API surface with native-only fields.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.LMStudio.LMStudioNativeChatResponse.html">LMStudioNativeChatResponse</a></h4>
+      <section><p>Response from LM Studio native /api/v1/chat endpoint (Track B).
+Contains conversation_id for stateful session continuation.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.LMStudio.LMStudioNativeChoice.html">LMStudioNativeChoice</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.LMStudio.LMStudioNativeStreamChoice.html">LMStudioNativeStreamChoice</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.LMStudio.LMStudioNativeStreamEvent.html">LMStudioNativeStreamEvent</a></h4>
+      <section><p>Stream event from native /api/v1/chat (Track B, stream=true).
+The final event includes &quot;stats&quot;; intermediate events contain delta content.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.LMStudio.LMStudioPlugin.html">LMStudioPlugin</a></h4>
+      <section><p>A plugin entry for native LM Studio chat requests.
+Passed as elements of the &quot;plugin&quot; array in the request body.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.LMStudio.LMStudioResponseStats.html">LMStudioResponseStats</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.LMStudio.LMStudioSettings.html">LMStudioSettings</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.LMStudio.ModelLoadRequest.html">ModelLoadRequest</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.LMStudio.ModelLoadResponse.html">ModelLoadResponse</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.LMStudio.ModelStatusResponse.html">ModelStatusResponse</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.LMStudio.ModelUnloadRequest.html">ModelUnloadRequest</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.LMStudio.NativeChatMessage.html">NativeChatMessage</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.LMStudio.NativeConversationSession.html">NativeConversationSession</a></h4>
+      <section><p>Holds stateful session data for LM Studio native /api/v1/chat.
+Lifecycle: Create (first request, no id) ??Continue (pass id) ??Clear (drop reference).
+Server-side sessions expire automatically; no explicit delete endpoint exists.</p>
+</section>
+
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AI DevKit Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

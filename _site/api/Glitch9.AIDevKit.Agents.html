@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Namespace Glitch9.AIDevKit.Agents | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Namespace Glitch9.AIDevKit.Agents | AI DevKit ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.Agents">
+
+  <h1 id="Glitch9_AIDevKit_Agents" data-uid="Glitch9.AIDevKit.Agents" class="text-break">Namespace Glitch9.AIDevKit.Agents</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">
+Classes
+</h3>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.AdaptiveInstructionsSettings.html">AdaptiveInstructionsSettings</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.AdaptiveInstructionsUpdater.html">AdaptiveInstructionsUpdater</a></h4>
+      <section><p>Embedding-based dynamic instructions updater.</p>
+<p>
+Register multiple <a class="xref" href="Glitch9.AIDevKit.Agents.InstructionsRule.html">InstructionsRule</a> entries; before each request the updater
+embeds the user message, computes cosine similarity against every rule description,
+and returns the instructions of the best-matching rule.
+</p>
+<p>
+Returns <code>null</code> (leaving instructions unchanged) when no rule exceeds MinSimilarity.
+</p>
+<example>
+<pre><code class="lang-csharp">var updater = new AdaptiveInstructionsUpdater(embeddingModel)
+    .AddRule("user is asking about billing or payments", billingInstructions)
+    .AddRule("user is reporting a bug or technical issue", techSupportInstructions)
+    .SetMinSimilarity(0.72f);
+<p>agent.SetInstructionsUpdater(updater);</p></code></pre>
+</example>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.Agent.html">Agent</a></h4>
+      <section><p>AI Agent that can generate responses using various models and manage conversations.</p>
+<ul><li>Wraps model, tools, audio, and conversation management in a single fa�?��de.</li><li>Uses internal services for conversations, tool calls, and audio I/O.</li><li>Acts as the main entry point for runtime chat / tool workflows.</li></ul>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.AgentAssistantsSettings.html">AgentAssistantsSettings</a></h4>
+      <section><p>Configuration settings for the OpenAI Assistants API.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.AgentBehaviour.html">AgentBehaviour</a></h4>
+      <section><p>Agent behaviour callbacks and UnityEvent bridges.</p>
+<ul><li>Implements listener interfaces for agent, conversation, text, image, and tool events.</li><li>Exposes UnityEvents so game code and UI can react to agent activity.</li><li>Converts low-level deltas and tool outputs into high-level Unity events.</li></ul>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.AgentDependencies.html">AgentDependencies</a></h4>
+      <section><p>Optional external dependency overrides injected into an <a class="xref" href="Glitch9.AIDevKit.Agents.Agent.html">Agent</a> at construction time.
+All properties are optional; each falls back to a sensible default when left <code>null</code>.
+Supply only the dependencies you need to customise; leave the rest unset.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.AgentProfile.html">AgentProfile</a></h4>
+      <section><p>Comprehensive configuration settings for an AI agent including models, parameters, tools, and behavior.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.html">AgentRealtimeOptions</a></h4>
+      <section><p>Runtime composition of realtime chat options from agent-level settings.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.AgentSaveData.html">AgentSaveData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.AgentSaveData.AIResourceTracker.html">AgentSaveData.AIResourceTracker</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.AgentSaveData.ChatSaveData.html">AgentSaveData.ChatSaveData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.AgentSaveData.ConversationSaveData.html">AgentSaveData.ConversationSaveData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.AgentSaveData.PersonalizationItem.html">AgentSaveData.PersonalizationItem</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.AgentSaveData.PersonalizationSaveData.html">AgentSaveData.PersonalizationSaveData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.AgentSaveData.VoiceInputSaveData.html">AgentSaveData.VoiceInputSaveData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.AgentSaveData.VoiceOuputSaveData.html">AgentSaveData.VoiceOuputSaveData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.AgentSession.html">AgentSession</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.AgentSessionSettingsBase.html">AgentSessionSettingsBase</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.AgentStatusChangedEvent.html">AgentStatusChangedEvent</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.AgentToolRoutingSettings.html">AgentToolRoutingSettings</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.AssistantPersona.html">AssistantPersona</a></h4>
+      <section><p>Persona profile with optional personality traits that augment behavior instructions.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.AssistantsApiChatService.html">AssistantsApiChatService</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.AssistantsApiVisitor.html">AssistantsApiVisitor</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.CharacterPersona.html">CharacterPersona</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.ChatSessionSettings.html">ChatSessionSettings</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.CodeInterpreterToolDefinition.html">CodeInterpreterToolDefinition</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.ComputerUseCallManager.html">ComputerUseCallManager</a></h4>
+      <section><p>Manages and executes computer actions that can be called by AI agents.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.ComputerUseToolDefinition.html">ComputerUseToolDefinition</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.ConversationController.html">ConversationController</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.CustomToolCallManager.html">CustomToolCallManager</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.CustomToolDescriptor.html">CustomToolDescriptor</a></h4>
+      <section><p>Describes a MonoBehaviour method mapped to an AI-callable custom tool.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.DefaultAgentSettings.html">DefaultAgentSettings</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.DefaultAgentSettingsUtility.html">DefaultAgentSettingsUtility</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.DefaultInstructionsUpdater.html">DefaultInstructionsUpdater</a></h4>
+      <section><p>LLM-driven dynamic instructions updater with embedding-based topic shift detection.</p>
+<p>
+No rules need to be defined manually. The updater uses embeddings to detect topic shifts
+and only calls the LLM to regenerate system instructions when a shift is detected.
+</p>
+<p>
+How it works:
+<ol><li>Every turn: embed the user message (cheap)</li><li>Compare cosine similarity against the cached embedding</li><li>If similarity &lt; TopicShiftThreshold, regenerate instructions via LLM (expensive)</li><li>Otherwise reuse the cached instructions (returns null)</li></ol>
+
+<example>
+<pre><code class="lang-csharp">var updater = new DefaultInstructionsUpdater(embeddingModel, generationModel)
+    .SetMetaInstructions("This agent helps customers with our SaaS product.")
+    .SetTopicShiftThreshold(0.80f)
+    .SetMaxTokens(300);
+<p>agent.SetInstructionsUpdater(updater);</p></code></pre>
+</example>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.DefaultOutputAudioPlayer.html">DefaultOutputAudioPlayer</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.DefaultToolCallHandler.html">DefaultToolCallHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.DefaultToolRouter.html">DefaultToolRouter</a></h4>
+      <section><p>Embedding-based tool router.</p>
+<p>Flow:
+ToolRegistry (full tool list)
+??embed each tool's description text ??ToolEmbeddingIndex (in-memory)
+??embed user message ??cosine similarity search
+??pass only top-K tools to the LLM (reduces prompt token count)</p>
+<p>If total tool count is ??topK, the full list is returned without filtering.
+Falls back to the full list if embedding fails.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.FileSearchToolDefinition.html">FileSearchToolDefinition</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.FunctionCallManager.html">FunctionCallManager</a></h4>
+      <section><p>Manages and executes registered functions that can be called by AI agents.</p>
+<ul>
+<li>Caches MethodInfo and Delegate for performance</li>
+<li>JSON binding for arguments and return values</li>
+<li>Supports CancellationToken</li>
+<li>Supports void/UniTask/UniTaskT return types</li>
+</ul>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.FunctionDescriptor.html">FunctionDescriptor</a></h4>
+      <section><p>Describes a C# method registered as an AI-callable function.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.GenerativeControllerBase-4.html">GenerativeControllerBase&lt;TDelta, TOutput, TService, TSettings&gt;</a></h4>
+      <section><p>Base class for generative controllers (TTS, STT, Image) that support both REST and Streaming modes.
+Provides common infrastructure for service management and error handling.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.ImageGenerationController.html">ImageGenerationController</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.InstructionsRule.html">InstructionsRule</a></h4>
+      <section><p>A single rule registered in <a class="xref" href="Glitch9.AIDevKit.Agents.AdaptiveInstructionsUpdater.html">AdaptiveInstructionsUpdater</a>.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.InstructionsUpdaterBase-1.html">InstructionsUpdaterBase&lt;TSettings&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.McpServerSettings.html">McpServerSettings</a></h4>
+      <section><p>Container that groups multiple MCP tool definitions (<a class="xref" href="Glitch9.AIDevKit.McpToolDefinition.html">McpToolDefinition</a>) into one.
+MCP hosted tool settings used by AgentProfile.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.MediaController.html">MediaController</a></h4>
+      <section><p>Manages all media generation capabilities including speech-to-text, text-to-speech, and image generation.
+Consolidates audio and visual output generation for the Agent.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.MemoryPersonalizationSettings.html">MemoryPersonalizationSettings</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.MemoryProfile.html">MemoryProfile</a></h4>
+      <section><p>Conversation and memory configuration profile used by agents.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.MemoryRagSettings.html">MemoryRagSettings</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.MemorySettings.html">MemorySettings</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.MemorySummarySettings.html">MemorySummarySettings</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.MemoryTitleSettings.html">MemoryTitleSettings</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.ModelChangedEvent.html">ModelChangedEvent</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.ModerationSessionSettings.html">ModerationSessionSettings</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.NpcPersona.html">NpcPersona</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.PersonaBase.html">PersonaBase</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.PersonaInstruct.html">PersonaInstruct</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.RealtimeApiChatService.html">RealtimeApiChatService</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.ReasoningEffortChangedEvent.html">ReasoningEffortChangedEvent</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.ShellCommandCallManager.html">ShellCommandCallManager</a></h4>
+      <section><p>Manages and executes local shell commands that can be called by AI agents.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.SpeechSessionSettings.html">SpeechSessionSettings</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.SpeechToTextController.html">SpeechToTextController</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.StreamingTextThrottler.html">StreamingTextThrottler</a></h4>
+      <section><p>Unity MonoBehaviour managing multiple StreamingTextThrottler instances by TextType.
+Coordinates throttled text streaming for different content types (messages, thoughts, code blocks)
+with configurable chunk rate and tick interval.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.StreamingTextThrottler.TextTickEvent.html">StreamingTextThrottler.TextTickEvent</a></h4>
+      <section><p>Unity event invoked when a text chunk is emitted during streaming.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.TextEditorToolDefinition.html">TextEditorToolDefinition</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.TextToSpeechController.html">TextToSpeechController</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.ToolCallConfig.html">ToolCallConfig</a></h4>
+      <section><p>Configuration settings that control how an AI agent handles function/tool calls during interactions.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.ToolCallManagerBase-2.html">ToolCallManagerBase&lt;TCall, TOutput&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.ToolController.html">ToolController</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.ToolDescriptorBase.html">ToolDescriptorBase</a></h4>
+      <section><p>Shared base class for descriptors that map AI tool/function calls to MonoBehaviour methods.
+Holds serialized metadata and the runtime execution cache.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.ToolRegistry.html">ToolRegistry</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.TranscriptionSessionSettings.html">TranscriptionSessionSettings</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.VoiceChangedEvent.html">VoiceChangedEvent</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.WebSearchToolDefinition.html">WebSearchToolDefinition</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.XSearchToolDefinition.html">XSearchToolDefinition</a></h4>
+      <section></section>
+    <h3 id="structs">
+Structs
+</h3>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.CharacterPresetData.html">CharacterPresetData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.ToolOutputResult.html">ToolOutputResult</a></h4>
+      <section></section>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.IAdaptiveInstructionsUpdaterSettings.html">IAdaptiveInstructionsUpdaterSettings</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.IAgentBehaviour.html">IAgentBehaviour</a></h4>
+      <section><p>Defines the behavior and configuration settings for an AI agent, including conversation management,
+tool calling policies, streaming options, and logging preferences.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.IAgentDependency.html">IAgentDependency</a></h4>
+      <section><p>Interface for components that depend on an agent and require initialization and cleanup.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.IAgentEventHandler.html">IAgentEventHandler</a></h4>
+      <section><p>Unified interface for handling all agent-related events across different API types
+(ChatCompletions, Responses, Realtime) and conversation/status events.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.IAgentEventListener.html">IAgentEventListener</a></h4>
+      <section><p>Listener interface for handling all agent-related events including streaming responses,
+conversation changes, and agent status updates.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.IAgentSettings.html">IAgentSettings</a></h4>
+      <section><p>A thin interface representing the core settings required to configure an Agent instance.
+Allows providing custom settings without a AgentSettings ScriptableObject.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.IComputerUseActionHandler.html">IComputerUseActionHandler</a></h4>
+      <section><p>Handler interface for executing computer use actions dispatched by AI agents.
+Keys are passed as strings from the implementation (e.g., &quot;Ctrl+Shift+P&quot;, &quot;Enter&quot;, &quot;Meta&quot;).</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.IComputerUseExecutor.html">IComputerUseExecutor</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.IComputerUseSafetyCheckService.html">IComputerUseSafetyCheckService</a></h4>
+      <section><p>Service interface for approving or rejecting pending computer use safety checks.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.ICustomToolExecutor.html">ICustomToolExecutor</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.IDefaultInstructionsUpdaterSettings.html">IDefaultInstructionsUpdaterSettings</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.IFunctionExecutor.html">IFunctionExecutor</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.IInstructionsUpdater.html">IInstructionsUpdater</a></h4>
+      <section><p>Dynamically updates system instructions before each request is sent to the LLM.
+Implement this interface to adapt the agent's behaviour based on conversation history
+or any external context (user state, scene data, game phase, etc.).</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.IInstructionsUpdaterSettings.html">IInstructionsUpdaterSettings</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.ILocalShellExecutor.html">ILocalShellExecutor</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.IMemoryPersonalizationSettings.html">IMemoryPersonalizationSettings</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.IMemoryRagSettings.html">IMemoryRagSettings</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.IMemorySettings.html">IMemorySettings</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.IMemorySummarySettings.html">IMemorySummarySettings</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.IMemoryTitleSettings.html">IMemoryTitleSettings</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.ISpeechToTextRecorder.html">ISpeechToTextRecorder</a></h4>
+      <section><p>Interface for recording audio input and converting it to text via speech recognition.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.ITextToSpeechPlayer.html">ITextToSpeechPlayer</a></h4>
+      <section><p>Interface for playing synthesized speech audio from text-to-speech output.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.IToolCallExecutor-2.html">IToolCallExecutor&lt;TCall, TOutput&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.IToolCallHandler.html">IToolCallHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.IToolProvider.html">IToolProvider</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.IToolRouter.html">IToolRouter</a></h4>
+      <section><p>Selects which tools to forward to the LLM for a given user message.
+Implement this interface to provide a custom routing strategy
+(e.g. rule-based, tag-based, or embedding-based).</p>
+</section>
+    <h3 id="enums">
+Enums
+</h3>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.AgentCapabilities.html">AgentCapabilities</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.AgentStatus.html">AgentStatus</a></h4>
+      <section><p>High-level lifecycle state of an <code>Agent</code>.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.AgentTraits.html">AgentTraits</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.CharacterDisposition.html">CharacterDisposition</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.CharacterKnowledgeScope.html">CharacterKnowledgeScope</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.CharacterRole.html">CharacterRole</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.CharacterSpeechStyle.html">CharacterSpeechStyle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.ChatApi.html">ChatApi</a></h4>
+      <section><p>Defines the type of AI agent, which determines which API it uses.</p>
+<ul><li><span class="term">Default</span>Uses Responses API if supported, or ChatCompletions API.</li><li><span class="term">AssistantsApi</span>Uses Assistants API (OpenAI).</li><li><span class="term">RealtimeApi</span>Uses Realtime API (OpenAI/WebSocket)</li></ul>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.ConversationSelectMode.html">ConversationSelectMode</a></h4>
+      <section><p>Specifies how the conversation ID should be determined when initializing an agent.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.FamousCharacterPreset.html">FamousCharacterPreset</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.MemoryCapabilities.html">MemoryCapabilities</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.ScreenshotPathType.html">ScreenshotPathType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.UnhandledToolCallBehaviour.html">UnhandledToolCallBehaviour</a></h4>
+      <section><p>Defines the policy to apply when a tool call is received but the agent has no handler for it.</p>
+</section>
+    <h3 id="delegates">
+Delegates
+</h3>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Agents.SubmitToolOutputsDelegate.html">SubmitToolOutputsDelegate</a></h4>
+      <section></section>
+
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AI DevKit Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

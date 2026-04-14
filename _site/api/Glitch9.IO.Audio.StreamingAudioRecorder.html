@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class StreamingAudioRecorder | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class StreamingAudioRecorder | AI DevKit ">
+    
+    <meta name="description" content="Robust implementation of the audio recorder that supports real-time audio recording. This class allows for real-time audio recording with various triggers and callbacks. You can start and stop recording, handle audio input in real-time, and manage state transitions. You must call &#39;OnUpdateLoop()&#39; method from the MonoBehaviour&#39;s Update() loop to process triggers.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder">
+
+
+
+  <h1 id="Glitch9_IO_Audio_StreamingAudioRecorder" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder" class="text-break">Class StreamingAudioRecorder</h1>
+  <div class="markdown level0 summary"><p>Robust implementation of the audio recorder that supports real-time audio recording.
+This class allows for real-time audio recording with various triggers and callbacks.
+You can start and stop recording, handle audio input in real-time, and manage state transitions.
+You must call 'OnUpdateLoop()' method from the MonoBehaviour's Update() loop to process triggers.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Glitch9.IO.Audio.AudioRecorderBase.html">AudioRecorderBase</a></div>
+    <div class="level2"><span class="xref">StreamingAudioRecorder</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Glitch9.IO.Audio.AudioRecorderBase.html#Glitch9_IO_Audio_AudioRecorderBase_RecordingFileNameFormat">AudioRecorderBase.RecordingFileNameFormat</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Audio.AudioRecorderBase.html#Glitch9_IO_Audio_AudioRecorderBase_MicrophoneDeviceName">AudioRecorderBase.MicrophoneDeviceName</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Audio.AudioRecorderBase.html#Glitch9_IO_Audio_AudioRecorderBase_SampleRate">AudioRecorderBase.SampleRate</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Audio.AudioRecorderBase.html#Glitch9_IO_Audio_AudioRecorderBase_RecordingLengthSec">AudioRecorderBase.RecordingLengthSec</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Audio.AudioRecorderBase.html#Glitch9_IO_Audio_AudioRecorderBase_MinRecordingLengthSec">AudioRecorderBase.MinRecordingLengthSec</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Audio.AudioRecorderBase.html#Glitch9_IO_Audio_AudioRecorderBase_IsRecording">AudioRecorderBase.IsRecording</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Audio.AudioRecorderBase.html#Glitch9_IO_Audio_AudioRecorderBase_RecordingClip">AudioRecorderBase.RecordingClip</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Audio.AudioRecorderBase.html#Glitch9_IO_Audio_AudioRecorderBase_Configure_Glitch9_IO_Audio_AudioRecorderSettings_">AudioRecorderBase.Configure(AudioRecorderSettings)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Audio.AudioRecorderBase.html#Glitch9_IO_Audio_AudioRecorderBase_RequestMicrophonePermission_System_Action_System_Boolean__">AudioRecorderBase.RequestMicrophonePermission(Action&lt;bool&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Audio.AudioRecorderBase.html#Glitch9_IO_Audio_AudioRecorderBase_StartRecording_System_String_">AudioRecorderBase.StartRecording(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Audio.AudioRecorderBase.html#Glitch9_IO_Audio_AudioRecorderBase_StopRecordingWithoutNotify">AudioRecorderBase.StopRecordingWithoutNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Audio.AudioRecorderBase.html#Glitch9_IO_Audio_AudioRecorderBase_GetRecording">AudioRecorderBase.GetRecording()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Audio.AudioRecorderBase.html#Glitch9_IO_Audio_AudioRecorderBase_PlayRecording">AudioRecorderBase.PlayRecording()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Audio.AudioRecorderBase.html#Glitch9_IO_Audio_AudioRecorderBase_FormatRecordingFileName">AudioRecorderBase.FormatRecordingFileName()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.IO.html">IO</a>.<a class="xref" href="Glitch9.IO.Audio.html">Audio</a></h6>
+  <h6><strong>Assembly</strong>: Glitch9.IO.dll</h6>
+  <h5 id="Glitch9_IO_Audio_StreamingAudioRecorder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class StreamingAudioRecorder : AudioRecorderBase, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Audio_StreamingAudioRecorder__ctor_Glitch9_IO_Audio_AudioRecorderSettings_Glitch9_IO_Audio_RecordingTriggerType_System_Boolean_Glitch9_IO_Audio_KeyCodeTrigger_Glitch9_IO_Audio_VoiceDetectionTrigger_Glitch9_ILogger_.md&amp;value=---%0Auid%3A%20Glitch9.IO.Audio.StreamingAudioRecorder.%23ctor(Glitch9.IO.Audio.AudioRecorderSettings%2CGlitch9.IO.Audio.RecordingTriggerType%2CSystem.Boolean%2CGlitch9.IO.Audio.KeyCodeTrigger%2CGlitch9.IO.Audio.VoiceDetectionTrigger%2CGlitch9.ILogger)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Audio/Components/StreamingAudioRecorder.cs/#L273">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Audio_StreamingAudioRecorder__ctor_" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.#ctor*"></a>
+  <h4 id="Glitch9_IO_Audio_StreamingAudioRecorder__ctor_Glitch9_IO_Audio_AudioRecorderSettings_Glitch9_IO_Audio_RecordingTriggerType_System_Boolean_Glitch9_IO_Audio_KeyCodeTrigger_Glitch9_IO_Audio_VoiceDetectionTrigger_Glitch9_ILogger_" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.#ctor(Glitch9.IO.Audio.AudioRecorderSettings,Glitch9.IO.Audio.RecordingTriggerType,System.Boolean,Glitch9.IO.Audio.KeyCodeTrigger,Glitch9.IO.Audio.VoiceDetectionTrigger,Glitch9.ILogger)">StreamingAudioRecorder(AudioRecorderSettings, RecordingTriggerType, bool, KeyCodeTrigger, VoiceDetectionTrigger, ILogger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StreamingAudioRecorder(AudioRecorderSettings settings = null, RecordingTriggerType triggerType = RecordingTriggerType.Manual, bool autoStopRecordingOnSilence = false, KeyCodeTrigger keyCodeTrigger = null, VoiceDetectionTrigger voiceDetectionTrigger = null, ILogger logger = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Audio.AudioRecorderSettings.html">AudioRecorderSettings</a></td>
+        <td><span class="parametername">settings</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Audio.RecordingTriggerType.html">RecordingTriggerType</a></td>
+        <td><span class="parametername">triggerType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">autoStopRecordingOnSilence</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Audio.KeyCodeTrigger.html">KeyCodeTrigger</a></td>
+        <td><span class="parametername">keyCodeTrigger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Audio.VoiceDetectionTrigger.html">VoiceDetectionTrigger</a></td>
+        <td><span class="parametername">voiceDetectionTrigger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.ILogger.html">ILogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Audio_StreamingAudioRecorder_AutoStopRecordingOnSilence.md&amp;value=---%0Auid%3A%20Glitch9.IO.Audio.StreamingAudioRecorder.AutoStopRecordingOnSilence%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Audio/Components/StreamingAudioRecorder.cs/#L243">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Audio_StreamingAudioRecorder_AutoStopRecordingOnSilence_" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.AutoStopRecordingOnSilence*"></a>
+  <h4 id="Glitch9_IO_Audio_StreamingAudioRecorder_AutoStopRecordingOnSilence" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.AutoStopRecordingOnSilence">AutoStopRecordingOnSilence</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AutoStopRecordingOnSilence { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Audio_StreamingAudioRecorder_DetectionIntervalMs.md&amp;value=---%0Auid%3A%20Glitch9.IO.Audio.StreamingAudioRecorder.DetectionIntervalMs%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Audio/Components/StreamingAudioRecorder.cs/#L230">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Audio_StreamingAudioRecorder_DetectionIntervalMs_" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.DetectionIntervalMs*"></a>
+  <h4 id="Glitch9_IO_Audio_StreamingAudioRecorder_DetectionIntervalMs" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.DetectionIntervalMs">DetectionIntervalMs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DetectionIntervalMs { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Audio_StreamingAudioRecorder_SilenceDurationMs.md&amp;value=---%0Auid%3A%20Glitch9.IO.Audio.StreamingAudioRecorder.SilenceDurationMs%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Audio/Components/StreamingAudioRecorder.cs/#L236">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Audio_StreamingAudioRecorder_SilenceDurationMs_" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.SilenceDurationMs*"></a>
+  <h4 id="Glitch9_IO_Audio_StreamingAudioRecorder_SilenceDurationMs" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.SilenceDurationMs">SilenceDurationMs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SilenceDurationMs { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Audio_StreamingAudioRecorder_SilenceThreshold.md&amp;value=---%0Auid%3A%20Glitch9.IO.Audio.StreamingAudioRecorder.SilenceThreshold%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Audio/Components/StreamingAudioRecorder.cs/#L224">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Audio_StreamingAudioRecorder_SilenceThreshold_" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.SilenceThreshold*"></a>
+  <h4 id="Glitch9_IO_Audio_StreamingAudioRecorder_SilenceThreshold" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.SilenceThreshold">SilenceThreshold</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SilenceThreshold { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Audio_StreamingAudioRecorder_TriggerType.md&amp;value=---%0Auid%3A%20Glitch9.IO.Audio.StreamingAudioRecorder.TriggerType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Audio/Components/StreamingAudioRecorder.cs/#L242">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Audio_StreamingAudioRecorder_TriggerType_" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.TriggerType*"></a>
+  <h4 id="Glitch9_IO_Audio_StreamingAudioRecorder_TriggerType" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.TriggerType">TriggerType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RecordingTriggerType TriggerType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Audio.RecordingTriggerType.html">RecordingTriggerType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Audio_StreamingAudioRecorder_state.md&amp;value=---%0Auid%3A%20Glitch9.IO.Audio.StreamingAudioRecorder.state%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Audio/Components/StreamingAudioRecorder.cs/#L245">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Audio_StreamingAudioRecorder_state_" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.state*"></a>
+  <h4 id="Glitch9_IO_Audio_StreamingAudioRecorder_state" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.state">state</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StreamingAudioRecorder.State state { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Audio.StreamingAudioRecorder.html">StreamingAudioRecorder</a>.<a class="xref" href="Glitch9.IO.Audio.StreamingAudioRecorder.State.html">State</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Audio_StreamingAudioRecorder_CanStartRecording.md&amp;value=---%0Auid%3A%20Glitch9.IO.Audio.StreamingAudioRecorder.CanStartRecording%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Audio/Components/StreamingAudioRecorder.cs/#L316">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Audio_StreamingAudioRecorder_CanStartRecording_" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.CanStartRecording*"></a>
+  <h4 id="Glitch9_IO_Audio_StreamingAudioRecorder_CanStartRecording" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.CanStartRecording">CanStartRecording()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool CanStartRecording()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.IO.Audio.AudioRecorderBase.html#Glitch9_IO_Audio_AudioRecorderBase_CanStartRecording">AudioRecorderBase.CanStartRecording()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Audio_StreamingAudioRecorder_Dispose.md&amp;value=---%0Auid%3A%20Glitch9.IO.Audio.StreamingAudioRecorder.Dispose%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Audio/Components/StreamingAudioRecorder.cs/#L486">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Audio_StreamingAudioRecorder_Dispose_" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.Dispose*"></a>
+  <h4 id="Glitch9_IO_Audio_StreamingAudioRecorder_Dispose" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Audio_StreamingAudioRecorder_OnRecordingStarted_UnityEngine_AudioClip_.md&amp;value=---%0Auid%3A%20Glitch9.IO.Audio.StreamingAudioRecorder.OnRecordingStarted(UnityEngine.AudioClip)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Audio/Components/StreamingAudioRecorder.cs/#L364">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Audio_StreamingAudioRecorder_OnRecordingStarted_" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.OnRecordingStarted*"></a>
+  <h4 id="Glitch9_IO_Audio_StreamingAudioRecorder_OnRecordingStarted_UnityEngine_AudioClip_" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.OnRecordingStarted(UnityEngine.AudioClip)">OnRecordingStarted(AudioClip)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool OnRecordingStarted(AudioClip clip)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AudioClip</span></td>
+        <td><span class="parametername">clip</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.IO.Audio.AudioRecorderBase.html#Glitch9_IO_Audio_AudioRecorderBase_OnRecordingStarted_UnityEngine_AudioClip_">AudioRecorderBase.OnRecordingStarted(AudioClip)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Audio_StreamingAudioRecorder_OnUpdateLoop.md&amp;value=---%0Auid%3A%20Glitch9.IO.Audio.StreamingAudioRecorder.OnUpdateLoop%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Audio/Components/StreamingAudioRecorder.cs/#L335">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Audio_StreamingAudioRecorder_OnUpdateLoop_" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.OnUpdateLoop*"></a>
+  <h4 id="Glitch9_IO_Audio_StreamingAudioRecorder_OnUpdateLoop" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.OnUpdateLoop">OnUpdateLoop()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnUpdateLoop()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Audio_StreamingAudioRecorder_StopRecording.md&amp;value=---%0Auid%3A%20Glitch9.IO.Audio.StreamingAudioRecorder.StopRecording%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Audio/Components/StreamingAudioRecorder.cs/#L374">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Audio_StreamingAudioRecorder_StopRecording_" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.StopRecording*"></a>
+  <h4 id="Glitch9_IO_Audio_StreamingAudioRecorder_StopRecording" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.StopRecording">StopRecording()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override AudioClip StopRecording()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AudioClip</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.IO.Audio.AudioRecorderBase.html#Glitch9_IO_Audio_AudioRecorderBase_StopRecording">AudioRecorderBase.StopRecording()</a></div>
+  <h3 id="events">Events
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Audio_StreamingAudioRecorder_canRecordPredicate.md&amp;value=---%0Auid%3A%20Glitch9.IO.Audio.StreamingAudioRecorder.canRecordPredicate%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Audio/Components/StreamingAudioRecorder.cs/#L264">View Source</a>
+  </span>
+  <h4 id="Glitch9_IO_Audio_StreamingAudioRecorder_canRecordPredicate" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.canRecordPredicate">canRecordPredicate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Func&lt;bool&gt; canRecordPredicate</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Audio_StreamingAudioRecorder_onInputAudioBuffer.md&amp;value=---%0Auid%3A%20Glitch9.IO.Audio.StreamingAudioRecorder.onInputAudioBuffer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Audio/Components/StreamingAudioRecorder.cs/#L263">View Source</a>
+  </span>
+  <h4 id="Glitch9_IO_Audio_StreamingAudioRecorder_onInputAudioBuffer" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.onInputAudioBuffer">onInputAudioBuffer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;float[]&gt; onInputAudioBuffer</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Audio_StreamingAudioRecorder_onMicrophoneLevelChanged.md&amp;value=---%0Auid%3A%20Glitch9.IO.Audio.StreamingAudioRecorder.onMicrophoneLevelChanged%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Audio/Components/StreamingAudioRecorder.cs/#L260">View Source</a>
+  </span>
+  <h4 id="Glitch9_IO_Audio_StreamingAudioRecorder_onMicrophoneLevelChanged" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.onMicrophoneLevelChanged">onMicrophoneLevelChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;float&gt; onMicrophoneLevelChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Audio_StreamingAudioRecorder_onRecordingStarted.md&amp;value=---%0Auid%3A%20Glitch9.IO.Audio.StreamingAudioRecorder.onRecordingStarted%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Audio/Components/StreamingAudioRecorder.cs/#L261">View Source</a>
+  </span>
+  <h4 id="Glitch9_IO_Audio_StreamingAudioRecorder_onRecordingStarted" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.onRecordingStarted">onRecordingStarted</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action onRecordingStarted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Audio_StreamingAudioRecorder_onRecordingStopped.md&amp;value=---%0Auid%3A%20Glitch9.IO.Audio.StreamingAudioRecorder.onRecordingStopped%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Audio/Components/StreamingAudioRecorder.cs/#L262">View Source</a>
+  </span>
+  <h4 id="Glitch9_IO_Audio_StreamingAudioRecorder_onRecordingStopped" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.onRecordingStopped">onRecordingStopped</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;AudioClip&gt; onRecordingStopped</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">AudioClip</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Audio_StreamingAudioRecorder_onStateChanged.md&amp;value=---%0Auid%3A%20Glitch9.IO.Audio.StreamingAudioRecorder.onStateChanged%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Audio/Components/StreamingAudioRecorder.cs/#L259">View Source</a>
+  </span>
+  <h4 id="Glitch9_IO_Audio_StreamingAudioRecorder_onStateChanged" data-uid="Glitch9.IO.Audio.StreamingAudioRecorder.onStateChanged">onStateChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;StreamingAudioRecorder.State&gt; onStateChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Glitch9.IO.Audio.StreamingAudioRecorder.html">StreamingAudioRecorder</a>.<a class="xref" href="Glitch9.IO.Audio.StreamingAudioRecorder.State.html">State</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrEmpty__1___0_">ArrayExtensions.ToArrayOrEmpty&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrNull__1___0_">ArrayExtensions.ToArrayOrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDelta__1___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.ToDelta&lt;T&gt;(T, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDone__1___0_System_String_System_Int32_System_String_">EventExtensions.ToDone&lt;T&gt;(T, string, int, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToEvent__1___0_">EventExtensions.ToEvent&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_UpcastDelta__2___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.UpcastDelta&lt;T1, T2&gt;(T1, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.FallbackExtensions.html#Glitch9_FallbackExtensions_IsOr__2___0___1_">FallbackExtensions.IsOr&lt;TParent, TChild&gt;(TParent, TChild)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ResponseCastingExtensions.html#Glitch9_IO_Networking_RESTApi_ResponseCastingExtensions_GetResult__1___0_">ResponseCastingExtensions.GetResult&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_TryDispose_System_IDisposable_">SystemExtensions.TryDispose(IDisposable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_GetName_System_Object_">SystemExtensions.GetName(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Audio_StreamingAudioRecorder.md&amp;value=---%0Auid%3A%20Glitch9.IO.Audio.StreamingAudioRecorder%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Audio/Components/StreamingAudioRecorder.cs/#L213" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AI DevKit Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

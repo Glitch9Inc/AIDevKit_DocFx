@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class RealtimeItem | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class RealtimeItem | AI DevKit ">
+    
+    <meta name="description" content="A realtime Item is of three types: message, function_call, or function_call_output. A message item can contain text or audio. A function_call item indicates a model&#39;s desire to call a tool. A function_call_output item indicates a function response. The client may add and remove message and function_call_output Items using conversation.item.create and conversation.item.delete.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem">
+
+
+
+  <h1 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem" class="text-break">Class RealtimeItem</h1>
+  <div class="markdown level0 summary"><p>A realtime Item is of three types: message, function_call, or function_call_output.</p>
+<p>A message item can contain text or audio.</p>
+<p>A function_call item indicates a model's desire to call a tool.</p>
+<p>A function_call_output item indicates a function response.</p>
+<p>The client may add and remove message and function_call_output Items using conversation.item.create and conversation.item.delete.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">RealtimeItem</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.html">OpenAI</a>.<a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.html">Realtime</a></h6>
+  <h6><strong>Assembly</strong>: Glitch9.AIDevKit.Provider.OpenAI.dll</h6>
+  <h5 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RealtimeItem</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_ApprovalRequestId.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.ApprovalRequestId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L83">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_ApprovalRequestId_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.ApprovalRequestId*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_ApprovalRequestId" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.ApprovalRequestId">ApprovalRequestId</h4>
+  <div class="markdown level1 summary"><p>The ID of an associated approval request, if any.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;approval_request_id&quot;)]
+public string ApprovalRequestId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Approve.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Approve%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L88">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Approve_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Approve*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Approve" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Approve">Approve</h4>
+  <div class="markdown level1 summary"><p>Whether the request was approved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;approve&quot;)]
+public bool? Approve { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Arguments.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Arguments%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L63">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Arguments_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Arguments*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Arguments" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Arguments">Arguments</h4>
+  <div class="markdown level1 summary"><p>The arguments of the function call (for &quot;function_call&quot; items).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;arguments&quot;)]
+public string Arguments { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_CallId.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.CallId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L53">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_CallId_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.CallId*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_CallId" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.CallId">CallId</h4>
+  <div class="markdown level1 summary"><p>The ID of the function call (for &quot;function_call&quot; items).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;call_id&quot;)]
+public string CallId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Content.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Content%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L48">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Content_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Content*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Content" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Content">Content</h4>
+  <div class="markdown level1 summary"><p>The content of the item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;content&quot;)]
+public RealtimeItemContent[] Content { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemContent.html">RealtimeItemContent</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Error.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Error%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L103">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Error_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Error*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Error" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Error">Error</h4>
+  <div class="markdown level1 summary"><p>The error from the MCP tool call, if any.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;error&quot;)]
+public McpException Error { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.McpException.html">McpException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Id.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Id%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L18">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Id_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Id*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Id" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Id">Id</h4>
+  <div class="markdown level1 summary"><p>The unique ID of the item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;id&quot;)]
+public string Id { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Name.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Name%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L58">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Name_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Name*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Name" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Name">Name</h4>
+  <div class="markdown level1 summary"><p>The name of the function being called (for &quot;function_call&quot; items).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;name&quot;)]
+public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Object.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Object%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L23">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Object_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Object*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Object" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Object">Object</h4>
+  <div class="markdown level1 summary"><p>The object type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;object&quot;)]
+public string Object { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Output.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Output%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L68">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Output_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Output*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Output" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Output">Output</h4>
+  <div class="markdown level1 summary"><p>The list of output items generated by the response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;output&quot;)]
+public RealtimeItem[] Output { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Reason.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Reason%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L93">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Reason_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Reason*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Reason" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Reason">Reason</h4>
+  <div class="markdown level1 summary"><p>Optional reason for the decision for approval or rejection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;reason&quot;)]
+public string Reason { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Role.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Role%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L43">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Role_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Role*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Role" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Role">Role</h4>
+  <div class="markdown level1 summary"><p>The role associated with the item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;role&quot;)]
+public ChatRole? Role { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ChatRole.html">ChatRole</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_ServerLabel.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.ServerLabel%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L78">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_ServerLabel_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.ServerLabel*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_ServerLabel" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.ServerLabel">ServerLabel</h4>
+  <div class="markdown level1 summary"><p>The label of the MCP server running the tool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;server_label&quot;)]
+public string ServerLabel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Status.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Status%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L33">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Status_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Status*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Status" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Status">Status</h4>
+  <div class="markdown level1 summary"><p>The status of the item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;status&quot;)]
+public RealtimeItemStatus? Status { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatus.html">RealtimeItemStatus</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_StatusDetails.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.StatusDetails%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L38">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_StatusDetails_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.StatusDetails*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_StatusDetails" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.StatusDetails">StatusDetails</h4>
+  <div class="markdown level1 summary"><p>Additional details about the status.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;status_details&quot;)]
+public RealtimeItemStatusDetails StatusDetails { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemStatusDetails.html">RealtimeItemStatusDetails</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Tools.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Tools%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L98">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Tools_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Tools*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Tools" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Tools">Tools</h4>
+  <div class="markdown level1 summary"><p>The MCP tools available on the server retrieved by McpToolList call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;tools&quot;)]
+public List&lt;McpToolInfo&gt; Tools { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Glitch9.AIDevKit.McpToolInfo.html">McpToolInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Type.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Type%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L28">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Type_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Type*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Type" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Type">Type</h4>
+  <div class="markdown level1 summary"><p>The type of the item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;type&quot;)]
+public RealtimeItemType Type { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItemType.html">RealtimeItemType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Usage.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Usage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L73">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Usage_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Usage*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_Usage" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.Usage">Usage</h4>
+  <div class="markdown level1 summary"><p>Usage statistics for the response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;usage&quot;)]
+public Usage Usage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Usage.html">Usage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_AssistantMessage_System_String_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.AssistantMessage(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L160">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_AssistantMessage_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.AssistantMessage*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_AssistantMessage_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.AssistantMessage(System.String)">AssistantMessage(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RealtimeItem AssistantMessage(string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_AssistantVoice_System_String_System_String_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.AssistantVoice(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L170">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_AssistantVoice_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.AssistantVoice*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_AssistantVoice_System_String_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.AssistantVoice(System.String,System.String)">AssistantVoice(string, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RealtimeItem AssistantVoice(string base64EncodedAudio, string transcript)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">base64EncodedAudio</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">transcript</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_FromMessage_Glitch9_AIDevKit_Message_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.FromMessage(Glitch9.AIDevKit.Message)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L116">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_FromMessage_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.FromMessage*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_FromMessage_Glitch9_AIDevKit_Message_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.FromMessage(Glitch9.AIDevKit.Message)">FromMessage(Message)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RealtimeItem FromMessage(Message message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Message.html">Message</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_GetResponseText.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.GetResponseText%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L207">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_GetResponseText_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.GetResponseText*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_GetResponseText" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.GetResponseText">GetResponseText()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetResponseText()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_GetResponseTranscript.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.GetResponseTranscript%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L193">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_GetResponseTranscript_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.GetResponseTranscript*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_GetResponseTranscript" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.GetResponseTranscript">GetResponseTranscript()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetResponseTranscript()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_McpApproval_Glitch9_AIDevKit_McpApprovalResponse_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.McpApproval(Glitch9.AIDevKit.McpApprovalResponse)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L180">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_McpApproval_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.McpApproval*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_McpApproval_Glitch9_AIDevKit_McpApprovalResponse_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.McpApproval(Glitch9.AIDevKit.McpApprovalResponse)">McpApproval(McpApprovalResponse)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RealtimeItem McpApproval(McpApprovalResponse approval)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.McpApprovalResponse.html">McpApprovalResponse</a></td>
+        <td><span class="parametername">approval</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_ToMessage.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.ToMessage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L221">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_ToMessage_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.ToMessage*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_ToMessage" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.ToMessage">ToMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Message ToMessage()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Message.html">Message</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_ToStatusString.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.ToStatusString%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L191">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_ToStatusString_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.ToStatusString*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_ToStatusString" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.ToStatusString">ToStatusString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToStatusString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_TruncateAudioAt_System_Int64_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.TruncateAudioAt(System.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L231">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_TruncateAudioAt_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.TruncateAudioAt*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_TruncateAudioAt_System_Int64_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.TruncateAudioAt(System.Int64)">TruncateAudioAt(long)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TruncateAudioAt(long audioEndMs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">audioEndMs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_UserMessage_System_String_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.UserMessage(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L106">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_UserMessage_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.UserMessage*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_UserMessage_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.UserMessage(System.String)">UserMessage(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RealtimeItem UserMessage(string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_UserVoice_System_String_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.UserVoice(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L150">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_UserVoice_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.UserVoice*"></a>
+  <h4 id="Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem_UserVoice_System_String_" data-uid="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.UserVoice(System.String)">UserVoice(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RealtimeItem UserVoice(string base64EncodedAudio)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">base64EncodedAudio</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem.html">RealtimeItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrEmpty__1___0_">ArrayExtensions.ToArrayOrEmpty&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrNull__1___0_">ArrayExtensions.ToArrayOrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDelta__1___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.ToDelta&lt;T&gt;(T, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDone__1___0_System_String_System_Int32_System_String_">EventExtensions.ToDone&lt;T&gt;(T, string, int, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToEvent__1___0_">EventExtensions.ToEvent&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_UpcastDelta__2___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.UpcastDelta&lt;T1, T2&gt;(T1, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.FallbackExtensions.html#Glitch9_FallbackExtensions_IsOr__2___0___1_">FallbackExtensions.IsOr&lt;TParent, TChild&gt;(TParent, TChild)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ResponseCastingExtensions.html#Glitch9_IO_Networking_RESTApi_ResponseCastingExtensions_GetResult__1___0_">ResponseCastingExtensions.GetResult&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_GetName_System_Object_">SystemExtensions.GetName(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_OpenAI_Realtime_RealtimeItem.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.OpenAI.Realtime.RealtimeItem%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Providers/OpenAI/Models/Realtime/RealtimeItem/RealtimeItem.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AI DevKit Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

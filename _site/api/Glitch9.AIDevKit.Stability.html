@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Namespace Glitch9.AIDevKit.Stability | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Namespace Glitch9.AIDevKit.Stability | AI DevKit ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.Stability">
+
+  <h1 id="Glitch9_AIDevKit_Stability" data-uid="Glitch9.AIDevKit.Stability" class="text-break">Namespace Glitch9.AIDevKit.Stability</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">
+Classes
+</h3>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Stability.EditService.html">EditService</a></h4>
+      <section><p>Service for Stability AI image editing endpoints.
+POST /v2beta/stable-image/edit/inpaint
+POST /v2beta/stable-image/edit/outpaint
+POST /v2beta/stable-image/edit/erase
+POST /v2beta/stable-image/edit/search-and-replace
+POST /v2beta/stable-image/edit/search-and-recolor
+POST /v2beta/stable-image/edit/remove-background
+All endpoints return raw image bytes.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Stability.GenerateService.html">GenerateService</a></h4>
+      <section><p>Service for Stability AI image generation endpoints.
+POST /v2beta/stable-image/generate/sd3
+POST /v2beta/stable-image/generate/core
+POST /v2beta/stable-image/generate/ultra
+All endpoints return raw image bytes (image/png by default).</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Stability.StabilityClient.html">StabilityClient</a></h4>
+      <section><p>REST client for the native Stability AI API (<a href="https://api.stability.ai">https://api.stability.ai</a>).
+Auth: Bearer API key.
+All image endpoints use multipart/form-data and return raw image bytes.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Stability.StabilityCoreRequest.html">StabilityCoreRequest</a></h4>
+      <section><p>Request body for POST /v2beta/stable-image/generate/core.
+Fast, high-quality image generation. No explicit model field required.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Stability.StabilityEraseRequest.html">StabilityEraseRequest</a></h4>
+      <section><p>Request body for POST /v2beta/stable-image/edit/erase.
+Removes objects defined by the mask, replacing them with AI-generated background.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Stability.StabilityInpaintRequest.html">StabilityInpaintRequest</a></h4>
+      <section><p>Request body for POST /v2beta/stable-image/edit/inpaint.
+Fills masked or transparent areas of an image using the provided prompt.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Stability.StabilityOutpaintRequest.html">StabilityOutpaintRequest</a></h4>
+      <section><p>Request body for POST /v2beta/stable-image/edit/outpaint.
+Extends the canvas of an existing image by a specified number of pixels on each side.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Stability.StabilityRemoveBgRequest.html">StabilityRemoveBgRequest</a></h4>
+      <section><p>Request body for POST /v2beta/stable-image/edit/remove-background.
+Segments the foreground and removes the background from an image.
+No prompt required.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Stability.StabilityRequest.html">StabilityRequest</a></h4>
+      <section><p>Shared base for all Stability AI native API generation and edit requests.
+All requests use multipart/form-data encoding.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Stability.StabilitySD3Request.html">StabilitySD3Request</a></h4>
+      <section><p>Request body for POST /v2beta/stable-image/generate/sd3.
+Supports SD3 Large, SD3 Large Turbo, and SD3 Medium models.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Stability.StabilitySearchRecolorRequest.html">StabilitySearchRecolorRequest</a></h4>
+      <section><p>Request body for POST /v2beta/stable-image/edit/search-and-recolor.
+Recolors a specified object in the image based on a text prompt.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Stability.StabilitySearchReplaceRequest.html">StabilitySearchReplaceRequest</a></h4>
+      <section><p>Request body for POST /v2beta/stable-image/edit/search-and-replace.
+Replaces a specified object (described by search_prompt) with generated content.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Stability.StabilitySettings.html">StabilitySettings</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Stability.StabilityUltraRequest.html">StabilityUltraRequest</a></h4>
+      <section><p>Request body for POST /v2beta/stable-image/generate/ultra.
+Highest-quality single-image generation, highest credit cost.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Stability.StabilityUpscaleRequest.html">StabilityUpscaleRequest</a></h4>
+      <section><p>Request body for synchronous upscale endpoints:
+POST /v2beta/stable-image/upscale/conservative
+POST /v2beta/stable-image/upscale/fast
+The creative upscale endpoint is async (deferred) and uses a different polling flow.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.AIDevKit.Stability.UpscaleService.html">UpscaleService</a></h4>
+      <section><p>Service for synchronous Stability AI upscale endpoints.
+POST /v2beta/stable-image/upscale/conservative
+POST /v2beta/stable-image/upscale/fast</p>
+<p>Note: The creative upscale endpoint is async (returns a job ID for polling)
+and is deferred to a future implementation.</p>
+</section>
+
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AI DevKit Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

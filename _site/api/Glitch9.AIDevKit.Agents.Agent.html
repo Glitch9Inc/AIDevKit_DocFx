@@ -1,0 +1,2538 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Agent | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Agent | AI DevKit ">
+    
+    <meta name="description" content="AI Agent that can generate responses using various models and manage conversations. Wraps model, tools, audio, and conversation management in a single fa�?��de.Uses internal services for conversations, tool calls, and audio I/O.Acts as the main entry point for runtime chat / tool workflows.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.Agents.Agent">
+
+
+
+  <h1 id="Glitch9_AIDevKit_Agents_Agent" data-uid="Glitch9.AIDevKit.Agents.Agent" class="text-break">Class Agent</h1>
+  <div class="markdown level0 summary"><p>AI Agent that can generate responses using various models and manage conversations.</p>
+<ul><li>Wraps model, tools, audio, and conversation management in a single fa�?��de.</li><li>Uses internal services for conversations, tool calls, and audio I/O.</li><li>Acts as the main entry point for runtime chat / tool workflows.</li></ul>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">Agent</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.Agents.html">Agents</a></h6>
+  <h6><strong>Assembly</strong>: Glitch9.AIDevKit.dll</h6>
+  <h5 id="Glitch9_AIDevKit_Agents_Agent_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class Agent : IDisposable</code></pre>
+  </div>
+  <h5 id="Glitch9_AIDevKit_Agents_Agent_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p><em>Warning: Do not attempt to change ConversationManager once Agent is created.</em></p>
+</div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent__ctor_Glitch9_AIDevKit_Agents_IAgentBehaviour_Glitch9_AIDevKit_Agents_IAgentSettings_Glitch9_AIDevKit_Agents_IMemorySettings_Glitch9_AIDevKit_Agents_AgentDependencies_Glitch9_IO_IUniTaskStore_Glitch9_AIDevKit_Agents_AgentSaveData__Glitch9_ILogger_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.%23ctor(Glitch9.AIDevKit.Agents.IAgentBehaviour%2CGlitch9.AIDevKit.Agents.IAgentSettings%2CGlitch9.AIDevKit.Agents.IMemorySettings%2CGlitch9.AIDevKit.Agents.AgentDependencies%2CGlitch9.IO.IUniTaskStore%7BGlitch9.AIDevKit.Agents.AgentSaveData%7D%2CGlitch9.ILogger)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L297">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent__ctor_" data-uid="Glitch9.AIDevKit.Agents.Agent.#ctor*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent__ctor_Glitch9_AIDevKit_Agents_IAgentBehaviour_Glitch9_AIDevKit_Agents_IAgentSettings_Glitch9_AIDevKit_Agents_IMemorySettings_Glitch9_AIDevKit_Agents_AgentDependencies_Glitch9_IO_IUniTaskStore_Glitch9_AIDevKit_Agents_AgentSaveData__Glitch9_ILogger_" data-uid="Glitch9.AIDevKit.Agents.Agent.#ctor(Glitch9.AIDevKit.Agents.IAgentBehaviour,Glitch9.AIDevKit.Agents.IAgentSettings,Glitch9.AIDevKit.Agents.IMemorySettings,Glitch9.AIDevKit.Agents.AgentDependencies,Glitch9.IO.IUniTaskStore{Glitch9.AIDevKit.Agents.AgentSaveData},Glitch9.ILogger)">Agent(IAgentBehaviour, IAgentSettings, IMemorySettings, AgentDependencies, IUniTaskStore&lt;AgentSaveData&gt;, ILogger)</h4>
+  <div class="markdown level1 summary"><p>Creates a new AI Agent with the specified configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Agent(IAgentBehaviour agentConfig, IAgentSettings agentSettings, IMemorySettings conversationSettings, AgentDependencies dependencies = null, IUniTaskStore&lt;AgentSaveData&gt; saveDataStore = null, ILogger logger = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Agents.IAgentBehaviour.html">IAgentBehaviour</a></td>
+        <td><span class="parametername">agentConfig</span></td>
+        <td><p>Required agent behavior settings (streaming, logging, etc.)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Agents.IAgentSettings.html">IAgentSettings</a></td>
+        <td><span class="parametername">agentSettings</span></td>
+        <td><p>Required agent configuration (model, instructions, etc.)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Agents.IMemorySettings.html">IMemorySettings</a></td>
+        <td><span class="parametername">conversationSettings</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Agents.AgentDependencies.html">AgentDependencies</a></td>
+        <td><span class="parametername">dependencies</span></td>
+        <td><p>Optional custom service implementations</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.IUniTaskStore-1.html">IUniTaskStore</a>&lt;<a class="xref" href="Glitch9.AIDevKit.Agents.AgentSaveData.html">AgentSaveData</a>&gt;</td>
+        <td><span class="parametername">saveDataStore</span></td>
+        <td><p>Optional preferences storage implementation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.ILogger.html">ILogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>Optional custom logger</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_conversationController.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.conversationController%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L256">View Source</a>
+  </span>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_conversationController" data-uid="Glitch9.AIDevKit.Agents.Agent.conversationController">conversationController</h4>
+  <div class="markdown level1 summary"><p>Manages conversation state, history, and message persistence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly ConversationController conversationController</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Agents.ConversationController.html">ConversationController</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_mediaController.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.mediaController%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L261">View Source</a>
+  </span>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_mediaController" data-uid="Glitch9.AIDevKit.Agents.Agent.mediaController">mediaController</h4>
+  <div class="markdown level1 summary"><p>Manages all media generation including speech-to-text, text-to-speech, and image generation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly MediaController mediaController</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Agents.MediaController.html">MediaController</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_AgentName.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.AgentName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L83">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_AgentName_" data-uid="Glitch9.AIDevKit.Agents.Agent.AgentName*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_AgentName" data-uid="Glitch9.AIDevKit.Agents.Agent.AgentName">AgentName</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the agent's display name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AgentName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_ChatApiType.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.ChatApiType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L152">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_ChatApiType_" data-uid="Glitch9.AIDevKit.Agents.Agent.ChatApiType*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_ChatApiType" data-uid="Glitch9.AIDevKit.Agents.Agent.ChatApiType">ChatApiType</h4>
+  <div class="markdown level1 summary"><p>Gets the chat service API type being used (Default, RealtimeApi, Assistants).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChatApi ChatApiType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Agents.ChatApi.html">ChatApi</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_Conversation.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.Conversation%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L184">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_Conversation_" data-uid="Glitch9.AIDevKit.Agents.Agent.Conversation*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_Conversation" data-uid="Glitch9.AIDevKit.Agents.Agent.Conversation">Conversation</h4>
+  <div class="markdown level1 summary"><p>Gets the current conversation context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Conversation Conversation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Agents.Conversations.Conversation.html">Conversation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_ConversationId.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.ConversationId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L120">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_ConversationId_" data-uid="Glitch9.AIDevKit.Agents.Agent.ConversationId*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_ConversationId" data-uid="Glitch9.AIDevKit.Agents.Agent.ConversationId">ConversationId</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the conversation ID for maintaining conversation context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ConversationId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_ConversationSettings.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.ConversationSettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L237">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_ConversationSettings_" data-uid="Glitch9.AIDevKit.Agents.Agent.ConversationSettings*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_ConversationSettings" data-uid="Glitch9.AIDevKit.Agents.Agent.ConversationSettings">ConversationSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMemorySettings ConversationSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Agents.IMemorySettings.html">IMemorySettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_HasInputAudio.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.HasInputAudio%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L167">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_HasInputAudio_" data-uid="Glitch9.AIDevKit.Agents.Agent.HasInputAudio*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_HasInputAudio" data-uid="Glitch9.AIDevKit.Agents.Agent.HasInputAudio">HasInputAudio</h4>
+  <div class="markdown level1 summary"><p>Gets whether the agent supports input audio (microphone/speech recognition).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasInputAudio { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_HasOutputAudio.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.HasOutputAudio%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L174">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_HasOutputAudio_" data-uid="Glitch9.AIDevKit.Agents.Agent.HasOutputAudio*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_HasOutputAudio" data-uid="Glitch9.AIDevKit.Agents.Agent.HasOutputAudio">HasOutputAudio</h4>
+  <div class="markdown level1 summary"><p>Gets whether the agent supports output audio (text-to-speech).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasOutputAudio { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_HasOutputImage.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.HasOutputImage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L179">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_HasOutputImage_" data-uid="Glitch9.AIDevKit.Agents.Agent.HasOutputImage*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_HasOutputImage" data-uid="Glitch9.AIDevKit.Agents.Agent.HasOutputImage">HasOutputImage</h4>
+  <div class="markdown level1 summary"><p>Gets whether the agent supports image generation output.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasOutputImage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_Id.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.Id%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L147">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_Id_" data-uid="Glitch9.AIDevKit.Agents.Agent.Id*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_Id" data-uid="Glitch9.AIDevKit.Agents.Agent.Id">Id</h4>
+  <div class="markdown level1 summary"><p>Gets the unique identifier for this agent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Id { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_ImageModel.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.ImageModel%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L65">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_ImageModel_" data-uid="Glitch9.AIDevKit.Agents.Agent.ImageModel*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_ImageModel" data-uid="Glitch9.AIDevKit.Agents.Agent.ImageModel">ImageModel</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the image generation model used for creating images.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Model ImageModel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_InputAudioLanguage.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.InputAudioLanguage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L111">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_InputAudioLanguage_" data-uid="Glitch9.AIDevKit.Agents.Agent.InputAudioLanguage*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_InputAudioLanguage" data-uid="Glitch9.AIDevKit.Agents.Agent.InputAudioLanguage">InputAudioLanguage</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the language locale for input audio transcription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Locale InputAudioLanguage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.Locale.html">Locale</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_Instructions.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.Instructions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L138">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_Instructions_" data-uid="Glitch9.AIDevKit.Agents.Agent.Instructions*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_Instructions" data-uid="Glitch9.AIDevKit.Agents.Agent.Instructions">Instructions</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the system instructions that define the agent's behavior and context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Instructions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_IsDisposed.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.IsDisposed%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L229">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_IsDisposed_" data-uid="Glitch9.AIDevKit.Agents.Agent.IsDisposed*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_IsDisposed" data-uid="Glitch9.AIDevKit.Agents.Agent.IsDisposed">IsDisposed</h4>
+  <div class="markdown level1 summary"><p>Gets whether the agent has been disposed and is no longer usable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDisposed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_IsInitialized.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.IsInitialized%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L224">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_IsInitialized_" data-uid="Glitch9.AIDevKit.Agents.Agent.IsInitialized*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_IsInitialized" data-uid="Glitch9.AIDevKit.Agents.Agent.IsInitialized">IsInitialized</h4>
+  <div class="markdown level1 summary"><p>Gets whether the agent and all its controllers are fully initialized and ready to use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInitialized { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_Items.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.Items%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L189">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_Items_" data-uid="Glitch9.AIDevKit.Agents.Agent.Items*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_Items" data-uid="Glitch9.AIDevKit.Agents.Agent.Items">Items</h4>
+  <div class="markdown level1 summary"><p>Gets all conversation items (messages and tool outputs).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ConversationItem&gt; Items { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Glitch9.AIDevKit.ConversationItem.html">ConversationItem</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_LastMessage.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.LastMessage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L199">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_LastMessage_" data-uid="Glitch9.AIDevKit.Agents.Agent.LastMessage*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_LastMessage" data-uid="Glitch9.AIDevKit.Agents.Agent.LastMessage">LastMessage</h4>
+  <div class="markdown level1 summary"><p>Gets the most recent message in the conversation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Message LastMessage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Message.html">Message</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_LogLevel.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.LogLevel%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L162">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_LogLevel_" data-uid="Glitch9.AIDevKit.Agents.Agent.LogLevel*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_LogLevel" data-uid="Glitch9.AIDevKit.Agents.Agent.LogLevel">LogLevel</h4>
+  <div class="markdown level1 summary"><p>Gets the logging level for agent operations (Off, Error, Warning, Info, Verbose).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TraceLevel LogLevel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.diagnostics.tracelevel">TraceLevel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_MaxTokens.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.MaxTokens%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L209">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_MaxTokens_" data-uid="Glitch9.AIDevKit.Agents.Agent.MaxTokens*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_MaxTokens" data-uid="Glitch9.AIDevKit.Agents.Agent.MaxTokens">MaxTokens</h4>
+  <div class="markdown level1 summary"><p>Gets the maximum number of tokens the agent can generate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? MaxTokens { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_Messages.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.Messages%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L194">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_Messages_" data-uid="Glitch9.AIDevKit.Agents.Agent.Messages*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_Messages" data-uid="Glitch9.AIDevKit.Agents.Agent.Messages">Messages</h4>
+  <div class="markdown level1 summary"><p>Gets all messages in the conversation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Message&gt; Messages { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Glitch9.AIDevKit.Message.html">Message</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_Model.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.Model%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L38">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_Model_" data-uid="Glitch9.AIDevKit.Agents.Agent.Model*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_Model" data-uid="Glitch9.AIDevKit.Agents.Agent.Model">Model</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the language model used for text generation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Model Model { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_OutputAudioVolume.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.OutputAudioVolume%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L102">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_OutputAudioVolume_" data-uid="Glitch9.AIDevKit.Agents.Agent.OutputAudioVolume*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_OutputAudioVolume" data-uid="Glitch9.AIDevKit.Agents.Agent.OutputAudioVolume">OutputAudioVolume</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the volume level for output audio playback (0.0 to 1.0).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float OutputAudioVolume { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_Settings.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.Settings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L236">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_Settings_" data-uid="Glitch9.AIDevKit.Agents.Agent.Settings*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_Settings" data-uid="Glitch9.AIDevKit.Agents.Agent.Settings">Settings</h4>
+  <div class="markdown level1 summary"><p>Gets the agent's configuration settings (models, tools, instructions, etc.).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAgentSettings Settings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Agents.IAgentSettings.html">IAgentSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_SpeechModel.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.SpeechModel%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L47">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_SpeechModel_" data-uid="Glitch9.AIDevKit.Agents.Agent.SpeechModel*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_SpeechModel" data-uid="Glitch9.AIDevKit.Agents.Agent.SpeechModel">SpeechModel</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the speech generation model used for text-to-speech.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Model SpeechModel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_Status.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.Status%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L219">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_Status_" data-uid="Glitch9.AIDevKit.Agents.Agent.Status*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_Status" data-uid="Glitch9.AIDevKit.Agents.Agent.Status">Status</h4>
+  <div class="markdown level1 summary"><p>Gets the current lifecycle status of the agent (None, Initializing, Ready, GeneratingResponse, etc.).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AgentStatus Status { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Agents.AgentStatus.html">AgentStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_Stream.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.Stream%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L157">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_Stream_" data-uid="Glitch9.AIDevKit.Agents.Agent.Stream*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_Stream" data-uid="Glitch9.AIDevKit.Agents.Agent.Stream">Stream</h4>
+  <div class="markdown level1 summary"><p>Gets whether streaming is enabled for responses.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Stream { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_Temperature.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.Temperature%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L214">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_Temperature_" data-uid="Glitch9.AIDevKit.Agents.Agent.Temperature*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_Temperature" data-uid="Glitch9.AIDevKit.Agents.Agent.Temperature">Temperature</h4>
+  <div class="markdown level1 summary"><p>Gets the temperature setting for response generation (0.0 = deterministic, higher = more creative).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float? Temperature { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_ToolChoice.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.ToolChoice%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L129">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_ToolChoice_" data-uid="Glitch9.AIDevKit.Agents.Agent.ToolChoice*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_ToolChoice" data-uid="Glitch9.AIDevKit.Agents.Agent.ToolChoice">ToolChoice</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the tool choice strategy (auto, required, none, or specific tool).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ToolChoice ToolChoice { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ToolChoice.html">ToolChoice</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_Tools.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.Tools%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L204">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_Tools_" data-uid="Glitch9.AIDevKit.Agents.Agent.Tools*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_Tools" data-uid="Glitch9.AIDevKit.Agents.Agent.Tools">Tools</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the list of tools available to the agent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Tool&gt; Tools { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Glitch9.AIDevKit.Tool.html">Tool</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_TranscriptionModel.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.TranscriptionModel%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L56">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_TranscriptionModel_" data-uid="Glitch9.AIDevKit.Agents.Agent.TranscriptionModel*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_TranscriptionModel" data-uid="Glitch9.AIDevKit.Agents.Agent.TranscriptionModel">TranscriptionModel</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the transcription model used for speech-to-text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Model TranscriptionModel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_UserName.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.UserName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L93">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_UserName_" data-uid="Glitch9.AIDevKit.Agents.Agent.UserName*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_UserName" data-uid="Glitch9.AIDevKit.Agents.Agent.UserName">UserName</h4>
+  <div class="markdown level1 summary"><p>The name this agent uses when referring to the user (e.g., in conversations or logs).
+It does not affect authentication or API calls, and is purely for display and contextual purposes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string UserName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_Voice.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.Voice%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L74">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_Voice_" data-uid="Glitch9.AIDevKit.Agents.Agent.Voice*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_Voice" data-uid="Glitch9.AIDevKit.Agents.Agent.Voice">Voice</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the voice used for speech generation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Voice Voice { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Voice.html">Voice</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_CancelRequest.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.CancelRequest%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.RequestHandler.cs/#L332">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_CancelRequest_" data-uid="Glitch9.AIDevKit.Agents.Agent.CancelRequest*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_CancelRequest" data-uid="Glitch9.AIDevKit.Agents.Agent.CancelRequest">CancelRequest()</h4>
+  <div class="markdown level1 summary"><p>Cancels all ongoing requests including chat, image generation, speech, transcription, and MCP operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CancelRequest()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_Dispose.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.Dispose%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L394">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_Dispose_" data-uid="Glitch9.AIDevKit.Agents.Agent.Dispose*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_Dispose" data-uid="Glitch9.AIDevKit.Agents.Agent.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Disposes the agent and releases all resources including active requests and services.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_InitializeAsync.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.InitializeAsync%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.Initializer.cs/#L14">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_InitializeAsync_" data-uid="Glitch9.AIDevKit.Agents.Agent.InitializeAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_InitializeAsync" data-uid="Glitch9.AIDevKit.Agents.Agent.InitializeAsync">InitializeAsync()</h4>
+  <div class="markdown level1 summary"><p>Initializes the agent asynchronously. Loads saved parameters, conversation history, and services.
+Must be called before using the agent unless AutoInit is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask InitializeAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Glitch9_AIDevKit_Agents_Agent_InitializeAsync_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Safe to call multiple times - will skip if already initialized.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_RegisterCallback__1_System_Action___0__.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.RegisterCallback%60%601(System.Action%7B%60%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L578">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_RegisterCallback_" data-uid="Glitch9.AIDevKit.Agents.Agent.RegisterCallback*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_RegisterCallback__1_System_Action___0__" data-uid="Glitch9.AIDevKit.Agents.Agent.RegisterCallback``1(System.Action{``0})">RegisterCallback&lt;T&gt;(Action&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers an event handler for agent events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDisposable RegisterCallback&lt;T&gt;(Action&lt;T&gt; handler) where T : IEvent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>The event handler callback</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The event payload type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_RegisterEvent__1_System_Action___0__.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.RegisterEvent%60%601(System.Action%7B%60%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L583">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_RegisterEvent_" data-uid="Glitch9.AIDevKit.Agents.Agent.RegisterEvent*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_RegisterEvent__1_System_Action___0__" data-uid="Glitch9.AIDevKit.Agents.Agent.RegisterEvent``1(System.Action{``0})">RegisterEvent&lt;T&gt;(Action&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use RegisterCallback instead. This method will be removed in future versions.&quot;)]
+public IDisposable RegisterEvent&lt;T&gt;(Action&lt;T&gt; handler) where T : IEvent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</td>
+        <td><span class="parametername">handler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_RegisterMcpApprovalHandler_System_String_Glitch9_AIDevKit_Agents_McpTools_IMcpApprovalHandler_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.RegisterMcpApprovalHandler(System.String%2CGlitch9.AIDevKit.Agents.McpTools.IMcpApprovalHandler)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L538">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_RegisterMcpApprovalHandler_" data-uid="Glitch9.AIDevKit.Agents.Agent.RegisterMcpApprovalHandler*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_RegisterMcpApprovalHandler_System_String_Glitch9_AIDevKit_Agents_McpTools_IMcpApprovalHandler_" data-uid="Glitch9.AIDevKit.Agents.Agent.RegisterMcpApprovalHandler(System.String,Glitch9.AIDevKit.Agents.McpTools.IMcpApprovalHandler)">RegisterMcpApprovalHandler(string, IMcpApprovalHandler)</h4>
+  <div class="markdown level1 summary"><p>Registers an MCP approval handler for a specific server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterMcpApprovalHandler(string serverLabel, IMcpApprovalHandler handler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">serverLabel</span></td>
+        <td><p>The MCP server identifier</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Agents.McpTools.IMcpApprovalHandler.html">IMcpApprovalHandler</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>The approval handler implementation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_RegisterOAuthTokenProvider_System_String_Glitch9_IO_Networking_Auth_IOAuthTokenProvider_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.RegisterOAuthTokenProvider(System.String%2CGlitch9.IO.Networking.Auth.IOAuthTokenProvider)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L558">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_RegisterOAuthTokenProvider_" data-uid="Glitch9.AIDevKit.Agents.Agent.RegisterOAuthTokenProvider*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_RegisterOAuthTokenProvider_System_String_Glitch9_IO_Networking_Auth_IOAuthTokenProvider_" data-uid="Glitch9.AIDevKit.Agents.Agent.RegisterOAuthTokenProvider(System.String,Glitch9.IO.Networking.Auth.IOAuthTokenProvider)">RegisterOAuthTokenProvider(string, IOAuthTokenProvider)</h4>
+  <div class="markdown level1 summary"><p>Registers an OAuth token provider for MCP server authentication.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterOAuthTokenProvider(string serverLabel, IOAuthTokenProvider provider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">serverLabel</span></td>
+        <td><p>The MCP server identifier</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IOAuthTokenProvider</span></td>
+        <td><span class="parametername">provider</span></td>
+        <td><p>The OAuth token provider</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_RegisterTool_Glitch9_AIDevKit_Tool_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.RegisterTool(Glitch9.AIDevKit.Tool)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L609">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_RegisterTool_" data-uid="Glitch9.AIDevKit.Agents.Agent.RegisterTool*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_RegisterTool_Glitch9_AIDevKit_Tool_" data-uid="Glitch9.AIDevKit.Agents.Agent.RegisterTool(Glitch9.AIDevKit.Tool)">RegisterTool(Tool)</h4>
+  <div class="markdown level1 summary"><p>Registers a single tool for agent use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterTool(Tool tool)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Tool.html">Tool</a></td>
+        <td><span class="parametername">tool</span></td>
+        <td><p>The tool to register</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_RegisterToolDefinition_Glitch9_AIDevKit_HostedToolDefinitionBase_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.RegisterToolDefinition(Glitch9.AIDevKit.HostedToolDefinitionBase)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L627">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_RegisterToolDefinition_" data-uid="Glitch9.AIDevKit.Agents.Agent.RegisterToolDefinition*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_RegisterToolDefinition_Glitch9_AIDevKit_HostedToolDefinitionBase_" data-uid="Glitch9.AIDevKit.Agents.Agent.RegisterToolDefinition(Glitch9.AIDevKit.HostedToolDefinitionBase)">RegisterToolDefinition(HostedToolDefinitionBase)</h4>
+  <div class="markdown level1 summary"><p>Registers a tool definition that will be automatically instantiated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterToolDefinition(HostedToolDefinitionBase toolDef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.HostedToolDefinitionBase.html">HostedToolDefinitionBase</a></td>
+        <td><span class="parametername">toolDef</span></td>
+        <td><p>The tool definition to register</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_RegisterToolDefinitions_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_HostedToolDefinitionBase__.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.RegisterToolDefinitions(System.Collections.Generic.IEnumerable%7BGlitch9.AIDevKit.HostedToolDefinitionBase%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L663">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_RegisterToolDefinitions_" data-uid="Glitch9.AIDevKit.Agents.Agent.RegisterToolDefinitions*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_RegisterToolDefinitions_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_HostedToolDefinitionBase__" data-uid="Glitch9.AIDevKit.Agents.Agent.RegisterToolDefinitions(System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.HostedToolDefinitionBase})">RegisterToolDefinitions(IEnumerable&lt;HostedToolDefinitionBase&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers multiple tool definitions at once.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterToolDefinitions(IEnumerable&lt;HostedToolDefinitionBase&gt; toolDefs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Glitch9.AIDevKit.HostedToolDefinitionBase.html">HostedToolDefinitionBase</a>&gt;</td>
+        <td><span class="parametername">toolDefs</span></td>
+        <td><p>The tool definitions to register</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_RegisterToolExecutor__2_Glitch9_AIDevKit_Agents_IToolCallExecutor___0___1__.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.RegisterToolExecutor%60%602(Glitch9.AIDevKit.Agents.IToolCallExecutor%7B%60%600%2C%60%601%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L516">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_RegisterToolExecutor_" data-uid="Glitch9.AIDevKit.Agents.Agent.RegisterToolExecutor*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_RegisterToolExecutor__2_Glitch9_AIDevKit_Agents_IToolCallExecutor___0___1__" data-uid="Glitch9.AIDevKit.Agents.Agent.RegisterToolExecutor``2(Glitch9.AIDevKit.Agents.IToolCallExecutor{``0,``1})">RegisterToolExecutor&lt;TCall, TOutput&gt;(IToolCallExecutor&lt;TCall, TOutput&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers a custom tool executor for handling specific tool call types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterToolExecutor&lt;TCall, TOutput&gt;(IToolCallExecutor&lt;TCall, TOutput&gt; executor) where TCall : ToolCall where TOutput : ToolOutput</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Agents.IToolCallExecutor-2.html">IToolCallExecutor</a>&lt;TCall, TOutput&gt;</td>
+        <td><span class="parametername">executor</span></td>
+        <td><p>The executor implementation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TCall</span></td>
+        <td><p>The tool call type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOutput</span></td>
+        <td><p>The tool output type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_RegisterTools_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_Tool__.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.RegisterTools(System.Collections.Generic.IEnumerable%7BGlitch9.AIDevKit.Tool%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L645">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_RegisterTools_" data-uid="Glitch9.AIDevKit.Agents.Agent.RegisterTools*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_RegisterTools_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_Tool__" data-uid="Glitch9.AIDevKit.Agents.Agent.RegisterTools(System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.Tool})">RegisterTools(IEnumerable&lt;Tool&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers multiple tools at once.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterTools(IEnumerable&lt;Tool&gt; tools)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Glitch9.AIDevKit.Tool.html">Tool</a>&gt;</td>
+        <td><span class="parametername">tools</span></td>
+        <td><p>The tools to register</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_SendAsync_Glitch9_AIDevKit_ConversationItem_System_Int32_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.SendAsync(Glitch9.AIDevKit.ConversationItem%2CSystem.Int32%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L448">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_SendAsync_" data-uid="Glitch9.AIDevKit.Agents.Agent.SendAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_SendAsync_Glitch9_AIDevKit_ConversationItem_System_Int32_System_Threading_CancellationToken_" data-uid="Glitch9.AIDevKit.Agents.Agent.SendAsync(Glitch9.AIDevKit.ConversationItem,System.Int32,System.Threading.CancellationToken)">SendAsync(ConversationItem, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends a conversation item (message or tool output) to the agent and returns the response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;Generated&lt;ConversationItem&gt;&gt; SendAsync(ConversationItem inputItem, int index = -1, CancellationToken ct = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ConversationItem.html">ConversationItem</a></td>
+        <td><span class="parametername">inputItem</span></td>
+        <td><p>The conversation item to send</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Optional conversation index (-1 for append to end)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.Generated-1.html">Generated</a>&lt;<a class="xref" href="Glitch9.AIDevKit.ConversationItem.html">ConversationItem</a>&gt;&gt;</td>
+        <td><p>Agent's response including text, tool calls, or audio</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_SendAsync_Glitch9_AIDevKit_Message_System_Int32_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.SendAsync(Glitch9.AIDevKit.Message%2CSystem.Int32%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L436">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_SendAsync_" data-uid="Glitch9.AIDevKit.Agents.Agent.SendAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_SendAsync_Glitch9_AIDevKit_Message_System_Int32_System_Threading_CancellationToken_" data-uid="Glitch9.AIDevKit.Agents.Agent.SendAsync(Glitch9.AIDevKit.Message,System.Int32,System.Threading.CancellationToken)">SendAsync(Message, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends a message object to the agent and returns the response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;Generated&lt;ConversationItem&gt;&gt; SendAsync(Message message, int index = -1, CancellationToken ct = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Message.html">Message</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to send</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Optional conversation index (-1 for append to end)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.Generated-1.html">Generated</a>&lt;<a class="xref" href="Glitch9.AIDevKit.ConversationItem.html">ConversationItem</a>&gt;&gt;</td>
+        <td><p>Agent's response including text, tool calls, or audio</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_SendAsync_System_String_System_Int32_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.SendAsync(System.String%2CSystem.Int32%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L424">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_SendAsync_" data-uid="Glitch9.AIDevKit.Agents.Agent.SendAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_SendAsync_System_String_System_Int32_System_Threading_CancellationToken_" data-uid="Glitch9.AIDevKit.Agents.Agent.SendAsync(System.String,System.Int32,System.Threading.CancellationToken)">SendAsync(string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Sends a text message to the agent and returns the response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;Generated&lt;ConversationItem&gt;&gt; SendAsync(string text, int index = -1, CancellationToken ct = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>The message text to send</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Optional conversation index (-1 for append to end)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td><p>Cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.Generated-1.html">Generated</a>&lt;<a class="xref" href="Glitch9.AIDevKit.ConversationItem.html">ConversationItem</a>&gt;&gt;</td>
+        <td><p>Agent's response including text, tool calls, or audio</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_SetInstructionsUpdater_Glitch9_AIDevKit_Agents_IInstructionsUpdater_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.SetInstructionsUpdater(Glitch9.AIDevKit.Agents.IInstructionsUpdater)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L692">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_SetInstructionsUpdater_" data-uid="Glitch9.AIDevKit.Agents.Agent.SetInstructionsUpdater*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_SetInstructionsUpdater_Glitch9_AIDevKit_Agents_IInstructionsUpdater_" data-uid="Glitch9.AIDevKit.Agents.Agent.SetInstructionsUpdater(Glitch9.AIDevKit.Agents.IInstructionsUpdater)">SetInstructionsUpdater(IInstructionsUpdater)</h4>
+  <div class="markdown level1 summary"><p>Replaces the active instructions updater at runtime.
+Pass <code>null</code> to stop dynamic updates (instructions remain as last set).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInstructionsUpdater(IInstructionsUpdater updater)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Agents.IInstructionsUpdater.html">IInstructionsUpdater</a></td>
+        <td><span class="parametername">updater</span></td>
+        <td><p>The updater implementation to use, or <code>null</code> to disable.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_SetToolRouter_Glitch9_AIDevKit_Agents_IToolRouter_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.SetToolRouter(Glitch9.AIDevKit.Agents.IToolRouter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L682">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_SetToolRouter_" data-uid="Glitch9.AIDevKit.Agents.Agent.SetToolRouter*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_SetToolRouter_Glitch9_AIDevKit_Agents_IToolRouter_" data-uid="Glitch9.AIDevKit.Agents.Agent.SetToolRouter(Glitch9.AIDevKit.Agents.IToolRouter)">SetToolRouter(IToolRouter)</h4>
+  <div class="markdown level1 summary"><p>Replaces the active tool router at runtime.
+Pass <code>null</code> to disable routing (all tools forwarded to the LLM).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetToolRouter(IToolRouter router)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Agents.IToolRouter.html">IToolRouter</a></td>
+        <td><span class="parametername">router</span></td>
+        <td><p>The router implementation to use, or <code>null</code> to disable.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_StartTranscription.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.StartTranscription%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L491">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_StartTranscription_" data-uid="Glitch9.AIDevKit.Agents.Agent.StartTranscription*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_StartTranscription" data-uid="Glitch9.AIDevKit.Agents.Agent.StartTranscription">StartTranscription()</h4>
+  <div class="markdown level1 summary"><p>Starts recording audio input for transcription, if supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartTranscription()</code></pre>
+  </div>
+  <h5 id="Glitch9_AIDevKit_Agents_Agent_StartTranscription_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This call proxies <a class="xref" href="Glitch9.AIDevKit.Agents.Agent.html#Glitch9_AIDevKit_Agents_Agent_StartTranscription">StartTranscription()</a> and uses the configured
+<span class="xref">Glitch9.AIDevKit.Agents.Agent.InputAudioRecorder</span> when available.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_StopTranscription.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.StopTranscription%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L503">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_StopTranscription_" data-uid="Glitch9.AIDevKit.Agents.Agent.StopTranscription*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_StopTranscription" data-uid="Glitch9.AIDevKit.Agents.Agent.StopTranscription">StopTranscription()</h4>
+  <div class="markdown level1 summary"><p>Stops recording audio input and submits the captured audio for transcription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopTranscription()</code></pre>
+  </div>
+  <h5 id="Glitch9_AIDevKit_Agents_Agent_StopTranscription_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This call proxies <a class="xref" href="Glitch9.AIDevKit.Agents.Agent.html#Glitch9_AIDevKit_Agents_Agent_StopTranscription">StopTranscription()</a> and will only have an effect
+if audio recording was previously started.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_SubmitMcpApprovalRequest_Glitch9_AIDevKit_McpApprovalRequest_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.SubmitMcpApprovalRequest(Glitch9.AIDevKit.McpApprovalRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L477">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_SubmitMcpApprovalRequest_" data-uid="Glitch9.AIDevKit.Agents.Agent.SubmitMcpApprovalRequest*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_SubmitMcpApprovalRequest_Glitch9_AIDevKit_McpApprovalRequest_" data-uid="Glitch9.AIDevKit.Agents.Agent.SubmitMcpApprovalRequest(Glitch9.AIDevKit.McpApprovalRequest)">SubmitMcpApprovalRequest(McpApprovalRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SubmitMcpApprovalRequest(McpApprovalRequest approvalRequest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.McpApprovalRequest.html">McpApprovalRequest</a></td>
+        <td><span class="parametername">approvalRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_SubmitToolOutput_System_String_Glitch9_AIDevKit_ToolOutput_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.SubmitToolOutput(System.String%2CGlitch9.AIDevKit.ToolOutput)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L466">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_SubmitToolOutput_" data-uid="Glitch9.AIDevKit.Agents.Agent.SubmitToolOutput*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_SubmitToolOutput_System_String_Glitch9_AIDevKit_ToolOutput_" data-uid="Glitch9.AIDevKit.Agents.Agent.SubmitToolOutput(System.String,Glitch9.AIDevKit.ToolOutput)">SubmitToolOutput(string, ToolOutput)</h4>
+  <div class="markdown level1 summary"><p>Manually submits a tool output for unhandled tool calls.
+Used when UnhandledToolCallBehaviour is set to SubmitToolOutput.
+The tool output will be cached and batch-submitted with other outputs when the response is complete.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SubmitToolOutput(string responseId, ToolOutput toolOutput)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">responseId</span></td>
+        <td><p>The response ID that contains the tool call</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ToolOutput.html">ToolOutput</a></td>
+        <td><span class="parametername">toolOutput</span></td>
+        <td><p>The tool execution result to submit</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_UnregisterCallback__1_System_Action___0__.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.UnregisterCallback%60%601(System.Action%7B%60%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L594">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_UnregisterCallback_" data-uid="Glitch9.AIDevKit.Agents.Agent.UnregisterCallback*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_UnregisterCallback__1_System_Action___0__" data-uid="Glitch9.AIDevKit.Agents.Agent.UnregisterCallback``1(System.Action{``0})">UnregisterCallback&lt;T&gt;(Action&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Unregisters an event handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterCallback&lt;T&gt;(Action&lt;T&gt; handler) where T : IEvent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>The event handler to remove</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The event payload type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_UnregisterEvent__1_System_Action___0__.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.UnregisterEvent%60%601(System.Action%7B%60%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L599">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_UnregisterEvent_" data-uid="Glitch9.AIDevKit.Agents.Agent.UnregisterEvent*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_UnregisterEvent__1_System_Action___0__" data-uid="Glitch9.AIDevKit.Agents.Agent.UnregisterEvent``1(System.Action{``0})">UnregisterEvent&lt;T&gt;(Action&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use UnregisterCallback instead. This method will be removed in future versions.&quot;)]
+public void UnregisterEvent&lt;T&gt;(Action&lt;T&gt; handler) where T : IEvent</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</td>
+        <td><span class="parametername">handler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_UnregisterMcpApprovalHandler_System_String_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.UnregisterMcpApprovalHandler(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L548">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_UnregisterMcpApprovalHandler_" data-uid="Glitch9.AIDevKit.Agents.Agent.UnregisterMcpApprovalHandler*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_UnregisterMcpApprovalHandler_System_String_" data-uid="Glitch9.AIDevKit.Agents.Agent.UnregisterMcpApprovalHandler(System.String)">UnregisterMcpApprovalHandler(string)</h4>
+  <div class="markdown level1 summary"><p>Unregisters an MCP approval handler for a specific server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UnregisterMcpApprovalHandler(string serverLabel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">serverLabel</span></td>
+        <td><p>The MCP server identifier</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if successfully unregistered, false otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_UnregisterOAuthTokenProvider_System_String_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.UnregisterOAuthTokenProvider(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L568">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_UnregisterOAuthTokenProvider_" data-uid="Glitch9.AIDevKit.Agents.Agent.UnregisterOAuthTokenProvider*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_UnregisterOAuthTokenProvider_System_String_" data-uid="Glitch9.AIDevKit.Agents.Agent.UnregisterOAuthTokenProvider(System.String)">UnregisterOAuthTokenProvider(string)</h4>
+  <div class="markdown level1 summary"><p>Unregisters an OAuth token provider for a specific server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UnregisterOAuthTokenProvider(string serverLabel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">serverLabel</span></td>
+        <td><p>The MCP server identifier</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if successfully unregistered, false otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_UnregisterTool_Glitch9_AIDevKit_Tool_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.UnregisterTool(Glitch9.AIDevKit.Tool)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L618">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_UnregisterTool_" data-uid="Glitch9.AIDevKit.Agents.Agent.UnregisterTool*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_UnregisterTool_Glitch9_AIDevKit_Tool_" data-uid="Glitch9.AIDevKit.Agents.Agent.UnregisterTool(Glitch9.AIDevKit.Tool)">UnregisterTool(Tool)</h4>
+  <div class="markdown level1 summary"><p>Unregisters a single tool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterTool(Tool tool)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Tool.html">Tool</a></td>
+        <td><span class="parametername">tool</span></td>
+        <td><p>The tool to unregister</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_UnregisterToolDefinition_Glitch9_AIDevKit_HostedToolDefinitionBase_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.UnregisterToolDefinition(Glitch9.AIDevKit.HostedToolDefinitionBase)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L636">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_UnregisterToolDefinition_" data-uid="Glitch9.AIDevKit.Agents.Agent.UnregisterToolDefinition*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_UnregisterToolDefinition_Glitch9_AIDevKit_HostedToolDefinitionBase_" data-uid="Glitch9.AIDevKit.Agents.Agent.UnregisterToolDefinition(Glitch9.AIDevKit.HostedToolDefinitionBase)">UnregisterToolDefinition(HostedToolDefinitionBase)</h4>
+  <div class="markdown level1 summary"><p>Unregisters a tool definition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterToolDefinition(HostedToolDefinitionBase toolDef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.HostedToolDefinitionBase.html">HostedToolDefinitionBase</a></td>
+        <td><span class="parametername">toolDef</span></td>
+        <td><p>The tool definition to unregister</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_UnregisterToolDefinitions_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_HostedToolDefinitionBase__.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.UnregisterToolDefinitions(System.Collections.Generic.IEnumerable%7BGlitch9.AIDevKit.HostedToolDefinitionBase%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L672">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_UnregisterToolDefinitions_" data-uid="Glitch9.AIDevKit.Agents.Agent.UnregisterToolDefinitions*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_UnregisterToolDefinitions_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_HostedToolDefinitionBase__" data-uid="Glitch9.AIDevKit.Agents.Agent.UnregisterToolDefinitions(System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.HostedToolDefinitionBase})">UnregisterToolDefinitions(IEnumerable&lt;HostedToolDefinitionBase&gt;)</h4>
+  <div class="markdown level1 summary"><p>Unregisters multiple tool definitions at once.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterToolDefinitions(IEnumerable&lt;HostedToolDefinitionBase&gt; toolDefs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Glitch9.AIDevKit.HostedToolDefinitionBase.html">HostedToolDefinitionBase</a>&gt;</td>
+        <td><span class="parametername">toolDefs</span></td>
+        <td><p>The tool definitions to unregister</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_UnregisterToolExecutor__2_Glitch9_AIDevKit_Agents_IToolCallExecutor___0___1__.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.UnregisterToolExecutor%60%602(Glitch9.AIDevKit.Agents.IToolCallExecutor%7B%60%600%2C%60%601%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L528">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_UnregisterToolExecutor_" data-uid="Glitch9.AIDevKit.Agents.Agent.UnregisterToolExecutor*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_UnregisterToolExecutor__2_Glitch9_AIDevKit_Agents_IToolCallExecutor___0___1__" data-uid="Glitch9.AIDevKit.Agents.Agent.UnregisterToolExecutor``2(Glitch9.AIDevKit.Agents.IToolCallExecutor{``0,``1})">UnregisterToolExecutor&lt;TCall, TOutput&gt;(IToolCallExecutor&lt;TCall, TOutput&gt;)</h4>
+  <div class="markdown level1 summary"><p>Unregisters a previously registered tool executor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UnregisterToolExecutor&lt;TCall, TOutput&gt;(IToolCallExecutor&lt;TCall, TOutput&gt; executor) where TCall : ToolCall where TOutput : ToolOutput</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Agents.IToolCallExecutor-2.html">IToolCallExecutor</a>&lt;TCall, TOutput&gt;</td>
+        <td><span class="parametername">executor</span></td>
+        <td><p>The executor to unregister</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if successfully unregistered, false otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TCall</span></td>
+        <td><p>The tool call type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOutput</span></td>
+        <td><p>The tool output type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent_UnregisterTools_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_Tool__.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent.UnregisterTools(System.Collections.Generic.IEnumerable%7BGlitch9.AIDevKit.Tool%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.cs/#L654">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_Agent_UnregisterTools_" data-uid="Glitch9.AIDevKit.Agents.Agent.UnregisterTools*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_Agent_UnregisterTools_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_Tool__" data-uid="Glitch9.AIDevKit.Agents.Agent.UnregisterTools(System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.Tool})">UnregisterTools(IEnumerable&lt;Tool&gt;)</h4>
+  <div class="markdown level1 summary"><p>Unregisters multiple tools at once.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterTools(IEnumerable&lt;Tool&gt; tools)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Glitch9.AIDevKit.Tool.html">Tool</a>&gt;</td>
+        <td><span class="parametername">tools</span></td>
+        <td><p>The tools to unregister</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrEmpty__1___0_">ArrayExtensions.ToArrayOrEmpty&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrNull__1___0_">ArrayExtensions.ToArrayOrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDelta__1___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.ToDelta&lt;T&gt;(T, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDone__1___0_System_String_System_Int32_System_String_">EventExtensions.ToDone&lt;T&gt;(T, string, int, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToEvent__1___0_">EventExtensions.ToEvent&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_UpcastDelta__2___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.UpcastDelta&lt;T1, T2&gt;(T1, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.FallbackExtensions.html#Glitch9_FallbackExtensions_IsOr__2___0___1_">FallbackExtensions.IsOr&lt;TParent, TChild&gt;(TParent, TChild)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ResponseCastingExtensions.html#Glitch9_IO_Networking_RESTApi_ResponseCastingExtensions_GetResult__1___0_">ResponseCastingExtensions.GetResult&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_TryDispose_System_IDisposable_">SystemExtensions.TryDispose(IDisposable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_GetName_System_Object_">SystemExtensions.GetName(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_Agent.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.Agent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/_Core/Agent.Initializer.cs/#L7" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AI DevKit Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

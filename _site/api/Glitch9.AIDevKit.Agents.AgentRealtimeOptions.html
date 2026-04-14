@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class AgentRealtimeOptions | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class AgentRealtimeOptions | AI DevKit ">
+    
+    <meta name="description" content="Runtime composition of realtime chat options from agent-level settings.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions">
+
+
+
+  <h1 id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions" class="text-break">Class AgentRealtimeOptions</h1>
+  <div class="markdown level0 summary"><p>Runtime composition of realtime chat options from agent-level settings.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">AgentRealtimeOptions</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Glitch9.AIDevKit.IRealtimeOptions.html">IRealtimeOptions</a></div>
+    <div><a class="xref" href="Glitch9.AIDevKit.ITextGenerationOptions.html">ITextGenerationOptions</a></div>
+    <div><a class="xref" href="Glitch9.AIDevKit.IGenerationOptions.html">IGenerationOptions</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.Agents.html">Agents</a></h6>
+  <h6><strong>Assembly</strong>: Glitch9.AIDevKit.dll</h6>
+  <h5 id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class AgentRealtimeOptions : IRealtimeOptions, ITextGenerationOptions, IGenerationOptions</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_AgentRealtimeOptions__ctor_Glitch9_AIDevKit_ITextGenerationOptions_Glitch9_AIDevKit_ISpeechToTextOptions_Glitch9_AIDevKit_ITextToSpeechOptions_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.AgentRealtimeOptions.%23ctor(Glitch9.AIDevKit.ITextGenerationOptions%2CGlitch9.AIDevKit.ISpeechToTextOptions%2CGlitch9.AIDevKit.ITextToSpeechOptions)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Settings/AgentRealtimeOptions.cs/#L19">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions__ctor_" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.#ctor*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions__ctor_Glitch9_AIDevKit_ITextGenerationOptions_Glitch9_AIDevKit_ISpeechToTextOptions_Glitch9_AIDevKit_ITextToSpeechOptions_" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.#ctor(Glitch9.AIDevKit.ITextGenerationOptions,Glitch9.AIDevKit.ISpeechToTextOptions,Glitch9.AIDevKit.ITextToSpeechOptions)">AgentRealtimeOptions(ITextGenerationOptions, ISpeechToTextOptions, ITextToSpeechOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AgentRealtimeOptions(ITextGenerationOptions textOptions, ISpeechToTextOptions inputAudioOptions, ITextToSpeechOptions outputAudioOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ITextGenerationOptions.html">ITextGenerationOptions</a></td>
+        <td><span class="parametername">textOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ISpeechToTextOptions.html">ISpeechToTextOptions</a></td>
+        <td><span class="parametername">inputAudioOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ITextToSpeechOptions.html">ITextToSpeechOptions</a></td>
+        <td><span class="parametername">outputAudioOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_AgentRealtimeOptions_ConnectionMode.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.AgentRealtimeOptions.ConnectionMode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Settings/AgentRealtimeOptions.cs/#L44">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_ConnectionMode_" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.ConnectionMode*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_ConnectionMode" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.ConnectionMode">ConnectionMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConnectionMode ConnectionMode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ConnectionMode.html">ConnectionMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_AgentRealtimeOptions_InputVoiceLanguage.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.AgentRealtimeOptions.InputVoiceLanguage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Settings/AgentRealtimeOptions.cs/#L59">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_InputVoiceLanguage_" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.InputVoiceLanguage*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_InputVoiceLanguage" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.InputVoiceLanguage">InputVoiceLanguage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Locale InputVoiceLanguage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.Locale.html">Locale</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_AgentRealtimeOptions_Instructions.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.AgentRealtimeOptions.Instructions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Settings/AgentRealtimeOptions.cs/#L48">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_Instructions_" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.Instructions*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_Instructions" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.Instructions">Instructions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Instructions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_AgentRealtimeOptions_MaxTokens.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.AgentRealtimeOptions.MaxTokens%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Settings/AgentRealtimeOptions.cs/#L53">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_MaxTokens_" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.MaxTokens*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_MaxTokens" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.MaxTokens">MaxTokens</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TokenCount MaxTokens { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.TokenCount.html">TokenCount</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_AgentRealtimeOptions_Model.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.AgentRealtimeOptions.Model%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Settings/AgentRealtimeOptions.cs/#L43">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_Model_" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.Model*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_Model" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.Model">Model</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Model Model { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_AgentRealtimeOptions_ReasoningOptions.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.AgentRealtimeOptions.ReasoningOptions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Settings/AgentRealtimeOptions.cs/#L54">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_ReasoningOptions_" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.ReasoningOptions*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_ReasoningOptions" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.ReasoningOptions">ReasoningOptions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReasoningOptions ReasoningOptions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ReasoningOptions.html">ReasoningOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_AgentRealtimeOptions_Seed.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.AgentRealtimeOptions.Seed%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Settings/AgentRealtimeOptions.cs/#L50">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_Seed_" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.Seed*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_Seed" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.Seed">Seed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Seed Seed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Seed.html">Seed</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_AgentRealtimeOptions_StartingMessage.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.AgentRealtimeOptions.StartingMessage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Settings/AgentRealtimeOptions.cs/#L49">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_StartingMessage_" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.StartingMessage*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_StartingMessage" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.StartingMessage">StartingMessage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string StartingMessage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_AgentRealtimeOptions_Temperature.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.AgentRealtimeOptions.Temperature%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Settings/AgentRealtimeOptions.cs/#L52">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_Temperature_" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.Temperature*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_Temperature" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.Temperature">Temperature</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Temperature Temperature { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Temperature.html">Temperature</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_AgentRealtimeOptions_ToolChoice.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.AgentRealtimeOptions.ToolChoice%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Settings/AgentRealtimeOptions.cs/#L47">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_ToolChoice_" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.ToolChoice*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_ToolChoice" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.ToolChoice">ToolChoice</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ToolChoice ToolChoice { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ToolChoice.html">ToolChoice</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_AgentRealtimeOptions_Tools.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.AgentRealtimeOptions.Tools%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Settings/AgentRealtimeOptions.cs/#L46">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_Tools_" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.Tools*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_Tools" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.Tools">Tools</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tool[] Tools { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Tool.html">Tool</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_AgentRealtimeOptions_TopP.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.AgentRealtimeOptions.TopP%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Settings/AgentRealtimeOptions.cs/#L51">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_TopP_" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.TopP*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_TopP" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.TopP">TopP</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TopP TopP { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.TopP.html">TopP</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_AgentRealtimeOptions_TranscriptionModel.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.AgentRealtimeOptions.TranscriptionModel%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Settings/AgentRealtimeOptions.cs/#L58">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_TranscriptionModel_" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.TranscriptionModel*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_TranscriptionModel" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.TranscriptionModel">TranscriptionModel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Model TranscriptionModel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Model.html">Model</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_AgentRealtimeOptions_Voice.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.AgentRealtimeOptions.Voice%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Settings/AgentRealtimeOptions.cs/#L57">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_Voice_" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.Voice*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_Voice" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.Voice">Voice</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Voice Voice { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Voice.html">Voice</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_AgentRealtimeOptions_WebSearchOptions.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.AgentRealtimeOptions.WebSearchOptions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Settings/AgentRealtimeOptions.cs/#L55">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_WebSearchOptions_" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.WebSearchOptions*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_WebSearchOptions" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.WebSearchOptions">WebSearchOptions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WebSearchSettings WebSearchOptions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.WebSearchSettings.html">WebSearchSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_AgentRealtimeOptions_WriteGenerationRecords.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.AgentRealtimeOptions.WriteGenerationRecords%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Settings/AgentRealtimeOptions.cs/#L45">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_WriteGenerationRecords_" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.WriteGenerationRecords*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_WriteGenerationRecords" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.WriteGenerationRecords">WriteGenerationRecords</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WriteGenerationRecords { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_AgentRealtimeOptions_FromSettings_Glitch9_AIDevKit_Agents_IAgentSettings_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.AgentRealtimeOptions.FromSettings(Glitch9.AIDevKit.Agents.IAgentSettings)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Settings/AgentRealtimeOptions.cs/#L10">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_FromSettings_" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.FromSettings*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_AgentRealtimeOptions_FromSettings_Glitch9_AIDevKit_Agents_IAgentSettings_" data-uid="Glitch9.AIDevKit.Agents.AgentRealtimeOptions.FromSettings(Glitch9.AIDevKit.Agents.IAgentSettings)">FromSettings(IAgentSettings)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IRealtimeOptions FromSettings(IAgentSettings settings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Agents.IAgentSettings.html">IAgentSettings</a></td>
+        <td><span class="parametername">settings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.IRealtimeOptions.html">IRealtimeOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.IRealtimeOptions.html">IRealtimeOptions</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.ITextGenerationOptions.html">ITextGenerationOptions</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.IGenerationOptions.html">IGenerationOptions</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrEmpty__1___0_">ArrayExtensions.ToArrayOrEmpty&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrNull__1___0_">ArrayExtensions.ToArrayOrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDelta__1___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.ToDelta&lt;T&gt;(T, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDone__1___0_System_String_System_Int32_System_String_">EventExtensions.ToDone&lt;T&gt;(T, string, int, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToEvent__1___0_">EventExtensions.ToEvent&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_UpcastDelta__2___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.UpcastDelta&lt;T1, T2&gt;(T1, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.FallbackExtensions.html#Glitch9_FallbackExtensions_IsOr__2___0___1_">FallbackExtensions.IsOr&lt;TParent, TChild&gt;(TParent, TChild)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ResponseCastingExtensions.html#Glitch9_IO_Networking_RESTApi_ResponseCastingExtensions_GetResult__1___0_">ResponseCastingExtensions.GetResult&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_GetName_System_Object_">SystemExtensions.GetName(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_AgentRealtimeOptions.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.AgentRealtimeOptions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Settings/AgentRealtimeOptions.cs/#L8" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AI DevKit Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

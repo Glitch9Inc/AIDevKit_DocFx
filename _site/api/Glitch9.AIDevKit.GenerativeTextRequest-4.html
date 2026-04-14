@@ -1,0 +1,2523 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class GenerativeTextRequest&lt;TSelf, TInput, TResult, TEvent&gt; | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class GenerativeTextRequest&lt;TSelf, TInput, TResult, TEvent&gt; | AI DevKit ">
+    
+    <meta name="description" content="Base class for text generation tasks using LLM models. Supports instructions, role-based prompts, and attachments.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4">
+
+
+
+  <h1 id="Glitch9_AIDevKit_GenerativeTextRequest_4" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4" class="text-break">Class GenerativeTextRequest&lt;TSelf, TInput, TResult, TEvent&gt;</h1>
+  <div class="markdown level0 summary"><p>Base class for text generation tasks using LLM models. Supports instructions, role-based prompts, and attachments.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html">UnifiedApiRequestBase</a>&lt;TSelf, <a class="xref" href="Glitch9.AIDevKit.Generated-1.html">Generated</a>&lt;TResult&gt;, <a class="xref" href="Glitch9.AIDevKit.ITextRequestOptions.html">ITextRequestOptions</a>&gt;</div>
+    <div class="level2"><a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html">GenerativeRequest</a>&lt;TSelf, TInput, TResult, <a class="xref" href="Glitch9.AIDevKit.ITextRequestOptions.html">ITextRequestOptions</a>&gt;</div>
+    <div class="level3"><a class="xref" href="Glitch9.AIDevKit.StreamingGenerativeRequest-5.html">StreamingGenerativeRequest</a>&lt;TSelf, TInput, TResult, TEvent, <a class="xref" href="Glitch9.AIDevKit.ITextRequestOptions.html">ITextRequestOptions</a>&gt;</div>
+    <div class="level4"><span class="xref">GenerativeTextRequest&lt;TSelf, TInput, TResult, TEvent&gt;</span></div>
+      <div class="level5"><a class="xref" href="Glitch9.AIDevKit.ChatCompletionRequestBase-3.html">ChatCompletionRequestBase&lt;TSelf, TInput, TAsset&gt;</a></div>
+      <div class="level5"><a class="xref" href="Glitch9.AIDevKit.ResponseRequest.html">ResponseRequest</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Glitch9.AIDevKit.IStreamingGenerativeRequest-2.html">IStreamingGenerativeRequest</a>&lt;TEvent, TResult&gt;</div>
+    <div><a class="xref" href="Glitch9.AIDevKit.IGenerativeTextRequest.html">IGenerativeTextRequest</a></div>
+    <div><a class="xref" href="Glitch9.AIDevKit.IGenerativeRequest.html">IGenerativeRequest</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.StreamingGenerativeRequest-5.html#Glitch9_AIDevKit_StreamingGenerativeRequest_5_StreamAsync_System_Threading_CancellationToken_">StreamingGenerativeRequest&lt;TSelf, TInput, TResult, TEvent, ITextRequestOptions&gt;.StreamAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.StreamingGenerativeRequest-5.html#Glitch9_AIDevKit_StreamingGenerativeRequest_5_StreamAsyncInternal">StreamingGenerativeRequest&lt;TSelf, TInput, TResult, TEvent, ITextRequestOptions&gt;.StreamAsyncInternal()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_FileNameKey">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.FileNameKey</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_FallbackModel">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.FallbackModel</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_ModelType">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.ModelType</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_Api">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.Api</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_Prompt">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.Prompt</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_Model">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.Model</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_N">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.N</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_Seed">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.Seed</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_MeasureLatency">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.MeasureLatency</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_OnLatencyMeasured">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.OnLatencyMeasured</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_RequestedAt">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.RequestedAt</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_RecordOptions">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.RecordOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_RecordedContext">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.RecordedContext</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetModel_Glitch9_AIDevKit_Api_System_String_">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.SetModel(Api, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetModel_Glitch9_AIDevKit_ModelBase_">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.SetModel(ModelBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetCount_System_Int32_">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.SetCount(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetN_System_Int32_">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.SetN(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetSeed_System_Int64_">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.SetSeed(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetRecordOptions_System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_String_System_String_Glitch9_AIDevKit_History_GenerationRecord_Glitch9_AIDevKit_RecordMerger_System_Action_Glitch9_AIDevKit_History_GenerationRecord__">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.SetRecordOptions(bool?, bool?, string, string, GenerationRecord, RecordMerger, Action&lt;GenerationRecord&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetRecordOptions_Glitch9_AIDevKit_GenerationRecordOptions_">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.SetRecordOptions(GenerationRecordOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetMeasureLatency_System_Action_System_Double__">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.SetMeasureLatency(Action&lt;double&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetMeasureLatency_System_Boolean_System_Action_System_Double__">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.SetMeasureLatency(bool, Action&lt;double&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetPlaygroundSettings_System_String_System_String_System_String_System_Boolean_System_Action_System_Double__System_Action_Glitch9_AIDevKit_History_GenerationRecord__">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.SetPlaygroundSettings(string, string, string, bool, Action&lt;double&gt;, Action&lt;GenerationRecord&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_ExecuteAsync_System_Threading_CancellationToken_">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.ExecuteAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_ExecuteAsyncT__1_System_Threading_CancellationToken_">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.ExecuteAsyncT&lt;T&gt;(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_ProcessPostRequestTasks__1_Glitch9_AIDevKit_Generated___0__">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.ProcessPostRequestTasks&lt;T&gt;(Generated&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_ProcessPostRequestTasks_Glitch9_IResult_">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.ProcessPostRequestTasks(IResult)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_GetPrompt">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.GetPrompt()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_GetPromptStringToRecord">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.GetPromptStringToRecord()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_ResolveDownloadOptions_Glitch9_IO_Networking_RESTApi_DownloadOptions_">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.ResolveDownloadOptions(DownloadOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_ValidateRequest">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.ValidateRequest()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_GenerateDefaultFileName">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.GenerateDefaultFileName()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_PrepareRequestAsync">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.PrepareRequestAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_m_Api">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.m_Api</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_Api">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.Api</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_RequestType">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.RequestType</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_HttpOptions">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.HttpOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_DownloadOptions">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.DownloadOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_Sender">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.Sender</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_LogOptions">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.LogOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_ContentType">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.ContentType</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_ResponseType">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.ResponseType</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_IsCanceled">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.IsCanceled</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_Stream">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.Stream</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SafetyIdentifier">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.SafetyIdentifier</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_ServiceTier">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.ServiceTier</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_Metadata">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.Metadata</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_ProviderOptions">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.ProviderOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_Options">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.Options</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetSender_System_String_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.SetSender(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetLogOptions_Glitch9_IO_Networking_CurlLogOptions_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.SetLogOptions(CurlLogOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetOutputPath_System_String_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.SetOutputPath(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetOutputPath_System_String_System_String_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.SetOutputPath(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetOutputDirectory_System_String_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.SetOutputDirectory(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetDownloadOptions_Glitch9_IO_Networking_RESTApi_DownloadOptions_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.SetDownloadOptions(DownloadOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetRequestMimeType_Glitch9_MimeType_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.SetRequestMimeType(MimeType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetResponseMimeType_Glitch9_MimeType_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.SetResponseMimeType(MimeType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetStream_System_Boolean_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.SetStream(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetMetadata_Glitch9_AIDevKit_ServerDictionary_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.SetMetadata(ServerDictionary)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetSafetyIdentifier_System_String_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.SetSafetyIdentifier(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetProviderOptions__2_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.SetProviderOptions(ITextRequestOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetSpecificOptions__2_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.SetSpecificOptions(ITextRequestOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_ValidateRequest">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.ValidateRequest()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_GetConfig__1">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.GetConfig&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetApi_Glitch9_AIDevKit_Api_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.SetApi(Api)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_ExecuteAsync_System_Threading_CancellationToken_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.ExecuteAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_Cancel">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.Cancel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_ExecuteAsyncInternal">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.ExecuteAsyncInternal()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_ResolveDownloadOptions_Glitch9_IO_Networking_RESTApi_DownloadOptions_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.ResolveDownloadOptions(DownloadOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_GenerateDefaultFileName">UnifiedApiRequestBase&lt;TSelf, Generated&lt;TResult&gt;, ITextRequestOptions&gt;.GenerateDefaultFileName()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a></h6>
+  <h6><strong>Assembly</strong>: Glitch9.AIDevKit.dll</h6>
+  <h5 id="Glitch9_AIDevKit_GenerativeTextRequest_4_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class GenerativeTextRequest&lt;TSelf, TInput, TResult, TEvent&gt; : StreamingGenerativeRequest&lt;TSelf, TInput, TResult, TEvent, ITextRequestOptions&gt;, IStreamingGenerativeRequest&lt;TEvent, TResult&gt;, IGenerativeTextRequest, IGenerativeRequest where TSelf : GenerativeTextRequest&lt;TSelf, TInput, TResult, TEvent&gt; where TInput : IPrompt where TResult : class</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSelf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TInput</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TEvent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4__ctor.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L150">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4__ctor_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.#ctor*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4__ctor" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.#ctor">GenerativeTextRequest()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GenerativeTextRequest()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4__ctor__1_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.%23ctor(%601)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L151">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4__ctor_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.#ctor*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4__ctor__1_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.#ctor(`1)">GenerativeTextRequest(TInput)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GenerativeTextRequest(TInput prompt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TInput</span></td>
+        <td><span class="parametername">prompt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_FrequencyPenalty.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.FrequencyPenalty%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L81">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_FrequencyPenalty_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.FrequencyPenalty*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_FrequencyPenalty" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.FrequencyPenalty">FrequencyPenalty</h4>
+  <div class="markdown level1 summary"><p>Penalizes frequent repetition of the same token sequence.
+Range: -2.0 - 2.0 (typical: 0.0).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrequencyPenalty FrequencyPenalty { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.FrequencyPenalty.html">FrequencyPenalty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_Instructions.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.Instructions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L24">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_Instructions_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.Instructions*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_Instructions" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.Instructions">Instructions</h4>
+  <div class="markdown level1 summary"><p>Optional. A system (or developer) message inserted into the model's context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Instructions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_LogitBias.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.LogitBias%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L62">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_LogitBias_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.LogitBias*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_LogitBias" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.LogitBias">LogitBias</h4>
+  <div class="markdown level1 summary"><p>Biases specific tokens by ID. Use to influence token selection.
+Key = token ID (as string), Value = bias (-100 to 100, 0 = no bias).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, double&gt; LogitBias { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_Logprobs.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.Logprobs%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L69">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_Logprobs_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.Logprobs*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_Logprobs" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.Logprobs">Logprobs</h4>
+  <div class="markdown level1 summary"><p>Whether to return log probabilities of the Output tokens or not.
+If true, returns the log probabilities of each Output token returned in the content of message.
+This option is currently not available on the gpt-4-vision-preview model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? Logprobs { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_MaxTokens.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.MaxTokens%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L86">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_MaxTokens_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.MaxTokens*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_MaxTokens" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.MaxTokens">MaxTokens</h4>
+  <div class="markdown level1 summary"><p>Optional. An upper bound for the number of tokens that can be generated for a response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TokenCount MaxTokens { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.TokenCount.html">TokenCount</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_ModelType.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.ModelType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L17">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_ModelType_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.ModelType*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_ModelType" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.ModelType">ModelType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ModelType ModelType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ModelType.html">ModelType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_ModelType">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.ModelType</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_ParallelToolCalls.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.ParallelToolCalls%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L133">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_ParallelToolCalls_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.ParallelToolCalls*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_ParallelToolCalls" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.ParallelToolCalls">ParallelToolCalls</h4>
+  <div class="markdown level1 summary"><p>Optional. Defaults to true.
+Whether to allow the model to run tool calls in parallel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? ParallelToolCalls { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_PresencePenalty.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.PresencePenalty%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L75">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_PresencePenalty_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.PresencePenalty*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_PresencePenalty" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.PresencePenalty">PresencePenalty</h4>
+  <div class="markdown level1 summary"><p>Penalizes tokens already present in the generated content.
+Range: -2.0 - 2.0 (typical: 0.0).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PresencePenalty PresencePenalty { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.PresencePenalty.html">PresencePenalty</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_ReasoningOptions.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.ReasoningOptions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L91">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_ReasoningOptions_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.ReasoningOptions*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_ReasoningOptions" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.ReasoningOptions">ReasoningOptions</h4>
+  <div class="markdown level1 summary"><p>Optional. Configuration options for reasoning models.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReasoningOptions ReasoningOptions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ReasoningOptions.html">ReasoningOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_RequestMetadata.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.RequestMetadata%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L110">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_RequestMetadata_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.RequestMetadata*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_RequestMetadata" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.RequestMetadata">RequestMetadata</h4>
+  <div class="markdown level1 summary"><p>Optional. Metadata to include with the request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ServerDictionary RequestMetadata { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ServerDictionary.html">ServerDictionary</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_ResponseFormat.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.ResponseFormat%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L138">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_ResponseFormat_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.ResponseFormat*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_ResponseFormat" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.ResponseFormat">ResponseFormat</h4>
+  <div class="markdown level1 summary"><p>Defines how the response should be formatted (e.g., text, JSON).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ResponseFormat ResponseFormat { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ResponseFormat.html">ResponseFormat</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_SafetySettings.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.SafetySettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L105">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_SafetySettings_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SafetySettings*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_SafetySettings" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SafetySettings">SafetySettings</h4>
+  <div class="markdown level1 summary"><p>Safety filters that define moderation thresholds for the model output.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;SafetySetting&gt; SafetySettings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Glitch9.AIDevKit.SafetySetting.html">SafetySetting</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_StartingMessage.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.StartingMessage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L29">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_StartingMessage_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.StartingMessage*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_StartingMessage" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.StartingMessage">StartingMessage</h4>
+  <div class="markdown level1 summary"><p>Optional. A conversation starter of the model's response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string StartingMessage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_Stop.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.Stop%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L144">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_Stop_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.Stop*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_Stop" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.Stop">Stop</h4>
+  <div class="markdown level1 summary"><p>Stop sequences for text generation.<br>
+Note: Responses API does not support this parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; Stop { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_StreamOptions.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.StreamOptions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L97">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_StreamOptions_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.StreamOptions*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_StreamOptions" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.StreamOptions">StreamOptions</h4>
+  <div class="markdown level1 summary"><p>Optional. Defaults to null
+Options for streaming responses. Only set this when you set stream: true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StreamOptions StreamOptions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.StreamOptions.html">StreamOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_Temperature.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.Temperature%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L51">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_Temperature_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.Temperature*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_Temperature" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.Temperature">Temperature</h4>
+  <div class="markdown level1 summary"><p>Optional. Defaults to 1
+What sampling temperature to use, between 0 and 2.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Temperature Temperature { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Temperature.html">Temperature</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_ToolChoice.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.ToolChoice%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L127">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_ToolChoice_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.ToolChoice*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_ToolChoice" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.ToolChoice">ToolChoice</h4>
+  <div class="markdown level1 summary"><p>Optional. How the model should select which tool (or tools) to use when generating a response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ToolChoice ToolChoice { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ToolChoice.html">ToolChoice</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_Tools.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.Tools%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L118">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_Tools_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.Tools*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_Tools" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.Tools">Tools</h4>
+  <div class="markdown level1 summary"><p>Optional. An array of tools the model may call while generating a response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tool[] Tools { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Tool.html">Tool</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_TopK.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.TopK%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L45">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_TopK_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.TopK*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_TopK" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.TopK">TopK</h4>
+  <div class="markdown level1 summary"><p>Samples the topK tokens with the highest probabilities.
+Range is [1, 1000].
+Default is 40.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TopK TopK { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.TopK.html">TopK</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_TopLogprobs.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.TopLogprobs%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L56">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_TopLogprobs_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.TopLogprobs*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_TopLogprobs" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.TopLogprobs">TopLogprobs</h4>
+  <div class="markdown level1 summary"><p>Optional. An integer between 0 and 20 specifying the number of most likely tokens to return.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Logprobs TopLogprobs { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Logprobs.html">Logprobs</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_TopP.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.TopP%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L38">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_TopP_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.TopP*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_TopP" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.TopP">TopP</h4>
+  <div class="markdown level1 summary"><p>Optional. Defaults to 1
+Nucleus sampling parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TopP TopP { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.TopP.html">TopP</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_WebSearchOptions.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.WebSearchOptions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L146">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_WebSearchOptions_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.WebSearchOptions*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_WebSearchOptions" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.WebSearchOptions">WebSearchOptions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WebSearchSettings WebSearchOptions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.WebSearchSettings.html">WebSearchSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_AddMessage_Glitch9_AIDevKit_Message___.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.AddMessage(Glitch9.AIDevKit.Message%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L327">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_AddMessage_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.AddMessage*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_AddMessage_Glitch9_AIDevKit_Message___" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.AddMessage(Glitch9.AIDevKit.Message[])">AddMessage(params Message[])</h4>
+  <div class="markdown level1 summary"><p>Adds context messages for chat-based models.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf AddMessage(params Message[] messages)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Message.html">Message</a>[]</td>
+        <td><span class="parametername">messages</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_AddMessageRange_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_Message__.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.AddMessageRange(System.Collections.Generic.IEnumerable%7BGlitch9.AIDevKit.Message%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L328">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_AddMessageRange_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.AddMessageRange*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_AddMessageRange_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_Message__" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.AddMessageRange(System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.Message})">AddMessageRange(IEnumerable&lt;Message&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract TSelf AddMessageRange(IEnumerable&lt;Message&gt; messages)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Glitch9.AIDevKit.Message.html">Message</a>&gt;</td>
+        <td><span class="parametername">messages</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_GetMessages.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.GetMessages%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L329">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_GetMessages_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.GetMessages*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_GetMessages" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.GetMessages">GetMessages()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract List&lt;Message&gt; GetMessages()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Glitch9.AIDevKit.Message.html">Message</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_SetFrequencyPenalty_Glitch9_AIDevKit_FrequencyPenalty_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.SetFrequencyPenalty(Glitch9.AIDevKit.FrequencyPenalty)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L207">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetFrequencyPenalty_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetFrequencyPenalty*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetFrequencyPenalty_Glitch9_AIDevKit_FrequencyPenalty_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetFrequencyPenalty(Glitch9.AIDevKit.FrequencyPenalty)">SetFrequencyPenalty(FrequencyPenalty)</h4>
+  <div class="markdown level1 summary"><p>Sets the frequency penalty parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetFrequencyPenalty(FrequencyPenalty frequencyPenalty)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.FrequencyPenalty.html">FrequencyPenalty</a></td>
+        <td><span class="parametername">frequencyPenalty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_SetInstructions_System_String_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.SetInstructions(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L157">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetInstructions_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetInstructions*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetInstructions_System_String_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetInstructions(System.String)">SetInstructions(string)</h4>
+  <div class="markdown level1 summary"><p>Sets the instruction for the task. This is a specific command or request for the model to follow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetInstructions(string instructions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">instructions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_SetLogitBias_System_Collections_Generic_Dictionary_System_String_System_Double__.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.SetLogitBias(System.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Double%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L212">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetLogitBias_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetLogitBias*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetLogitBias_System_Collections_Generic_Dictionary_System_String_System_Double__" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetLogitBias(System.Collections.Generic.Dictionary{System.String,System.Double})">SetLogitBias(Dictionary&lt;string, double&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sets a custom token bias map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetLogitBias(Dictionary&lt;string, double&gt; logitBias)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</td>
+        <td><span class="parametername">logitBias</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_SetLogprobs_System_Boolean_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.SetLogprobs(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L217">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetLogprobs_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetLogprobs*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetLogprobs_System_Boolean_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetLogprobs(System.Boolean)">SetLogprobs(bool)</h4>
+  <div class="markdown level1 summary"><p>Enables returning token-level log probabilities.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetLogprobs(bool logprobs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">logprobs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_SetMaxOutputTokens_Glitch9_AIDevKit_TokenCount_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.SetMaxOutputTokens(Glitch9.AIDevKit.TokenCount)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L224">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetMaxOutputTokens_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetMaxOutputTokens*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetMaxOutputTokens_Glitch9_AIDevKit_TokenCount_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetMaxOutputTokens(Glitch9.AIDevKit.TokenCount)">SetMaxOutputTokens(TokenCount)</h4>
+  <div class="markdown level1 summary"><p>Sets the maximum number of tokens the model can generate in its response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetMaxOutputTokens(TokenCount maxTokens)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.TokenCount.html">TokenCount</a></td>
+        <td><span class="parametername">maxTokens</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_SetPresencePenalty_Glitch9_AIDevKit_PresencePenalty_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.SetPresencePenalty(Glitch9.AIDevKit.PresencePenalty)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L202">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetPresencePenalty_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetPresencePenalty*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetPresencePenalty_Glitch9_AIDevKit_PresencePenalty_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetPresencePenalty(Glitch9.AIDevKit.PresencePenalty)">SetPresencePenalty(PresencePenalty)</h4>
+  <div class="markdown level1 summary"><p>Sets the presence penalty parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetPresencePenalty(PresencePenalty presencePenalty)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.PresencePenalty.html">PresencePenalty</a></td>
+        <td><span class="parametername">presencePenalty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_SetReasoning_Glitch9_AIDevKit_ReasoningEffort_Glitch9_AIDevKit_TokenCount_System_Boolean_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.SetReasoning(Glitch9.AIDevKit.ReasoningEffort%2CGlitch9.AIDevKit.TokenCount%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L246">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetReasoning_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetReasoning*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetReasoning_Glitch9_AIDevKit_ReasoningEffort_Glitch9_AIDevKit_TokenCount_System_Boolean_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetReasoning(Glitch9.AIDevKit.ReasoningEffort,Glitch9.AIDevKit.TokenCount,System.Boolean)">SetReasoning(ReasoningEffort, TokenCount, bool)</h4>
+  <div class="markdown level1 summary"><p>OpenRouter style reasoning configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetReasoning(ReasoningEffort effort, TokenCount budgetTokens, bool exclude)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ReasoningEffort.html">ReasoningEffort</a></td>
+        <td><span class="parametername">effort</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.TokenCount.html">TokenCount</a></td>
+        <td><span class="parametername">budgetTokens</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">exclude</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_SetReasoning_Glitch9_AIDevKit_ReasoningEffort_System_Nullable_Glitch9_AIDevKit_ReasoningSummaryLevel__.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.SetReasoning(Glitch9.AIDevKit.ReasoningEffort%2CSystem.Nullable%7BGlitch9.AIDevKit.ReasoningSummaryLevel%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L235">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetReasoning_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetReasoning*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetReasoning_Glitch9_AIDevKit_ReasoningEffort_System_Nullable_Glitch9_AIDevKit_ReasoningSummaryLevel__" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetReasoning(Glitch9.AIDevKit.ReasoningEffort,System.Nullable{Glitch9.AIDevKit.ReasoningSummaryLevel})">SetReasoning(ReasoningEffort, ReasoningSummaryLevel?)</h4>
+  <div class="markdown level1 summary"><p>Configures the reasoning settings for the task.
+For Anthropic models, use 'SetReasoning(TokenCount budgetTokens)' instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetReasoning(ReasoningEffort effort, ReasoningSummaryLevel? summaryLevel = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ReasoningEffort.html">ReasoningEffort</a></td>
+        <td><span class="parametername">effort</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ReasoningSummaryLevel.html">ReasoningSummaryLevel</a>?</td>
+        <td><span class="parametername">summaryLevel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_SetReasoning_Glitch9_AIDevKit_ReasoningFormat_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.SetReasoning(Glitch9.AIDevKit.ReasoningFormat)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L264">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetReasoning_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetReasoning*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetReasoning_Glitch9_AIDevKit_ReasoningFormat_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetReasoning(Glitch9.AIDevKit.ReasoningFormat)">SetReasoning(ReasoningFormat)</h4>
+  <div class="markdown level1 summary"><p>GroqCloud-specific parameter to set the reasoning output format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetReasoning(ReasoningFormat format)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ReasoningFormat.html">ReasoningFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>Specifies how to output reasoning tokens</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_SetReasoning_Glitch9_AIDevKit_TokenCount_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.SetReasoning(Glitch9.AIDevKit.TokenCount)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L280">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetReasoning_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetReasoning*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetReasoning_Glitch9_AIDevKit_TokenCount_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetReasoning(Glitch9.AIDevKit.TokenCount)">SetReasoning(TokenCount)</h4>
+  <div class="markdown level1 summary"><p>Anthropic-specific parameter to set the reasoning budget in tokens.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetReasoning(TokenCount budgetTokens)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.TokenCount.html">TokenCount</a></td>
+        <td><span class="parametername">budgetTokens</span></td>
+        <td><p>Required. Determines how many tokens Claude can use for its internal reasoning process. Larger budgets
+can enable more thorough analysis for complex problems, improving response quality.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_SetReasoningOptions_Glitch9_AIDevKit_ReasoningOptions_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.SetReasoningOptions(Glitch9.AIDevKit.ReasoningOptions)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L229">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetReasoningOptions_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetReasoningOptions*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetReasoningOptions_Glitch9_AIDevKit_ReasoningOptions_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetReasoningOptions(Glitch9.AIDevKit.ReasoningOptions)">SetReasoningOptions(ReasoningOptions)</h4>
+  <div class="markdown level1 summary"><p>Configures the reasoning settings for the task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetReasoningOptions(ReasoningOptions reasoningOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ReasoningOptions.html">ReasoningOptions</a></td>
+        <td><span class="parametername">reasoningOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_SetRequestMetadata_Glitch9_AIDevKit_ServerDictionary_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.SetRequestMetadata(Glitch9.AIDevKit.ServerDictionary)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L319">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetRequestMetadata_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetRequestMetadata*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetRequestMetadata_Glitch9_AIDevKit_ServerDictionary_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetRequestMetadata(Glitch9.AIDevKit.ServerDictionary)">SetRequestMetadata(ServerDictionary)</h4>
+  <div class="markdown level1 summary"><p>Sets the stop sequences for text generation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetRequestMetadata(ServerDictionary metadata)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ServerDictionary.html">ServerDictionary</a></td>
+        <td><span class="parametername">metadata</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_SetResponseFormat_Glitch9_AIDevKit_ResponseFormat_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.SetResponseFormat(Glitch9.AIDevKit.ResponseFormat)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L298">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetResponseFormat_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetResponseFormat*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetResponseFormat_Glitch9_AIDevKit_ResponseFormat_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetResponseFormat(Glitch9.AIDevKit.ResponseFormat)">SetResponseFormat(ResponseFormat)</h4>
+  <div class="markdown level1 summary"><p>Sets the desired response format for the output.</p>
+<ul><li><code>Auto</code>: Model decides the best format.</li><li><code>Text</code>: Plain text output.</li><li><code>JsonObject</code>: Structured JSON output.</li></ul>
+<p>You can also use 'JsonSchemaFormat' which extends ResponseFormat to specify a strict JSON schema for structured output.
+Note: Not all providers support response format control. Check your provider's documentation for details.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetResponseFormat(ResponseFormat format)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ResponseFormat.html">ResponseFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_SetResponseFormat_System_Type_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.SetResponseFormat(System.Type)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L304">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetResponseFormat_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetResponseFormat*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetResponseFormat_System_Type_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetResponseFormat(System.Type)">SetResponseFormat(Type)</h4>
+  <div class="markdown level1 summary"><p>Sets the desired response format using a type annotated with JsonSchemaAttribute or StrictJsonSchemaAttribute.
+The type's structure will be converted into a JSON schema for the model to follow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetResponseFormat(Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_SetSafetySettings_System_Collections_Generic_List_Glitch9_AIDevKit_SafetySetting__.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.SetSafetySettings(System.Collections.Generic.List%7BGlitch9.AIDevKit.SafetySetting%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L167">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetSafetySettings_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetSafetySettings*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetSafetySettings_System_Collections_Generic_List_Glitch9_AIDevKit_SafetySetting__" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetSafetySettings(System.Collections.Generic.List{Glitch9.AIDevKit.SafetySetting})">SetSafetySettings(List&lt;SafetySetting&gt;)</h4>
+  <div class="markdown level1 summary"><p>If set, the model will apply the specified safety settings to filter or moderate the generated content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetSafetySettings(List&lt;SafetySetting&gt; settings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Glitch9.AIDevKit.SafetySetting.html">SafetySetting</a>&gt;</td>
+        <td><span class="parametername">settings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_SetStartingMessage_System_String_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.SetStartingMessage(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L162">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetStartingMessage_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetStartingMessage*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetStartingMessage_System_String_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetStartingMessage(System.String)">SetStartingMessage(string)</h4>
+  <div class="markdown level1 summary"><p>Sets the starting message or initial prompt for the task. This can be used to provide context or a starting point for the model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetStartingMessage(string startingMessage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">startingMessage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_SetStopSequences_System_String___.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.SetStopSequences(System.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L312">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetStopSequences_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetStopSequences*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetStopSequences_System_String___" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetStopSequences(System.String[])">SetStopSequences(params string[])</h4>
+  <div class="markdown level1 summary"><p>Sets the stop sequences for text generation.
+<br>Note: Responses API does not support this parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetStopSequences(params string[] stop)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td><span class="parametername">stop</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_SetTemperature_Glitch9_AIDevKit_Temperature_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.SetTemperature(Glitch9.AIDevKit.Temperature)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L187">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetTemperature_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetTemperature*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetTemperature_Glitch9_AIDevKit_Temperature_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetTemperature(Glitch9.AIDevKit.Temperature)">SetTemperature(Temperature)</h4>
+  <div class="markdown level1 summary"><p>Sets the sampling temperature parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetTemperature(Temperature temperature)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Temperature.html">Temperature</a></td>
+        <td><span class="parametername">temperature</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_SetToolChoice_Glitch9_AIDevKit_ToolChoice_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.SetToolChoice(Glitch9.AIDevKit.ToolChoice)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L182">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetToolChoice_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetToolChoice*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetToolChoice_Glitch9_AIDevKit_ToolChoice_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetToolChoice(Glitch9.AIDevKit.ToolChoice)">SetToolChoice(ToolChoice)</h4>
+  <div class="markdown level1 summary"><p>Sets the tool choice strategy for the model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetToolChoice(ToolChoice toolChoice)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ToolChoice.html">ToolChoice</a></td>
+        <td><span class="parametername">toolChoice</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_SetTools_Glitch9_AIDevKit_Tool___.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.SetTools(Glitch9.AIDevKit.Tool%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L172">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetTools_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetTools*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetTools_Glitch9_AIDevKit_Tool___" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetTools(Glitch9.AIDevKit.Tool[])">SetTools(params Tool[])</h4>
+  <div class="markdown level1 summary"><p>Sets the tools available for the model to use during generation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetTools(params Tool[] tools)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Tool.html">Tool</a>[]</td>
+        <td><span class="parametername">tools</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_SetTools_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_Tool__.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.SetTools(System.Collections.Generic.IEnumerable%7BGlitch9.AIDevKit.Tool%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L177">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetTools_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetTools*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetTools_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_Tool__" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetTools(System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.Tool})">SetTools(IEnumerable&lt;Tool&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sets the tools available for the model to use during generation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetTools(IEnumerable&lt;Tool&gt; tools)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Glitch9.AIDevKit.Tool.html">Tool</a>&gt;</td>
+        <td><span class="parametername">tools</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_SetTopK_Glitch9_AIDevKit_TopK_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.SetTopK(Glitch9.AIDevKit.TopK)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L197">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetTopK_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetTopK*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetTopK_Glitch9_AIDevKit_TopK_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetTopK(Glitch9.AIDevKit.TopK)">SetTopK(TopK)</h4>
+  <div class="markdown level1 summary"><p>Sets the TopK parameter for sampling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetTopK(TopK topK)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.TopK.html">TopK</a></td>
+        <td><span class="parametername">topK</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_SetTopP_Glitch9_AIDevKit_TopP_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.SetTopP(Glitch9.AIDevKit.TopP)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L192">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetTopP_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetTopP*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetTopP_Glitch9_AIDevKit_TopP_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetTopP(Glitch9.AIDevKit.TopP)">SetTopP(TopP)</h4>
+  <div class="markdown level1 summary"><p>Sets the nucleus sampling (TopP) parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetTopP(TopP topP)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.TopP.html">TopP</a></td>
+        <td><span class="parametername">topP</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_SetWebSearchOptions_Glitch9_AIDevKit_WebSearchSettings_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.SetWebSearchOptions(Glitch9.AIDevKit.WebSearchSettings)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L321">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetWebSearchOptions_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetWebSearchOptions*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_SetWebSearchOptions_Glitch9_AIDevKit_WebSearchSettings_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.SetWebSearchOptions(Glitch9.AIDevKit.WebSearchSettings)">SetWebSearchOptions(WebSearchSettings)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetWebSearchOptions(WebSearchSettings options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.WebSearchSettings.html">WebSearchSettings</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4_ValidateRequest.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604.ValidateRequest%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L331">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_GenerativeTextRequest_4_ValidateRequest_" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.ValidateRequest*"></a>
+  <h4 id="Glitch9_AIDevKit_GenerativeTextRequest_4_ValidateRequest" data-uid="Glitch9.AIDevKit.GenerativeTextRequest`4.ValidateRequest">ValidateRequest()</h4>
+  <div class="markdown level1 summary"><p>Validates the request before execution.
+Override in derived classes to implement request validation logic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ValidateRequest()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_ValidateRequest">GenerativeRequest&lt;TSelf, TInput, TResult, ITextRequestOptions&gt;.ValidateRequest()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.IStreamingGenerativeRequest-2.html">IStreamingGenerativeRequest&lt;TEvent, TAsset&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.IGenerativeTextRequest.html">IGenerativeTextRequest</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.IGenerativeRequest.html">IGenerativeRequest</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrEmpty__1___0_">ArrayExtensions.ToArrayOrEmpty&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrNull__1___0_">ArrayExtensions.ToArrayOrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDelta__1___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.ToDelta&lt;T&gt;(T, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDone__1___0_System_String_System_Int32_System_String_">EventExtensions.ToDone&lt;T&gt;(T, string, int, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToEvent__1___0_">EventExtensions.ToEvent&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_UpcastDelta__2___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.UpcastDelta&lt;T1, T2&gt;(T1, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.FallbackExtensions.html#Glitch9_FallbackExtensions_IsOr__2___0___1_">FallbackExtensions.IsOr&lt;TParent, TChild&gt;(TParent, TChild)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ResponseCastingExtensions.html#Glitch9_IO_Networking_RESTApi_ResponseCastingExtensions_GetResult__1___0_">ResponseCastingExtensions.GetResult&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_GetName_System_Object_">SystemExtensions.GetName(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_GenerativeTextRequest_4.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.GenerativeTextRequest%604%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/_Abstractions/Bases/GenerativeTextRequest.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AI DevKit Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

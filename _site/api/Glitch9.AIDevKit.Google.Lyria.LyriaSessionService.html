@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class LyriaSessionService | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class LyriaSessionService | AI DevKit ">
+    
+    <meta name="description" content="Service class that manages the WebSocket connection to the Lyria music generation API, handles sending control messages, and processes incoming audio data and events.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService">
+
+
+
+  <h1 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService" class="text-break">Class LyriaSessionService</h1>
+  <div class="markdown level0 summary"><p>Service class that manages the WebSocket connection to the Lyria music generation API,
+handles sending control messages, and processes incoming audio data and events.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">LyriaSessionService</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Glitch9.IO.Networking.WebSocket.IWebSocketListener-1.html">IWebSocketListener</a>&lt;<a class="xref" href="Glitch9.AIDevKit.Google.Lyria.BidiGenerateMusicServerMessage.html">BidiGenerateMusicServerMessage</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.Google.html">Google</a>.<a class="xref" href="Glitch9.AIDevKit.Google.Lyria.html">Lyria</a></h6>
+  <h6><strong>Assembly</strong>: Glitch9.AIDevKit.Provider.Google.dll</h6>
+  <h5 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LyriaSessionService : IWebSocketListener&lt;BidiGenerateMusicServerMessage&gt;, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_Lyria_LyriaSessionService__ctor_System_String_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.%23ctor(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Lyria/Services/LyriaSessionService.cs/#L99">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService__ctor_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.#ctor*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService__ctor_System_String_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.#ctor(System.String)">LyriaSessionService(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LyriaSessionService(string modelId = &quot;models/lyria-realtime-exp&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">modelId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_IsConnected.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.IsConnected%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Lyria/Services/LyriaSessionService.cs/#L64">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_IsConnected_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.IsConnected*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_IsConnected" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.IsConnected">IsConnected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsConnected { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_WebSocket.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.WebSocket%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Lyria/Services/LyriaSessionService.cs/#L65">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_WebSocket_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.WebSocket*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_WebSocket" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.WebSocket">WebSocket</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IWebSocket WebSocket { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.WebSocket.IWebSocket.html">IWebSocket</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_ConnectAsync_System_String_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.ConnectAsync(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Lyria/Services/LyriaSessionService.cs/#L111">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_ConnectAsync_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.ConnectAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_ConnectAsync_System_String_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.ConnectAsync(System.String)">ConnectAsync(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask ConnectAsync(string modelId = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">modelId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_DisconnectAsync.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.DisconnectAsync%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Lyria/Services/LyriaSessionService.cs/#L120">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_DisconnectAsync_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.DisconnectAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_DisconnectAsync" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.DisconnectAsync">DisconnectAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask DisconnectAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_Dispose.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.Dispose%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Lyria/Services/LyriaSessionService.cs/#L399">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_Dispose_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.Dispose*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_Dispose" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_OnWebSocketBinaryReceived_System_Byte___.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.OnWebSocketBinaryReceived(System.Byte%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Lyria/Services/LyriaSessionService.cs/#L386">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_OnWebSocketBinaryReceived_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.OnWebSocketBinaryReceived*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_OnWebSocketBinaryReceived_System_Byte___" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.OnWebSocketBinaryReceived(System.Byte[])">OnWebSocketBinaryReceived(byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnWebSocketBinaryReceived(byte[] binaryData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">binaryData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_OnWebSocketMessageReceived_Glitch9_AIDevKit_Google_Lyria_BidiGenerateMusicServerMessage_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.OnWebSocketMessageReceived(Glitch9.AIDevKit.Google.Lyria.BidiGenerateMusicServerMessage)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Lyria/Services/LyriaSessionService.cs/#L264">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_OnWebSocketMessageReceived_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.OnWebSocketMessageReceived*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_OnWebSocketMessageReceived_Glitch9_AIDevKit_Google_Lyria_BidiGenerateMusicServerMessage_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.OnWebSocketMessageReceived(Glitch9.AIDevKit.Google.Lyria.BidiGenerateMusicServerMessage)">OnWebSocketMessageReceived(BidiGenerateMusicServerMessage)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnWebSocketMessageReceived(BidiGenerateMusicServerMessage message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Google.Lyria.BidiGenerateMusicServerMessage.html">BidiGenerateMusicServerMessage</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_PauseAsync.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.PauseAsync%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Lyria/Services/LyriaSessionService.cs/#L220">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_PauseAsync_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.PauseAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_PauseAsync" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.PauseAsync">PauseAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask PauseAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_PlayAsync.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.PlayAsync%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Lyria/Services/LyriaSessionService.cs/#L219">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_PlayAsync_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.PlayAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_PlayAsync" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.PlayAsync">PlayAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask PlayAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_ResetAsync.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.ResetAsync%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Lyria/Services/LyriaSessionService.cs/#L222">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_ResetAsync_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.ResetAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_ResetAsync" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.ResetAsync">ResetAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask ResetAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_SendPromptAsync_System_String_System_Single_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.SendPromptAsync(System.String%2CSystem.Single)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Lyria/Services/LyriaSessionService.cs/#L174">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_SendPromptAsync_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.SendPromptAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_SendPromptAsync_System_String_System_Single_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.SendPromptAsync(System.String,System.Single)">SendPromptAsync(string, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask SendPromptAsync(string promptText, float weight = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">promptText</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">weight</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_SendPromptsAsync_Glitch9_AIDevKit_Prompt___.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.SendPromptsAsync(Glitch9.AIDevKit.Prompt%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Lyria/Services/LyriaSessionService.cs/#L193">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_SendPromptsAsync_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.SendPromptsAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_SendPromptsAsync_Glitch9_AIDevKit_Prompt___" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.SendPromptsAsync(Glitch9.AIDevKit.Prompt[])">SendPromptsAsync(params Prompt[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask SendPromptsAsync(params Prompt[] prompts)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Prompt.html">Prompt</a>[]</td>
+        <td><span class="parametername">prompts</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_SetClientContentAsync_Glitch9_AIDevKit_Google_Lyria_BidiGenerateMusicClientContent_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.SetClientContentAsync(Glitch9.AIDevKit.Google.Lyria.BidiGenerateMusicClientContent)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Lyria/Services/LyriaSessionService.cs/#L152">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_SetClientContentAsync_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.SetClientContentAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_SetClientContentAsync_Glitch9_AIDevKit_Google_Lyria_BidiGenerateMusicClientContent_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.SetClientContentAsync(Glitch9.AIDevKit.Google.Lyria.BidiGenerateMusicClientContent)">SetClientContentAsync(BidiGenerateMusicClientContent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask SetClientContentAsync(BidiGenerateMusicClientContent clientContent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Google.Lyria.BidiGenerateMusicClientContent.html">BidiGenerateMusicClientContent</a></td>
+        <td><span class="parametername">clientContent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_SetModelAsync_System_String_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.SetModelAsync(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Lyria/Services/LyriaSessionService.cs/#L128">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_SetModelAsync_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.SetModelAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_SetModelAsync_System_String_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.SetModelAsync(System.String)">SetModelAsync(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask SetModelAsync(string model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_SetMusicGenerationConfigAsync_Glitch9_AIDevKit_Google_Lyria_BidiGenerateMusicGenerationConfig_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.SetMusicGenerationConfigAsync(Glitch9.AIDevKit.Google.Lyria.BidiGenerateMusicGenerationConfig)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Lyria/Services/LyriaSessionService.cs/#L163">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_SetMusicGenerationConfigAsync_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.SetMusicGenerationConfigAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_SetMusicGenerationConfigAsync_Glitch9_AIDevKit_Google_Lyria_BidiGenerateMusicGenerationConfig_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.SetMusicGenerationConfigAsync(Glitch9.AIDevKit.Google.Lyria.BidiGenerateMusicGenerationConfig)">SetMusicGenerationConfigAsync(BidiGenerateMusicGenerationConfig)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask SetMusicGenerationConfigAsync(BidiGenerateMusicGenerationConfig config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Google.Lyria.BidiGenerateMusicGenerationConfig.html">BidiGenerateMusicGenerationConfig</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_SetSetupAsync_Glitch9_AIDevKit_Google_Lyria_BidiGenerateMusicSetup_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.SetSetupAsync(Glitch9.AIDevKit.Google.Lyria.BidiGenerateMusicSetup)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Lyria/Services/LyriaSessionService.cs/#L141">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_SetSetupAsync_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.SetSetupAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_SetSetupAsync_Glitch9_AIDevKit_Google_Lyria_BidiGenerateMusicSetup_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.SetSetupAsync(Glitch9.AIDevKit.Google.Lyria.BidiGenerateMusicSetup)">SetSetupAsync(BidiGenerateMusicSetup)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask SetSetupAsync(BidiGenerateMusicSetup setup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Google.Lyria.BidiGenerateMusicSetup.html">BidiGenerateMusicSetup</a></td>
+        <td><span class="parametername">setup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_StopAsync.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.StopAsync%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Lyria/Services/LyriaSessionService.cs/#L221">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_StopAsync_" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.StopAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_StopAsync" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.StopAsync">StopAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask StopAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_onError.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.onError%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Lyria/Services/LyriaSessionService.cs/#L95">View Source</a>
+  </span>
+  <h4 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_onError" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.onError">onError</h4>
+  <div class="markdown level1 summary"><p>Invoked when an error occurs during communication with the Lyria service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;Exception&gt; onError</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_onPlaybackControlSent.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.onPlaybackControlSent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Lyria/Services/LyriaSessionService.cs/#L90">View Source</a>
+  </span>
+  <h4 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_onPlaybackControlSent" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.onPlaybackControlSent">onPlaybackControlSent</h4>
+  <div class="markdown level1 summary"><p>Invoked when a playback control command is sent and successfully processed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;BidiGenerateMusicPlaybackControl&gt; onPlaybackControlSent</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Glitch9.AIDevKit.Google.Lyria.BidiGenerateMusicPlaybackControl.html">BidiGenerateMusicPlaybackControl</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_onReceiveAudioData.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.onReceiveAudioData%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Lyria/Services/LyriaSessionService.cs/#L75">View Source</a>
+  </span>
+  <h4 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_onReceiveAudioData" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.onReceiveAudioData">onReceiveAudioData</h4>
+  <div class="markdown level1 summary"><p>Invoked when streaming audio data is received.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;IAudioBuffer&gt; onReceiveAudioData</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Glitch9.IO.Audio.IAudioBuffer.html">IAudioBuffer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_onReceiveFilteredPrompt.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.onReceiveFilteredPrompt%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Lyria/Services/LyriaSessionService.cs/#L85">View Source</a>
+  </span>
+  <h4 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_onReceiveFilteredPrompt" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.onReceiveFilteredPrompt">onReceiveFilteredPrompt</h4>
+  <div class="markdown level1 summary"><p>Invoked when a filtered prompt is received from the Lyria service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;string&gt; onReceiveFilteredPrompt</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_onReceiveWarning.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.onReceiveWarning%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Lyria/Services/LyriaSessionService.cs/#L80">View Source</a>
+  </span>
+  <h4 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_onReceiveWarning" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.onReceiveWarning">onReceiveWarning</h4>
+  <div class="markdown level1 summary"><p>Invoked when a warning message is received from the Lyria service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;string&gt; onReceiveWarning</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_onSetupComplete.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.onSetupComplete%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Lyria/Services/LyriaSessionService.cs/#L70">View Source</a>
+  </span>
+  <h4 id="Glitch9_AIDevKit_Google_Lyria_LyriaSessionService_onSetupComplete" data-uid="Glitch9.AIDevKit.Google.Lyria.LyriaSessionService.onSetupComplete">onSetupComplete</h4>
+  <div class="markdown level1 summary"><p>Invoked when the Lyria Session setup is complete.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action onSetupComplete</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.WebSocket.IWebSocketListener-1.html">IWebSocketListener&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrEmpty__1___0_">ArrayExtensions.ToArrayOrEmpty&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrNull__1___0_">ArrayExtensions.ToArrayOrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDelta__1___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.ToDelta&lt;T&gt;(T, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDone__1___0_System_String_System_Int32_System_String_">EventExtensions.ToDone&lt;T&gt;(T, string, int, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToEvent__1___0_">EventExtensions.ToEvent&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_UpcastDelta__2___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.UpcastDelta&lt;T1, T2&gt;(T1, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.FallbackExtensions.html#Glitch9_FallbackExtensions_IsOr__2___0___1_">FallbackExtensions.IsOr&lt;TParent, TChild&gt;(TParent, TChild)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ResponseCastingExtensions.html#Glitch9_IO_Networking_RESTApi_ResponseCastingExtensions_GetResult__1___0_">ResponseCastingExtensions.GetResult&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_TryDispose_System_IDisposable_">SystemExtensions.TryDispose(IDisposable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_GetName_System_Object_">SystemExtensions.GetName(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_Lyria_LyriaSessionService.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.Lyria.LyriaSessionService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Lyria/Services/LyriaSessionService.cs/#L59" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AI DevKit Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

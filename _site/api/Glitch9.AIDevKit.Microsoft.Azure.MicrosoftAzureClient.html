@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class MicrosoftAzureClient | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class MicrosoftAzureClient | AI DevKit ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient">
+
+
+
+  <h1 id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient" class="text-break">Class MicrosoftAzureClient</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html">RESTClient</a></div>
+    <div class="level2"><a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html">ApiClient</a>&lt;<a class="xref" href="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.html">MicrosoftAzureClient</a>, <a class="xref" href="Glitch9.AIDevKit.Api.html">Api</a>, <a class="xref" href="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureSettings.html">MicrosoftAzureSettings</a>&gt;</div>
+    <div class="level3"><a class="xref" href="Glitch9.AIDevKit.AIClient-2.html">AIClient</a>&lt;<a class="xref" href="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.html">MicrosoftAzureClient</a>, <a class="xref" href="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureSettings.html">MicrosoftAzureSettings</a>&gt;</div>
+    <div class="level4"><span class="xref">MicrosoftAzureClient</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Glitch9.IO.Networking.RESTApi.IApiClient.html">IApiClient</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIClient-2.html#Glitch9_AIDevKit_AIClient_2_ResolveApiKey_System_String_">AIClient&lt;MicrosoftAzureClient, MicrosoftAzureSettings&gt;.ResolveApiKey(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIClient-2.html#Glitch9_AIDevKit_AIClient_2_GetVersion_System_String_">AIClient&lt;MicrosoftAzureClient, MicrosoftAzureSettings&gt;.GetVersion(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIClient-2.html#Glitch9_AIDevKit_AIClient_2_ResolveBetaVersion_System_String_">AIClient&lt;MicrosoftAzureClient, MicrosoftAzureSettings&gt;.ResolveBetaVersion(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_DefaultInstance">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.DefaultInstance</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_Name">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_BaseUrl">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.BaseUrl</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_Api">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.Api</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_BaseRequestParameters">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.BaseRequestParameters</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_AdditionalHeaders">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.AdditionalHeaders</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_RequiresApiKey">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.RequiresApiKey</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_Settings">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.Settings</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_POSTAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.POSTAsync&lt;TBody, TResponse&gt;(ICrudService, string, TBody, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_POSTAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.POSTAsync&lt;TBody&gt;(ICrudService, string, TBody, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_POSTAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.POSTAsync&lt;TResponse&gt;(ICrudService, string, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_GETAsync_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.GETAsync(ICrudService, string, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_GETAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.GETAsync&lt;TResponse&gt;(ICrudService, string, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_PUTAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.PUTAsync&lt;TBody&gt;(ICrudService, string, TBody, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_PATCHAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.PATCHAsync&lt;TResponse&gt;(ICrudService, string, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_DELETEAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.DELETEAsync&lt;TBody, TStatus&gt;(ICrudService, string, TBody, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_DELETEAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.DELETEAsync&lt;TStatus&gt;(ICrudService, string, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_DELETEAsync_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.DELETEAsync(ICrudService, string, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_STREAMAsync__3_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_IStreamPipeline_System_String___1___2__Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.STREAMAsync&lt;TBody, TDelta, TResult&gt;(ICrudService, string, TBody, RequestOptions, IStreamPipeline&lt;string, TDelta, TResult&gt;, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_STREAMAsync__3_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_IStreamPipeline_Glitch9_IO_PooledBytes___1___2__Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.STREAMAsync&lt;TBody, TDelta, TResult&gt;(ICrudService, string, TBody, RequestOptions, IStreamPipeline&lt;PooledBytes, TDelta, TResult&gt;, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_STREAMAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_IStreamPipeline_System_String___0___1__Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.STREAMAsync&lt;TDelta, TResult&gt;(ICrudService, string, RequestOptions, IStreamPipeline&lt;string, TDelta, TResult&gt;, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_STREAMAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_IStreamPipeline_Glitch9_IO_PooledBytes___0___1__Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.STREAMAsync&lt;TDelta, TResult&gt;(ICrudService, string, RequestOptions, IStreamPipeline&lt;PooledBytes, TDelta, TResult&gt;, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_DownloadAsync_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.DownloadAsync(ICrudService, string, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_ValidateAuthAsync">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.ValidateAuthAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_ValidateEndpointAsync_System_String_">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.ValidateEndpointAsync(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_Jss">RESTClient.Jss</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_Xss">RESTClient.Xss</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_Logger">RESTClient.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_LogOptions">RESTClient.LogOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_Timeout">RESTClient.Timeout</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_ExceptionParser">RESTClient.ExceptionParser</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_ExceptionHandler">RESTClient.ExceptionHandler</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_MaxRetryCount">RESTClient.MaxRetryCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_RetryDelaySeconds">RESTClient.RetryDelaySeconds</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_MaxRetryDelaySeconds">RESTClient.MaxRetryDelaySeconds</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_DefaultFileMimeType">RESTClient.DefaultFileMimeType</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_DefaultDownloadDirectoryPath">RESTClient.DefaultDownloadDirectoryPath</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_SetOnetimeLogOptions_Glitch9_IO_Networking_CurlLogOptions_">RESTClient.SetOnetimeLogOptions(CurlLogOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_POSTAsync_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.POSTAsync(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_POSTAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.POSTAsync&lt;T&gt;(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_PUTAsync_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.PUTAsync(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_PUTAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.PUTAsync&lt;T&gt;(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_GETAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.GETAsync&lt;T&gt;(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_GETAsync_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.GETAsync(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_DELETEAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.DELETEAsync&lt;T&gt;(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_DELETEAsync_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.DELETEAsync(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_HEADAsync_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.HEADAsync(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_HEADAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.HEADAsync&lt;T&gt;(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_PATCHAsync_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.PATCHAsync(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_PATCHAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.PATCHAsync&lt;T&gt;(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_STREAMAsync__2_Glitch9_IO_Networking_RESTApi_RESTRequest_Glitch9_IO_Networking_RESTApi_IStreamPipeline_System_String___0___1__System_String_">RESTClient.STREAMAsync&lt;TDelta, TResult&gt;(RESTRequest, IStreamPipeline&lt;string, TDelta, TResult&gt;, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_STREAMAsync__2_Glitch9_IO_Networking_RESTApi_RESTRequest_Glitch9_IO_Networking_RESTApi_IStreamPipeline_Glitch9_IO_PooledBytes___0___1__System_String_">RESTClient.STREAMAsync&lt;TDelta, TResult&gt;(RESTRequest, IStreamPipeline&lt;PooledBytes, TDelta, TResult&gt;, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_DOWNLOADAsync_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.DOWNLOADAsync(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.Microsoft.html">Microsoft</a>.<a class="xref" href="Glitch9.AIDevKit.Microsoft.Azure.html">Azure</a></h6>
+  <h6><strong>Assembly</strong>: Glitch9.AIDevKit.Provider.Microsoft.Azure.dll</h6>
+  <h5 id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class MicrosoftAzureClient : AIClient&lt;MicrosoftAzureClient, MicrosoftAzureSettings&gt;, IApiClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient__ctor.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Azure/Client/MicrosoftAzureClient.cs/#L23">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient__ctor_" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.#ctor*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient__ctor" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.#ctor">MicrosoftAzureClient()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MicrosoftAzureClient()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_Auth.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.Auth%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Azure/Client/MicrosoftAzureClient.cs/#L16">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_Auth_" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.Auth*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_Auth" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.Auth">Auth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AuthService Auth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Microsoft.Azure.Services.AuthService.html">AuthService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_ComputerVision.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.ComputerVision%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Azure/Client/MicrosoftAzureClient.cs/#L20">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_ComputerVision_" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.ComputerVision*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_ComputerVision" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.ComputerVision">ComputerVision</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ComputerVisionService ComputerVision { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Microsoft.Azure.ComputerVision.ComputerVisionService.html">ComputerVisionService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_DocumentIntelligence.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.DocumentIntelligence%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Azure/Client/MicrosoftAzureClient.cs/#L21">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_DocumentIntelligence_" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.DocumentIntelligence*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_DocumentIntelligence" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.DocumentIntelligence">DocumentIntelligence</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DocumentIntelligenceService DocumentIntelligence { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Microsoft.Azure.DocumentIntelligence.DocumentIntelligenceService.html">DocumentIntelligenceService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_Models.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.Models%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Azure/Client/MicrosoftAzureClient.cs/#L19">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_Models_" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.Models*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_Models" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.Models">Models</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModelService Models { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Microsoft.Azure.Services.ModelService.html">ModelService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_OpenAI.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.OpenAI%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Azure/Client/MicrosoftAzureClient.cs/#L17">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_OpenAI_" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.OpenAI*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_OpenAI" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.OpenAI">OpenAI</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OpenAIService OpenAI { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Microsoft.Azure.Services.OpenAIService.html">OpenAIService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_Speech.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.Speech%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Azure/Client/MicrosoftAzureClient.cs/#L18">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_Speech_" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.Speech*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_Speech" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.Speech">Speech</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpeechService Speech { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Microsoft.Azure.Speech.SpeechService.html">SpeechService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_CreateBaseRequestParameters.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.CreateBaseRequestParameters%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Azure/Client/MicrosoftAzureClient.cs/#L84">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_CreateBaseRequestParameters_" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.CreateBaseRequestParameters*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_CreateBaseRequestParameters" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.CreateBaseRequestParameters">CreateBaseRequestParameters()</h4>
+  <div class="markdown level1 summary"><p>Creates the request parameters for API key, version, and beta version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Dictionary&lt;string, RequestParameter&gt; CreateBaseRequestParameters()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestParameter.html">RequestParameter</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_CreateBaseRequestParameters">ApiClient&lt;MicrosoftAzureClient, Api, MicrosoftAzureSettings&gt;.CreateBaseRequestParameters()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_CreateJsonConverters.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.CreateJsonConverters%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Azure/Client/MicrosoftAzureClient.cs/#L93">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_CreateJsonConverters_" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.CreateJsonConverters*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_CreateJsonConverters" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.CreateJsonConverters">CreateJsonConverters()</h4>
+  <div class="markdown level1 summary"><p>Override this to add more JsonConverters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override List&lt;JsonConverter&gt; CreateJsonConverters()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">JsonConverter</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.AIDevKit.AIClient-2.html#Glitch9_AIDevKit_AIClient_2_CreateJsonConverters">AIClient&lt;MicrosoftAzureClient, MicrosoftAzureSettings&gt;.CreateJsonConverters()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_GetApiKeyHeader_System_String_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.GetApiKeyHeader(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Azure/Client/MicrosoftAzureClient.cs/#L47">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_GetApiKeyHeader_" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.GetApiKeyHeader*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_GetApiKeyHeader_System_String_" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.GetApiKeyHeader(System.String)">GetApiKeyHeader(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RequestParameter GetApiKeyHeader(string modelId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">modelId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestParameter.html">RequestParameter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_GetExtraParametersHeader.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.GetExtraParametersHeader%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Azure/Client/MicrosoftAzureClient.cs/#L62">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_GetExtraParametersHeader_" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.GetExtraParametersHeader*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_GetExtraParametersHeader" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.GetExtraParametersHeader">GetExtraParametersHeader()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RequestParameter GetExtraParametersHeader()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestParameter.html">RequestParameter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_GetOcpApimSubscriptionKeyHeader_Glitch9_AIDevKit_Microsoft_Azure_AzureResource_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.GetOcpApimSubscriptionKeyHeader(Glitch9.AIDevKit.Microsoft.Azure.AzureResource)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Azure/Client/MicrosoftAzureClient.cs/#L37">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_GetOcpApimSubscriptionKeyHeader_" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.GetOcpApimSubscriptionKeyHeader*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient_GetOcpApimSubscriptionKeyHeader_Glitch9_AIDevKit_Microsoft_Azure_AzureResource_" data-uid="Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient.GetOcpApimSubscriptionKeyHeader(Glitch9.AIDevKit.Microsoft.Azure.AzureResource)">GetOcpApimSubscriptionKeyHeader(AzureResource)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RequestParameter GetOcpApimSubscriptionKeyHeader(AzureResource resource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Microsoft.Azure.AzureResource.html">AzureResource</a></td>
+        <td><span class="parametername">resource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestParameter.html">RequestParameter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.IApiClient.html">IApiClient</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrEmpty__1___0_">ArrayExtensions.ToArrayOrEmpty&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrNull__1___0_">ArrayExtensions.ToArrayOrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDelta__1___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.ToDelta&lt;T&gt;(T, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDone__1___0_System_String_System_Int32_System_String_">EventExtensions.ToDone&lt;T&gt;(T, string, int, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToEvent__1___0_">EventExtensions.ToEvent&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_UpcastDelta__2___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.UpcastDelta&lt;T1, T2&gt;(T1, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.FallbackExtensions.html#Glitch9_FallbackExtensions_IsOr__2___0___1_">FallbackExtensions.IsOr&lt;TParent, TChild&gt;(TParent, TChild)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ResponseCastingExtensions.html#Glitch9_IO_Networking_RESTApi_ResponseCastingExtensions_GetResult__1___0_">ResponseCastingExtensions.GetResult&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_GetName_System_Object_">SystemExtensions.GetName(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Azure_MicrosoftAzureClient.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Azure.MicrosoftAzureClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Azure/Client/MicrosoftAzureClient.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AI DevKit Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

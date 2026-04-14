@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class PixelTilesetRequest | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class PixelTilesetRequest | AI DevKit ">
+    
+    <meta name="description" content="Creates a complete tileset for game development with seamlessly connecting tiles.  A tileset is a collection of tiles that can be combined to create larger maps and environments. This endpoint generates a comprehensive tileset with inner, outer, and optional transition areas that connect seamlessly when placed adjacent to each other.  Features:  Inner and outer area descriptions for varied terrain Optional transition zones between areas Configurable tile sizes (8x8 to 32x32 pixels) Seamless tile connections for map creation Style control via outline, shading, and detail parameters Reference images for style guidance Color palette control   Common use cases:  Game world tilesets (grass/dirt, water/sand, forest/clearing) Dungeon tilesets (floor/wall combinations) Terrain tilesets for top-down or isometric games   Maximum tileset size: 400x400 pixels Individual tile size range: 8x8 to 32x32 pixels">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest">
+
+
+
+  <h1 id="Glitch9_AIDevKit_PixelArt_PixelTilesetRequest" data-uid="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest" class="text-break">Class PixelTilesetRequest</h1>
+  <div class="markdown level0 summary"><p>Creates a complete tileset for game development with seamlessly connecting tiles.
+<br><br>
+A tileset is a collection of tiles that can be combined to create larger maps and environments.
+This endpoint generates a comprehensive tileset with inner, outer, and optional transition areas
+that connect seamlessly when placed adjacent to each other.</p>
+<p><br><br>
+Features:<br></p>
+<ul>
+<li>Inner and outer area descriptions for varied terrain<br></li>
+<li>Optional transition zones between areas<br></li>
+<li>Configurable tile sizes (8x8 to 32x32 pixels)<br></li>
+<li>Seamless tile connections for map creation<br></li>
+<li>Style control via outline, shading, and detail parameters<br></li>
+<li>Reference images for style guidance<br></li>
+<li>Color palette control</li>
+</ul>
+<p><br><br>
+Common use cases:<br></p>
+<ul>
+<li>Game world tilesets (grass/dirt, water/sand, forest/clearing)<br></li>
+<li>Dungeon tilesets (floor/wall combinations)<br></li>
+<li>Terrain tilesets for top-down or isometric games</li>
+</ul>
+<p><br><br>
+Maximum tileset size: 400x400 pixels<br>
+Individual tile size range: 8x8 to 32x32 pixels</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html">UnifiedApiRequestBase</a>&lt;<a class="xref" href="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.html">PixelTilesetRequest</a>, <a class="xref" href="Glitch9.AIDevKit.Generated-1.html">Generated</a>&lt;<a class="xref" href="Glitch9.IO.IImageAsset.html">IImageAsset</a>&gt;, <a class="xref" href="Glitch9.AIDevKit.PixelArt.IPixelArtTilesetOptions.html">IPixelArtTilesetOptions</a>&gt;</div>
+    <div class="level2"><a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html">GenerativeRequest</a>&lt;<a class="xref" href="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.html">PixelTilesetRequest</a>, <a class="xref" href="Glitch9.AIDevKit.Prompt.html">Prompt</a>, <a class="xref" href="Glitch9.IO.IImageAsset.html">IImageAsset</a>, <a class="xref" href="Glitch9.AIDevKit.PixelArt.IPixelArtTilesetOptions.html">IPixelArtTilesetOptions</a>&gt;</div>
+    <div class="level3"><a class="xref" href="Glitch9.AIDevKit.PixelArt.PixelArtRequest-3.html">PixelArtRequest</a>&lt;<a class="xref" href="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.html">PixelTilesetRequest</a>, <a class="xref" href="Glitch9.AIDevKit.Prompt.html">Prompt</a>, <a class="xref" href="Glitch9.AIDevKit.PixelArt.IPixelArtTilesetOptions.html">IPixelArtTilesetOptions</a>&gt;</div>
+    <div class="level4"><span class="xref">PixelTilesetRequest</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Glitch9.AIDevKit.IGenerativeRequest.html">IGenerativeRequest</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.PixelArt.PixelArtRequest-3.html#Glitch9_AIDevKit_PixelArt_PixelArtRequest_3_ModelType">PixelArtRequest&lt;PixelTilesetRequest, Prompt, IPixelArtTilesetOptions&gt;.ModelType</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.PixelArt.PixelArtRequest-3.html#Glitch9_AIDevKit_PixelArt_PixelArtRequest_3_Size">PixelArtRequest&lt;PixelTilesetRequest, Prompt, IPixelArtTilesetOptions&gt;.Size</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.PixelArt.PixelArtRequest-3.html#Glitch9_AIDevKit_PixelArt_PixelArtRequest_3_NegativePrompt">PixelArtRequest&lt;PixelTilesetRequest, Prompt, IPixelArtTilesetOptions&gt;.NegativePrompt</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.PixelArt.PixelArtRequest-3.html#Glitch9_AIDevKit_PixelArt_PixelArtRequest_3_NoBackground">PixelArtRequest&lt;PixelTilesetRequest, Prompt, IPixelArtTilesetOptions&gt;.NoBackground</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.PixelArt.PixelArtRequest-3.html#Glitch9_AIDevKit_PixelArt_PixelArtRequest_3_PaletteImage">PixelArtRequest&lt;PixelTilesetRequest, Prompt, IPixelArtTilesetOptions&gt;.PaletteImage</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.PixelArt.PixelArtRequest-3.html#Glitch9_AIDevKit_PixelArt_PixelArtRequest_3_SetSize_Glitch9_AIDevKit_MediaSize_">PixelArtRequest&lt;PixelTilesetRequest, Prompt, IPixelArtTilesetOptions&gt;.SetSize(MediaSize)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.PixelArt.PixelArtRequest-3.html#Glitch9_AIDevKit_PixelArt_PixelArtRequest_3_SetSize_Glitch9_AIDevKit_PixelArt_SpriteSize_">PixelArtRequest&lt;PixelTilesetRequest, Prompt, IPixelArtTilesetOptions&gt;.SetSize(SpriteSize)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.PixelArt.PixelArtRequest-3.html#Glitch9_AIDevKit_PixelArt_PixelArtRequest_3_SetNegativePrompt_System_String_">PixelArtRequest&lt;PixelTilesetRequest, Prompt, IPixelArtTilesetOptions&gt;.SetNegativePrompt(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.PixelArt.PixelArtRequest-3.html#Glitch9_AIDevKit_PixelArt_PixelArtRequest_3_SetNoBackground_System_Boolean_">PixelArtRequest&lt;PixelTilesetRequest, Prompt, IPixelArtTilesetOptions&gt;.SetNoBackground(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.PixelArt.PixelArtRequest-3.html#Glitch9_AIDevKit_PixelArt_PixelArtRequest_3_SetPaletteImage_UnityEngine_Texture2D_">PixelArtRequest&lt;PixelTilesetRequest, Prompt, IPixelArtTilesetOptions&gt;.SetPaletteImage(Texture2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_ModelType">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.ModelType</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_Api">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.Api</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_Prompt">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.Prompt</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_Model">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.Model</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_N">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.N</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_Seed">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.Seed</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_MeasureLatency">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.MeasureLatency</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_OnLatencyMeasured">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.OnLatencyMeasured</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_RequestedAt">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.RequestedAt</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_RecordOptions">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.RecordOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_RecordedContext">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.RecordedContext</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetModel_Glitch9_AIDevKit_Api_System_String_">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.SetModel(Api, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetModel_Glitch9_AIDevKit_ModelBase_">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.SetModel(ModelBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetCount_System_Int32_">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.SetCount(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetN_System_Int32_">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.SetN(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetSeed_System_Int64_">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.SetSeed(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetRecordOptions_System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_String_System_String_Glitch9_AIDevKit_History_GenerationRecord_Glitch9_AIDevKit_RecordMerger_System_Action_Glitch9_AIDevKit_History_GenerationRecord__">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.SetRecordOptions(bool?, bool?, string, string, GenerationRecord, RecordMerger, Action&lt;GenerationRecord&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetRecordOptions_Glitch9_AIDevKit_GenerationRecordOptions_">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.SetRecordOptions(GenerationRecordOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetMeasureLatency_System_Action_System_Double__">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.SetMeasureLatency(Action&lt;double&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetMeasureLatency_System_Boolean_System_Action_System_Double__">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.SetMeasureLatency(bool, Action&lt;double&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetPlaygroundSettings_System_String_System_String_System_String_System_Boolean_System_Action_System_Double__System_Action_Glitch9_AIDevKit_History_GenerationRecord__">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.SetPlaygroundSettings(string, string, string, bool, Action&lt;double&gt;, Action&lt;GenerationRecord&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_ExecuteAsync_System_Threading_CancellationToken_">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.ExecuteAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_ExecuteAsyncT__1_System_Threading_CancellationToken_">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.ExecuteAsyncT&lt;T&gt;(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_ProcessPostRequestTasks__1_Glitch9_AIDevKit_Generated___0__">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.ProcessPostRequestTasks&lt;T&gt;(Generated&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_ProcessPostRequestTasks_Glitch9_IResult_">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.ProcessPostRequestTasks(IResult)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_GetPrompt">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.GetPrompt()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_GetPromptStringToRecord">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.GetPromptStringToRecord()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_Api">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.Api</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_RequestType">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.RequestType</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_HttpOptions">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.HttpOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_DownloadOptions">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.DownloadOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_Sender">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.Sender</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_LogOptions">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.LogOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_ContentType">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.ContentType</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_ResponseType">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.ResponseType</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_IsCanceled">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.IsCanceled</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_Stream">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.Stream</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SafetyIdentifier">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.SafetyIdentifier</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_ServiceTier">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.ServiceTier</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_Metadata">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.Metadata</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_ProviderOptions">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.ProviderOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_Options">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.Options</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetSender_System_String_">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.SetSender(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetLogOptions_Glitch9_IO_Networking_CurlLogOptions_">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.SetLogOptions(CurlLogOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetOutputPath_System_String_">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.SetOutputPath(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetOutputPath_System_String_System_String_">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.SetOutputPath(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetOutputDirectory_System_String_">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.SetOutputDirectory(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetDownloadOptions_Glitch9_IO_Networking_RESTApi_DownloadOptions_">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.SetDownloadOptions(DownloadOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetRequestMimeType_Glitch9_MimeType_">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.SetRequestMimeType(MimeType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetResponseMimeType_Glitch9_MimeType_">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.SetResponseMimeType(MimeType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetStream_System_Boolean_">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.SetStream(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetMetadata_Glitch9_AIDevKit_ServerDictionary_">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.SetMetadata(ServerDictionary)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetSafetyIdentifier_System_String_">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.SetSafetyIdentifier(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetProviderOptions__2_">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.SetProviderOptions(IPixelArtTilesetOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetSpecificOptions__2_">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.SetSpecificOptions(IPixelArtTilesetOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_GetConfig__1">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.GetConfig&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_ExecuteAsync_System_Threading_CancellationToken_">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.ExecuteAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_Cancel">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.Cancel()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.PixelArt.html">PixelArt</a></h6>
+  <h6><strong>Assembly</strong>: Glitch9.AIDevKit.PixelArt.dll</h6>
+  <h5 id="Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class PixelTilesetRequest : PixelArtRequest&lt;PixelTilesetRequest, Prompt, IPixelArtTilesetOptions&gt;, IGenerativeRequest</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit.PixelArts/new/main/apiSpec/new?filename=Glitch9_AIDevKit_PixelArt_PixelTilesetRequest__ctor_Glitch9_AIDevKit_Prompt_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.%23ctor(Glitch9.AIDevKit.Prompt)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit.PixelArts/blob/main/Runtime/Foundation/Models/Requests/Generation/PixelTilesetRequest.cs/#L61">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_PixelArt_PixelTilesetRequest__ctor_" data-uid="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.#ctor*"></a>
+  <h4 id="Glitch9_AIDevKit_PixelArt_PixelTilesetRequest__ctor_Glitch9_AIDevKit_Prompt_" data-uid="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.#ctor(Glitch9.AIDevKit.Prompt)">PixelTilesetRequest(Prompt)</h4>
+  <div class="markdown level1 summary"><p>Creates a pixel-art tileset request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PixelTilesetRequest(Prompt prompt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Prompt.html">Prompt</a></td>
+        <td><span class="parametername">prompt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit.PixelArts/new/main/apiSpec/new?filename=Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_FallbackModel.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.FallbackModel%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit.PixelArts/blob/main/Runtime/Foundation/Models/Requests/Generation/PixelTilesetRequest.cs/#L38">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_FallbackModel_" data-uid="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.FallbackModel*"></a>
+  <h4 id="Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_FallbackModel" data-uid="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.FallbackModel">FallbackModel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override string FallbackModel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_FallbackModel">GenerativeRequest&lt;PixelTilesetRequest, Prompt, IImageAsset, IPixelArtTilesetOptions&gt;.FallbackModel</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit.PixelArts/new/main/apiSpec/new?filename=Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_InnerDescription.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.InnerDescription%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit.PixelArts/blob/main/Runtime/Foundation/Models/Requests/Generation/PixelTilesetRequest.cs/#L46">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_InnerDescription_" data-uid="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.InnerDescription*"></a>
+  <h4 id="Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_InnerDescription" data-uid="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.InnerDescription">InnerDescription</h4>
+  <div class="markdown level1 summary"><p>Required. Description of the inner/center area (e.g., 'ocean', 'grass')</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string InnerDescription { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit.PixelArts/new/main/apiSpec/new?filename=Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_ModelType.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.ModelType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit.PixelArts/blob/main/Runtime/Foundation/Models/Requests/Generation/PixelTilesetRequest.cs/#L37">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_ModelType_" data-uid="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.ModelType*"></a>
+  <h4 id="Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_ModelType" data-uid="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.ModelType">ModelType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ModelType ModelType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ModelType.html">ModelType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.AIDevKit.PixelArt.PixelArtRequest-3.html#Glitch9_AIDevKit_PixelArt_PixelArtRequest_3_ModelType">PixelArtRequest&lt;PixelTilesetRequest, Prompt, IPixelArtTilesetOptions&gt;.ModelType</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit.PixelArts/new/main/apiSpec/new?filename=Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_OuterDescription.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.OuterDescription%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit.PixelArts/blob/main/Runtime/Foundation/Models/Requests/Generation/PixelTilesetRequest.cs/#L51">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_OuterDescription_" data-uid="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.OuterDescription*"></a>
+  <h4 id="Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_OuterDescription" data-uid="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.OuterDescription">OuterDescription</h4>
+  <div class="markdown level1 summary"><p>Required. Description of the outer/border area (e.g., 'sand', 'stone')</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string OuterDescription { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit.PixelArts/new/main/apiSpec/new?filename=Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_RequestType.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.RequestType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit.PixelArts/blob/main/Runtime/Foundation/Models/Requests/Generation/PixelTilesetRequest.cs/#L41">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_RequestType_" data-uid="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.RequestType*"></a>
+  <h4 id="Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_RequestType" data-uid="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.RequestType">RequestType</h4>
+  <div class="markdown level1 summary"><p>The endpoint type for this</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override RequestType RequestType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.RequestType.html">RequestType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_RequestType">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.RequestType</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit.PixelArts/new/main/apiSpec/new?filename=Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_TransitionDescription.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.TransitionDescription%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit.PixelArts/blob/main/Runtime/Foundation/Models/Requests/Generation/PixelTilesetRequest.cs/#L56">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_TransitionDescription_" data-uid="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.TransitionDescription*"></a>
+  <h4 id="Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_TransitionDescription" data-uid="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.TransitionDescription">TransitionDescription</h4>
+  <div class="markdown level1 summary"><p>Optional description of transition area between inner and outer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TransitionDescription { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit.PixelArts/new/main/apiSpec/new?filename=Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_ExecuteAsyncInternal.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.ExecuteAsyncInternal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit.PixelArts/blob/main/Runtime/Foundation/Models/Requests/Generation/PixelTilesetRequest.cs/#L90">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_ExecuteAsyncInternal_" data-uid="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.ExecuteAsyncInternal*"></a>
+  <h4 id="Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_ExecuteAsyncInternal" data-uid="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.ExecuteAsyncInternal">ExecuteAsyncInternal()</h4>
+  <div class="markdown level1 summary"><p>Executes the actual task logic. Must be implemented in derived classes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override UniTask&lt;Generated&lt;IImageAsset&gt;&gt; ExecuteAsyncInternal()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.Generated-1.html">Generated</a>&lt;<a class="xref" href="Glitch9.IO.IImageAsset.html">IImageAsset</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_ExecuteAsyncInternal">UnifiedApiRequestBase&lt;PixelTilesetRequest, Generated&lt;IImageAsset&gt;, IPixelArtTilesetOptions&gt;.ExecuteAsyncInternal()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit.PixelArts/new/main/apiSpec/new?filename=Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_SetInnerDescription_System_String_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.SetInnerDescription(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit.PixelArts/blob/main/Runtime/Foundation/Models/Requests/Generation/PixelTilesetRequest.cs/#L66">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_SetInnerDescription_" data-uid="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.SetInnerDescription*"></a>
+  <h4 id="Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_SetInnerDescription_System_String_" data-uid="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.SetInnerDescription(System.String)">SetInnerDescription(string)</h4>
+  <div class="markdown level1 summary"><p>Sets inner area description.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PixelTilesetRequest SetInnerDescription(string innerDescription)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">innerDescription</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.html">PixelTilesetRequest</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit.PixelArts/new/main/apiSpec/new?filename=Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_SetOuterDescription_System_String_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.SetOuterDescription(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit.PixelArts/blob/main/Runtime/Foundation/Models/Requests/Generation/PixelTilesetRequest.cs/#L75">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_SetOuterDescription_" data-uid="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.SetOuterDescription*"></a>
+  <h4 id="Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_SetOuterDescription_System_String_" data-uid="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.SetOuterDescription(System.String)">SetOuterDescription(string)</h4>
+  <div class="markdown level1 summary"><p>Sets outer area description.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PixelTilesetRequest SetOuterDescription(string outerDescription)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outerDescription</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.html">PixelTilesetRequest</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit.PixelArts/new/main/apiSpec/new?filename=Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_SetTransitionDescription_System_String_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.SetTransitionDescription(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit.PixelArts/blob/main/Runtime/Foundation/Models/Requests/Generation/PixelTilesetRequest.cs/#L84">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_SetTransitionDescription_" data-uid="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.SetTransitionDescription*"></a>
+  <h4 id="Glitch9_AIDevKit_PixelArt_PixelTilesetRequest_SetTransitionDescription_System_String_" data-uid="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.SetTransitionDescription(System.String)">SetTransitionDescription(string)</h4>
+  <div class="markdown level1 summary"><p>Sets optional transition area description.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PixelTilesetRequest SetTransitionDescription(string transitionDescription)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">transitionDescription</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.PixelArt.PixelTilesetRequest.html">PixelTilesetRequest</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.IGenerativeRequest.html">IGenerativeRequest</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrEmpty__1___0_">ArrayExtensions.ToArrayOrEmpty&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrNull__1___0_">ArrayExtensions.ToArrayOrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDelta__1___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.ToDelta&lt;T&gt;(T, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDone__1___0_System_String_System_Int32_System_String_">EventExtensions.ToDone&lt;T&gt;(T, string, int, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToEvent__1___0_">EventExtensions.ToEvent&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_UpcastDelta__2___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.UpcastDelta&lt;T1, T2&gt;(T1, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.FallbackExtensions.html#Glitch9_FallbackExtensions_IsOr__2___0___1_">FallbackExtensions.IsOr&lt;TParent, TChild&gt;(TParent, TChild)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ResponseCastingExtensions.html#Glitch9_IO_Networking_RESTApi_ResponseCastingExtensions_GetResult__1___0_">ResponseCastingExtensions.GetResult&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_GetName_System_Object_">SystemExtensions.GetName(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit.PixelArts/new/main/apiSpec/new?filename=Glitch9_AIDevKit_PixelArt_PixelTilesetRequest.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.PixelArt.PixelTilesetRequest%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit.PixelArts/blob/main/Runtime/Foundation/Models/Requests/Generation/PixelTilesetRequest.cs/#L33" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AI DevKit Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
