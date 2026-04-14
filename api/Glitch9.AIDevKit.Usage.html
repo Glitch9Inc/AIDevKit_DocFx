@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Usage | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Usage | AI DevKit ">
+    
+    <meta name="description" content="Usage metadata returned by AI service providers after a generation request. Contains token usage details for billing and monitoring.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.Usage">
+
+
+
+  <h1 id="Glitch9_AIDevKit_Usage" data-uid="Glitch9.AIDevKit.Usage" class="text-break">Class Usage</h1>
+  <div class="markdown level0 summary"><p>Usage metadata returned by AI service providers after a generation request.
+Contains token usage details for billing and monitoring.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">Usage</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a></h6>
+  <h6><strong>Assembly</strong>: Glitch9.AIDevKit.dll</h6>
+  <h5 id="Glitch9_AIDevKit_Usage_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+[JsonConverter(typeof(UsageJsonConverter))]
+public class Usage</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Usage__ctor.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Usage.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/Usage/Usage.cs/#L180">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Usage__ctor_" data-uid="Glitch9.AIDevKit.Usage.#ctor*"></a>
+  <h4 id="Glitch9_AIDevKit_Usage__ctor" data-uid="Glitch9.AIDevKit.Usage.#ctor">Usage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Usage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Usage__ctor_Glitch9_AIDevKit_UsageInfo___.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Usage.%23ctor(Glitch9.AIDevKit.UsageInfo%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/Usage/Usage.cs/#L181">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Usage__ctor_" data-uid="Glitch9.AIDevKit.Usage.#ctor*"></a>
+  <h4 id="Glitch9_AIDevKit_Usage__ctor_Glitch9_AIDevKit_UsageInfo___" data-uid="Glitch9.AIDevKit.Usage.#ctor(Glitch9.AIDevKit.UsageInfo[])">Usage(params UsageInfo[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Usage(params UsageInfo[] usages)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.UsageInfo.html">UsageInfo</a>[]</td>
+        <td><span class="parametername">usages</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Usage_AcceptedPredictionTokens.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Usage.AcceptedPredictionTokens%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/Usage/Usage.cs/#L124">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Usage_AcceptedPredictionTokens_" data-uid="Glitch9.AIDevKit.Usage.AcceptedPredictionTokens*"></a>
+  <h4 id="Glitch9_AIDevKit_Usage_AcceptedPredictionTokens" data-uid="Glitch9.AIDevKit.Usage.AcceptedPredictionTokens">AcceptedPredictionTokens</h4>
+  <div class="markdown level1 summary"><p>Number of tokens that matched model predictions and were accepted (prediction mode).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? AcceptedPredictionTokens { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Usage_AudioInputTokens.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Usage.AudioInputTokens%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/Usage/Usage.cs/#L97">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Usage_AudioInputTokens_" data-uid="Glitch9.AIDevKit.Usage.AudioInputTokens*"></a>
+  <h4 id="Glitch9_AIDevKit_Usage_AudioInputTokens" data-uid="Glitch9.AIDevKit.Usage.AudioInputTokens">AudioInputTokens</h4>
+  <div class="markdown level1 summary"><p>Number of tokens derived from audio input (e.g., in transcriptions).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? AudioInputTokens { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Usage_AudioOutputTokens.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Usage.AudioOutputTokens%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/Usage/Usage.cs/#L106">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Usage_AudioOutputTokens_" data-uid="Glitch9.AIDevKit.Usage.AudioOutputTokens*"></a>
+  <h4 id="Glitch9_AIDevKit_Usage_AudioOutputTokens" data-uid="Glitch9.AIDevKit.Usage.AudioOutputTokens">AudioOutputTokens</h4>
+  <div class="markdown level1 summary"><p>Number of tokens used for audio output (e.g., in TTS responses).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? AudioOutputTokens { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Usage_CachedInputReadTokens.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Usage.CachedInputReadTokens%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/Usage/Usage.cs/#L61">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Usage_CachedInputReadTokens_" data-uid="Glitch9.AIDevKit.Usage.CachedInputReadTokens*"></a>
+  <h4 id="Glitch9_AIDevKit_Usage_CachedInputReadTokens" data-uid="Glitch9.AIDevKit.Usage.CachedInputReadTokens">CachedInputReadTokens</h4>
+  <div class="markdown level1 summary"><p>Number of tokens read from cached input.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? CachedInputReadTokens { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Usage_CachedInputWriteTokens.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Usage.CachedInputWriteTokens%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/Usage/Usage.cs/#L70">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Usage_CachedInputWriteTokens_" data-uid="Glitch9.AIDevKit.Usage.CachedInputWriteTokens*"></a>
+  <h4 id="Glitch9_AIDevKit_Usage_CachedInputWriteTokens" data-uid="Glitch9.AIDevKit.Usage.CachedInputWriteTokens">CachedInputWriteTokens</h4>
+  <div class="markdown level1 summary"><p>Number of tokens written to cached input.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? CachedInputWriteTokens { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Usage_CitationTokens.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Usage.CitationTokens%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/Usage/Usage.cs/#L115">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Usage_CitationTokens_" data-uid="Glitch9.AIDevKit.Usage.CitationTokens*"></a>
+  <h4 id="Glitch9_AIDevKit_Usage_CitationTokens" data-uid="Glitch9.AIDevKit.Usage.CitationTokens">CitationTokens</h4>
+  <div class="markdown level1 summary"><p>Number of tokens used for citations or references in the output.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? CitationTokens { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Usage_ImageInputTokens.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Usage.ImageInputTokens%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/Usage/Usage.cs/#L79">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Usage_ImageInputTokens_" data-uid="Glitch9.AIDevKit.Usage.ImageInputTokens*"></a>
+  <h4 id="Glitch9_AIDevKit_Usage_ImageInputTokens" data-uid="Glitch9.AIDevKit.Usage.ImageInputTokens">ImageInputTokens</h4>
+  <div class="markdown level1 summary"><p>Number of tokens derived from image input (vision)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? ImageInputTokens { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Usage_ImageOutputTokens.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Usage.ImageOutputTokens%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/Usage/Usage.cs/#L88">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Usage_ImageOutputTokens_" data-uid="Glitch9.AIDevKit.Usage.ImageOutputTokens*"></a>
+  <h4 id="Glitch9_AIDevKit_Usage_ImageOutputTokens" data-uid="Glitch9.AIDevKit.Usage.ImageOutputTokens">ImageOutputTokens</h4>
+  <div class="markdown level1 summary"><p>Number of tokens used for Image Generation tool output.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? ImageOutputTokens { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Usage_Images.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Usage.Images%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/Usage/Usage.cs/#L157">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Usage_Images_" data-uid="Glitch9.AIDevKit.Usage.Images*"></a>
+  <h4 id="Glitch9_AIDevKit_Usage_Images" data-uid="Glitch9.AIDevKit.Usage.Images">Images</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? Images { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Usage_InputTokens.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Usage.InputTokens%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/Usage/Usage.cs/#L34">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Usage_InputTokens_" data-uid="Glitch9.AIDevKit.Usage.InputTokens*"></a>
+  <h4 id="Glitch9_AIDevKit_Usage_InputTokens" data-uid="Glitch9.AIDevKit.Usage.InputTokens">InputTokens</h4>
+  <div class="markdown level1 summary"><p>Number of tokens used in the prompt (input sent by the user).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? InputTokens { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Usage_IsEmpty.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Usage.IsEmpty%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/Usage/Usage.cs/#L174">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Usage_IsEmpty_" data-uid="Glitch9.AIDevKit.Usage.IsEmpty*"></a>
+  <h4 id="Glitch9_AIDevKit_Usage_IsEmpty" data-uid="Glitch9.AIDevKit.Usage.IsEmpty">IsEmpty</h4>
+  <div class="markdown level1 summary"><p>Returns true if no usage data is present.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Usage_IsFree.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Usage.IsFree%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/Usage/Usage.cs/#L175">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Usage_IsFree_" data-uid="Glitch9.AIDevKit.Usage.IsFree*"></a>
+  <h4 id="Glitch9_AIDevKit_Usage_IsFree" data-uid="Glitch9.AIDevKit.Usage.IsFree">IsFree</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFree { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Usage_OutputTokens.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Usage.OutputTokens%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/Usage/Usage.cs/#L43">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Usage_OutputTokens_" data-uid="Glitch9.AIDevKit.Usage.OutputTokens*"></a>
+  <h4 id="Glitch9_AIDevKit_Usage_OutputTokens" data-uid="Glitch9.AIDevKit.Usage.OutputTokens">OutputTokens</h4>
+  <div class="markdown level1 summary"><p>Number of tokens generated in the response (output by the model).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? OutputTokens { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Usage_ReasoningTokens.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Usage.ReasoningTokens%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/Usage/Usage.cs/#L142">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Usage_ReasoningTokens_" data-uid="Glitch9.AIDevKit.Usage.ReasoningTokens*"></a>
+  <h4 id="Glitch9_AIDevKit_Usage_ReasoningTokens" data-uid="Glitch9.AIDevKit.Usage.ReasoningTokens">ReasoningTokens</h4>
+  <div class="markdown level1 summary"><p>Number of tokens spent on internal reasoning (e.g., CoT steps).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? ReasoningTokens { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Usage_RejectedPredictionTokens.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Usage.RejectedPredictionTokens%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/Usage/Usage.cs/#L133">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Usage_RejectedPredictionTokens_" data-uid="Glitch9.AIDevKit.Usage.RejectedPredictionTokens*"></a>
+  <h4 id="Glitch9_AIDevKit_Usage_RejectedPredictionTokens" data-uid="Glitch9.AIDevKit.Usage.RejectedPredictionTokens">RejectedPredictionTokens</h4>
+  <div class="markdown level1 summary"><p>Number of tokens that were predicted but rejected or unused.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? RejectedPredictionTokens { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Usage_ToolUseTokens.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Usage.ToolUseTokens%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/Usage/Usage.cs/#L151">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Usage_ToolUseTokens_" data-uid="Glitch9.AIDevKit.Usage.ToolUseTokens*"></a>
+  <h4 id="Glitch9_AIDevKit_Usage_ToolUseTokens" data-uid="Glitch9.AIDevKit.Usage.ToolUseTokens">ToolUseTokens</h4>
+  <div class="markdown level1 summary"><p>Number of tokens used for tool call prompts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? ToolUseTokens { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Usage_TotalTokens.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Usage.TotalTokens%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/Usage/Usage.cs/#L25">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Usage_TotalTokens_" data-uid="Glitch9.AIDevKit.Usage.TotalTokens*"></a>
+  <h4 id="Glitch9_AIDevKit_Usage_TotalTokens" data-uid="Glitch9.AIDevKit.Usage.TotalTokens">TotalTokens</h4>
+  <div class="markdown level1 summary"><p>Total number of tokens used in the request.
+This is not calculated internally. It's sent by the API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? TotalTokens { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Usage_TrainingTokens.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Usage.TrainingTokens%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/Usage/Usage.cs/#L52">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Usage_TrainingTokens_" data-uid="Glitch9.AIDevKit.Usage.TrainingTokens*"></a>
+  <h4 id="Glitch9_AIDevKit_Usage_TrainingTokens" data-uid="Glitch9.AIDevKit.Usage.TrainingTokens">TrainingTokens</h4>
+  <div class="markdown level1 summary"><p>Number of tokens used for fine-tuning or training the model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? TrainingTokens { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Usage_WebSearches.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Usage.WebSearches%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/Usage/Usage.cs/#L163">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Usage_WebSearches_" data-uid="Glitch9.AIDevKit.Usage.WebSearches*"></a>
+  <h4 id="Glitch9_AIDevKit_Usage_WebSearches" data-uid="Glitch9.AIDevKit.Usage.WebSearches">WebSearches</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? WebSearches { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Usage_ToString.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Usage.ToString%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/Usage/Usage.cs/#L183">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Usage_ToString_" data-uid="Glitch9.AIDevKit.Usage.ToString*"></a>
+  <h4 id="Glitch9_AIDevKit_Usage_ToString" data-uid="Glitch9.AIDevKit.Usage.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.UsageCalculator.html#Glitch9_AIDevKit_UsageCalculator_CalcCostsOnRequestComplete_Glitch9_AIDevKit_Usage_System_String_">UsageCalculator.CalcCostsOnRequestComplete(Usage, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.UsageCalculator.html#Glitch9_AIDevKit_UsageCalculator_GetTotalCostInUsd_Glitch9_AIDevKit_Usage_">UsageCalculator.GetTotalCostInUsd(Usage)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrEmpty__1___0_">ArrayExtensions.ToArrayOrEmpty&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrNull__1___0_">ArrayExtensions.ToArrayOrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDelta__1___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.ToDelta&lt;T&gt;(T, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDone__1___0_System_String_System_Int32_System_String_">EventExtensions.ToDone&lt;T&gt;(T, string, int, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToEvent__1___0_">EventExtensions.ToEvent&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_UpcastDelta__2___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.UpcastDelta&lt;T1, T2&gt;(T1, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.FallbackExtensions.html#Glitch9_FallbackExtensions_IsOr__2___0___1_">FallbackExtensions.IsOr&lt;TParent, TChild&gt;(TParent, TChild)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ResponseCastingExtensions.html#Glitch9_IO_Networking_RESTApi_ResponseCastingExtensions_GetResult__1___0_">ResponseCastingExtensions.GetResult&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_GetName_System_Object_">SystemExtensions.GetName(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Usage.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Usage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/Usage/Usage.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AI DevKit Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

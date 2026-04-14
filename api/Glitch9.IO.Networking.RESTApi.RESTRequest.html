@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class RESTRequest | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class RESTRequest | AI DevKit ">
+    
+    <meta name="description" content="Represents an HTTP REST request, including endpoint, headers, body, and options. Supports sending requests with various content types and handling responses.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest">
+
+
+
+  <h1 id="Glitch9_IO_Networking_RESTApi_RESTRequest" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest" class="text-break">Class RESTRequest</h1>
+  <div class="markdown level0 summary"><p>Represents an HTTP REST request, including endpoint, headers, body, and options.
+Supports sending requests with various content types and handling responses.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">RESTRequest</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.IO.html">IO</a>.<a class="xref" href="Glitch9.IO.Networking.html">Networking</a>.<a class="xref" href="Glitch9.IO.Networking.RESTApi.html">RESTApi</a></h6>
+  <h6><strong>Assembly</strong>: Glitch9.IO.dll</h6>
+  <h5 id="Glitch9_IO_Networking_RESTApi_RESTRequest_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class RESTRequest</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Networking_RESTApi_RESTRequest__ctor.md&amp;value=---%0Auid%3A%20Glitch9.IO.Networking.RESTApi.RESTRequest.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Networking/RESTApi/Models/RESTRequest.cs/#L77">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Networking_RESTApi_RESTRequest__ctor_" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.#ctor*"></a>
+  <h4 id="Glitch9_IO_Networking_RESTApi_RESTRequest__ctor" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.#ctor">RESTRequest()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RESTRequest()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Networking_RESTApi_RESTRequest__ctor_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_.md&amp;value=---%0Auid%3A%20Glitch9.IO.Networking.RESTApi.RESTRequest.%23ctor(System.String%2CGlitch9.IO.Networking.RESTApi.RequestOptions)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Networking/RESTApi/Models/RESTRequest.cs/#L78">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Networking_RESTApi_RESTRequest__ctor_" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.#ctor*"></a>
+  <h4 id="Glitch9_IO_Networking_RESTApi_RESTRequest__ctor_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.#ctor(System.String,Glitch9.IO.Networking.RESTApi.RequestOptions)">RESTRequest(string, RequestOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RESTRequest(string url, RequestOptions options = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Networking_RESTApi_RESTRequest_Options.md&amp;value=---%0Auid%3A%20Glitch9.IO.Networking.RESTApi.RESTRequest.Options%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Networking/RESTApi/Models/RESTRequest.cs/#L54">View Source</a>
+  </span>
+  <h4 id="Glitch9_IO_Networking_RESTApi_RESTRequest_Options" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.Options">Options</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly RequestOptions Options</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestOptions.html">RequestOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Networking_RESTApi_RESTRequest_Body.md&amp;value=---%0Auid%3A%20Glitch9.IO.Networking.RESTApi.RESTRequest.Body%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Networking/RESTApi/Models/RESTRequest.cs/#L28">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Networking_RESTApi_RESTRequest_Body_" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.Body*"></a>
+  <h4 id="Glitch9_IO_Networking_RESTApi_RESTRequest_Body" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.Body">Body</h4>
+  <div class="markdown level1 summary"><p>Raw binary body of the request (e.g., for file uploads or custom payloads).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] Body { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Networking_RESTApi_RESTRequest_CancellationToken.md&amp;value=---%0Auid%3A%20Glitch9.IO.Networking.RESTApi.RESTRequest.CancellationToken%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Networking/RESTApi/Models/RESTRequest.cs/#L59">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Networking_RESTApi_RESTRequest_CancellationToken_" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.CancellationToken*"></a>
+  <h4 id="Glitch9_IO_Networking_RESTApi_RESTRequest_CancellationToken" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.CancellationToken">CancellationToken</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CancellationToken CancellationToken { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Networking_RESTApi_RESTRequest_ContentType.md&amp;value=---%0Auid%3A%20Glitch9.IO.Networking.RESTApi.RESTRequest.ContentType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Networking/RESTApi/Models/RESTRequest.cs/#L58">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Networking_RESTApi_RESTRequest_ContentType_" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.ContentType*"></a>
+  <h4 id="Glitch9_IO_Networking_RESTApi_RESTRequest_ContentType" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.ContentType">ContentType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MimeType ContentType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.MimeType.html">MimeType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Networking_RESTApi_RESTRequest_Context.md&amp;value=---%0Auid%3A%20Glitch9.IO.Networking.RESTApi.RESTRequest.Context%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Networking/RESTApi/Models/RESTRequest.cs/#L20">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Networking_RESTApi_RESTRequest_Context_" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.Context*"></a>
+  <h4 id="Glitch9_IO_Networking_RESTApi_RESTRequest_Context" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.Context">Context</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CurlContext Context { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.CurlContext.html">CurlContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Networking_RESTApi_RESTRequest_DownloadOptions.md&amp;value=---%0Auid%3A%20Glitch9.IO.Networking.RESTApi.RESTRequest.DownloadOptions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Networking/RESTApi/Models/RESTRequest.cs/#L63">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Networking_RESTApi_RESTRequest_DownloadOptions_" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.DownloadOptions*"></a>
+  <h4 id="Glitch9_IO_Networking_RESTApi_RESTRequest_DownloadOptions" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.DownloadOptions">DownloadOptions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DownloadOptions DownloadOptions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.DownloadOptions.html">DownloadOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Networking_RESTApi_RESTRequest_Endpoint.md&amp;value=---%0Auid%3A%20Glitch9.IO.Networking.RESTApi.RESTRequest.Endpoint%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Networking/RESTApi/Models/RESTRequest.cs/#L48">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Networking_RESTApi_RESTRequest_Endpoint_" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.Endpoint*"></a>
+  <h4 id="Glitch9_IO_Networking_RESTApi_RESTRequest_Endpoint" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.Endpoint">Endpoint</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Endpoint { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Networking_RESTApi_RESTRequest_Form.md&amp;value=---%0Auid%3A%20Glitch9.IO.Networking.RESTApi.RESTRequest.Form%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Networking/RESTApi/Models/RESTRequest.cs/#L33">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Networking_RESTApi_RESTRequest_Form_" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.Form*"></a>
+  <h4 id="Glitch9_IO_Networking_RESTApi_RESTRequest_Form" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.Form">Form</h4>
+  <div class="markdown level1 summary"><p>Optional: Unity WWWForm for form data requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WWWForm Form { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">WWWForm</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Networking_RESTApi_RESTRequest_HasBody.md&amp;value=---%0Auid%3A%20Glitch9.IO.Networking.RESTApi.RESTRequest.HasBody%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Networking/RESTApi/Models/RESTRequest.cs/#L43">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Networking_RESTApi_RESTRequest_HasBody_" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.HasBody*"></a>
+  <h4 id="Glitch9_IO_Networking_RESTApi_RESTRequest_HasBody" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.HasBody">HasBody</h4>
+  <div class="markdown level1 summary"><p>Returns true if the request has a body (raw, form, or multipart).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasBody { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Networking_RESTApi_RESTRequest_Headers.md&amp;value=---%0Auid%3A%20Glitch9.IO.Networking.RESTApi.RESTRequest.Headers%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Networking/RESTApi/Models/RESTRequest.cs/#L49">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Networking_RESTApi_RESTRequest_Headers_" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.Headers*"></a>
+  <h4 id="Glitch9_IO_Networking_RESTApi_RESTRequest_Headers" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.Headers">Headers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;HttpHeader&gt; Headers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Glitch9.IO.Networking.RESTApi.HttpHeader.html">HttpHeader</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Networking_RESTApi_RESTRequest_JssOverride.md&amp;value=---%0Auid%3A%20Glitch9.IO.Networking.RESTApi.RESTRequest.JssOverride%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Networking/RESTApi/Models/RESTRequest.cs/#L65">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Networking_RESTApi_RESTRequest_JssOverride_" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.JssOverride*"></a>
+  <h4 id="Glitch9_IO_Networking_RESTApi_RESTRequest_JssOverride" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.JssOverride">JssOverride</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonSerializerSettings JssOverride { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JsonSerializerSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Networking_RESTApi_RESTRequest_LogOptions.md&amp;value=---%0Auid%3A%20Glitch9.IO.Networking.RESTApi.RESTRequest.LogOptions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Networking/RESTApi/Models/RESTRequest.cs/#L70">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Networking_RESTApi_RESTRequest_LogOptions_" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.LogOptions*"></a>
+  <h4 id="Glitch9_IO_Networking_RESTApi_RESTRequest_LogOptions" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.LogOptions">LogOptions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CurlLogOptions LogOptions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.CurlLogOptions.html">CurlLogOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Networking_RESTApi_RESTRequest_MultipartFormSections.md&amp;value=---%0Auid%3A%20Glitch9.IO.Networking.RESTApi.RESTRequest.MultipartFormSections%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Networking/RESTApi/Models/RESTRequest.cs/#L38">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Networking_RESTApi_RESTRequest_MultipartFormSections_" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.MultipartFormSections*"></a>
+  <h4 id="Glitch9_IO_Networking_RESTApi_RESTRequest_MultipartFormSections" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.MultipartFormSections">MultipartFormSections</h4>
+  <div class="markdown level1 summary"><p>Optional: multipart form sections for multipart/form-data requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;IMultipartFormSection&gt; MultipartFormSections { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">IMultipartFormSection</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Networking_RESTApi_RESTRequest_OutputAudioFormat.md&amp;value=---%0Auid%3A%20Glitch9.IO.Networking.RESTApi.RESTRequest.OutputAudioFormat%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Networking/RESTApi/Models/RESTRequest.cs/#L64">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Networking_RESTApi_RESTRequest_OutputAudioFormat_" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.OutputAudioFormat*"></a>
+  <h4 id="Glitch9_IO_Networking_RESTApi_RESTRequest_OutputAudioFormat" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.OutputAudioFormat">OutputAudioFormat</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioFormat OutputAudioFormat { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Audio.AudioFormat.html">AudioFormat</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Networking_RESTApi_RESTRequest_StreamOptions.md&amp;value=---%0Auid%3A%20Glitch9.IO.Networking.RESTApi.RESTRequest.StreamOptions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Networking/RESTApi/Models/RESTRequest.cs/#L74">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Networking_RESTApi_RESTRequest_StreamOptions_" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.StreamOptions*"></a>
+  <h4 id="Glitch9_IO_Networking_RESTApi_RESTRequest_StreamOptions" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.StreamOptions">StreamOptions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StreamOptions StreamOptions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.StreamOptions.html">StreamOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Networking_RESTApi_RESTRequest_Timeout.md&amp;value=---%0Auid%3A%20Glitch9.IO.Networking.RESTApi.RESTRequest.Timeout%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Networking/RESTApi/Models/RESTRequest.cs/#L69">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Networking_RESTApi_RESTRequest_Timeout_" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.Timeout*"></a>
+  <h4 id="Glitch9_IO_Networking_RESTApi_RESTRequest_Timeout" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.Timeout">Timeout</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan? Timeout { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Networking_RESTApi_RESTRequest_UnityWebRequest.md&amp;value=---%0Auid%3A%20Glitch9.IO.Networking.RESTApi.RESTRequest.UnityWebRequest%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Networking/RESTApi/Models/RESTRequest.cs/#L50">View Source</a>
+  </span>
+  <a id="Glitch9_IO_Networking_RESTApi_RESTRequest_UnityWebRequest_" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.UnityWebRequest*"></a>
+  <h4 id="Glitch9_IO_Networking_RESTApi_RESTRequest_UnityWebRequest" data-uid="Glitch9.IO.Networking.RESTApi.RESTRequest.UnityWebRequest">UnityWebRequest</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityWebRequest UnityWebRequest { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityWebRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrEmpty__1___0_">ArrayExtensions.ToArrayOrEmpty&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrNull__1___0_">ArrayExtensions.ToArrayOrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDelta__1___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.ToDelta&lt;T&gt;(T, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDone__1___0_System_String_System_Int32_System_String_">EventExtensions.ToDone&lt;T&gt;(T, string, int, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToEvent__1___0_">EventExtensions.ToEvent&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_UpcastDelta__2___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.UpcastDelta&lt;T1, T2&gt;(T1, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.FallbackExtensions.html#Glitch9_FallbackExtensions_IsOr__2___0___1_">FallbackExtensions.IsOr&lt;TParent, TChild&gt;(TParent, TChild)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.PipelineExtensions.html#Glitch9_IO_Networking_RESTApi_PipelineExtensions_AddHeader_Glitch9_IO_Networking_RESTApi_RESTRequest_Glitch9_IO_Networking_RESTApi_HttpHeader_">PipelineExtensions.AddHeader(RESTRequest, HttpHeader)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.PipelineExtensions.html#Glitch9_IO_Networking_RESTApi_PipelineExtensions_AddHeaderRange_Glitch9_IO_Networking_RESTApi_RESTRequest_System_Collections_Generic_IEnumerable_Glitch9_IO_Networking_RESTApi_HttpHeader__">PipelineExtensions.AddHeaderRange(RESTRequest, IEnumerable&lt;HttpHeader&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.PipelineExtensions.html#Glitch9_IO_Networking_RESTApi_PipelineExtensions_GetHeaders_Glitch9_IO_Networking_RESTApi_RESTRequest_System_Boolean_System_Boolean_">PipelineExtensions.GetHeaders(RESTRequest, bool, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ResponseCastingExtensions.html#Glitch9_IO_Networking_RESTApi_ResponseCastingExtensions_GetResult__1___0_">ResponseCastingExtensions.GetResult&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_GetName_System_Object_">SystemExtensions.GetName(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_IO_Networking_RESTApi_RESTRequest.md&amp;value=---%0Auid%3A%20Glitch9.IO.Networking.RESTApi.RESTRequest%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Libraries/CoreLib.IO/Runtime/Networking/RESTApi/Models/RESTRequest.cs/#L16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AI DevKit Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

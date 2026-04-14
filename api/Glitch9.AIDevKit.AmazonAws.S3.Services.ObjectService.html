@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ObjectService | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ObjectService | AI DevKit ">
+    
+    <meta name="description" content="Amazon S3 Object operations service.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.AmazonAws.S3.Services.ObjectService">
+
+
+
+  <h1 id="Glitch9_AIDevKit_AmazonAws_S3_Services_ObjectService" data-uid="Glitch9.AIDevKit.AmazonAws.S3.Services.ObjectService" class="text-break">Class ObjectService</h1>
+  <div class="markdown level0 summary"><p>Amazon S3 Object operations service.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Glitch9.IO.Networking.RESTApi.CrudServiceBase-1.html">CrudServiceBase</a>&lt;<a class="xref" href="Glitch9.AIDevKit.AmazonAws.AwsClient.html">AwsClient</a>&gt;</div>
+    <div class="level2"><span class="xref">ObjectService</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.CrudServiceBase-1.html#Glitch9_IO_Networking_RESTApi_CrudServiceBase_1_client">CrudServiceBase&lt;AwsClient&gt;.client</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.CrudServiceBase-1.html#Glitch9_IO_Networking_RESTApi_CrudServiceBase_1_ApiKey">CrudServiceBase&lt;AwsClient&gt;.ApiKey</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.AmazonAws.html">AmazonAws</a>.<a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.html">S3</a>.<a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.Services.html">Services</a></h6>
+  <h6><strong>Assembly</strong>: Glitch9.AIDevKit.Provider.AmazonAws.dll</h6>
+  <h5 id="Glitch9_AIDevKit_AmazonAws_S3_Services_ObjectService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ObjectService : CrudServiceBase&lt;AwsClient&gt;, ICrudService</code></pre>
+  </div>
+  <h5 id="Glitch9_AIDevKit_AmazonAws_S3_Services_ObjectService_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p><b>Required Permissions:</b></p>
+<ul><li>s3:PutObject - To upload objects</li><li>s3:GetObject - To retrieve objects</li><li>s3:DeleteObject - To delete objects</li></ul>
+</div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_Services_ObjectService__ctor_Glitch9_AIDevKit_AmazonAws_AwsClient_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.Services.ObjectService.%23ctor(Glitch9.AIDevKit.AmazonAws.AwsClient)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Services/S3/ObjectService.cs/#L21">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_Services_ObjectService__ctor_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.Services.ObjectService.#ctor*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_Services_ObjectService__ctor_Glitch9_AIDevKit_AmazonAws_AwsClient_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.Services.ObjectService.#ctor(Glitch9.AIDevKit.AmazonAws.AwsClient)">ObjectService(AwsClient)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectService(AwsClient client)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.AmazonAws.AwsClient.html">AwsClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_Services_ObjectService_DeleteAsync_Glitch9_AIDevKit_AmazonAws_S3_DeleteObjectRequest_Glitch9_IO_Networking_RESTApi_RequestOptions_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.Services.ObjectService.DeleteAsync(Glitch9.AIDevKit.AmazonAws.S3.DeleteObjectRequest%2CGlitch9.IO.Networking.RESTApi.RequestOptions)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Services/S3/ObjectService.cs/#L193">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_Services_ObjectService_DeleteAsync_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.Services.ObjectService.DeleteAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_Services_ObjectService_DeleteAsync_Glitch9_AIDevKit_AmazonAws_S3_DeleteObjectRequest_Glitch9_IO_Networking_RESTApi_RequestOptions_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.Services.ObjectService.DeleteAsync(Glitch9.AIDevKit.AmazonAws.S3.DeleteObjectRequest,Glitch9.IO.Networking.RESTApi.RequestOptions)">DeleteAsync(DeleteObjectRequest, RequestOptions)</h4>
+  <div class="markdown level1 summary"><p>Removes an object from a bucket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;DeleteObjectResponse&gt; DeleteAsync(DeleteObjectRequest request, RequestOptions options = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.DeleteObjectRequest.html">DeleteObjectRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The object deletion request parameters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Optional REST request options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.DeleteObjectResponse.html">DeleteObjectResponse</a>&gt;</td>
+        <td><p>The DeleteObject response with deletion metadata.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Glitch9_AIDevKit_AmazonAws_S3_Services_ObjectService_DeleteAsync_Glitch9_AIDevKit_AmazonAws_S3_DeleteObjectRequest_Glitch9_IO_Networking_RESTApi_RequestOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><b>Versioning Behavior:</b></p>
+<p>- <b>Versioning not enabled:</b> The operation permanently deletes the object.</p>
+<p>- <b>Versioning enabled:</b> The operation inserts a delete marker, which becomes the current version. To permanently delete, include the object's versionId in the request.</p>
+<p>- <b>Versioning suspended:</b> The operation removes the object with a null versionId (if exists) and inserts a delete marker. To permanently delete an object with a versionId, include it in the request.</p>
+<p><b>Directory Buckets:</b></p>
+<p>- S3 Versioning isn't enabled and supported for directory buckets. Only the null value of the version ID is supported.</p>
+<p>- You must make requests to the Zonal endpoint: https://bucket-name.s3express-zone-id.region-code.amazonaws.com/key-name</p>
+<p>- Path-style requests are not supported.</p>
+<p><b>Version Deletion:</b></p>
+<p>To remove a specific version, use the versionId query parameter. This permanently deletes the version. If the deleted object is a delete marker, Amazon S3 sets the x-amz-delete-marker response header to true.</p>
+<p><b>MFA Delete:</b></p>
+<p>If the bucket has MFA Delete enabled, you must include the x-amz-mfa request header in the DELETE versionId request. Requests with x-amz-mfa must use HTTPS.</p>
+<p>MFA delete is not supported by directory buckets.</p>
+<p><b>Deletion Methods:</b></p>
+<p>You can delete objects by explicitly calling DELETE Object or by configuring PutBucketLifecycle to enable Amazon S3 to remove them automatically.</p>
+<p>To block users from removing objects, deny them the s3:DeleteObject, s3:DeleteObjectVersion, and s3:PutLifeCycleConfiguration actions.</p>
+<p>S3 Lifecycle is not supported by directory buckets.</p>
+<p><b>Permissions:</b></p>
+<p>- <b>General purpose bucket:</b> s3:DeleteObject permission is required. For versioned objects, s3:DeleteObjectVersion is needed. If these permissions are explicitly denied, attempts result in 403 Access Denied.</p>
+<p>- <b>Directory bucket:</b> Use CreateSession API for session-based authorization with s3express:CreateSession permission.</p>
+<p><b>Conditional Deletion (Directory Buckets Only):</b></p>
+<p>- <b>If-Match:</b> Deletes the object only if ETag matches. Returns 412 Precondition Failed if not matched. Supports '*' to match any ETag.</p>
+<p>- <b>x-amz-if-match-last-modified-time:</b> Deletes only if modification time matches the provided timestamp.</p>
+<p>- <b>x-amz-if-match-size:</b> Deletes only if size matches the provided value in bytes.</p>
+<p>These conditional headers can be used individually or in conjunction with each other.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_Services_ObjectService_GetAsync_Glitch9_AIDevKit_AmazonAws_S3_GetObjectRequest_Glitch9_IO_Networking_RESTApi_RequestOptions_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.Services.ObjectService.GetAsync(Glitch9.AIDevKit.AmazonAws.S3.GetObjectRequest%2CGlitch9.IO.Networking.RESTApi.RequestOptions)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Services/S3/ObjectService.cs/#L113">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_Services_ObjectService_GetAsync_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.Services.ObjectService.GetAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_Services_ObjectService_GetAsync_Glitch9_AIDevKit_AmazonAws_S3_GetObjectRequest_Glitch9_IO_Networking_RESTApi_RequestOptions_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.Services.ObjectService.GetAsync(Glitch9.AIDevKit.AmazonAws.S3.GetObjectRequest,Glitch9.IO.Networking.RESTApi.RequestOptions)">GetAsync(GetObjectRequest, RequestOptions)</h4>
+  <div class="markdown level1 summary"><p>Retrieves an object from Amazon S3.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;S3Object&gt; GetAsync(GetObjectRequest request, RequestOptions options = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.GetObjectRequest.html">GetObjectRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The object retrieval request parameters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Optional REST request options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.S3Object.html">S3Object</a>&gt;</td>
+        <td><p>The GetObject response with object data and metadata.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Glitch9_AIDevKit_AmazonAws_S3_Services_ObjectService_GetAsync_Glitch9_AIDevKit_AmazonAws_S3_GetObjectRequest_Glitch9_IO_Networking_RESTApi_RequestOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><b>Request Styles:</b></p>
+<p>- <b>General purpose buckets:</b> Both virtual-hosted-style and path-style requests are supported.</p>
+<p>- <b>Directory buckets:</b> Only virtual-hosted-style requests are supported. Requests are sent to the Zonal endpoint: https://bucket-name.s3express-zone-id.region-code.amazonaws.com/key-name</p>
+<p><b>Permissions:</b></p>
+<p>- <b>General purpose bucket:</b> s3:GetObject permission is required for READ access. For versioned objects, s3:GetObjectVersion is needed. If the object doesn't exist and you have s3:ListBucket permission, returns 404 Not Found; without it, returns 403 Access Denied.</p>
+<p>- <b>Directory bucket:</b> Use CreateSession API for session-based authorization with s3express:CreateSession permission. For SSE-KMS encrypted objects, kms:GenerateDataKey and kms:Decrypt permissions are required.</p>
+<p><b>Storage Classes:</b></p>
+<p>Objects stored in S3 Glacier Flexible Retrieval, S3 Glacier Deep Archive, S3 Intelligent-Tiering Archive Access, or S3 Intelligent-Tiering Deep Archive Access tiers must be restored using RestoreObject before retrieval. Otherwise, returns InvalidObjectState error.</p>
+<p>Directory buckets only support EXPRESS_ONEZONE (S3 Express One Zone) in Availability Zones and ONEZONE_IA (S3 One Zone-Infrequent Access) in Dedicated Local Zones.</p>
+<p><b>Encryption:</b></p>
+<p>Encryption request headers (x-amz-server-side-encryption) should NOT be sent for GetObject requests if your object uses SSE-S3, SSE-KMS, or DSSE-KMS. Including them results in HTTP 400 Bad Request.</p>
+<p>Directory buckets only support SSE-S3 and SSE-KMS; SSE-C is not supported.</p>
+<p><b>Response Header Overrides:</b></p>
+<p>You can override response headers using query parameters: response-cache-control, response-content-disposition, response-content-encoding, response-content-language, response-content-type, response-expires.</p>
+<p>These parameters require signed requests (Authorization header or presigned URL); anonymous requests cannot use them.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_Services_ObjectService_ListAsync_Glitch9_AIDevKit_AmazonAws_S3_ListObjectsV2Request_Glitch9_IO_Networking_RESTApi_RequestOptions_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.Services.ObjectService.ListAsync(Glitch9.AIDevKit.AmazonAws.S3.ListObjectsV2Request%2CGlitch9.IO.Networking.RESTApi.RequestOptions)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Services/S3/ObjectService.cs/#L246">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_Services_ObjectService_ListAsync_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.Services.ObjectService.ListAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_Services_ObjectService_ListAsync_Glitch9_AIDevKit_AmazonAws_S3_ListObjectsV2Request_Glitch9_IO_Networking_RESTApi_RequestOptions_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.Services.ObjectService.ListAsync(Glitch9.AIDevKit.AmazonAws.S3.ListObjectsV2Request,Glitch9.IO.Networking.RESTApi.RequestOptions)">ListAsync(ListObjectsV2Request, RequestOptions)</h4>
+  <div class="markdown level1 summary"><p>Returns some or all (up to 1,000) of the objects in a bucket with each request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;ListObjectsV2Response&gt; ListAsync(ListObjectsV2Request request, RequestOptions options = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.ListObjectsV2Request.html">ListObjectsV2Request</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The list objects request parameters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Optional REST request options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.ListObjectsV2Response.html">ListObjectsV2Response</a>&gt;</td>
+        <td><p>The ListObjectsV2 response with object metadata.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Glitch9_AIDevKit_AmazonAws_S3_Services_ObjectService_ListAsync_Glitch9_AIDevKit_AmazonAws_S3_ListObjectsV2Request_Glitch9_IO_Networking_RESTApi_RequestOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><b>General Purpose Bucket vs Directory Buckets:</b></p>
+<p>- <b>General purpose bucket:</b> Doesn't return prefixes related only to in-progress multipart uploads.</p>
+<p>- <b>Directory bucket:</b> Response includes prefixes related to in-progress multipart uploads.</p>
+<p><b>Directory Buckets:</b></p>
+<p>- You must make requests to the Zonal endpoint: https://bucket-name.s3express-zone-id.region-code.amazonaws.com/key-name</p>
+<p>- Path-style requests are not supported.</p>
+<p><b>Sorting Order:</b></p>
+<p>- <b>General purpose bucket:</b> Returns objects in lexicographical order based on key names.</p>
+<p>- <b>Directory bucket:</b> Does not return objects in lexicographical order.</p>
+<p><b>Permissions:</b></p>
+<p>- <b>General purpose bucket:</b> s3:ListBucket permission is required. Bucket owner has this permission by default and can grant to others.</p>
+<p>- <b>Directory bucket:</b> Use CreateSession API for session-based authorization with s3express:CreateSession permission.</p>
+<p><b>Pagination:</b></p>
+<p>Use ContinuationToken from the previous response's NextContinuationToken to continue listing. Response sets IsTruncated to true if more keys are available.</p>
+<p><b>Note:</b> This is ListObjectsV2 (latest revision). For backward compatibility, Amazon S3 continues to support ListObjects (prior version).</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_Services_ObjectService_PutAsync_Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_Glitch9_IO_Networking_RESTApi_RequestOptions_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.Services.ObjectService.PutAsync(Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest%2CGlitch9.IO.Networking.RESTApi.RequestOptions)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Services/S3/ObjectService.cs/#L61">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_Services_ObjectService_PutAsync_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.Services.ObjectService.PutAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_Services_ObjectService_PutAsync_Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_Glitch9_IO_Networking_RESTApi_RequestOptions_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.Services.ObjectService.PutAsync(Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest,Glitch9.IO.Networking.RESTApi.RequestOptions)">PutAsync(PutObjectRequest, RequestOptions)</h4>
+  <div class="markdown level1 summary"><p>Adds an object to a bucket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;S3Object&gt; PutAsync(PutObjectRequest request, RequestOptions options = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.html">PutObjectRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The object upload request parameters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Optional REST request options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.S3Object.html">S3Object</a>&gt;</td>
+        <td><p>The PutObject response with ETag and metadata.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Glitch9_AIDevKit_AmazonAws_S3_Services_ObjectService_PutAsync_Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_Glitch9_IO_Networking_RESTApi_RequestOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><b>Important:</b> Amazon S3 never adds partial objects; if you receive a success response, Amazon S3 added the entire object to the bucket.</p>
+<p>You cannot use PutObject to only update a single piece of metadata for an existing object. You must put the entire object with updated metadata if you want to update some values.</p>
+<p><b>Object Ownership:</b></p>
+<p>If your bucket uses the bucket owner enforced setting for Object Ownership, ACLs are disabled and no longer affect permissions. All objects written to the bucket by any account will be owned by the bucket owner.</p>
+<p><b>Directory Buckets:</b></p>
+<p>- You must make requests for this API operation to the Zonal endpoint.</p>
+<p>- These endpoints support virtual-hosted-style requests in the format: https://bucket-name.s3express-zone-id.region-code.amazonaws.com/key-name</p>
+<p>- Path-style requests are not supported.</p>
+<p><b>Concurrent Writes:</b></p>
+<p>Amazon S3 is a distributed system. If it receives multiple write requests for the same object simultaneously, it overwrites all but the last object written.</p>
+<p><b>Write Protection Options:</b></p>
+<p>- <b>S3 Object Lock:</b> To prevent objects from being deleted or overwritten (not supported for directory buckets).</p>
+<p>- <b>If-None-Match:</b> Uploads the object only if the object key name does not already exist in the specified bucket. Expects the * character. Returns 412 Precondition Failed if object exists, 409 ConditionalRequestConflict on conflict.</p>
+<p>- <b>S3 Versioning:</b> When enabled, Amazon S3 stores all versions of objects written simultaneously (not supported for directory buckets).</p>
+<p><b>Permissions:</b></p>
+<p>- <b>General purpose bucket:</b> s3:PutObject is required. Additional permissions may be needed for ACLs (s3:PutObjectAcl), Object Lock (s3:PutObjectObjectLockConfiguration, s3:PutBucketVersioning), Object Ownership (s3:PutBucketOwnershipControls), and Block Public Access (s3:PutBucketPublicAccessBlock).</p>
+<p>- <b>Directory bucket:</b> Use CreateSession API for session-based authorization with s3express:CreateSession permission. For SSE-KMS encryption, kms:GenerateDataKey and kms:Decrypt permissions are required.</p>
+<p><b>Data Integrity:</b></p>
+<p>- <b>General purpose bucket:</b> Use Content-MD5 header to ensure data is not corrupted traversing the network. Amazon S3 checks the object against the provided MD5 value.</p>
+<p>- <b>Directory bucket:</b> Content-MD5 functionality is not supported.</p>
+<p><b>Server-Side Encryption:</b></p>
+<p>- <b>General purpose buckets:</b> Four options - SSE-S3 (Amazon S3 managed keys), SSE-KMS/DSSE-KMS (AWS KMS keys), SSE-C (customer-provided keys), or no encryption.</p>
+<p>- <b>Directory buckets:</b> Only SSE-S3 (AES256) and SSE-KMS (aws:kms) are supported. Encryption settings must match the bucket's default encryption and CreateSession request.</p>
+</div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrEmpty__1___0_">ArrayExtensions.ToArrayOrEmpty&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrNull__1___0_">ArrayExtensions.ToArrayOrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDelta__1___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.ToDelta&lt;T&gt;(T, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDone__1___0_System_String_System_Int32_System_String_">EventExtensions.ToDone&lt;T&gt;(T, string, int, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToEvent__1___0_">EventExtensions.ToEvent&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_UpcastDelta__2___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.UpcastDelta&lt;T1, T2&gt;(T1, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.FallbackExtensions.html#Glitch9_FallbackExtensions_IsOr__2___0___1_">FallbackExtensions.IsOr&lt;TParent, TChild&gt;(TParent, TChild)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ResponseCastingExtensions.html#Glitch9_IO_Networking_RESTApi_ResponseCastingExtensions_GetResult__1___0_">ResponseCastingExtensions.GetResult&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_GetName_System_Object_">SystemExtensions.GetName(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_Services_ObjectService.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.Services.ObjectService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Services/S3/ObjectService.cs/#L19" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AI DevKit Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

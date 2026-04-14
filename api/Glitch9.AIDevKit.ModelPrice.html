@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ModelPrice | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ModelPrice | AI DevKit ">
+    
+    <meta name="description" content="Abstract base class representing the pricing information for a model usage tier. Derived classes represent specific billing units such as per-token, per-image, or per-second.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.ModelPrice">
+
+
+
+  <h1 id="Glitch9_AIDevKit_ModelPrice" data-uid="Glitch9.AIDevKit.ModelPrice" class="text-break">Class ModelPrice</h1>
+  <div class="markdown level0 summary"><p>Abstract base class representing the pricing information for a model usage tier.
+Derived classes represent specific billing units such as per-token, per-image, or per-second.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">ModelPrice</span></div>
+      <div class="level2"><a class="xref" href="Glitch9.AIDevKit.AudioPrice.html">AudioPrice</a></div>
+      <div class="level2"><a class="xref" href="Glitch9.AIDevKit.FreePrice.html">FreePrice</a></div>
+      <div class="level2"><a class="xref" href="Glitch9.AIDevKit.ImagePrice.html">ImagePrice</a></div>
+      <div class="level2"><a class="xref" href="Glitch9.AIDevKit.OcrPrice.html">OcrPrice</a></div>
+      <div class="level2"><a class="xref" href="Glitch9.AIDevKit.RequestPrice.html">RequestPrice</a></div>
+      <div class="level2"><a class="xref" href="Glitch9.AIDevKit.TokenPrice.html">TokenPrice</a></div>
+      <div class="level2"><a class="xref" href="Glitch9.AIDevKit.TranscriptionPrice.html">TranscriptionPrice</a></div>
+      <div class="level2"><a class="xref" href="Glitch9.AIDevKit.WebSearchPrice.html">WebSearchPrice</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a></h6>
+  <h6><strong>Assembly</strong>: Glitch9.AIDevKit.dll</h6>
+  <h5 id="Glitch9_AIDevKit_ModelPrice_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+[JsonConverter(typeof(ModelPriceJsonConverter))]
+public abstract class ModelPrice</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_ModelPrice__ctor.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.ModelPrice.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/AIResources/Model/ModelPrice.cs/#L28">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_ModelPrice__ctor_" data-uid="Glitch9.AIDevKit.ModelPrice.#ctor*"></a>
+  <h4 id="Glitch9_AIDevKit_ModelPrice__ctor" data-uid="Glitch9.AIDevKit.ModelPrice.#ctor">ModelPrice()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModelPrice()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_ModelPrice__ctor_Glitch9_AIDevKit_UsageType_System_Double_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.ModelPrice.%23ctor(Glitch9.AIDevKit.UsageType%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/AIResources/Model/ModelPrice.cs/#L29">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_ModelPrice__ctor_" data-uid="Glitch9.AIDevKit.ModelPrice.#ctor*"></a>
+  <h4 id="Glitch9_AIDevKit_ModelPrice__ctor_Glitch9_AIDevKit_UsageType_System_Double_" data-uid="Glitch9.AIDevKit.ModelPrice.#ctor(Glitch9.AIDevKit.UsageType,System.Double)">ModelPrice(UsageType, double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ModelPrice(UsageType type, double costInUsd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.UsageType.html">UsageType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">costInUsd</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_ModelPrice_m_TypeNameCache.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.ModelPrice.m_TypeNameCache%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/AIResources/Model/ModelPrice.cs/#L26">View Source</a>
+  </span>
+  <h4 id="Glitch9_AIDevKit_ModelPrice_m_TypeNameCache" data-uid="Glitch9.AIDevKit.ModelPrice.m_TypeNameCache">m_TypeNameCache</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string m_TypeNameCache</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_ModelPrice_CostInUsd.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.ModelPrice.CostInUsd%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/AIResources/Model/ModelPrice.cs/#L24">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_ModelPrice_CostInUsd_" data-uid="Glitch9.AIDevKit.ModelPrice.CostInUsd*"></a>
+  <h4 id="Glitch9_AIDevKit_ModelPrice_CostInUsd" data-uid="Glitch9.AIDevKit.ModelPrice.CostInUsd">CostInUsd</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public double CostInUsd { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_ModelPrice_Type.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.ModelPrice.Type%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/AIResources/Model/ModelPrice.cs/#L23">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_ModelPrice_Type_" data-uid="Glitch9.AIDevKit.ModelPrice.Type*"></a>
+  <h4 id="Glitch9_AIDevKit_ModelPrice_Type" data-uid="Glitch9.AIDevKit.ModelPrice.Type">Type</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public UsageType Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.UsageType.html">UsageType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_ModelPrice_CalcCostInUsd_System_Double_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.ModelPrice.CalcCostInUsd(System.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/AIResources/Model/ModelPrice.cs/#L51">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_ModelPrice_CalcCostInUsd_" data-uid="Glitch9.AIDevKit.ModelPrice.CalcCostInUsd*"></a>
+  <h4 id="Glitch9_AIDevKit_ModelPrice_CalcCostInUsd_System_Double_" data-uid="Glitch9.AIDevKit.ModelPrice.CalcCostInUsd(System.Double)">CalcCostInUsd(double)</h4>
+  <div class="markdown level1 summary"><p>Calculates the total cost in USD for the given usage amount.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double CalcCostInUsd(double amount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">amount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_ModelPrice_Free.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.ModelPrice.Free%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/AIResources/Model/ModelPrice.cs/#L35">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_ModelPrice_Free_" data-uid="Glitch9.AIDevKit.ModelPrice.Free*"></a>
+  <h4 id="Glitch9_AIDevKit_ModelPrice_Free" data-uid="Glitch9.AIDevKit.ModelPrice.Free">Free()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ModelPrice[] Free()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ModelPrice.html">ModelPrice</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_ModelPrice_GetTypeName.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.ModelPrice.GetTypeName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/AIResources/Model/ModelPrice.cs/#L48">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_ModelPrice_GetTypeName_" data-uid="Glitch9.AIDevKit.ModelPrice.GetTypeName*"></a>
+  <h4 id="Glitch9_AIDevKit_ModelPrice_GetTypeName" data-uid="Glitch9.AIDevKit.ModelPrice.GetTypeName">GetTypeName()</h4>
+  <div class="markdown level1 summary"><p>Returns a human-readable label for this price type (e.g. &quot;Input Token&quot;, &quot;HD Image&quot;).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetTypeName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_ModelPrice_PerCharacter_System_Double_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.ModelPrice.PerCharacter(System.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/AIResources/Model/ModelPrice.cs/#L36">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_ModelPrice_PerCharacter_" data-uid="Glitch9.AIDevKit.ModelPrice.PerCharacter*"></a>
+  <h4 id="Glitch9_AIDevKit_ModelPrice_PerCharacter_System_Double_" data-uid="Glitch9.AIDevKit.ModelPrice.PerCharacter(System.Double)">PerCharacter(double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ModelPrice[] PerCharacter(double cost)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">cost</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ModelPrice.html">ModelPrice</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_ModelPrice_PerICO_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.ModelPrice.PerICO(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/AIResources/Model/ModelPrice.cs/#L43">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_ModelPrice_PerICO_" data-uid="Glitch9.AIDevKit.ModelPrice.PerICO*"></a>
+  <h4 id="Glitch9_AIDevKit_ModelPrice_PerICO_System_Double_System_Double_System_Double_" data-uid="Glitch9.AIDevKit.ModelPrice.PerICO(System.Double,System.Double,System.Double)">PerICO(double, double, double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ModelPrice[] PerICO(double input, double cachedInput, double output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">cachedInput</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ModelPrice.html">ModelPrice</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_ModelPrice_PerIO_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.ModelPrice.PerIO(System.Double%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/AIResources/Model/ModelPrice.cs/#L41">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_ModelPrice_PerIO_" data-uid="Glitch9.AIDevKit.ModelPrice.PerIO*"></a>
+  <h4 id="Glitch9_AIDevKit_ModelPrice_PerIO_System_Double_System_Double_" data-uid="Glitch9.AIDevKit.ModelPrice.PerIO(System.Double,System.Double)">PerIO(double, double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ModelPrice[] PerIO(double input, double output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ModelPrice.html">ModelPrice</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_ModelPrice_PerImage_System_Double_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.ModelPrice.PerImage(System.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/AIResources/Model/ModelPrice.cs/#L40">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_ModelPrice_PerImage_" data-uid="Glitch9.AIDevKit.ModelPrice.PerImage*"></a>
+  <h4 id="Glitch9_AIDevKit_ModelPrice_PerImage_System_Double_" data-uid="Glitch9.AIDevKit.ModelPrice.PerImage(System.Double)">PerImage(double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ModelPrice[] PerImage(double cost)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">cost</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ModelPrice.html">ModelPrice</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_ModelPrice_PerInputToken_System_Double_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.ModelPrice.PerInputToken(System.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/AIResources/Model/ModelPrice.cs/#L39">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_ModelPrice_PerInputToken_" data-uid="Glitch9.AIDevKit.ModelPrice.PerInputToken*"></a>
+  <h4 id="Glitch9_AIDevKit_ModelPrice_PerInputToken_System_Double_" data-uid="Glitch9.AIDevKit.ModelPrice.PerInputToken(System.Double)">PerInputToken(double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ModelPrice[] PerInputToken(double cost)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">cost</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ModelPrice.html">ModelPrice</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_ModelPrice_PerMinute_System_Double_System_Boolean_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.ModelPrice.PerMinute(System.Double%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/AIResources/Model/ModelPrice.cs/#L38">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_ModelPrice_PerMinute_" data-uid="Glitch9.AIDevKit.ModelPrice.PerMinute*"></a>
+  <h4 id="Glitch9_AIDevKit_ModelPrice_PerMinute_System_Double_System_Boolean_" data-uid="Glitch9.AIDevKit.ModelPrice.PerMinute(System.Double,System.Boolean)">PerMinute(double, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ModelPrice[] PerMinute(double cost, bool isEstimated = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">cost</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isEstimated</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ModelPrice.html">ModelPrice</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_ModelPrice_PerRequest_System_Double_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.ModelPrice.PerRequest(System.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/AIResources/Model/ModelPrice.cs/#L37">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_ModelPrice_PerRequest_" data-uid="Glitch9.AIDevKit.ModelPrice.PerRequest*"></a>
+  <h4 id="Glitch9_AIDevKit_ModelPrice_PerRequest_System_Double_" data-uid="Glitch9.AIDevKit.ModelPrice.PerRequest(System.Double)">PerRequest(double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ModelPrice[] PerRequest(double cost)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">cost</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ModelPrice.html">ModelPrice</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_ModelPrice_ToString.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.ModelPrice.ToString%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/AIResources/Model/ModelPrice.cs/#L57">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_ModelPrice_ToString_" data-uid="Glitch9.AIDevKit.ModelPrice.ToString*"></a>
+  <h4 id="Glitch9_AIDevKit_ModelPrice_ToString" data-uid="Glitch9.AIDevKit.ModelPrice.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrEmpty__1___0_">ArrayExtensions.ToArrayOrEmpty&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrNull__1___0_">ArrayExtensions.ToArrayOrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDelta__1___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.ToDelta&lt;T&gt;(T, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDone__1___0_System_String_System_Int32_System_String_">EventExtensions.ToDone&lt;T&gt;(T, string, int, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToEvent__1___0_">EventExtensions.ToEvent&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_UpcastDelta__2___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.UpcastDelta&lt;T1, T2&gt;(T1, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.FallbackExtensions.html#Glitch9_FallbackExtensions_IsOr__2___0___1_">FallbackExtensions.IsOr&lt;TParent, TChild&gt;(TParent, TChild)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ResponseCastingExtensions.html#Glitch9_IO_Networking_RESTApi_ResponseCastingExtensions_GetResult__1___0_">ResponseCastingExtensions.GetResult&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_GetName_System_Object_">SystemExtensions.GetName(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_ModelPrice.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.ModelPrice%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Models/Domain/AIResources/Model/ModelPrice.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AI DevKit Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

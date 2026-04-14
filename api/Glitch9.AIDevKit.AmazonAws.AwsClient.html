@@ -1,0 +1,1592 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class AwsClient | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class AwsClient | AI DevKit ">
+    
+    <meta name="description" content="Bedrock doesn&#39;t have Stability Image Generation models anymore. They have been replaced by Amazon Titan Image Generator models.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient">
+
+
+
+  <h1 id="Glitch9_AIDevKit_AmazonAws_AwsClient" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient" class="text-break">Class AwsClient</h1>
+  <div class="markdown level0 summary"><p>Bedrock doesn't have Stability Image Generation models anymore.
+They have been replaced by Amazon Titan Image Generator models.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html">RESTClient</a></div>
+    <div class="level2"><a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html">ApiClient</a>&lt;<a class="xref" href="Glitch9.AIDevKit.AmazonAws.AwsClient.html">AwsClient</a>, <a class="xref" href="Glitch9.AIDevKit.Api.html">Api</a>, <a class="xref" href="Glitch9.AIDevKit.AmazonAws.AmazonAwsSettings.html">AmazonAwsSettings</a>&gt;</div>
+    <div class="level3"><a class="xref" href="Glitch9.AIDevKit.AIClient-2.html">AIClient</a>&lt;<a class="xref" href="Glitch9.AIDevKit.AmazonAws.AwsClient.html">AwsClient</a>, <a class="xref" href="Glitch9.AIDevKit.AmazonAws.AmazonAwsSettings.html">AmazonAwsSettings</a>&gt;</div>
+    <div class="level4"><span class="xref">AwsClient</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Glitch9.IO.Networking.RESTApi.IApiClient.html">IApiClient</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIClient-2.html#Glitch9_AIDevKit_AIClient_2_GetClientSettings">AIClient&lt;AwsClient, AmazonAwsSettings&gt;.GetClientSettings()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIClient-2.html#Glitch9_AIDevKit_AIClient_2_ResolveApiKey_System_String_">AIClient&lt;AwsClient, AmazonAwsSettings&gt;.ResolveApiKey(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIClient-2.html#Glitch9_AIDevKit_AIClient_2_GetVersion_System_String_">AIClient&lt;AwsClient, AmazonAwsSettings&gt;.GetVersion(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIClient-2.html#Glitch9_AIDevKit_AIClient_2_ResolveBetaVersion_System_String_">AIClient&lt;AwsClient, AmazonAwsSettings&gt;.ResolveBetaVersion(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIClient-2.html#Glitch9_AIDevKit_AIClient_2_CreateJsonConverters">AIClient&lt;AwsClient, AmazonAwsSettings&gt;.CreateJsonConverters()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AIClient-2.html#Glitch9_AIDevKit_AIClient_2_GetContractResolver">AIClient&lt;AwsClient, AmazonAwsSettings&gt;.GetContractResolver()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_DefaultInstance">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.DefaultInstance</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_Name">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_BaseUrl">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.BaseUrl</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_Api">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.Api</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_BaseRequestParameters">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.BaseRequestParameters</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_AdditionalHeaders">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.AdditionalHeaders</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_RequiresApiKey">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.RequiresApiKey</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_Settings">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.Settings</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_GetContractResolver">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.GetContractResolver()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_GetClientSettings">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.GetClientSettings()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_CreateBaseRequestParameters">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.CreateBaseRequestParameters()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_CreateAdditionalHeaders">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.CreateAdditionalHeaders()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_CreateJsonConverters">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.CreateJsonConverters()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_POSTAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.POSTAsync&lt;TBody, TResponse&gt;(ICrudService, string, TBody, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_POSTAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.POSTAsync&lt;TBody&gt;(ICrudService, string, TBody, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_POSTAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.POSTAsync&lt;TResponse&gt;(ICrudService, string, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_GETAsync_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.GETAsync(ICrudService, string, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_GETAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.GETAsync&lt;TResponse&gt;(ICrudService, string, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_PUTAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.PUTAsync&lt;TBody&gt;(ICrudService, string, TBody, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_PATCHAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.PATCHAsync&lt;TResponse&gt;(ICrudService, string, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_DELETEAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.DELETEAsync&lt;TBody, TStatus&gt;(ICrudService, string, TBody, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_DELETEAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.DELETEAsync&lt;TStatus&gt;(ICrudService, string, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_DELETEAsync_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.DELETEAsync(ICrudService, string, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_STREAMAsync__3_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_IStreamPipeline_System_String___1___2__Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.STREAMAsync&lt;TBody, TDelta, TResult&gt;(ICrudService, string, TBody, RequestOptions, IStreamPipeline&lt;string, TDelta, TResult&gt;, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_STREAMAsync__3_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_IStreamPipeline_Glitch9_IO_PooledBytes___1___2__Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.STREAMAsync&lt;TBody, TDelta, TResult&gt;(ICrudService, string, TBody, RequestOptions, IStreamPipeline&lt;PooledBytes, TDelta, TResult&gt;, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_STREAMAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_IStreamPipeline_System_String___0___1__Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.STREAMAsync&lt;TDelta, TResult&gt;(ICrudService, string, RequestOptions, IStreamPipeline&lt;string, TDelta, TResult&gt;, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_STREAMAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_IStreamPipeline_Glitch9_IO_PooledBytes___0___1__Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.STREAMAsync&lt;TDelta, TResult&gt;(ICrudService, string, RequestOptions, IStreamPipeline&lt;PooledBytes, TDelta, TResult&gt;, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_DownloadAsync_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.DownloadAsync(ICrudService, string, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_ValidateAuthAsync">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.ValidateAuthAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_ValidateEndpointAsync_System_String_">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.ValidateEndpointAsync(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_Jss">RESTClient.Jss</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_Xss">RESTClient.Xss</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_Logger">RESTClient.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_LogOptions">RESTClient.LogOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_Timeout">RESTClient.Timeout</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_ExceptionParser">RESTClient.ExceptionParser</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_ExceptionHandler">RESTClient.ExceptionHandler</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_MaxRetryCount">RESTClient.MaxRetryCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_RetryDelaySeconds">RESTClient.RetryDelaySeconds</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_MaxRetryDelaySeconds">RESTClient.MaxRetryDelaySeconds</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_DefaultFileMimeType">RESTClient.DefaultFileMimeType</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_DefaultDownloadDirectoryPath">RESTClient.DefaultDownloadDirectoryPath</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_m_Settings">RESTClient.m_Settings</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_SetOnetimeLogOptions_Glitch9_IO_Networking_CurlLogOptions_">RESTClient.SetOnetimeLogOptions(CurlLogOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_POSTAsync_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.POSTAsync(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_POSTAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.POSTAsync&lt;T&gt;(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_PUTAsync_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.PUTAsync(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_PUTAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.PUTAsync&lt;T&gt;(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_GETAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.GETAsync&lt;T&gt;(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_GETAsync_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.GETAsync(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_DELETEAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.DELETEAsync&lt;T&gt;(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_DELETEAsync_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.DELETEAsync(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_HEADAsync_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.HEADAsync(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_HEADAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.HEADAsync&lt;T&gt;(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_PATCHAsync_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.PATCHAsync(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_PATCHAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.PATCHAsync&lt;T&gt;(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_STREAMAsync__2_Glitch9_IO_Networking_RESTApi_RESTRequest_Glitch9_IO_Networking_RESTApi_IStreamPipeline_System_String___0___1__System_String_">RESTClient.STREAMAsync&lt;TDelta, TResult&gt;(RESTRequest, IStreamPipeline&lt;string, TDelta, TResult&gt;, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_STREAMAsync__2_Glitch9_IO_Networking_RESTApi_RESTRequest_Glitch9_IO_Networking_RESTApi_IStreamPipeline_Glitch9_IO_PooledBytes___0___1__System_String_">RESTClient.STREAMAsync&lt;TDelta, TResult&gt;(RESTRequest, IStreamPipeline&lt;PooledBytes, TDelta, TResult&gt;, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_DOWNLOADAsync_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.DOWNLOADAsync(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.AmazonAws.html">AmazonAws</a></h6>
+  <h6><strong>Assembly</strong>: Glitch9.AIDevKit.Provider.AmazonAws.dll</h6>
+  <h5 id="Glitch9_AIDevKit_AmazonAws_AwsClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AwsClient : AIClient&lt;AwsClient, AmazonAwsSettings&gt;, IApiClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_AwsClient__ctor.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.AwsClient.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Client/AwsClient.cs/#L83">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_AwsClient__ctor_" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.#ctor*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_AwsClient__ctor" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.#ctor">AwsClient()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AwsClient()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_AwsClient_Bedrock.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.AwsClient.Bedrock%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Client/AwsClient.cs/#L78">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_AwsClient_Bedrock_" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.Bedrock*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_AwsClient_Bedrock" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.Bedrock">Bedrock</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BedrockService Bedrock { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.AmazonAws.Bedrock.Services.BedrockService.html">BedrockService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_AwsClient_Polly.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.AwsClient.Polly%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Client/AwsClient.cs/#L79">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_AwsClient_Polly_" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.Polly*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_AwsClient_Polly" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.Polly">Polly</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PollyService Polly { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.AmazonAws.Polly.Services.PollyService.html">PollyService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_AwsClient_S3.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.AwsClient.S3%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Client/AwsClient.cs/#L81">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_AwsClient_S3_" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.S3*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_AwsClient_S3" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.S3">S3</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public S3Service S3 { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.Services.S3Service.html">S3Service</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_AwsClient_Transcribe.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.AwsClient.Transcribe%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Client/AwsClient.cs/#L80">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_AwsClient_Transcribe_" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.Transcribe*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_AwsClient_Transcribe" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.Transcribe">Transcribe</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TranscribeService Transcribe { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.AmazonAws.Transcribe.Services.TranscribeService.html">TranscribeService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_AwsClient_DELETEAsync_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.AwsClient.DELETEAsync(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2CGlitch9.IO.Networking.RESTApi.RequestOptions%2CGlitch9.IO.Networking.RESTApi.RequestParameter%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Client/AwsClient.cs/#L177">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_AwsClient_DELETEAsync_" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.DELETEAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_AwsClient_DELETEAsync_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.DELETEAsync(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,Glitch9.IO.Networking.RESTApi.RequestOptions,Glitch9.IO.Networking.RESTApi.RequestParameter[])">DELETEAsync(ICrudService, string, RequestOptions, params RequestParameter[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override UniTask&lt;RESTResponse&gt; DELETEAsync(ICrudService service, string url, RequestOptions options = null, params RequestParameter[] requestParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestParameter.html">RequestParameter</a>[]</td>
+        <td><span class="parametername">requestParams</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTResponse.html">RESTResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_DELETEAsync_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.DELETEAsync(ICrudService, string, RequestOptions, params RequestParameter[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_AwsClient_DELETEAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.AwsClient.DELETEAsync%60%601(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2CGlitch9.IO.Networking.RESTApi.RequestOptions%2CGlitch9.IO.Networking.RESTApi.RequestParameter%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Client/AwsClient.cs/#L169">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_AwsClient_DELETEAsync_" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.DELETEAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_AwsClient_DELETEAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.DELETEAsync``1(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,Glitch9.IO.Networking.RESTApi.RequestOptions,Glitch9.IO.Networking.RESTApi.RequestParameter[])">DELETEAsync&lt;TDeletionStatus&gt;(ICrudService, string, RequestOptions, params RequestParameter[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override UniTask&lt;TDeletionStatus&gt; DELETEAsync&lt;TDeletionStatus&gt;(ICrudService service, string url, RequestOptions options = null, params RequestParameter[] requestParams) where TDeletionStatus : class, IDeletionStatus</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestParameter.html">RequestParameter</a>[]</td>
+        <td><span class="parametername">requestParams</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;TDeletionStatus&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TDeletionStatus</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_DELETEAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.DELETEAsync&lt;TStatus&gt;(ICrudService, string, RequestOptions, params RequestParameter[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_AwsClient_DELETEAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.AwsClient.DELETEAsync%60%601(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2C%60%600%2CGlitch9.IO.Networking.RESTApi.RequestOptions%2CGlitch9.IO.Networking.RESTApi.RequestParameter%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Client/AwsClient.cs/#L161">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_AwsClient_DELETEAsync_" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.DELETEAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_AwsClient_DELETEAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.DELETEAsync``1(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,``0,Glitch9.IO.Networking.RESTApi.RequestOptions,Glitch9.IO.Networking.RESTApi.RequestParameter[])">DELETEAsync&lt;TBody&gt;(ICrudService, string, TBody, RequestOptions, params RequestParameter[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;RESTResponse&gt; DELETEAsync&lt;TBody&gt;(ICrudService service, string url, TBody body, RequestOptions options = null, params RequestParameter[] requestParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TBody</span></td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestParameter.html">RequestParameter</a>[]</td>
+        <td><span class="parametername">requestParams</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTResponse.html">RESTResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TBody</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_AwsClient_DELETEAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.AwsClient.DELETEAsync%60%602(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2C%60%600%2CGlitch9.IO.Networking.RESTApi.RequestOptions%2CGlitch9.IO.Networking.RESTApi.RequestParameter%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Client/AwsClient.cs/#L153">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_AwsClient_DELETEAsync_" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.DELETEAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_AwsClient_DELETEAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.DELETEAsync``2(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,``0,Glitch9.IO.Networking.RESTApi.RequestOptions,Glitch9.IO.Networking.RESTApi.RequestParameter[])">DELETEAsync&lt;TBody, TDeletionStatus&gt;(ICrudService, string, TBody, RequestOptions, params RequestParameter[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override UniTask&lt;TDeletionStatus&gt; DELETEAsync&lt;TBody, TDeletionStatus&gt;(ICrudService service, string url, TBody body, RequestOptions options = null, params RequestParameter[] requestParams) where TDeletionStatus : class, IDeletionStatus</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TBody</span></td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestParameter.html">RequestParameter</a>[]</td>
+        <td><span class="parametername">requestParams</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;TDeletionStatus&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TBody</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TDeletionStatus</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_DELETEAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.DELETEAsync&lt;TBody, TStatus&gt;(ICrudService, string, TBody, RequestOptions, params RequestParameter[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_AwsClient_GETAsync_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.AwsClient.GETAsync(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2CGlitch9.IO.Networking.RESTApi.RequestOptions%2CGlitch9.IO.Networking.RESTApi.RequestParameter%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Client/AwsClient.cs/#L118">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_AwsClient_GETAsync_" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.GETAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_AwsClient_GETAsync_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.GETAsync(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,Glitch9.IO.Networking.RESTApi.RequestOptions,Glitch9.IO.Networking.RESTApi.RequestParameter[])">GETAsync(ICrudService, string, RequestOptions, params RequestParameter[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override UniTask&lt;RESTResponse&gt; GETAsync(ICrudService service, string url, RequestOptions options = null, params RequestParameter[] requestParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestParameter.html">RequestParameter</a>[]</td>
+        <td><span class="parametername">requestParams</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTResponse.html">RESTResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_GETAsync_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.GETAsync(ICrudService, string, RequestOptions, params RequestParameter[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_AwsClient_GETAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.AwsClient.GETAsync%60%601(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2CGlitch9.IO.Networking.RESTApi.RequestOptions%2CGlitch9.IO.Networking.RESTApi.RequestParameter%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Client/AwsClient.cs/#L128">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_AwsClient_GETAsync_" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.GETAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_AwsClient_GETAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.GETAsync``1(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,Glitch9.IO.Networking.RESTApi.RequestOptions,Glitch9.IO.Networking.RESTApi.RequestParameter[])">GETAsync&lt;TResponse&gt;(ICrudService, string, RequestOptions, params RequestParameter[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override UniTask&lt;TResponse&gt; GETAsync&lt;TResponse&gt;(ICrudService service, string url, RequestOptions options = null, params RequestParameter[] requestParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestParameter.html">RequestParameter</a>[]</td>
+        <td><span class="parametername">requestParams</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;TResponse&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResponse</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_GETAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.GETAsync&lt;TResponse&gt;(ICrudService, string, RequestOptions, params RequestParameter[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_AwsClient_PATCHAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.AwsClient.PATCHAsync%60%601(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2CGlitch9.IO.Networking.RESTApi.RequestOptions%2CGlitch9.IO.Networking.RESTApi.RequestParameter%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Client/AwsClient.cs/#L145">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_AwsClient_PATCHAsync_" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.PATCHAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_AwsClient_PATCHAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.PATCHAsync``1(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,Glitch9.IO.Networking.RESTApi.RequestOptions,Glitch9.IO.Networking.RESTApi.RequestParameter[])">PATCHAsync&lt;TResponse&gt;(ICrudService, string, RequestOptions, params RequestParameter[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override UniTask&lt;TResponse&gt; PATCHAsync&lt;TResponse&gt;(ICrudService service, string url, RequestOptions options = null, params RequestParameter[] requestParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestParameter.html">RequestParameter</a>[]</td>
+        <td><span class="parametername">requestParams</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;TResponse&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResponse</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_PATCHAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.PATCHAsync&lt;TResponse&gt;(ICrudService, string, RequestOptions, params RequestParameter[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_AwsClient_POSTAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.AwsClient.POSTAsync%60%601(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2CGlitch9.IO.Networking.RESTApi.RequestOptions%2CGlitch9.IO.Networking.RESTApi.RequestParameter%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Client/AwsClient.cs/#L110">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_AwsClient_POSTAsync_" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.POSTAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_AwsClient_POSTAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.POSTAsync``1(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,Glitch9.IO.Networking.RESTApi.RequestOptions,Glitch9.IO.Networking.RESTApi.RequestParameter[])">POSTAsync&lt;TResponse&gt;(ICrudService, string, RequestOptions, params RequestParameter[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override UniTask&lt;TResponse&gt; POSTAsync&lt;TResponse&gt;(ICrudService service, string url, RequestOptions options = null, params RequestParameter[] requestParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestParameter.html">RequestParameter</a>[]</td>
+        <td><span class="parametername">requestParams</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;TResponse&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResponse</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_POSTAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.POSTAsync&lt;TResponse&gt;(ICrudService, string, RequestOptions, params RequestParameter[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_AwsClient_POSTAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.AwsClient.POSTAsync%60%601(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2C%60%600%2CGlitch9.IO.Networking.RESTApi.RequestOptions%2CGlitch9.IO.Networking.RESTApi.RequestParameter%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Client/AwsClient.cs/#L102">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_AwsClient_POSTAsync_" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.POSTAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_AwsClient_POSTAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.POSTAsync``1(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,``0,Glitch9.IO.Networking.RESTApi.RequestOptions,Glitch9.IO.Networking.RESTApi.RequestParameter[])">POSTAsync&lt;TBody&gt;(ICrudService, string, TBody, RequestOptions, params RequestParameter[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override UniTask&lt;RESTResponse&gt; POSTAsync&lt;TBody&gt;(ICrudService service, string url, TBody body, RequestOptions options, params RequestParameter[] requestParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TBody</span></td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestParameter.html">RequestParameter</a>[]</td>
+        <td><span class="parametername">requestParams</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTResponse.html">RESTResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TBody</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_POSTAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.POSTAsync&lt;TBody&gt;(ICrudService, string, TBody, RequestOptions, params RequestParameter[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_AwsClient_POSTAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.AwsClient.POSTAsync%60%602(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2C%60%600%2CGlitch9.IO.Networking.RESTApi.RequestOptions%2CGlitch9.IO.Networking.RESTApi.RequestParameter%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Client/AwsClient.cs/#L94">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_AwsClient_POSTAsync_" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.POSTAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_AwsClient_POSTAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.POSTAsync``2(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,``0,Glitch9.IO.Networking.RESTApi.RequestOptions,Glitch9.IO.Networking.RESTApi.RequestParameter[])">POSTAsync&lt;TBody, TResponse&gt;(ICrudService, string, TBody, RequestOptions, params RequestParameter[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override UniTask&lt;TResponse&gt; POSTAsync&lt;TBody, TResponse&gt;(ICrudService service, string url, TBody body, RequestOptions options, params RequestParameter[] requestParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TBody</span></td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestParameter.html">RequestParameter</a>[]</td>
+        <td><span class="parametername">requestParams</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;TResponse&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TBody</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResponse</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_POSTAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.POSTAsync&lt;TBody, TResponse&gt;(ICrudService, string, TBody, RequestOptions, params RequestParameter[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_AwsClient_PUTAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.AwsClient.PUTAsync%60%601(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2C%60%600%2CGlitch9.IO.Networking.RESTApi.RequestOptions%2CGlitch9.IO.Networking.RESTApi.RequestParameter%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Client/AwsClient.cs/#L137">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_AwsClient_PUTAsync_" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.PUTAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_AwsClient_PUTAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.PUTAsync``1(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,``0,Glitch9.IO.Networking.RESTApi.RequestOptions,Glitch9.IO.Networking.RESTApi.RequestParameter[])">PUTAsync&lt;TBody&gt;(ICrudService, string, TBody, RequestOptions, params RequestParameter[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override UniTask&lt;RESTResponse&gt; PUTAsync&lt;TBody&gt;(ICrudService service, string url, TBody body, RequestOptions options, params RequestParameter[] requestParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TBody</span></td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestParameter.html">RequestParameter</a>[]</td>
+        <td><span class="parametername">requestParams</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTResponse.html">RESTResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TBody</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_PUTAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;AwsClient, Api, AmazonAwsSettings&gt;.PUTAsync&lt;TBody&gt;(ICrudService, string, TBody, RequestOptions, params RequestParameter[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_AwsClient_STREAMAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_IStreamPipeline_System_String___0___1__Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.AwsClient.STREAMAsync%60%602(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2CGlitch9.IO.Networking.RESTApi.IStreamPipeline%7BSystem.String%2C%60%600%2C%60%601%7D%2CGlitch9.IO.Networking.RESTApi.RequestOptions%2CGlitch9.IO.Networking.RESTApi.RequestParameter%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Client/AwsClient.cs/#L200">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_AwsClient_STREAMAsync_" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.STREAMAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_AwsClient_STREAMAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_IStreamPipeline_System_String___0___1__Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.STREAMAsync``2(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,Glitch9.IO.Networking.RESTApi.IStreamPipeline{System.String,``0,``1},Glitch9.IO.Networking.RESTApi.RequestOptions,Glitch9.IO.Networking.RESTApi.RequestParameter[])">STREAMAsync&lt;TDelta, TResult&gt;(ICrudService, string, IStreamPipeline&lt;string, TDelta, TResult&gt;, RequestOptions, params RequestParameter[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IStream&lt;TDelta, TResult&gt; STREAMAsync&lt;TDelta, TResult&gt;(ICrudService service, string endpoint, IStreamPipeline&lt;string, TDelta, TResult&gt; pipeline, RequestOptions options = null, params RequestParameter[] requestParams) where TDelta : IEvent where TResult : IResult</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">endpoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.IStreamPipeline-3.html">IStreamPipeline</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, TDelta, TResult&gt;</td>
+        <td><span class="parametername">pipeline</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestParameter.html">RequestParameter</a>[]</td>
+        <td><span class="parametername">requestParams</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.IStream-2.html">IStream</a>&lt;TDelta, TResult&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TDelta</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_AwsClient_STREAMAsync__3_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_IStreamPipeline_System_String___1___2__Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.AwsClient.STREAMAsync%60%603(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2C%60%600%2CGlitch9.IO.Networking.RESTApi.IStreamPipeline%7BSystem.String%2C%60%601%2C%60%602%7D%2CGlitch9.IO.Networking.RESTApi.RequestOptions%2CGlitch9.IO.Networking.RESTApi.RequestParameter%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Client/AwsClient.cs/#L185">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_AwsClient_STREAMAsync_" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.STREAMAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_AwsClient_STREAMAsync__3_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_IStreamPipeline_System_String___1___2__Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___" data-uid="Glitch9.AIDevKit.AmazonAws.AwsClient.STREAMAsync``3(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,``0,Glitch9.IO.Networking.RESTApi.IStreamPipeline{System.String,``1,``2},Glitch9.IO.Networking.RESTApi.RequestOptions,Glitch9.IO.Networking.RESTApi.RequestParameter[])">STREAMAsync&lt;TBody, TDelta, TResult&gt;(ICrudService, string, TBody, IStreamPipeline&lt;string, TDelta, TResult&gt;, RequestOptions, params RequestParameter[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IStream&lt;TDelta, TResult&gt; STREAMAsync&lt;TBody, TDelta, TResult&gt;(ICrudService service, string endpoint, TBody body, IStreamPipeline&lt;string, TDelta, TResult&gt; pipeline, RequestOptions options = null, params RequestParameter[] requestParams) where TDelta : IEvent where TResult : IResult</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">endpoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TBody</span></td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.IStreamPipeline-3.html">IStreamPipeline</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, TDelta, TResult&gt;</td>
+        <td><span class="parametername">pipeline</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestParameter.html">RequestParameter</a>[]</td>
+        <td><span class="parametername">requestParams</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.IStream-2.html">IStream</a>&lt;TDelta, TResult&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TBody</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TDelta</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.IApiClient.html">IApiClient</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrEmpty__1___0_">ArrayExtensions.ToArrayOrEmpty&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrNull__1___0_">ArrayExtensions.ToArrayOrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDelta__1___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.ToDelta&lt;T&gt;(T, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDone__1___0_System_String_System_Int32_System_String_">EventExtensions.ToDone&lt;T&gt;(T, string, int, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToEvent__1___0_">EventExtensions.ToEvent&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_UpcastDelta__2___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.UpcastDelta&lt;T1, T2&gt;(T1, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.FallbackExtensions.html#Glitch9_FallbackExtensions_IsOr__2___0___1_">FallbackExtensions.IsOr&lt;TParent, TChild&gt;(TParent, TChild)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ResponseCastingExtensions.html#Glitch9_IO_Networking_RESTApi_ResponseCastingExtensions_GetResult__1___0_">ResponseCastingExtensions.GetResult&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_GetName_System_Object_">SystemExtensions.GetName(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_AwsClient.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.AwsClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Client/AwsClient.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AI DevKit Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

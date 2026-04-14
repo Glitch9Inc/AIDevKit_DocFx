@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Namespace Glitch9 | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Namespace Glitch9 | AI DevKit ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9">
+
+  <h1 id="Glitch9" data-uid="Glitch9" class="text-break">Namespace Glitch9</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">
+Classes
+</h3>
+      <h4><a class="xref" href="Glitch9.ActiveState.html">ActiveState</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.ArrayExtensions.html">ArrayExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.AssetPathAttribute.html">AssetPathAttribute</a></h4>
+      <section><p>Runtime equivalent of FilePathAttribute.
+Used to define the relative path for ScriptableObjects that are loaded at runtime.
+<br>
+<br>
+For example:</p>
+<pre><code class="lang-csharp">[AssetPath("Settings/MySettings", AssetPathAttribute.Location.ResourcesFolder)]
+public class MySettings : ScriptableInstance&lt;MySettings&gt;</code></pre>
+<p>will load the ScriptableObject from:</p>
+<pre><code class="lang-csharp">Assets/Resources/Settings/MySettings.asset</code></pre>
+</section>
+      <h4><a class="xref" href="Glitch9.AttributeCache-1.html">AttributeCache&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.BugException.html">BugException</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.CollectionExtensions.html">CollectionExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.CommandBus.html">CommandBus</a></h4>
+      <section><ul><li>Concrete implementation of ICommandBus.</li><li>Multiple handlers per command type (fan-out) by design.</li><li>Thread-safe for Register/Unregister/Dispatch using a lock.</li><li>Dispatch executes handlers outside the lock using a snapshot.</li></ul>
+</section>
+      <h4><a class="xref" href="Glitch9.ConversionNotSupportedException.html">ConversionNotSupportedException</a></h4>
+      <section><p>Thrown when a conversion between two types is not supported.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.CoreLibTypeExtensions.html">CoreLibTypeExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.Currency.html">Currency</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.CustomerSupportException.html">CustomerSupportException</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.DateTimeExtensions.html">DateTimeExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.DevLog.html">DevLog</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.EmptyResult.html">EmptyResult</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.EnumExtensions.html">EnumExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.EnumSwitchAttribute.html">EnumSwitchAttribute</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.EventBus.html">EventBus</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.EventExtensions.html">EventExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.ExceptionExtensions.html">ExceptionExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.ExchangeRate.html">ExchangeRate</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.ExperimentalAttribute.html">ExperimentalAttribute</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.ExperimentalAttributeExtensions.html">ExperimentalAttributeExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.FallbackExtensions.html">FallbackExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.FeatureComingSoonException.html">FeatureComingSoonException</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.FoldoutHeaderAttribute.html">FoldoutHeaderAttribute</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.G9.html">G9</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.G9.Message.html">G9.Message</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.GMath.html">GMath</a></h4>
+      <section><p>Math utility class for CoreLib (UnityEngine-independent).</p>
+</section>
+      <h4><a class="xref" href="Glitch9.HideInInspectorIfAttribute.html">HideInInspectorIfAttribute</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.InspectorDisplayAttribute.html">InspectorDisplayAttribute</a></h4>
+      <section><p>Adds indentation to a field in the Inspector.
+Usage: [Indent(1)] public int example;</p>
+</section>
+      <h4><a class="xref" href="Glitch9.InspectorNameUtils.html">InspectorNameUtils</a></h4>
+      <section><p>열거형 값에 InspectorName을 붙여서 Editor에서 사용하기 위함
+또는 DisplayName을 붙여서도 사용 가능
+주로 Editor에서 코드와 UI를 연결할 때 활용됩니다.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.JsonNet.html">JsonNet</a></h4>
+      <section><p>Internally used utilities for JSON serialization and deserialization using Newtonsoft.Json</p>
+</section>
+      <h4><a class="xref" href="Glitch9.JsonNetDebug.html">JsonNetDebug</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.LeftToggleAttribute.html">LeftToggleAttribute</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.LocaleIetfConverter.html">LocaleIetfConverter</a></h4>
+      <section><p>JSON converter for Locale struct to handle serialization and deserialization.
+It uses IETF tags for representation.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.LocaleUtil.html">LocaleUtil</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.Log.html">Log</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.LogMessageAttribute.html">LogMessageAttribute</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.LogMessageExtensions.html">LogMessageExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.Logger.html">Logger</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.MessageBusBase-1.html">MessageBusBase&lt;TMessage&gt;</a></h4>
+      <section><ul><li>공통 메시지 버스 기반 클래스.</li><li>타입별 핸들러 관리 및 스냅샷 캐싱.</li><li>클래스 체인 + 인터페이스 순회 지원.</li><li>스레드 안전성 보장 (lock).</li></ul>
+</section>
+      <h4><a class="xref" href="Glitch9.Metadata.html">Metadata</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.MetadataExtensions.html">MetadataExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.MimeType.html">MimeType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.MimeTypeExtensions.html">MimeTypeExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.MimeTypeUtils.html">MimeTypeUtils</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.NewTypeDetectedException.html">NewTypeDetectedException</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.NotInitializedException.html">NotInitializedException</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.NullableRangedFloatConverter-1.html">NullableRangedFloatConverter&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.NullableRangedFloat-1.html">NullableRangedFloat&lt;T&gt;</a></h4>
+      <section><p>Serializable nullable float with range validation and default value.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.NullableRangedIntConverter-1.html">NullableRangedIntConverter&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.NullableRangedInt-1.html">NullableRangedInt&lt;T&gt;</a></h4>
+      <section><p>Serializable nullable int with range validation and default value.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.NullableRangedLongConverter-1.html">NullableRangedLongConverter&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.NullableRangedLong-1.html">NullableRangedLong&lt;T&gt;</a></h4>
+      <section><p>Serializable nullable long with range validation and default value.
+Mirrors <a class="xref" href="Glitch9.NullableRangedInt-1.html">NullableRangedInt&lt;T&gt;</a> for 64-bit integer values (e.g. seeds).</p>
+</section>
+      <h4><a class="xref" href="Glitch9.NullableUnixTimeAttribute.html">NullableUnixTimeAttribute</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.NumberExtensions.html">NumberExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.Prefs-1.html">Prefs&lt;T&gt;</a></h4>
+      <section><p>Wrapper for Unity's PlayerPrefs with type safety and serialization support.
+This class allows you to store and retrieve various types of data in PlayerPrefs,
+while ensuring type safety and automatic serialization/deserialization.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.PropertyInfoCache.html">PropertyInfoCache</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.RangedFloatAttribute.html">RangedFloatAttribute</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.RangedIntAttribute.html">RangedIntAttribute</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.Ref-1.html">Ref&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.ResultBase.html">ResultBase</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.ResultBase-1.html">ResultBase&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.RichText.html">RichText</a></h4>
+      <section><p>Utility class for generating rich text formatted strings.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.SafeConvert.html">SafeConvert</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.SafeParse.html">SafeParse</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.SafePath.html">SafePath</a></h4>
+      <section><p>Safe version of C# 'Path' class utilizing UniTask for async operations.
+Path operations with safety checks and utility methods.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.SearchUtility.html">SearchUtility</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.SemaphoreSlimPool.html">SemaphoreSlimPool</a></h4>
+      <section><p>Provides a pool of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.semaphoreslim">SemaphoreSlim</a> objects to manage resource usage efficiently.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.SerializableDatabase-1.html">SerializableDatabase&lt;TData&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.SerializableDictionary-2.html">SerializableDictionary&lt;TKey, TValue&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.SerializableKeyValuePair-2.html">SerializableKeyValuePair&lt;TKey, TValue&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.SerializableMetadata.html">SerializableMetadata</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.SerializableNullableExtensions.html">SerializableNullableExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.SerializableNullableJsonConverter-1.html">SerializableNullableJsonConverter&lt;T&gt;</a></h4>
+      <section><p>Put it on every SerializableNullable field.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.SerializableNullable-1.html">SerializableNullable&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.SerializableStringAttribute.html">SerializableStringAttribute</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.SerializableStringEnumConverter-1.html">SerializableStringEnumConverter&lt;T&gt;</a></h4>
+      <section><p>Enum-aware converter (preserves raw string, round-trips unknown values as strings)</p>
+</section>
+      <h4><a class="xref" href="Glitch9.SerializableString-1.html">SerializableString&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.SerializeNullableAttribute.html">SerializeNullableAttribute</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.ShowInInspectorIfAttribute.html">ShowInInspectorIfAttribute</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.State-1.html">State&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.StringBuilderPool.html">StringBuilderPool</a></h4>
+      <section><p>Provides a pool of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> objects to manage resource usage efficiently.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.StringExtensions.html">StringExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.StringOrTextAsset.html">StringOrTextAsset</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.StringOrTextAssetExtensions.html">StringOrTextAssetExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.StringOrTextAssetTextAreaAttribute.html">StringOrTextAssetTextAreaAttribute</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.StringPopupAttribute.html">StringPopupAttribute</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.SystemExtensions.html">SystemExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.SystemLanguageUtil.html">SystemLanguageUtil</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.TextSplitter.html">TextSplitter</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.ThreadSafeMap-2.html">ThreadSafeMap&lt;TKey, TValue&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.ThrowIf.html">ThrowIf</a></h4>
+      <section><p>Validator class that throws exceptions if conditions are not met.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.UnityObjectExtensions.html">UnityObjectExtensions</a></h4>
+      <section><p>Collection of extension methods that requires UnityEngine assembly reference.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.UnityPath.html">UnityPath</a></h4>
+      <section><p>Dealing the path in Unity can be very painful.
+This class provides a set of extensions to make it easier to work with file paths in Unity.
+(It's still painful, but at least it's easier.)</p>
+</section>
+      <h4><a class="xref" href="Glitch9.UnityPathAttribute.html">UnityPathAttribute</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.UnwrappedInspectorAttribute.html">UnwrappedInspectorAttribute</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.VideoTexture.html">VideoTexture</a></h4>
+      <section><p>ChatGPT told me that extending UnityEngine.Object directly is not recommended.
+So I made this ScriptableObject wrapper around RenderTexture.</p>
+</section>
+    <h3 id="structs">
+Structs
+</h3>
+      <h4><a class="xref" href="Glitch9.Delta-1.html">Delta&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.Event-1.html">Event&lt;T&gt;</a></h4>
+      <section><p>Wrapper event payload.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.FilePath.html">FilePath</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.Locale.html">Locale</a></h4>
+      <section><p>Locale value type that unifies ISO 639-1 language codes (e.g., &quot;en&quot;, &quot;ja&quot;)
+and IETF/BCP-47 tags (e.g., &quot;en-US&quot;, &quot;ja-JP&quot;) for game/app localization:</p>
+<ul><li><b>Purpose:</b> Represent a language (and optionally a region) with a single, ergonomic type.</li><li><b>Inputs:</b> Accepts <code>string</code> codes, <code>SystemLanguage</code>, <code>CultureInfo</code>, enum <code>int</code> index, or another <code>Locale</code>.</li><li><b>Parsing:</b> Strings containing '-' or '_' are treated as IETF/BCP-47 (e.g., <code>en-US</code>); otherwise parsed as ISO 639-1 (e.g., <code>en</code>).</li><li><b>Normalization:</b> Internally normalizes to <code>CultureInfo.Name</code> (e.g., "en-US"); case-insensitive; underscores tolerated.</li><li><b>Defaults:</b> <code>Unknown</code> maps to <code>SystemLanguage.Unknown</code>; null/empty/invalid inputs safely fall back to <code>"en-US"</code>.</li><li><b>Properties:</b> <code>CultureCode</code> returns normalized tag (e.g., "en-US"); <code>DisplayName</code> from <code>CultureInfo</code> (e.g., "English (United States)").</li><li><b>System bridges:</b> <code>EnumValue</code> exposes <code>SystemLanguage</code>; <code>CultureInfo</code> exposes full culture data for formatting and ICU rules.</li><li><b>Conversions:</b> <code>implicit</code>/<code>explicit</code> operators for <code>SystemLanguage</code>, <code>CultureInfo</code>, <code>string</code>, and <code>int</code> enable ergonomic use.</li><li><b>API helpers:</b> <code>FromISO6391("en")</code> and <code>FromIETFTag("en-US")</code> parse common code paths with safe fallbacks.</li><li><b>Equality:</b> <code>Equals</code>/<code>==</code> compare <code>SystemLanguage</code> and normalized <code>CultureCode</code> (case-insensitive); <code>GetHashCode</code> stable for dictionary keys.</li><li><b>Ordering:</b> <code>CompareTo</code> orders by <code>SystemLanguage</code> enum for predictable sorting.</li><li><b>Serialization:</b> <code>OnBeforeSerialize</code>/<code>OnAfterDeserialize</code> keep <code>CultureInfo</code>, <code>EnumValue</code>, and <code>cultureCode</code> consistent; safe default is "en-US".</li><li><b>When to use ISO 639-1</b> If regional differences are irrelevant (shared audio/UI), simple language codes (e.g., "en", "ja") are sufficient.</li><li><b>When to use IETF tags</b> If spelling/audio/content varies by region, use locale-specific tags (e.g., "en-US", "en-GB", "ja-JP").</li><li><b>Best practice</b> Store <code>CultureCode</code> (normalized) for persistence; convert to <code>SystemLanguage</code>/<code>CultureInfo</code> at UI/runtime edges.</li></ul>
+</section>
+      <h4><a class="xref" href="Glitch9.Result-1.html">Result&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.SystemMessage.html">SystemMessage</a></h4>
+      <section><p>A simple diagnostic message with a title and message body.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.UnityColor.html">UnityColor</a></h4>
+      <section><p>New colors added in Unity 6000+ for lower version compatibility.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.UnixTime.html">UnixTime</a></h4>
+      <section><p>A long value that acts as a DateTime object.
+(DateTime??媛?ν븳 long 媛?</p>
+</section>
+      <h4><a class="xref" href="Glitch9.ZuluTime.html">ZuluTime</a></h4>
+      <section></section>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+      <h4><a class="xref" href="Glitch9.IArchivable.html">IArchivable</a></h4>
+      <section><p>Represents objects that can be archived.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.ICommand.html">ICommand</a></h4>
+      <section><p>Marker interface for Commands.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.ICommandBus.html">ICommandBus</a></h4>
+      <section><ul><li>Routes Commands to exactly one handler per command type.</li><li>Designed for UI/Node -&gt; Controller command flow (single receiver).</li><li>Provides IDisposable registration token for clean unregistration.</li></ul>
+</section>
+      <h4><a class="xref" href="Glitch9.ICommandHandler-1.html">ICommandHandler&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.IData.html">IData</a></h4>
+      <section><p>Interface for data objects with an ID and Name.
+Useful for identifying items within a collection or database.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.IDeprecatable.html">IDeprecatable</a></h4>
+      <section><p>Represents objects that can be deprecated.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.IEmptiable.html">IEmptiable</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.IErrorListener.html">IErrorListener</a></h4>
+      <section><p>Observer interface for receiving error events.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.IErrorProvider.html">IErrorProvider</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.IEvent.html">IEvent</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.IEventBus.html">IEventBus</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.IEventHandler-1.html">IEventHandler&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.IFavoritable.html">IFavoritable</a></h4>
+      <section><p>Represents objects that can be marked as favorite.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.IHasGuid.html">IHasGuid</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.IHasId-1.html">IHasId&lt;TId&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.IHasName.html">IHasName</a></h4>
+      <section><p>Provides a name for an object.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.ILogger.html">ILogger</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.INullable.html">INullable</a></h4>
+      <section><p>Represents objects that can be null or have a value.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.IProjector-1.html">IProjector&lt;TOut&gt;</a></h4>
+      <section><p>Marker for payloads that can project to another type.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.IResult.html">IResult</a></h4>
+      <section><p>Avoid using object to keep APIs strongly typed.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.IValidatable.html">IValidatable</a></h4>
+      <section><p>Represents objects that can validate their parameters.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.IValidity.html">IValidity</a></h4>
+      <section><p>Represents objects that can report on the validity of their parameters.</p>
+</section>
+    <h3 id="enums">
+Enums
+</h3>
+      <h4><a class="xref" href="Glitch9.AssetPathAttribute.Location.html">AssetPathAttribute.Location</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.CalendarStartDay.html">CalendarStartDay</a></h4>
+      <section><p>Specifies the starting day of the week for a calendar.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.CompareMode.html">CompareMode</a></h4>
+      <section><p>Represents comparison modes for equality checks.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.Country.html">Country</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.CurrencyCode.html">CurrencyCode</a></h4>
+      <section><p>Enumeration of ISO 4217 currency codes, indexed with their respective ISO 4217 numeric currency codes.
+Only codes support in .Net with RegionInfo objects are listed</p>
+</section>
+      <h4><a class="xref" href="Glitch9.DevLogType.html">DevLogType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.InfoType.html">InfoType</a></h4>
+      <section><p>Represents the type of information or message.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.LanguageCodeType.html">LanguageCodeType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.NamingRule.html">NamingRule</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.Priority.html">Priority</a></h4>
+      <section><p>Represents the priority level of an item or task.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.TextCase.html">TextCase</a></h4>
+      <section><p>Represents different text casing styles.</p>
+</section>
+      <h4><a class="xref" href="Glitch9.TimeFormat.html">TimeFormat</a></h4>
+      <section><p>Specifies whether time is displayed in 24-hour format or 12-hour format (with AM/PM).</p>
+</section>
+      <h4><a class="xref" href="Glitch9.TimeZone.html">TimeZone</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Glitch9.UnityPathType.html">UnityPathType</a></h4>
+      <section><p>Specifies different types of paths used in Unity projects.</p>
+</section>
+
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AI DevKit Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

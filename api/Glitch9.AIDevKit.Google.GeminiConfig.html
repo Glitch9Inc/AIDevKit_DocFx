@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class GeminiConfig | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class GeminiConfig | AI DevKit ">
+    
+    <meta name="description" content="Configuration options for model generation and outputs. Not all parameters may be configurable for every model.  Note: Formerly known as &amp;quot;GenerationConfig&amp;quot; to match the official Gemini API. But renamed to &amp;quot;GeminiConfig&amp;quot; to avoid confusion with other similar classes for other providers.  2025-03-30: Added new properties - responseMimeType, responseSchema, responseModalities 2025-09-24: Added new properties - thinkingConfig 2025-12-17: Added imageConfig">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.Google.GeminiConfig">
+
+
+
+  <h1 id="Glitch9_AIDevKit_Google_GeminiConfig" data-uid="Glitch9.AIDevKit.Google.GeminiConfig" class="text-break">Class GeminiConfig</h1>
+  <div class="markdown level0 summary"><p>Configuration options for model generation and outputs.
+Not all parameters may be configurable for every model.
+<br><br>
+Note: Formerly known as &quot;GenerationConfig&quot; to match the official Gemini API.
+But renamed to &quot;GeminiConfig&quot; to avoid confusion with other similar classes for other providers.
+<br><br>
+2025-03-30: Added new properties - responseMimeType, responseSchema, responseModalities
+2025-09-24: Added new properties - thinkingConfig
+2025-12-17: Added imageConfig</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">GeminiConfig</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.Google.html">Google</a></h6>
+  <h6><strong>Assembly</strong>: Glitch9.AIDevKit.Provider.Google.dll</h6>
+  <h5 id="Glitch9_AIDevKit_Google_GeminiConfig_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GeminiConfig</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_GeminiConfig_CandidateCount.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.GeminiConfig.CandidateCount%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Models/Models/GenerateContent/Components/GeminiConfig.cs/#L60">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_GeminiConfig_CandidateCount_" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.CandidateCount*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GeminiConfig_CandidateCount" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.CandidateCount">CandidateCount</h4>
+  <div class="markdown level1 summary"><p>Optional. Number of generated responses to return.
+Currently, this value can only be set to 1. If unset, this will default to 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;candidateCount&quot;)]
+public int CandidateCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_GeminiConfig_EnableEnhancedCivicAnswers.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.GeminiConfig.EnableEnhancedCivicAnswers%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Models/Models/GenerateContent/Components/GeminiConfig.cs/#L125">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_GeminiConfig_EnableEnhancedCivicAnswers_" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.EnableEnhancedCivicAnswers*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GeminiConfig_EnableEnhancedCivicAnswers" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.EnableEnhancedCivicAnswers">EnableEnhancedCivicAnswers</h4>
+  <div class="markdown level1 summary"><p>Optional. Enables enhanced civic answers. It may not be available for all models.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;enableEnhancedCivicAnswers&quot;)]
+public bool? EnableEnhancedCivicAnswers { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_GeminiConfig_FrequencyPenalty.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.GeminiConfig.FrequencyPenalty%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Models/Models/GenerateContent/Components/GeminiConfig.cs/#L110">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_GeminiConfig_FrequencyPenalty_" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.FrequencyPenalty*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GeminiConfig_FrequencyPenalty" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.FrequencyPenalty">FrequencyPenalty</h4>
+  <div class="markdown level1 summary"><p>Optional. Frequency penalty applied to the next token's logprobs, multiplied by the number of times each token has been seen in the response so far.
+A positive penalty will discourage the use of tokens that have already been used, proportional to the number of times the token has been used: The more a token is used, the more difficult it is for the model to use that token again increasing the vocabulary of responses.
+Caution: A negative penalty will encourage the model to reuse tokens proportional to the number of times the token has been used. Small negative values will reduce the vocabulary of a response. Larger negative values will cause the model to start repeating a common token until it hits the maxOutputTokens limit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;frequencyPenalty&quot;)]
+public float? FrequencyPenalty { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_GeminiConfig_ImageConfig.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.GeminiConfig.ImageConfig%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Models/Models/GenerateContent/Components/GeminiConfig.cs/#L145">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_GeminiConfig_ImageConfig_" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.ImageConfig*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GeminiConfig_ImageConfig" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.ImageConfig">ImageConfig</h4>
+  <div class="markdown level1 summary"><p>Optional.
+Config for image generation.
+An error will be returned if this field is set for models that don't support these config options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;imageConfig&quot;)]
+public ImageConfig ImageConfig { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Google.ImageConfig.html">ImageConfig</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_GeminiConfig_Logprobs.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.GeminiConfig.Logprobs%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Models/Models/GenerateContent/Components/GeminiConfig.cs/#L120">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_GeminiConfig_Logprobs_" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.Logprobs*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GeminiConfig_Logprobs" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.Logprobs">Logprobs</h4>
+  <div class="markdown level1 summary"><p>Optional. Only valid if responseLogprobs=True. This sets the number of top logprobs to return at each decoding step in the Candidate.logprobs_result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;logprobs&quot;)]
+public int? Logprobs { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_GeminiConfig_MaxTokens.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.GeminiConfig.MaxTokens%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Models/Models/GenerateContent/Components/GeminiConfig.cs/#L66">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_GeminiConfig_MaxTokens_" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.MaxTokens*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GeminiConfig_MaxTokens" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.MaxTokens">MaxTokens</h4>
+  <div class="markdown level1 summary"><p>Optional. The maximum number of tokens to include in a candidate.
+Note: The default value varies by model, see the Model.output_token_limit attribute of the Model returned from the getModel function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;maxOutputTokens&quot;)]
+public int? MaxTokens { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_GeminiConfig_MediaResolution.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.GeminiConfig.MediaResolution%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Models/Models/GenerateContent/Components/GeminiConfig.cs/#L151">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_GeminiConfig_MediaResolution_" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.MediaResolution*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GeminiConfig_MediaResolution" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.MediaResolution">MediaResolution</h4>
+  <div class="markdown level1 summary"><p>Optional.
+If specified, the media resolution specified will be used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;mediaResolution&quot;)]
+public MediaResolution? MediaResolution { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Google.MediaResolution.html">MediaResolution</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_GeminiConfig_PresencePenalty.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.GeminiConfig.PresencePenalty%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Models/Models/GenerateContent/Components/GeminiConfig.cs/#L103">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_GeminiConfig_PresencePenalty_" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.PresencePenalty*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GeminiConfig_PresencePenalty" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.PresencePenalty">PresencePenalty</h4>
+  <div class="markdown level1 summary"><p>Optional. Presence penalty applied to the next token's logprobs if the token has already been seen in the response.
+This penalty is binary on/off and not dependant on the number of times the token is used (after the first).
+Use frequencyPenalty for a penalty that increases with each use.
+A positive penalty will discourage the use of tokens that have already been used in the response, increasing the vocabulary.
+A negative penalty will encourage the use of tokens that have already been used in the response, decreasing the vocabulary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;presencePenalty&quot;)]
+public float? PresencePenalty { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_GeminiConfig_ResponseLogprobs.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.GeminiConfig.ResponseLogprobs%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Models/Models/GenerateContent/Components/GeminiConfig.cs/#L115">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_GeminiConfig_ResponseLogprobs_" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.ResponseLogprobs*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GeminiConfig_ResponseLogprobs" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.ResponseLogprobs">ResponseLogprobs</h4>
+  <div class="markdown level1 summary"><p>Optional. If true, export the logprobs results in response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;responseLogprobs&quot;)]
+public bool? ResponseLogprobs { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_GeminiConfig_ResponseMimeType.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.GeminiConfig.ResponseMimeType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Models/Models/GenerateContent/Components/GeminiConfig.cs/#L38">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_GeminiConfig_ResponseMimeType_" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.ResponseMimeType*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GeminiConfig_ResponseMimeType" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.ResponseMimeType">ResponseMimeType</h4>
+  <div class="markdown level1 summary"><p>Optional. MIME type of the generated candidate text.
+Supported MIME types are:</p>
+<ul>
+<li>text/plain: (default) Text output.</li>
+<li>application/json: JSON response in the response candidates.</li>
+<li>text/x.enum: ENUM as a string response in the response candidates.
+Refer to the docs for a list of all supported text MIME types.
+Refer to the <a href="https://ai.google.dev/gemini-api/docs/file-prompting-strategies?_gl=1%2A10bjnrf%2A_up%2AMQ..%2A_ga%2ANjkzODk1OTc0LjE3NDMzMDY2ODM.%2A_ga_P1DBVKWT6V%2AMTc0MzMxODE4NC4yLjAuMTc0MzMxODE4NC4wLjAuMTQ4ODM2MjUwNg..#plain_text_formats">docs</a> for a list of all supported text MIME types.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;responseMimeType&quot;)]
+public string ResponseMimeType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_GeminiConfig_ResponseModalities.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.GeminiConfig.ResponseModalities%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Models/Models/GenerateContent/Components/GeminiConfig.cs/#L54">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_GeminiConfig_ResponseModalities_" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.ResponseModalities*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GeminiConfig_ResponseModalities" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.ResponseModalities">ResponseModalities</h4>
+  <div class="markdown level1 summary"><p>Optional. The requested Modality of the response.
+Represents the set of Modality that the model can return, and should be expected in the response.
+This is an exact match to the Modality of the response.
+A model may have multiple combinations of supported Modality.
+If the requested Modality do not match any of the supported combinations, an error will be returned.
+An empty list is equivalent to requesting only text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;responseModalities&quot;)]
+public List&lt;Modality&gt; ResponseModalities { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Glitch9.AIDevKit.Modality.html">Modality</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_GeminiConfig_ResponseSchema.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.GeminiConfig.ResponseSchema%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Models/Models/GenerateContent/Components/GeminiConfig.cs/#L44">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_GeminiConfig_ResponseSchema_" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.ResponseSchema*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GeminiConfig_ResponseSchema" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.ResponseSchema">ResponseSchema</h4>
+  <div class="markdown level1 summary"><p>Optional. Output schema of the generated candidate text. Schemas must be a subset of the OpenAPI schema and can be objects, primitives or arrays.
+If set, a compatible responseMimeType must also be set. Compatible MIME types: application/json: Schema for JSON response. Refer to the JSON text generation guide for more details.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;responseSchema&quot;)]
+public JsonSchema ResponseSchema { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Json.Schema.JsonSchema.html">JsonSchema</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_GeminiConfig_Seed.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.GeminiConfig.Seed%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Models/Models/GenerateContent/Components/GeminiConfig.cs/#L94">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_GeminiConfig_Seed_" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.Seed*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GeminiConfig_Seed" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.Seed">Seed</h4>
+  <div class="markdown level1 summary"><p>Optional. Seed used in decoding.
+If not set, the request uses a randomly generated seed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;seed&quot;)]
+public int? Seed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_GeminiConfig_SpeechConfig.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.GeminiConfig.SpeechConfig%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Models/Models/GenerateContent/Components/GeminiConfig.cs/#L131">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_GeminiConfig_SpeechConfig_" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.SpeechConfig*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GeminiConfig_SpeechConfig" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.SpeechConfig">SpeechConfig</h4>
+  <div class="markdown level1 summary"><p>Optional.
+The speech generation config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;speechConfig&quot;)]
+public SpeechConfig SpeechConfig { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Google.SpeechConfig.html">SpeechConfig</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_GeminiConfig_StopSequences.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.GeminiConfig.StopSequences%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Models/Models/GenerateContent/Components/GeminiConfig.cs/#L27">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_GeminiConfig_StopSequences_" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.StopSequences*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GeminiConfig_StopSequences" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.StopSequences">StopSequences</h4>
+  <div class="markdown level1 summary"><p>Optional.
+The set of character sequences (up to 5) that will stop output generation.
+If specified, the API will stop at the first appearance of a stop sequence.
+The stop sequence will not be included as part of the response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;stopSequences&quot;)]
+public string[] StopSequences { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_GeminiConfig_Temperature.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.GeminiConfig.Temperature%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Models/Models/GenerateContent/Components/GeminiConfig.cs/#L73">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_GeminiConfig_Temperature_" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.Temperature*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GeminiConfig_Temperature" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.Temperature">Temperature</h4>
+  <div class="markdown level1 summary"><p>Optional. Controls the randomness of the output.
+Note: The default value varies by model, see the Model.temperature attribute of the Model returned from the getModel function.
+Values can range from [0.0, 2.0].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;temperature&quot;)]
+public float? Temperature { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_GeminiConfig_ThinkingConfig.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.GeminiConfig.ThinkingConfig%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Models/Models/GenerateContent/Components/GeminiConfig.cs/#L138">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_GeminiConfig_ThinkingConfig_" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.ThinkingConfig*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GeminiConfig_ThinkingConfig" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.ThinkingConfig">ThinkingConfig</h4>
+  <div class="markdown level1 summary"><p>Optional.
+Config for thinking features.
+An error will be returned if this field is set for models that don't support thinking.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;thinkingConfig&quot;)]
+public ThinkingConfig ThinkingConfig { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Google.ThinkingConfig.html">ThinkingConfig</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_GeminiConfig_TopK.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.GeminiConfig.TopK%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Models/Models/GenerateContent/Components/GeminiConfig.cs/#L88">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_GeminiConfig_TopK_" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.TopK*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GeminiConfig_TopK" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.TopK">TopK</h4>
+  <div class="markdown level1 summary"><p>Optional. The maximum number of tokens to consider when sampling.
+Models use nucleus sampling or combined Top-k and nucleus sampling.Top-k sampling considers the set of topK most probable tokens. Models running with nucleus sampling don't allow topK setting.
+Note: The default value varies by model, see the Model.top_k attribute of the Model returned from the getModel function. Empty topK field in Model indicates the model doesn't apply top-k sampling and doesn't allow setting topK on requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;topK&quot;)]
+public int? TopK { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_GeminiConfig_TopP.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.GeminiConfig.TopP%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Models/Models/GenerateContent/Components/GeminiConfig.cs/#L81">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Google_GeminiConfig_TopP_" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.TopP*"></a>
+  <h4 id="Glitch9_AIDevKit_Google_GeminiConfig_TopP" data-uid="Glitch9.AIDevKit.Google.GeminiConfig.TopP">TopP</h4>
+  <div class="markdown level1 summary"><p>Optional. The maximum cumulative probability of tokens to consider when sampling.
+The model uses combined Top-k and nucleus sampling.
+Tokens are sorted based on their assigned probabilities so that only the most likely tokens are considered. Top-k sampling directly limits the maximum number of tokens to consider, while Nucleus sampling limits number of tokens based on the cumulative probability.
+Note: The default value varies by model, see the Model.top_p attribute of the Model returned from the getModel function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;topP&quot;)]
+public float? TopP { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrEmpty__1___0_">ArrayExtensions.ToArrayOrEmpty&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrNull__1___0_">ArrayExtensions.ToArrayOrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDelta__1___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.ToDelta&lt;T&gt;(T, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDone__1___0_System_String_System_Int32_System_String_">EventExtensions.ToDone&lt;T&gt;(T, string, int, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToEvent__1___0_">EventExtensions.ToEvent&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_UpcastDelta__2___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.UpcastDelta&lt;T1, T2&gt;(T1, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.FallbackExtensions.html#Glitch9_FallbackExtensions_IsOr__2___0___1_">FallbackExtensions.IsOr&lt;TParent, TChild&gt;(TParent, TChild)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ResponseCastingExtensions.html#Glitch9_IO_Networking_RESTApi_ResponseCastingExtensions_GetResult__1___0_">ResponseCastingExtensions.GetResult&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_GetName_System_Object_">SystemExtensions.GetName(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Google_GeminiConfig.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Google.GeminiConfig%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Agent/Runtime/Providers/Google/Models/Models/GenerateContent/Components/GeminiConfig.cs/#L19" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AI DevKit Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

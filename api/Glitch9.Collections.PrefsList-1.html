@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class PrefsList&lt;T&gt; | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class PrefsList&lt;T&gt; | AI DevKit ">
+    
+    <meta name="description" content="Wrapper for a list that is stored in Unity&#39;s PlayerPrefs. This class allows you to store and retrieve a list of items in PlayerPrefs, while ensuring type safety and automatic serialization/deserialization.   is separate from  in order to track the list&#39;s data changes like adding or removing items.  Supported types for the list items include: int, float, string, bool, UnixTime, Vector2, Vector3, Quaternion, and more.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.Collections.PrefsList`1">
+
+
+
+  <h1 id="Glitch9_Collections_PrefsList_1" data-uid="Glitch9.Collections.PrefsList`1" class="text-break">Class PrefsList&lt;T&gt;</h1>
+  <div class="markdown level0 summary"><p>Wrapper for a list that is stored in Unity's PlayerPrefs.
+This class allows you to store and retrieve a list of items in PlayerPrefs,
+while ensuring type safety and automatic serialization/deserialization.
+<br><br>
+<a class="xref" href="Glitch9.Collections.PrefsList-1.html">PrefsList&lt;T&gt;</a> is separate from <a class="xref" href="Glitch9.Prefs-1.html">Prefs&lt;T&gt;</a> in order to track the list's data changes like adding or removing items.
+<br><br>
+Supported types for the list items include: int, float, string, bool, UnixTime, Vector2, Vector3, Quaternion, and more.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">PrefsList&lt;T&gt;</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;T&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.Collections.html">Collections</a></h6>
+  <h6><strong>Assembly</strong>: Glitch9.dll</h6>
+  <h5 id="Glitch9_Collections_PrefsList_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PrefsList&lt;T&gt; : IList&lt;T&gt;, ICollection&lt;T&gt;, IEnumerable&lt;T&gt;, IEnumerable</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the items in the list.
+Supported types include: int, float, string, bool, UnixTime, Vector2, Vector3, Quaternion, and more.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/new/main/apiSpec/new?filename=Glitch9_Collections_PrefsList_1__ctor_System_String_.md&amp;value=---%0Auid%3A%20Glitch9.Collections.PrefsList%601.%23ctor(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Unity/Wrappers/Prefs/PrefsList.cs/#L43">View Source</a>
+  </span>
+  <a id="Glitch9_Collections_PrefsList_1__ctor_" data-uid="Glitch9.Collections.PrefsList`1.#ctor*"></a>
+  <h4 id="Glitch9_Collections_PrefsList_1__ctor_System_String_" data-uid="Glitch9.Collections.PrefsList`1.#ctor(System.String)">PrefsList(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PrefsList(string prefsKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">prefsKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/new/main/apiSpec/new?filename=Glitch9_Collections_PrefsList_1__ctor_System_String_System_Collections_Generic_List__0__.md&amp;value=---%0Auid%3A%20Glitch9.Collections.PrefsList%601.%23ctor(System.String%2CSystem.Collections.Generic.List%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Unity/Wrappers/Prefs/PrefsList.cs/#L59">View Source</a>
+  </span>
+  <a id="Glitch9_Collections_PrefsList_1__ctor_" data-uid="Glitch9.Collections.PrefsList`1.#ctor*"></a>
+  <h4 id="Glitch9_Collections_PrefsList_1__ctor_System_String_System_Collections_Generic_List__0__" data-uid="Glitch9.Collections.PrefsList`1.#ctor(System.String,System.Collections.Generic.List{`0})">PrefsList(string, List&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PrefsList(string prefsKey, List&lt;T&gt; defaultValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">prefsKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</td>
+        <td><span class="parametername">defaultValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/new/main/apiSpec/new?filename=Glitch9_Collections_PrefsList_1_Count.md&amp;value=---%0Auid%3A%20Glitch9.Collections.PrefsList%601.Count%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Unity/Wrappers/Prefs/PrefsList.cs/#L24">View Source</a>
+  </span>
+  <a id="Glitch9_Collections_PrefsList_1_Count_" data-uid="Glitch9.Collections.PrefsList`1.Count*"></a>
+  <h4 id="Glitch9_Collections_PrefsList_1_Count" data-uid="Glitch9.Collections.PrefsList`1.Count">Count</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/new/main/apiSpec/new?filename=Glitch9_Collections_PrefsList_1_IsReadOnly.md&amp;value=---%0Auid%3A%20Glitch9.Collections.PrefsList%601.IsReadOnly%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Unity/Wrappers/Prefs/PrefsList.cs/#L25">View Source</a>
+  </span>
+  <a id="Glitch9_Collections_PrefsList_1_IsReadOnly_" data-uid="Glitch9.Collections.PrefsList`1.IsReadOnly*"></a>
+  <h4 id="Glitch9_Collections_PrefsList_1_IsReadOnly" data-uid="Glitch9.Collections.PrefsList`1.IsReadOnly">IsReadOnly</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/new/main/apiSpec/new?filename=Glitch9_Collections_PrefsList_1_Item_System_Int32_.md&amp;value=---%0Auid%3A%20Glitch9.Collections.PrefsList%601.Item(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Unity/Wrappers/Prefs/PrefsList.cs/#L148">View Source</a>
+  </span>
+  <a id="Glitch9_Collections_PrefsList_1_Item_" data-uid="Glitch9.Collections.PrefsList`1.Item*"></a>
+  <h4 id="Glitch9_Collections_PrefsList_1_Item_System_Int32_" data-uid="Glitch9.Collections.PrefsList`1.Item(System.Int32)">this[int]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T this[int index] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/new/main/apiSpec/new?filename=Glitch9_Collections_PrefsList_1_ListName.md&amp;value=---%0Auid%3A%20Glitch9.Collections.PrefsList%601.ListName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Unity/Wrappers/Prefs/PrefsList.cs/#L29">View Source</a>
+  </span>
+  <a id="Glitch9_Collections_PrefsList_1_ListName_" data-uid="Glitch9.Collections.PrefsList`1.ListName*"></a>
+  <h4 id="Glitch9_Collections_PrefsList_1_ListName" data-uid="Glitch9.Collections.PrefsList`1.ListName">ListName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ListName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/new/main/apiSpec/new?filename=Glitch9_Collections_PrefsList_1_Add__0_.md&amp;value=---%0Auid%3A%20Glitch9.Collections.PrefsList%601.Add(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Unity/Wrappers/Prefs/PrefsList.cs/#L99">View Source</a>
+  </span>
+  <a id="Glitch9_Collections_PrefsList_1_Add_" data-uid="Glitch9.Collections.PrefsList`1.Add*"></a>
+  <h4 id="Glitch9_Collections_PrefsList_1_Add__0_" data-uid="Glitch9.Collections.PrefsList`1.Add(`0)">Add(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/new/main/apiSpec/new?filename=Glitch9_Collections_PrefsList_1_Clear.md&amp;value=---%0Auid%3A%20Glitch9.Collections.PrefsList%601.Clear%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Unity/Wrappers/Prefs/PrefsList.cs/#L105">View Source</a>
+  </span>
+  <a id="Glitch9_Collections_PrefsList_1_Clear_" data-uid="Glitch9.Collections.PrefsList`1.Clear*"></a>
+  <h4 id="Glitch9_Collections_PrefsList_1_Clear" data-uid="Glitch9.Collections.PrefsList`1.Clear">Clear()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/new/main/apiSpec/new?filename=Glitch9_Collections_PrefsList_1_Contains__0_.md&amp;value=---%0Auid%3A%20Glitch9.Collections.PrefsList%601.Contains(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Unity/Wrappers/Prefs/PrefsList.cs/#L111">View Source</a>
+  </span>
+  <a id="Glitch9_Collections_PrefsList_1_Contains_" data-uid="Glitch9.Collections.PrefsList`1.Contains*"></a>
+  <h4 id="Glitch9_Collections_PrefsList_1_Contains__0_" data-uid="Glitch9.Collections.PrefsList`1.Contains(`0)">Contains(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/new/main/apiSpec/new?filename=Glitch9_Collections_PrefsList_1_CopyTo__0___System_Int32_.md&amp;value=---%0Auid%3A%20Glitch9.Collections.PrefsList%601.CopyTo(%600%5B%5D%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Unity/Wrappers/Prefs/PrefsList.cs/#L116">View Source</a>
+  </span>
+  <a id="Glitch9_Collections_PrefsList_1_CopyTo_" data-uid="Glitch9.Collections.PrefsList`1.CopyTo*"></a>
+  <h4 id="Glitch9_Collections_PrefsList_1_CopyTo__0___System_Int32_" data-uid="Glitch9.Collections.PrefsList`1.CopyTo(`0[],System.Int32)">CopyTo(T[], int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(T[] array, int arrayIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">arrayIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/new/main/apiSpec/new?filename=Glitch9_Collections_PrefsList_1_GetEnumerator.md&amp;value=---%0Auid%3A%20Glitch9.Collections.PrefsList%601.GetEnumerator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Unity/Wrappers/Prefs/PrefsList.cs/#L89">View Source</a>
+  </span>
+  <a id="Glitch9_Collections_PrefsList_1_GetEnumerator_" data-uid="Glitch9.Collections.PrefsList`1.GetEnumerator*"></a>
+  <h4 id="Glitch9_Collections_PrefsList_1_GetEnumerator" data-uid="Glitch9.Collections.PrefsList`1.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;T&gt; GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/new/main/apiSpec/new?filename=Glitch9_Collections_PrefsList_1_IndexOf__0_.md&amp;value=---%0Auid%3A%20Glitch9.Collections.PrefsList%601.IndexOf(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Unity/Wrappers/Prefs/PrefsList.cs/#L131">View Source</a>
+  </span>
+  <a id="Glitch9_Collections_PrefsList_1_IndexOf_" data-uid="Glitch9.Collections.PrefsList`1.IndexOf*"></a>
+  <h4 id="Glitch9_Collections_PrefsList_1_IndexOf__0_" data-uid="Glitch9.Collections.PrefsList`1.IndexOf(`0)">IndexOf(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/new/main/apiSpec/new?filename=Glitch9_Collections_PrefsList_1_Insert_System_Int32__0_.md&amp;value=---%0Auid%3A%20Glitch9.Collections.PrefsList%601.Insert(System.Int32%2C%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Unity/Wrappers/Prefs/PrefsList.cs/#L136">View Source</a>
+  </span>
+  <a id="Glitch9_Collections_PrefsList_1_Insert_" data-uid="Glitch9.Collections.PrefsList`1.Insert*"></a>
+  <h4 id="Glitch9_Collections_PrefsList_1_Insert_System_Int32__0_" data-uid="Glitch9.Collections.PrefsList`1.Insert(System.Int32,`0)">Insert(int, T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(int index, T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/new/main/apiSpec/new?filename=Glitch9_Collections_PrefsList_1_Remove__0_.md&amp;value=---%0Auid%3A%20Glitch9.Collections.PrefsList%601.Remove(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Unity/Wrappers/Prefs/PrefsList.cs/#L121">View Source</a>
+  </span>
+  <a id="Glitch9_Collections_PrefsList_1_Remove_" data-uid="Glitch9.Collections.PrefsList`1.Remove*"></a>
+  <h4 id="Glitch9_Collections_PrefsList_1_Remove__0_" data-uid="Glitch9.Collections.PrefsList`1.Remove(`0)">Remove(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/new/main/apiSpec/new?filename=Glitch9_Collections_PrefsList_1_RemoveAt_System_Int32_.md&amp;value=---%0Auid%3A%20Glitch9.Collections.PrefsList%601.RemoveAt(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Unity/Wrappers/Prefs/PrefsList.cs/#L142">View Source</a>
+  </span>
+  <a id="Glitch9_Collections_PrefsList_1_RemoveAt_" data-uid="Glitch9.Collections.PrefsList`1.RemoveAt*"></a>
+  <h4 id="Glitch9_Collections_PrefsList_1_RemoveAt_System_Int32_" data-uid="Glitch9.Collections.PrefsList`1.RemoveAt(System.Int32)">RemoveAt(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAt(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/new/main/apiSpec/new?filename=Glitch9_Collections_PrefsList_1_Save.md&amp;value=---%0Auid%3A%20Glitch9.Collections.PrefsList%601.Save%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Unity/Wrappers/Prefs/PrefsList.cs/#L172">View Source</a>
+  </span>
+  <a id="Glitch9_Collections_PrefsList_1_Save_" data-uid="Glitch9.Collections.PrefsList`1.Save*"></a>
+  <h4 id="Glitch9_Collections_PrefsList_1_Save" data-uid="Glitch9.Collections.PrefsList`1.Save">Save()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Save()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/new/main/apiSpec/new?filename=Glitch9_Collections_PrefsList_1_ToList.md&amp;value=---%0Auid%3A%20Glitch9.Collections.PrefsList%601.ToList%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Unity/Wrappers/Prefs/PrefsList.cs/#L179">View Source</a>
+  </span>
+  <a id="Glitch9_Collections_PrefsList_1_ToList_" data-uid="Glitch9.Collections.PrefsList`1.ToList*"></a>
+  <h4 id="Glitch9_Collections_PrefsList_1_ToList" data-uid="Glitch9.Collections.PrefsList`1.ToList">ToList()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;T&gt; ToList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrEmpty__1___0_">ArrayExtensions.ToArrayOrEmpty&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrNull__1___0_">ArrayExtensions.ToArrayOrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDelta__1___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.ToDelta&lt;T&gt;(T, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDone__1___0_System_String_System_Int32_System_String_">EventExtensions.ToDone&lt;T&gt;(T, string, int, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToEvent__1___0_">EventExtensions.ToEvent&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_UpcastDelta__2___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.UpcastDelta&lt;T1, T2&gt;(T1, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.FallbackExtensions.html#Glitch9_FallbackExtensions_IsOr__2___0___1_">FallbackExtensions.IsOr&lt;TParent, TChild&gt;(TParent, TChild)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ResponseCastingExtensions.html#Glitch9_IO_Networking_RESTApi_ResponseCastingExtensions_GetResult__1___0_">ResponseCastingExtensions.GetResult&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.CollectionExtensions.html#Glitch9_CollectionExtensions_ContainsAll__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__">CollectionExtensions.ContainsAll&lt;T&gt;(IEnumerable&lt;T&gt;, IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.CollectionExtensions.html#Glitch9_CollectionExtensions_ContainsAny__1_System_Collections_Generic_IEnumerable___0____0___">CollectionExtensions.ContainsAny&lt;T&gt;(IEnumerable&lt;T&gt;, params T[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.CollectionExtensions.html#Glitch9_CollectionExtensions_IndexOf__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__">CollectionExtensions.IndexOf&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.CollectionExtensions.html#Glitch9_CollectionExtensions_IsNotNullOrEmpty__1_System_Collections_Generic_IEnumerable___0__">CollectionExtensions.IsNotNullOrEmpty&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.CollectionExtensions.html#Glitch9_CollectionExtensions_IsNullOrEmpty__1_System_Collections_Generic_IEnumerable___0__">CollectionExtensions.IsNullOrEmpty&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.CollectionExtensions.html#Glitch9_CollectionExtensions_SafeAddRange__1_System_Collections_Generic_IList___0__System_Collections_Generic_IEnumerable___0__">CollectionExtensions.SafeAddRange&lt;T&gt;(IList&lt;T&gt;, IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.CollectionExtensions.html#Glitch9_CollectionExtensions_SafeAdd__1_System_Collections_Generic_IList___0____0_System_Boolean_">CollectionExtensions.SafeAdd&lt;T&gt;(IList&lt;T&gt;, T, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.CollectionExtensions.html#Glitch9_CollectionExtensions_SafeRemoveAt__1_System_Collections_Generic_IList___0__System_Int32_">CollectionExtensions.SafeRemoveAt&lt;T&gt;(IList&lt;T&gt;, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.CollectionExtensions.html#Glitch9_CollectionExtensions_SwapElements__1_System_Collections_Generic_IList___0__System_Int32_System_Int32_">CollectionExtensions.SwapElements&lt;T&gt;(IList&lt;T&gt;, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_GetHashCodeOrDefault__1_System_Collections_Generic_IList___0__">SystemExtensions.GetHashCodeOrDefault&lt;T&gt;(IList&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_GetName_System_Object_">SystemExtensions.GetName(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/new/main/apiSpec/new?filename=Glitch9_Collections_PrefsList_1.md&amp;value=---%0Auid%3A%20Glitch9.Collections.PrefsList%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.CoreLib/blob/main/Runtime/Unity/Wrappers/Prefs/PrefsList.cs/#L22" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AI DevKit Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

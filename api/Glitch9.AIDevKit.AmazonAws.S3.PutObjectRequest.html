@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class PutObjectRequest | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class PutObjectRequest | AI DevKit ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest">
+
+
+
+  <h1 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest" class="text-break">Class PutObjectRequest</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.S3RequestBase.html">S3RequestBase</a></div>
+    <div class="level2"><a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.ObjectRequestBase.html">ObjectRequestBase</a></div>
+    <div class="level3"><span class="xref">PutObjectRequest</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Glitch9.IValidatable.html">IValidatable</a></div>
+    <div><a class="xref" href="Glitch9.IO.Networking.RESTApi.IRequestParameterProvider.html">IRequestParameterProvider</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.ObjectRequestBase.html#Glitch9_AIDevKit_AmazonAws_S3_ObjectRequestBase_Bucket">ObjectRequestBase.Bucket</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.ObjectRequestBase.html#Glitch9_AIDevKit_AmazonAws_S3_ObjectRequestBase_Key">ObjectRequestBase.Key</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.ObjectRequestBase.html#Glitch9_AIDevKit_AmazonAws_S3_ObjectRequestBase_VersionId">ObjectRequestBase.VersionId</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.ObjectRequestBase.html#Glitch9_AIDevKit_AmazonAws_S3_ObjectRequestBase_IfMatch">ObjectRequestBase.IfMatch</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.ObjectRequestBase.html#Glitch9_AIDevKit_AmazonAws_S3_ObjectRequestBase_IfModifiedSince">ObjectRequestBase.IfModifiedSince</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.ObjectRequestBase.html#Glitch9_AIDevKit_AmazonAws_S3_ObjectRequestBase_IfNoneMatch">ObjectRequestBase.IfNoneMatch</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.ObjectRequestBase.html#Glitch9_AIDevKit_AmazonAws_S3_ObjectRequestBase_IfUnmodifiedSince">ObjectRequestBase.IfUnmodifiedSince</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.ObjectRequestBase.html#Glitch9_AIDevKit_AmazonAws_S3_ObjectRequestBase_SSECustomerAlgorithm">ObjectRequestBase.SSECustomerAlgorithm</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.ObjectRequestBase.html#Glitch9_AIDevKit_AmazonAws_S3_ObjectRequestBase_SSECustomerKey">ObjectRequestBase.SSECustomerKey</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.ObjectRequestBase.html#Glitch9_AIDevKit_AmazonAws_S3_ObjectRequestBase_SSECustomerKeyMD5">ObjectRequestBase.SSECustomerKeyMD5</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.ObjectRequestBase.html#Glitch9_AIDevKit_AmazonAws_S3_ObjectRequestBase_Validate">ObjectRequestBase.Validate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.S3RequestBase.html#Glitch9_AIDevKit_AmazonAws_S3_S3RequestBase_ExpectedBucketOwner">S3RequestBase.ExpectedBucketOwner</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.S3RequestBase.html#Glitch9_AIDevKit_AmazonAws_S3_S3RequestBase_RequestPayer">S3RequestBase.RequestPayer</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.S3RequestBase.html#Glitch9_AIDevKit_AmazonAws_S3_S3RequestBase_IsValid">S3RequestBase.IsValid()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.AmazonAws.html">AmazonAws</a>.<a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.html">S3</a></h6>
+  <h6><strong>Assembly</strong>: Glitch9.AIDevKit.Provider.AmazonAws.dll</h6>
+  <h5 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PutObjectRequest : ObjectRequestBase, IValidatable, IRequestParameterProvider</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_Body.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.Body%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L10">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_Body_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.Body*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_Body" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.Body">Body</h4>
+  <div class="markdown level1 summary"><p>Object data (binary content).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] Body { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_BucketKeyEnabled.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.BucketKeyEnabled%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L34">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_BucketKeyEnabled_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.BucketKeyEnabled*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_BucketKeyEnabled" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.BucketKeyEnabled">BucketKeyEnabled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? BucketKeyEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_CacheControl.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.CacheControl%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L13">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_CacheControl_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.CacheControl*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_CacheControl" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.CacheControl">CacheControl</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CacheControl { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ChecksumAlgorithm.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ChecksumAlgorithm%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L23">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ChecksumAlgorithm_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ChecksumAlgorithm*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ChecksumAlgorithm" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ChecksumAlgorithm">ChecksumAlgorithm</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ChecksumAlgorithm { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ChecksumCRC32.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ChecksumCRC32%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L24">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ChecksumCRC32_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ChecksumCRC32*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ChecksumCRC32" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ChecksumCRC32">ChecksumCRC32</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ChecksumCRC32 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ChecksumCRC32C.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ChecksumCRC32C%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L25">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ChecksumCRC32C_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ChecksumCRC32C*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ChecksumCRC32C" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ChecksumCRC32C">ChecksumCRC32C</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ChecksumCRC32C { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ChecksumCRC64NVME.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ChecksumCRC64NVME%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L26">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ChecksumCRC64NVME_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ChecksumCRC64NVME*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ChecksumCRC64NVME" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ChecksumCRC64NVME">ChecksumCRC64NVME</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ChecksumCRC64NVME { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ChecksumSHA1.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ChecksumSHA1%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L27">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ChecksumSHA1_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ChecksumSHA1*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ChecksumSHA1" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ChecksumSHA1">ChecksumSHA1</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ChecksumSHA1 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ChecksumSHA256.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ChecksumSHA256%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L28">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ChecksumSHA256_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ChecksumSHA256*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ChecksumSHA256" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ChecksumSHA256">ChecksumSHA256</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ChecksumSHA256 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ContentDisposition.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ContentDisposition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L14">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ContentDisposition_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ContentDisposition*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ContentDisposition" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ContentDisposition">ContentDisposition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ContentDisposition { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ContentEncoding.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ContentEncoding%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L15">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ContentEncoding_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ContentEncoding*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ContentEncoding" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ContentEncoding">ContentEncoding</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ContentEncoding { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ContentLanguage.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ContentLanguage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L16">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ContentLanguage_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ContentLanguage*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ContentLanguage" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ContentLanguage">ContentLanguage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ContentLanguage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ContentMD5.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ContentMD5%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L18">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ContentMD5_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ContentMD5*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ContentMD5" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ContentMD5">ContentMD5</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ContentMD5 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_Expires.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.Expires%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L19">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_Expires_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.Expires*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_Expires" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.Expires">Expires</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? Expires { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ObjectLockLegalHoldStatus.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ObjectLockLegalHoldStatus%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L45">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ObjectLockLegalHoldStatus_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ObjectLockLegalHoldStatus*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ObjectLockLegalHoldStatus" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ObjectLockLegalHoldStatus">ObjectLockLegalHoldStatus</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ObjectLockLegalHoldStatus { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ObjectLockMode.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ObjectLockMode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L43">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ObjectLockMode_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ObjectLockMode*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ObjectLockMode" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ObjectLockMode">ObjectLockMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ObjectLockMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ObjectLockRetainUntilDate.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ObjectLockRetainUntilDate%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L44">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ObjectLockRetainUntilDate_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ObjectLockRetainUntilDate*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ObjectLockRetainUntilDate" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ObjectLockRetainUntilDate">ObjectLockRetainUntilDate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? ObjectLockRetainUntilDate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_SSEKMSEncryptionContext.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.SSEKMSEncryptionContext%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L33">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_SSEKMSEncryptionContext_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.SSEKMSEncryptionContext*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_SSEKMSEncryptionContext" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.SSEKMSEncryptionContext">SSEKMSEncryptionContext</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SSEKMSEncryptionContext { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_SSEKMSKeyId.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.SSEKMSKeyId%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L32">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_SSEKMSKeyId_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.SSEKMSKeyId*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_SSEKMSKeyId" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.SSEKMSKeyId">SSEKMSKeyId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SSEKMSKeyId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ServerSideEncryption.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ServerSideEncryption%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L31">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ServerSideEncryption_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ServerSideEncryption*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_ServerSideEncryption" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.ServerSideEncryption">ServerSideEncryption</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ServerSideEncryption { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_StorageClass.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.StorageClass%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L37">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_StorageClass_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.StorageClass*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_StorageClass" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.StorageClass">StorageClass</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string StorageClass { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_Tagging.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.Tagging%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L40">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_Tagging_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.Tagging*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_Tagging" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.Tagging">Tagging</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Tagging { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_WebsiteRedirectLocation.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.WebsiteRedirectLocation%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L48">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_WebsiteRedirectLocation_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.WebsiteRedirectLocation*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_WebsiteRedirectLocation" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.WebsiteRedirectLocation">WebsiteRedirectLocation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string WebsiteRedirectLocation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_WriteOffsetBytes.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.WriteOffsetBytes%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L49">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_WriteOffsetBytes_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.WriteOffsetBytes*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_WriteOffsetBytes" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.WriteOffsetBytes">WriteOffsetBytes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long? WriteOffsetBytes { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_GetRequestParameters.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.GetRequestParameters%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L52">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_GetRequestParameters_" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.GetRequestParameters*"></a>
+  <h4 id="Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest_GetRequestParameters" data-uid="Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest.GetRequestParameters">GetRequestParameters()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;RequestParameter&gt; GetRequestParameters()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestParameter.html">RequestParameter</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.AIDevKit.AmazonAws.S3.ObjectRequestBase.html#Glitch9_AIDevKit_AmazonAws_S3_ObjectRequestBase_GetRequestParameters">ObjectRequestBase.GetRequestParameters()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Glitch9.IValidatable.html">IValidatable</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.IRequestParameterProvider.html">IRequestParameterProvider</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrEmpty__1___0_">ArrayExtensions.ToArrayOrEmpty&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrNull__1___0_">ArrayExtensions.ToArrayOrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDelta__1___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.ToDelta&lt;T&gt;(T, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDone__1___0_System_String_System_Int32_System_String_">EventExtensions.ToDone&lt;T&gt;(T, string, int, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToEvent__1___0_">EventExtensions.ToEvent&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_UpcastDelta__2___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.UpcastDelta&lt;T1, T2&gt;(T1, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.FallbackExtensions.html#Glitch9_FallbackExtensions_IsOr__2___0___1_">FallbackExtensions.IsOr&lt;TParent, TChild&gt;(TParent, TChild)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ResponseCastingExtensions.html#Glitch9_IO_Networking_RESTApi_ResponseCastingExtensions_GetResult__1___0_">ResponseCastingExtensions.GetResult&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ResponseCastingExtensions.html#Glitch9_IO_Networking_RESTApi_ResponseCastingExtensions_ToParams_Glitch9_IO_Networking_RESTApi_IRequestParameterProvider_">ResponseCastingExtensions.ToParams(IRequestParameterProvider)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ResponseCastingExtensions.html#Glitch9_IO_Networking_RESTApi_ResponseCastingExtensions_ToParams_Glitch9_IO_Networking_RESTApi_IRequestParameterProvider_Glitch9_IO_Networking_RESTApi_RequestParameter___">ResponseCastingExtensions.ToParams(IRequestParameterProvider, params RequestParameter[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_GetName_System_Object_">SystemExtensions.GetName(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_AmazonAws_S3_PutObjectRequest.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.AmazonAws.S3.PutObjectRequest%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/AmazonAws/Models/S3/Object/ObjectRequest.cs/#L7" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AI DevKit Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

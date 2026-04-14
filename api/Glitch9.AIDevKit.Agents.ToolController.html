@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ToolController | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ToolController | AI DevKit ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.Agents.ToolController">
+
+
+
+  <h1 id="Glitch9_AIDevKit_Agents_ToolController" data-uid="Glitch9.AIDevKit.Agents.ToolController" class="text-break">Class ToolController</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">ToolController</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.Agents.html">Agents</a></h6>
+  <h6><strong>Assembly</strong>: Glitch9.AIDevKit.dll</h6>
+  <h5 id="Glitch9_AIDevKit_Agents_ToolController_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ToolController : IDisposable</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_ToolController_Dispose.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.ToolController.Dispose%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Controllers/Tool/ToolController.cs/#L73">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_ToolController_Dispose_" data-uid="Glitch9.AIDevKit.Agents.ToolController.Dispose*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_ToolController_Dispose" data-uid="Glitch9.AIDevKit.Agents.ToolController.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_ToolController_GetTools.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.ToolController.GetTools%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Controllers/Tool/ToolController.cs/#L131">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_ToolController_GetTools_" data-uid="Glitch9.AIDevKit.Agents.ToolController.GetTools*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_ToolController_GetTools" data-uid="Glitch9.AIDevKit.Agents.ToolController.GetTools">GetTools()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tool[] GetTools()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Tool.html">Tool</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_ToolController_RegisterTool_Glitch9_AIDevKit_Tool_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.ToolController.RegisterTool(Glitch9.AIDevKit.Tool)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Controllers/Tool/ToolController.cs/#L113">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_ToolController_RegisterTool_" data-uid="Glitch9.AIDevKit.Agents.ToolController.RegisterTool*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_ToolController_RegisterTool_Glitch9_AIDevKit_Tool_" data-uid="Glitch9.AIDevKit.Agents.ToolController.RegisterTool(Glitch9.AIDevKit.Tool)">RegisterTool(Tool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterTool(Tool tool)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Tool.html">Tool</a></td>
+        <td><span class="parametername">tool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_ToolController_RegisterToolDefinition_Glitch9_AIDevKit_HostedToolDefinitionBase_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.ToolController.RegisterToolDefinition(Glitch9.AIDevKit.HostedToolDefinitionBase)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Controllers/Tool/ToolController.cs/#L117">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_ToolController_RegisterToolDefinition_" data-uid="Glitch9.AIDevKit.Agents.ToolController.RegisterToolDefinition*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_ToolController_RegisterToolDefinition_Glitch9_AIDevKit_HostedToolDefinitionBase_" data-uid="Glitch9.AIDevKit.Agents.ToolController.RegisterToolDefinition(Glitch9.AIDevKit.HostedToolDefinitionBase)">RegisterToolDefinition(HostedToolDefinitionBase)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterToolDefinition(HostedToolDefinitionBase toolDef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.HostedToolDefinitionBase.html">HostedToolDefinitionBase</a></td>
+        <td><span class="parametername">toolDef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_ToolController_RegisterToolDefinitions_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_HostedToolDefinitionBase__.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.ToolController.RegisterToolDefinitions(System.Collections.Generic.IEnumerable%7BGlitch9.AIDevKit.HostedToolDefinitionBase%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Controllers/Tool/ToolController.cs/#L125">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_ToolController_RegisterToolDefinitions_" data-uid="Glitch9.AIDevKit.Agents.ToolController.RegisterToolDefinitions*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_ToolController_RegisterToolDefinitions_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_HostedToolDefinitionBase__" data-uid="Glitch9.AIDevKit.Agents.ToolController.RegisterToolDefinitions(System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.HostedToolDefinitionBase})">RegisterToolDefinitions(IEnumerable&lt;HostedToolDefinitionBase&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterToolDefinitions(IEnumerable&lt;HostedToolDefinitionBase&gt; toolDefs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Glitch9.AIDevKit.HostedToolDefinitionBase.html">HostedToolDefinitionBase</a>&gt;</td>
+        <td><span class="parametername">toolDefs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_ToolController_RegisterToolExecutor__2_Glitch9_AIDevKit_Agents_IToolCallExecutor___0___1__.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.ToolController.RegisterToolExecutor%60%602(Glitch9.AIDevKit.Agents.IToolCallExecutor%7B%60%600%2C%60%601%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Controllers/Tool/ToolController.cs/#L79">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_ToolController_RegisterToolExecutor_" data-uid="Glitch9.AIDevKit.Agents.ToolController.RegisterToolExecutor*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_ToolController_RegisterToolExecutor__2_Glitch9_AIDevKit_Agents_IToolCallExecutor___0___1__" data-uid="Glitch9.AIDevKit.Agents.ToolController.RegisterToolExecutor``2(Glitch9.AIDevKit.Agents.IToolCallExecutor{``0,``1})">RegisterToolExecutor&lt;TCall, TOutput&gt;(IToolCallExecutor&lt;TCall, TOutput&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterToolExecutor&lt;TCall, TOutput&gt;(IToolCallExecutor&lt;TCall, TOutput&gt; executor) where TCall : ToolCall where TOutput : ToolOutput</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Agents.IToolCallExecutor-2.html">IToolCallExecutor</a>&lt;TCall, TOutput&gt;</td>
+        <td><span class="parametername">executor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TCall</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOutput</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_ToolController_RegisterTools_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_Tool__.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.ToolController.RegisterTools(System.Collections.Generic.IEnumerable%7BGlitch9.AIDevKit.Tool%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Controllers/Tool/ToolController.cs/#L121">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_ToolController_RegisterTools_" data-uid="Glitch9.AIDevKit.Agents.ToolController.RegisterTools*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_ToolController_RegisterTools_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_Tool__" data-uid="Glitch9.AIDevKit.Agents.ToolController.RegisterTools(System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.Tool})">RegisterTools(IEnumerable&lt;Tool&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterTools(IEnumerable&lt;Tool&gt; tools)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Glitch9.AIDevKit.Tool.html">Tool</a>&gt;</td>
+        <td><span class="parametername">tools</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_ToolController_RouteToolsAsync_System_String_System_Int32_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.ToolController.RouteToolsAsync(System.String%2CSystem.Int32%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Controllers/Tool/ToolController.cs/#L155">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_ToolController_RouteToolsAsync_" data-uid="Glitch9.AIDevKit.Agents.ToolController.RouteToolsAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_ToolController_RouteToolsAsync_System_String_System_Int32_System_Threading_CancellationToken_" data-uid="Glitch9.AIDevKit.Agents.ToolController.RouteToolsAsync(System.String,System.Int32,System.Threading.CancellationToken)">RouteToolsAsync(string, int, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Returns the top-K tools most relevant to the user message for semantic routing.
+If EnableSemanticRouting is disabled, returns the full tool list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;List&lt;Tool&gt;&gt; RouteToolsAsync(string userMessage, int topK = 12, CancellationToken ct = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">userMessage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">topK</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Glitch9.AIDevKit.Tool.html">Tool</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_ToolController_SetRouter_Glitch9_AIDevKit_Agents_IToolRouter_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.ToolController.SetRouter(Glitch9.AIDevKit.Agents.IToolRouter)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Controllers/Tool/ToolController.cs/#L139">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_ToolController_SetRouter_" data-uid="Glitch9.AIDevKit.Agents.ToolController.SetRouter*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_ToolController_SetRouter_Glitch9_AIDevKit_Agents_IToolRouter_" data-uid="Glitch9.AIDevKit.Agents.ToolController.SetRouter(Glitch9.AIDevKit.Agents.IToolRouter)">SetRouter(IToolRouter)</h4>
+  <div class="markdown level1 summary"><p>Sets a new router, replacing the previous one.
+If a previous router exists, unsubscribes it from the OnToolsChanged event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRouter(IToolRouter router)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Agents.IToolRouter.html">IToolRouter</a></td>
+        <td><span class="parametername">router</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_ToolController_SubmitUserToolOutput_System_String_Glitch9_AIDevKit_ToolOutput_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.ToolController.SubmitUserToolOutput(System.String%2CGlitch9.AIDevKit.ToolOutput)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Controllers/Tool/ToolController.cs/#L442">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_ToolController_SubmitUserToolOutput_" data-uid="Glitch9.AIDevKit.Agents.ToolController.SubmitUserToolOutput*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_ToolController_SubmitUserToolOutput_System_String_Glitch9_AIDevKit_ToolOutput_" data-uid="Glitch9.AIDevKit.Agents.ToolController.SubmitUserToolOutput(System.String,Glitch9.AIDevKit.ToolOutput)">SubmitUserToolOutput(string, ToolOutput)</h4>
+  <div class="markdown level1 summary"><p>Allows user to manually submit a tool output.
+Used when UnhandledToolCallBehaviour is SubmitToolOutput.
+The output will be cached and included in the batch submission when the response is complete.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SubmitUserToolOutput(string responseId, ToolOutput output)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">responseId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.ToolOutput.html">ToolOutput</a></td>
+        <td><span class="parametername">output</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_ToolController_UnregisterTool_Glitch9_AIDevKit_Tool_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.ToolController.UnregisterTool(Glitch9.AIDevKit.Tool)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Controllers/Tool/ToolController.cs/#L115">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_ToolController_UnregisterTool_" data-uid="Glitch9.AIDevKit.Agents.ToolController.UnregisterTool*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_ToolController_UnregisterTool_Glitch9_AIDevKit_Tool_" data-uid="Glitch9.AIDevKit.Agents.ToolController.UnregisterTool(Glitch9.AIDevKit.Tool)">UnregisterTool(Tool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterTool(Tool tool)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Tool.html">Tool</a></td>
+        <td><span class="parametername">tool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_ToolController_UnregisterToolDefinition_Glitch9_AIDevKit_HostedToolDefinitionBase_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.ToolController.UnregisterToolDefinition(Glitch9.AIDevKit.HostedToolDefinitionBase)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Controllers/Tool/ToolController.cs/#L119">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_ToolController_UnregisterToolDefinition_" data-uid="Glitch9.AIDevKit.Agents.ToolController.UnregisterToolDefinition*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_ToolController_UnregisterToolDefinition_Glitch9_AIDevKit_HostedToolDefinitionBase_" data-uid="Glitch9.AIDevKit.Agents.ToolController.UnregisterToolDefinition(Glitch9.AIDevKit.HostedToolDefinitionBase)">UnregisterToolDefinition(HostedToolDefinitionBase)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterToolDefinition(HostedToolDefinitionBase toolDef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.HostedToolDefinitionBase.html">HostedToolDefinitionBase</a></td>
+        <td><span class="parametername">toolDef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_ToolController_UnregisterToolDefinitions_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_HostedToolDefinitionBase__.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.ToolController.UnregisterToolDefinitions(System.Collections.Generic.IEnumerable%7BGlitch9.AIDevKit.HostedToolDefinitionBase%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Controllers/Tool/ToolController.cs/#L128">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_ToolController_UnregisterToolDefinitions_" data-uid="Glitch9.AIDevKit.Agents.ToolController.UnregisterToolDefinitions*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_ToolController_UnregisterToolDefinitions_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_HostedToolDefinitionBase__" data-uid="Glitch9.AIDevKit.Agents.ToolController.UnregisterToolDefinitions(System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.HostedToolDefinitionBase})">UnregisterToolDefinitions(IEnumerable&lt;HostedToolDefinitionBase&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterToolDefinitions(IEnumerable&lt;HostedToolDefinitionBase&gt; toolDefs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Glitch9.AIDevKit.HostedToolDefinitionBase.html">HostedToolDefinitionBase</a>&gt;</td>
+        <td><span class="parametername">toolDefs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_ToolController_UnregisterToolExecutor__2_Glitch9_AIDevKit_Agents_IToolCallExecutor___0___1__.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.ToolController.UnregisterToolExecutor%60%602(Glitch9.AIDevKit.Agents.IToolCallExecutor%7B%60%600%2C%60%601%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Controllers/Tool/ToolController.cs/#L97">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_ToolController_UnregisterToolExecutor_" data-uid="Glitch9.AIDevKit.Agents.ToolController.UnregisterToolExecutor*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_ToolController_UnregisterToolExecutor__2_Glitch9_AIDevKit_Agents_IToolCallExecutor___0___1__" data-uid="Glitch9.AIDevKit.Agents.ToolController.UnregisterToolExecutor``2(Glitch9.AIDevKit.Agents.IToolCallExecutor{``0,``1})">UnregisterToolExecutor&lt;TCall, TOutput&gt;(IToolCallExecutor&lt;TCall, TOutput&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UnregisterToolExecutor&lt;TCall, TOutput&gt;(IToolCallExecutor&lt;TCall, TOutput&gt; executor) where TCall : ToolCall where TOutput : ToolOutput</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Agents.IToolCallExecutor-2.html">IToolCallExecutor</a>&lt;TCall, TOutput&gt;</td>
+        <td><span class="parametername">executor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TCall</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOutput</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_ToolController_UnregisterTools_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_Tool__.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.ToolController.UnregisterTools(System.Collections.Generic.IEnumerable%7BGlitch9.AIDevKit.Tool%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Controllers/Tool/ToolController.cs/#L123">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Agents_ToolController_UnregisterTools_" data-uid="Glitch9.AIDevKit.Agents.ToolController.UnregisterTools*"></a>
+  <h4 id="Glitch9_AIDevKit_Agents_ToolController_UnregisterTools_System_Collections_Generic_IEnumerable_Glitch9_AIDevKit_Tool__" data-uid="Glitch9.AIDevKit.Agents.ToolController.UnregisterTools(System.Collections.Generic.IEnumerable{Glitch9.AIDevKit.Tool})">UnregisterTools(IEnumerable&lt;Tool&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterTools(IEnumerable&lt;Tool&gt; tools)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Glitch9.AIDevKit.Tool.html">Tool</a>&gt;</td>
+        <td><span class="parametername">tools</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrEmpty__1___0_">ArrayExtensions.ToArrayOrEmpty&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrNull__1___0_">ArrayExtensions.ToArrayOrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDelta__1___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.ToDelta&lt;T&gt;(T, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDone__1___0_System_String_System_Int32_System_String_">EventExtensions.ToDone&lt;T&gt;(T, string, int, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToEvent__1___0_">EventExtensions.ToEvent&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_UpcastDelta__2___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.UpcastDelta&lt;T1, T2&gt;(T1, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.FallbackExtensions.html#Glitch9_FallbackExtensions_IsOr__2___0___1_">FallbackExtensions.IsOr&lt;TParent, TChild&gt;(TParent, TChild)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ResponseCastingExtensions.html#Glitch9_IO_Networking_RESTApi_ResponseCastingExtensions_GetResult__1___0_">ResponseCastingExtensions.GetResult&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_TryDispose_System_IDisposable_">SystemExtensions.TryDispose(IDisposable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_GetName_System_Object_">SystemExtensions.GetName(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Agents_ToolController.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Agents.ToolController%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/Agent/Controllers/Tool/ToolController.cs/#L22" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AI DevKit Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

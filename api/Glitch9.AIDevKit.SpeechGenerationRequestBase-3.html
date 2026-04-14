@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class SpeechGenerationRequestBase&lt;TSelf, TPrompt, TConfig&gt; | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class SpeechGenerationRequestBase&lt;TSelf, TPrompt, TConfig&gt; | AI DevKit ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.SpeechGenerationRequestBase`3">
+
+
+
+  <h1 id="Glitch9_AIDevKit_SpeechGenerationRequestBase_3" data-uid="Glitch9.AIDevKit.SpeechGenerationRequestBase`3" class="text-break">Class SpeechGenerationRequestBase&lt;TSelf, TPrompt, TConfig&gt;</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html">UnifiedApiRequestBase</a>&lt;TSelf, <a class="xref" href="Glitch9.AIDevKit.Generated-1.html">Generated</a>&lt;<a class="xref" href="Glitch9.IO.IAudioAsset.html">IAudioAsset</a>&gt;, TConfig&gt;</div>
+    <div class="level2"><a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html">GenerativeRequest</a>&lt;TSelf, TPrompt, <a class="xref" href="Glitch9.IO.IAudioAsset.html">IAudioAsset</a>, TConfig&gt;</div>
+    <div class="level3"><a class="xref" href="Glitch9.AIDevKit.StreamingGenerativeRequest-5.html">StreamingGenerativeRequest</a>&lt;TSelf, TPrompt, <a class="xref" href="Glitch9.IO.IAudioAsset.html">IAudioAsset</a>, <a class="xref" href="Glitch9.Delta-1.html">Delta</a>&lt;<a class="xref" href="Glitch9.IO.IAudioChunk.html">IAudioChunk</a>&gt;, TConfig&gt;</div>
+    <div class="level4"><a class="xref" href="Glitch9.AIDevKit.GenerativeAudioRequest-3.html">GenerativeAudioRequest</a>&lt;TSelf, TPrompt, TConfig&gt;</div>
+    <div class="level5"><span class="xref">SpeechGenerationRequestBase&lt;TSelf, TPrompt, TConfig&gt;</span></div>
+      <div class="level6"><a class="xref" href="Glitch9.AIDevKit.SpeechGenerationRequest.html">SpeechGenerationRequest</a></div>
+      <div class="level6"><a class="xref" href="Glitch9.AIDevKit.VoiceChangeRequest.html">VoiceChangeRequest</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Glitch9.AIDevKit.IGenerativeRequest.html">IGenerativeRequest</a></div>
+    <div><a class="xref" href="Glitch9.AIDevKit.IStreamingGenerativeRequest-2.html">IStreamingGenerativeRequest</a>&lt;<a class="xref" href="Glitch9.Delta-1.html">Delta</a>&lt;<a class="xref" href="Glitch9.IO.IAudioChunk.html">IAudioChunk</a>&gt;, <a class="xref" href="Glitch9.IO.IAudioAsset.html">IAudioAsset</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeAudioRequest-3.html#Glitch9_AIDevKit_GenerativeAudioRequest_3_ResponseType">GenerativeAudioRequest&lt;TSelf, TPrompt, TConfig&gt;.ResponseType</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeAudioRequest-3.html#Glitch9_AIDevKit_GenerativeAudioRequest_3_FileNameKey">GenerativeAudioRequest&lt;TSelf, TPrompt, TConfig&gt;.FileNameKey</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeAudioRequest-3.html#Glitch9_AIDevKit_GenerativeAudioRequest_3_OutputFormat">GenerativeAudioRequest&lt;TSelf, TPrompt, TConfig&gt;.OutputFormat</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeAudioRequest-3.html#Glitch9_AIDevKit_GenerativeAudioRequest_3_SetEncoding_Glitch9_IO_Audio_AudioEncoding_">GenerativeAudioRequest&lt;TSelf, TPrompt, TConfig&gt;.SetEncoding(AudioEncoding)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeAudioRequest-3.html#Glitch9_AIDevKit_GenerativeAudioRequest_3_SetElevenLabsFormat_Glitch9_AIDevKit_ElevenLabsTypes_OutputFormat_">GenerativeAudioRequest&lt;TSelf, TPrompt, TConfig&gt;.SetElevenLabsFormat(ElevenLabsTypes.OutputFormat)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.StreamingGenerativeRequest-5.html#Glitch9_AIDevKit_StreamingGenerativeRequest_5_StreamAsync_System_Threading_CancellationToken_">StreamingGenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, Delta&lt;IAudioChunk&gt;, TConfig&gt;.StreamAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.StreamingGenerativeRequest-5.html#Glitch9_AIDevKit_StreamingGenerativeRequest_5_StreamAsyncInternal">StreamingGenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, Delta&lt;IAudioChunk&gt;, TConfig&gt;.StreamAsyncInternal()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_FileNameKey">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.FileNameKey</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_FallbackModel">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.FallbackModel</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_ModelType">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.ModelType</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_Api">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.Api</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_Prompt">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.Prompt</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_Model">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.Model</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_N">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.N</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_Seed">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.Seed</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_MeasureLatency">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.MeasureLatency</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_OnLatencyMeasured">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.OnLatencyMeasured</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_RequestedAt">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.RequestedAt</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_RecordOptions">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.RecordOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_RecordedContext">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.RecordedContext</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetModel_Glitch9_AIDevKit_Api_System_String_">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.SetModel(Api, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetModel_Glitch9_AIDevKit_ModelBase_">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.SetModel(ModelBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetCount_System_Int32_">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.SetCount(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetN_System_Int32_">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.SetN(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetSeed_System_Int64_">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.SetSeed(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetRecordOptions_System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_String_System_String_Glitch9_AIDevKit_History_GenerationRecord_Glitch9_AIDevKit_RecordMerger_System_Action_Glitch9_AIDevKit_History_GenerationRecord__">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.SetRecordOptions(bool?, bool?, string, string, GenerationRecord, RecordMerger, Action&lt;GenerationRecord&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetRecordOptions_Glitch9_AIDevKit_GenerationRecordOptions_">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.SetRecordOptions(GenerationRecordOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetMeasureLatency_System_Action_System_Double__">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.SetMeasureLatency(Action&lt;double&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetMeasureLatency_System_Boolean_System_Action_System_Double__">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.SetMeasureLatency(bool, Action&lt;double&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_SetPlaygroundSettings_System_String_System_String_System_String_System_Boolean_System_Action_System_Double__System_Action_Glitch9_AIDevKit_History_GenerationRecord__">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.SetPlaygroundSettings(string, string, string, bool, Action&lt;double&gt;, Action&lt;GenerationRecord&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_ExecuteAsync_System_Threading_CancellationToken_">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.ExecuteAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_ExecuteAsyncT__1_System_Threading_CancellationToken_">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.ExecuteAsyncT&lt;T&gt;(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_ProcessPostRequestTasks__1_Glitch9_AIDevKit_Generated___0__">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.ProcessPostRequestTasks&lt;T&gt;(Generated&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_ProcessPostRequestTasks_Glitch9_IResult_">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.ProcessPostRequestTasks(IResult)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_GetPrompt">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.GetPrompt()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_GetPromptStringToRecord">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.GetPromptStringToRecord()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_ResolveDownloadOptions_Glitch9_IO_Networking_RESTApi_DownloadOptions_">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.ResolveDownloadOptions(DownloadOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_ValidateRequest">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.ValidateRequest()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_GenerateDefaultFileName">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.GenerateDefaultFileName()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_PrepareRequestAsync">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.PrepareRequestAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_m_Api">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.m_Api</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_Api">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.Api</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_RequestType">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.RequestType</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_HttpOptions">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.HttpOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_DownloadOptions">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.DownloadOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_Sender">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.Sender</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_LogOptions">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.LogOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_ContentType">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.ContentType</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_ResponseType">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.ResponseType</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_IsCanceled">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.IsCanceled</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_Stream">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.Stream</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SafetyIdentifier">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.SafetyIdentifier</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_ServiceTier">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.ServiceTier</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_Metadata">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.Metadata</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_ProviderOptions">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.ProviderOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_Options">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.Options</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetSender_System_String_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.SetSender(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetLogOptions_Glitch9_IO_Networking_CurlLogOptions_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.SetLogOptions(CurlLogOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetOutputPath_System_String_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.SetOutputPath(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetOutputPath_System_String_System_String_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.SetOutputPath(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetOutputDirectory_System_String_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.SetOutputDirectory(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetDownloadOptions_Glitch9_IO_Networking_RESTApi_DownloadOptions_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.SetDownloadOptions(DownloadOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetRequestMimeType_Glitch9_MimeType_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.SetRequestMimeType(MimeType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetResponseMimeType_Glitch9_MimeType_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.SetResponseMimeType(MimeType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetStream_System_Boolean_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.SetStream(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetMetadata_Glitch9_AIDevKit_ServerDictionary_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.SetMetadata(ServerDictionary)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetSafetyIdentifier_System_String_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.SetSafetyIdentifier(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetProviderOptions__2_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.SetProviderOptions(TConfig)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetSpecificOptions__2_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.SetSpecificOptions(TConfig)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_ValidateRequest">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.ValidateRequest()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_GetConfig__1">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.GetConfig&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_SetApi_Glitch9_AIDevKit_Api_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.SetApi(Api)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_ExecuteAsync_System_Threading_CancellationToken_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.ExecuteAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_Cancel">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.Cancel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_ExecuteAsyncInternal">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.ExecuteAsyncInternal()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_ResolveDownloadOptions_Glitch9_IO_Networking_RESTApi_DownloadOptions_">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.ResolveDownloadOptions(DownloadOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.AIDevKit.UnifiedApiRequestBase-3.html#Glitch9_AIDevKit_UnifiedApiRequestBase_3_GenerateDefaultFileName">UnifiedApiRequestBase&lt;TSelf, Generated&lt;IAudioAsset&gt;, TConfig&gt;.GenerateDefaultFileName()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a></h6>
+  <h6><strong>Assembly</strong>: Glitch9.AIDevKit.dll</h6>
+  <h5 id="Glitch9_AIDevKit_SpeechGenerationRequestBase_3_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class SpeechGenerationRequestBase&lt;TSelf, TPrompt, TConfig&gt; : GenerativeAudioRequest&lt;TSelf, TPrompt, TConfig&gt;, IGenerativeRequest, IStreamingGenerativeRequest&lt;Delta&lt;IAudioChunk&gt;, IAudioAsset&gt; where TSelf : SpeechGenerationRequestBase&lt;TSelf, TPrompt, TConfig&gt; where TPrompt : IPrompt where TConfig : IProviderRequestOptions</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSelf</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TPrompt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TConfig</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_SpeechGenerationRequestBase_3__ctor__1_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.SpeechGenerationRequestBase%603.%23ctor(%601)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/Audio/SpeechGenerationRequest.cs/#L127">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_SpeechGenerationRequestBase_3__ctor_" data-uid="Glitch9.AIDevKit.SpeechGenerationRequestBase`3.#ctor*"></a>
+  <h4 id="Glitch9_AIDevKit_SpeechGenerationRequestBase_3__ctor__1_" data-uid="Glitch9.AIDevKit.SpeechGenerationRequestBase`3.#ctor(`1)">SpeechGenerationRequestBase(TPrompt)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SpeechGenerationRequestBase(TPrompt prompt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TPrompt</span></td>
+        <td><span class="parametername">prompt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_SpeechGenerationRequestBase_3_SimilarityBoost.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.SpeechGenerationRequestBase%603.SimilarityBoost%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/Audio/SpeechGenerationRequest.cs/#L104">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_SpeechGenerationRequestBase_3_SimilarityBoost_" data-uid="Glitch9.AIDevKit.SpeechGenerationRequestBase`3.SimilarityBoost*"></a>
+  <h4 id="Glitch9_AIDevKit_SpeechGenerationRequestBase_3_SimilarityBoost" data-uid="Glitch9.AIDevKit.SpeechGenerationRequestBase`3.SimilarityBoost">SimilarityBoost</h4>
+  <div class="markdown level1 summary"><p>Only applicable when using ElevenLabs API.
+Optional. Determines how closely the AI should adhere to the original voice when attempting to replicate it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? SimilarityBoost { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_SpeechGenerationRequestBase_3_Stability.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.SpeechGenerationRequestBase%603.Stability%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/Audio/SpeechGenerationRequest.cs/#L98">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_SpeechGenerationRequestBase_3_Stability_" data-uid="Glitch9.AIDevKit.SpeechGenerationRequestBase`3.Stability*"></a>
+  <h4 id="Glitch9_AIDevKit_SpeechGenerationRequestBase_3_Stability" data-uid="Glitch9.AIDevKit.SpeechGenerationRequestBase`3.Stability">Stability</h4>
+  <div class="markdown level1 summary"><p>Only applicable when using ElevenLabs API.
+Optional. Determines how stable the voice is and the randomness between each generation.
+Lower values introduce broader emotional range for the voice.
+Higher values can result in a monotonous voice with limited emotion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? Stability { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_SpeechGenerationRequestBase_3_Style.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.SpeechGenerationRequestBase%603.Style%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/Audio/SpeechGenerationRequest.cs/#L112">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_SpeechGenerationRequestBase_3_Style_" data-uid="Glitch9.AIDevKit.SpeechGenerationRequestBase`3.Style*"></a>
+  <h4 id="Glitch9_AIDevKit_SpeechGenerationRequestBase_3_Style" data-uid="Glitch9.AIDevKit.SpeechGenerationRequestBase`3.Style">Style</h4>
+  <div class="markdown level1 summary"><p>Only applicable when using ElevenLabs API.
+Optional. Determines the style exaggeration of the voice.
+This setting attempts to amplify the style of the original speaker.
+This setting consumes additional computational resources and might increase latency if set to anything other than 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? Style { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_SpeechGenerationRequestBase_3_UseSpeakerBoost.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.SpeechGenerationRequestBase%603.UseSpeakerBoost%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/Audio/SpeechGenerationRequest.cs/#L119">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_SpeechGenerationRequestBase_3_UseSpeakerBoost_" data-uid="Glitch9.AIDevKit.SpeechGenerationRequestBase`3.UseSpeakerBoost*"></a>
+  <h4 id="Glitch9_AIDevKit_SpeechGenerationRequestBase_3_UseSpeakerBoost" data-uid="Glitch9.AIDevKit.SpeechGenerationRequestBase`3.UseSpeakerBoost">UseSpeakerBoost</h4>
+  <div class="markdown level1 summary"><p>Only applicable when using ElevenLabs API.
+Optional. This setting boosts the similarity to the original speaker.
+Using this setting requires a slightly higher computational load, which in turn increases latency.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? UseSpeakerBoost { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_SpeechGenerationRequestBase_3_UseStyleExaggeration.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.SpeechGenerationRequestBase%603.UseStyleExaggeration%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/Audio/SpeechGenerationRequest.cs/#L125">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_SpeechGenerationRequestBase_3_UseStyleExaggeration_" data-uid="Glitch9.AIDevKit.SpeechGenerationRequestBase`3.UseStyleExaggeration*"></a>
+  <h4 id="Glitch9_AIDevKit_SpeechGenerationRequestBase_3_UseStyleExaggeration" data-uid="Glitch9.AIDevKit.SpeechGenerationRequestBase`3.UseStyleExaggeration">UseStyleExaggeration</h4>
+  <div class="markdown level1 summary"><p>Only applicable when using ElevenLabs API.
+Optional. The use of style exaggeration in the voice output.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? UseStyleExaggeration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_SpeechGenerationRequestBase_3_Voice.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.SpeechGenerationRequestBase%603.Voice%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/Audio/SpeechGenerationRequest.cs/#L87">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_SpeechGenerationRequestBase_3_Voice_" data-uid="Glitch9.AIDevKit.SpeechGenerationRequestBase`3.Voice*"></a>
+  <h4 id="Glitch9_AIDevKit_SpeechGenerationRequestBase_3_Voice" data-uid="Glitch9.AIDevKit.SpeechGenerationRequestBase`3.Voice">Voice</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Voice { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_SpeechGenerationRequestBase_3_SetVoice_Glitch9_AIDevKit_Api_System_String_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.SpeechGenerationRequestBase%603.SetVoice(Glitch9.AIDevKit.Api%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/Audio/SpeechGenerationRequest.cs/#L153">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_SpeechGenerationRequestBase_3_SetVoice_" data-uid="Glitch9.AIDevKit.SpeechGenerationRequestBase`3.SetVoice*"></a>
+  <h4 id="Glitch9_AIDevKit_SpeechGenerationRequestBase_3_SetVoice_Glitch9_AIDevKit_Api_System_String_" data-uid="Glitch9.AIDevKit.SpeechGenerationRequestBase`3.SetVoice(Glitch9.AIDevKit.Api,System.String)">SetVoice(Api, string)</h4>
+  <div class="markdown level1 summary"><p>Sets the voice preset name (string-based, for future compatibility).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetVoice(Api api, string voice)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Api.html">Api</a></td>
+        <td><span class="parametername">api</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">voice</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_SpeechGenerationRequestBase_3_SetVoice_Glitch9_AIDevKit_Voice_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.SpeechGenerationRequestBase%603.SetVoice(Glitch9.AIDevKit.Voice)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/Audio/SpeechGenerationRequest.cs/#L160">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_SpeechGenerationRequestBase_3_SetVoice_" data-uid="Glitch9.AIDevKit.SpeechGenerationRequestBase`3.SetVoice*"></a>
+  <h4 id="Glitch9_AIDevKit_SpeechGenerationRequestBase_3_SetVoice_Glitch9_AIDevKit_Voice_" data-uid="Glitch9.AIDevKit.SpeechGenerationRequestBase`3.SetVoice(Glitch9.AIDevKit.Voice)">SetVoice(Voice)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TSelf SetVoice(Voice voice)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Voice.html">Voice</a></td>
+        <td><span class="parametername">voice</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSelf</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_SpeechGenerationRequestBase_3_ValidateRequest.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.SpeechGenerationRequestBase%603.ValidateRequest%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/Audio/SpeechGenerationRequest.cs/#L129">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_SpeechGenerationRequestBase_3_ValidateRequest_" data-uid="Glitch9.AIDevKit.SpeechGenerationRequestBase`3.ValidateRequest*"></a>
+  <h4 id="Glitch9_AIDevKit_SpeechGenerationRequestBase_3_ValidateRequest" data-uid="Glitch9.AIDevKit.SpeechGenerationRequestBase`3.ValidateRequest">ValidateRequest()</h4>
+  <div class="markdown level1 summary"><p>Validates the request before execution.
+Override in derived classes to implement request validation logic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ValidateRequest()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.AIDevKit.GenerativeRequest-4.html#Glitch9_AIDevKit_GenerativeRequest_4_ValidateRequest">GenerativeRequest&lt;TSelf, TPrompt, IAudioAsset, TConfig&gt;.ValidateRequest()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.IGenerativeRequest.html">IGenerativeRequest</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.AIDevKit.IStreamingGenerativeRequest-2.html">IStreamingGenerativeRequest&lt;TEvent, TAsset&gt;</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrEmpty__1___0_">ArrayExtensions.ToArrayOrEmpty&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrNull__1___0_">ArrayExtensions.ToArrayOrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDelta__1___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.ToDelta&lt;T&gt;(T, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDone__1___0_System_String_System_Int32_System_String_">EventExtensions.ToDone&lt;T&gt;(T, string, int, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToEvent__1___0_">EventExtensions.ToEvent&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_UpcastDelta__2___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.UpcastDelta&lt;T1, T2&gt;(T1, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.FallbackExtensions.html#Glitch9_FallbackExtensions_IsOr__2___0___1_">FallbackExtensions.IsOr&lt;TParent, TChild&gt;(TParent, TChild)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ResponseCastingExtensions.html#Glitch9_IO_Networking_RESTApi_ResponseCastingExtensions_GetResult__1___0_">ResponseCastingExtensions.GetResult&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_GetName_System_Object_">SystemExtensions.GetName(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_SpeechGenerationRequestBase_3.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.SpeechGenerationRequestBase%603%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/Runtime/Foundation/Application/UnifiedApi/Requests/Audio/SpeechGenerationRequest.cs/#L80" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AI DevKit Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

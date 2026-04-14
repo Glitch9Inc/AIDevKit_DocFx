@@ -1,0 +1,1794 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class GraphClient | AI DevKit </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class GraphClient | AI DevKit ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient">
+
+
+
+  <h1 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient" class="text-break">Class GraphClient</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html">RESTClient</a></div>
+    <div class="level2"><a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html">ApiClient</a>&lt;<a class="xref" href="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.html">GraphClient</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Glitch9.AIDevKit.Microsoft.Graph.GraphClientSettings.html">GraphClientSettings</a>&gt;</div>
+    <div class="level3"><span class="xref">GraphClient</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Glitch9.IO.Networking.RESTApi.IApiClient.html">IApiClient</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_DefaultInstance">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.DefaultInstance</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_Name">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_BaseUrl">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.BaseUrl</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_Api">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.Api</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_BaseRequestParameters">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.BaseRequestParameters</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_AdditionalHeaders">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.AdditionalHeaders</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_RequiresApiKey">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.RequiresApiKey</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_Settings">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.Settings</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_POSTAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.POSTAsync&lt;TBody, TResponse&gt;(ICrudService, string, TBody, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_POSTAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.POSTAsync&lt;TBody&gt;(ICrudService, string, TBody, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_POSTAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.POSTAsync&lt;TResponse&gt;(ICrudService, string, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_GETAsync_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.GETAsync(ICrudService, string, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_GETAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.GETAsync&lt;TResponse&gt;(ICrudService, string, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_PUTAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.PUTAsync&lt;TBody&gt;(ICrudService, string, TBody, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_PATCHAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.PATCHAsync&lt;TResponse&gt;(ICrudService, string, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_DELETEAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.DELETEAsync&lt;TBody, TStatus&gt;(ICrudService, string, TBody, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_DELETEAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.DELETEAsync&lt;TStatus&gt;(ICrudService, string, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_DELETEAsync_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.DELETEAsync(ICrudService, string, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_STREAMAsync__3_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_IStreamPipeline_System_String___1___2__Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.STREAMAsync&lt;TBody, TDelta, TResult&gt;(ICrudService, string, TBody, RequestOptions, IStreamPipeline&lt;string, TDelta, TResult&gt;, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_STREAMAsync__3_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_IStreamPipeline_Glitch9_IO_PooledBytes___1___2__Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.STREAMAsync&lt;TBody, TDelta, TResult&gt;(ICrudService, string, TBody, RequestOptions, IStreamPipeline&lt;PooledBytes, TDelta, TResult&gt;, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_STREAMAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_IStreamPipeline_System_String___0___1__Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.STREAMAsync&lt;TDelta, TResult&gt;(ICrudService, string, RequestOptions, IStreamPipeline&lt;string, TDelta, TResult&gt;, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_STREAMAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_IStreamPipeline_Glitch9_IO_PooledBytes___0___1__Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.STREAMAsync&lt;TDelta, TResult&gt;(ICrudService, string, RequestOptions, IStreamPipeline&lt;PooledBytes, TDelta, TResult&gt;, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_DownloadAsync_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_Glitch9_IO_Networking_RESTApi_RequestParameter___">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.DownloadAsync(ICrudService, string, RequestOptions, params RequestParameter[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_ValidateAuthAsync">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.ValidateAuthAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_ValidateEndpointAsync_System_String_">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.ValidateEndpointAsync(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_Jss">RESTClient.Jss</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_Xss">RESTClient.Xss</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_Logger">RESTClient.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_LogOptions">RESTClient.LogOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_Timeout">RESTClient.Timeout</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_ExceptionParser">RESTClient.ExceptionParser</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_ExceptionHandler">RESTClient.ExceptionHandler</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_MaxRetryCount">RESTClient.MaxRetryCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_RetryDelaySeconds">RESTClient.RetryDelaySeconds</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_MaxRetryDelaySeconds">RESTClient.MaxRetryDelaySeconds</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_DefaultFileMimeType">RESTClient.DefaultFileMimeType</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_DefaultDownloadDirectoryPath">RESTClient.DefaultDownloadDirectoryPath</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_SetOnetimeLogOptions_Glitch9_IO_Networking_CurlLogOptions_">RESTClient.SetOnetimeLogOptions(CurlLogOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_POSTAsync_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.POSTAsync(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_POSTAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.POSTAsync&lt;T&gt;(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_PUTAsync_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.PUTAsync(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_PUTAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.PUTAsync&lt;T&gt;(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_GETAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.GETAsync&lt;T&gt;(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_GETAsync_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.GETAsync(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_DELETEAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.DELETEAsync&lt;T&gt;(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_DELETEAsync_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.DELETEAsync(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_HEADAsync_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.HEADAsync(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_HEADAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.HEADAsync&lt;T&gt;(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_PATCHAsync_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.PATCHAsync(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_PATCHAsync__1_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.PATCHAsync&lt;T&gt;(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_STREAMAsync__2_Glitch9_IO_Networking_RESTApi_RESTRequest_Glitch9_IO_Networking_RESTApi_IStreamPipeline_System_String___0___1__System_String_">RESTClient.STREAMAsync&lt;TDelta, TResult&gt;(RESTRequest, IStreamPipeline&lt;string, TDelta, TResult&gt;, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_STREAMAsync__2_Glitch9_IO_Networking_RESTApi_RESTRequest_Glitch9_IO_Networking_RESTApi_IStreamPipeline_Glitch9_IO_PooledBytes___0___1__System_String_">RESTClient.STREAMAsync&lt;TDelta, TResult&gt;(RESTRequest, IStreamPipeline&lt;PooledBytes, TDelta, TResult&gt;, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTClient.html#Glitch9_IO_Networking_RESTApi_RESTClient_DOWNLOADAsync_Glitch9_IO_Networking_RESTApi_RESTRequest_">RESTClient.DOWNLOADAsync(RESTRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Glitch9.html">Glitch9</a>.<a class="xref" href="Glitch9.AIDevKit.html">AIDevKit</a>.<a class="xref" href="Glitch9.AIDevKit.Microsoft.html">Microsoft</a>.<a class="xref" href="Glitch9.AIDevKit.Microsoft.Graph.html">Graph</a></h6>
+  <h6><strong>Assembly</strong>: Glitch9.AIDevKit.Provider.Microsoft.Graph.dll</h6>
+  <h5 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class GraphClient : ApiClient&lt;GraphClient, string, GraphClientSettings&gt;, IApiClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient__ctor.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L40">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient__ctor_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.#ctor*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient__ctor" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.#ctor">GraphClient()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GraphClient()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient_Calendars.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient.Calendars%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L37">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_Calendars_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.Calendars*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_Calendars" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.Calendars">Calendars</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CalendarService Calendars { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Microsoft.Graph.CalendarService.html">CalendarService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient_DeltaSyncs.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient.DeltaSyncs%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L34">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_DeltaSyncs_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.DeltaSyncs*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_DeltaSyncs" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.DeltaSyncs">DeltaSyncs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DeltaSyncService DeltaSyncs { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Microsoft.Graph.DeltaSyncService.html">DeltaSyncService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient_DriveItems.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient.DriveItems%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L33">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_DriveItems_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.DriveItems*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_DriveItems" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.DriveItems">DriveItems</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DriveItemService DriveItems { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Microsoft.Graph.DriveItemService.html">DriveItemService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient_Drives.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient.Drives%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L32">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_Drives_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.Drives*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_Drives" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.Drives">Drives</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DriveService Drives { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Microsoft.Graph.DriveService.html">DriveService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient_Mails.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient.Mails%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L36">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_Mails_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.Mails*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_Mails" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.Mails">Mails</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MailService Mails { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Microsoft.Graph.MailService.html">MailService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient_OAuth.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient.OAuth%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L30">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_OAuth_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.OAuth*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_OAuth" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.OAuth">OAuth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OAuthService OAuth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Microsoft.Graph.OAuthService.html">OAuthService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient_Sites.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient.Sites%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L31">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_Sites_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.Sites*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_Sites" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.Sites">Sites</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SiteService Sites { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Microsoft.Graph.SiteService.html">SiteService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient_Todos.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient.Todos%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L35">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_Todos_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.Todos*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_Todos" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.Todos">Todos</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TodoService Todos { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Microsoft.Graph.TodoService.html">TodoService</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient_DELETEAsync_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient.DELETEAsync(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L180">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_DELETEAsync_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.DELETEAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_DELETEAsync_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_System_Boolean_System_Threading_CancellationToken_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.DELETEAsync(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,System.Boolean,System.Threading.CancellationToken)">DELETEAsync(ICrudService, string, bool, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;RESTResponse&gt; DELETEAsync(ICrudService service, string url, bool removeAuthHeaderOnRedirect, CancellationToken ct = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">removeAuthHeaderOnRedirect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTResponse.html">RESTResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient_DELETEAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient.DELETEAsync%60%601(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L171">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_DELETEAsync_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.DELETEAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_DELETEAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_System_Boolean_System_Threading_CancellationToken_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.DELETEAsync``1(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,System.Boolean,System.Threading.CancellationToken)">DELETEAsync&lt;TStatus&gt;(ICrudService, string, bool, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;TStatus&gt; DELETEAsync&lt;TStatus&gt;(ICrudService service, string url, bool removeAuthHeaderOnRedirect, CancellationToken ct = default) where TStatus : class, IDeletionStatus</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">removeAuthHeaderOnRedirect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;TStatus&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TStatus</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient_DELETEAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient.DELETEAsync%60%602(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2C%60%600%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L162">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_DELETEAsync_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.DELETEAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_DELETEAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_System_Boolean_System_Threading_CancellationToken_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.DELETEAsync``2(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,``0,System.Boolean,System.Threading.CancellationToken)">DELETEAsync&lt;TBody, TStatus&gt;(ICrudService, string, TBody, bool, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;TStatus&gt; DELETEAsync&lt;TBody, TStatus&gt;(ICrudService service, string url, TBody body, bool removeAuthHeaderOnRedirect, CancellationToken ct = default) where TStatus : class, IDeletionStatus</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TBody</span></td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">removeAuthHeaderOnRedirect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;TStatus&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TBody</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TStatus</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient_DownloadAsync_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient.DownloadAsync(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2CGlitch9.IO.Networking.RESTApi.RequestOptions)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L188">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_DownloadAsync_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.DownloadAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_DownloadAsync_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_RequestOptions_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.DownloadAsync(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,Glitch9.IO.Networking.RESTApi.RequestOptions)">DownloadAsync(ICrudService, string, RequestOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask DownloadAsync(ICrudService service, string url, RequestOptions options = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.RequestOptions.html">RequestOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient_GETAsync_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_IRequestParameterProvider_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient.GETAsync(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2CGlitch9.IO.Networking.RESTApi.IRequestParameterProvider%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L107">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_GETAsync_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.GETAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_GETAsync_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_IRequestParameterProvider_System_Boolean_System_Threading_CancellationToken_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.GETAsync(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,Glitch9.IO.Networking.RESTApi.IRequestParameterProvider,System.Boolean,System.Threading.CancellationToken)">GETAsync(ICrudService, string, IRequestParameterProvider, bool, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;RESTResponse&gt; GETAsync(ICrudService service, string url, IRequestParameterProvider query, bool removeAuthHeaderOnRedirect, CancellationToken ct = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.IRequestParameterProvider.html">IRequestParameterProvider</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">removeAuthHeaderOnRedirect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTResponse.html">RESTResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient_GETAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_IRequestParameterProvider_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient.GETAsync%60%601(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2CGlitch9.IO.Networking.RESTApi.IRequestParameterProvider%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L120">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_GETAsync_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.GETAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_GETAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_Glitch9_IO_Networking_RESTApi_IRequestParameterProvider_System_Boolean_System_Threading_CancellationToken_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.GETAsync``1(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,Glitch9.IO.Networking.RESTApi.IRequestParameterProvider,System.Boolean,System.Threading.CancellationToken)">GETAsync&lt;TResponse&gt;(ICrudService, string, IRequestParameterProvider, bool, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;TResponse&gt; GETAsync&lt;TResponse&gt;(ICrudService service, string url, IRequestParameterProvider query, bool removeAuthHeaderOnRedirect, CancellationToken ct = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.IRequestParameterProvider.html">IRequestParameterProvider</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">removeAuthHeaderOnRedirect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;TResponse&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResponse</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient_GETAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient.GETAsync%60%601(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L116">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_GETAsync_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.GETAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_GETAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_System_Threading_CancellationToken_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.GETAsync``1(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,System.Threading.CancellationToken)">GETAsync&lt;TResponse&gt;(ICrudService, string, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;TResponse&gt; GETAsync&lt;TResponse&gt;(ICrudService service, string url, CancellationToken ct)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;TResponse&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResponse</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient_GetClientSettings.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient.GetClientSettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L69">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_GetClientSettings_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.GetClientSettings*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_GetClientSettings" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.GetClientSettings">GetClientSettings()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override GraphClientSettings GetClientSettings()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.AIDevKit.Microsoft.Graph.GraphClientSettings.html">GraphClientSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Glitch9.IO.Networking.RESTApi.ApiClient-3.html#Glitch9_IO_Networking_RESTApi_ApiClient_3_GetClientSettings">ApiClient&lt;GraphClient, string, GraphClientSettings&gt;.GetClientSettings()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient_ListNextPageAsync__1_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient.ListNextPageAsync%60%601(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L77">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_ListNextPageAsync_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.ListNextPageAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_ListNextPageAsync__1_System_String_System_Threading_CancellationToken_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.ListNextPageAsync``1(System.String,System.Threading.CancellationToken)">ListNextPageAsync&lt;T&gt;(string, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Convenience: fetch next page via @odata.nextLink.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;GraphCollectionResponse&lt;T&gt;&gt; ListNextPageAsync&lt;T&gt;(string nextLink, CancellationToken ct = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">nextLink</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.AIDevKit.Microsoft.Graph.GraphCollectionResponse-1.html">GraphCollectionResponse</a>&lt;T&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient_PATCHAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient.PATCHAsync%60%601(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L137">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_PATCHAsync_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.PATCHAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_PATCHAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_System_Boolean_System_Threading_CancellationToken_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.PATCHAsync``1(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,System.Boolean,System.Threading.CancellationToken)">PATCHAsync&lt;TResponse&gt;(ICrudService, string, bool, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;TResponse&gt; PATCHAsync&lt;TResponse&gt;(ICrudService service, string url, bool removeAuthHeaderOnRedirect, CancellationToken ct = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">removeAuthHeaderOnRedirect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;TResponse&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResponse</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient_PATCHAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient.PATCHAsync%60%601(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2C%60%600%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L154">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_PATCHAsync_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.PATCHAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_PATCHAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_System_Boolean_System_Threading_CancellationToken_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.PATCHAsync``1(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,``0,System.Boolean,System.Threading.CancellationToken)">PATCHAsync&lt;TBody&gt;(ICrudService, string, TBody, bool, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;RESTResponse&gt; PATCHAsync&lt;TBody&gt;(ICrudService service, string url, TBody body, bool removeAuthHeaderOnRedirect, CancellationToken ct = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TBody</span></td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">removeAuthHeaderOnRedirect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTResponse.html">RESTResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TBody</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient_PATCHAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient.PATCHAsync%60%602(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2C%60%600%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L145">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_PATCHAsync_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.PATCHAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_PATCHAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_System_Boolean_System_Threading_CancellationToken_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.PATCHAsync``2(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,``0,System.Boolean,System.Threading.CancellationToken)">PATCHAsync&lt;TBody, TResponse&gt;(ICrudService, string, TBody, bool, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;TResponse&gt; PATCHAsync&lt;TBody, TResponse&gt;(ICrudService service, string url, TBody body, bool removeAuthHeaderOnRedirect, CancellationToken ct = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TBody</span></td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">removeAuthHeaderOnRedirect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;TResponse&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TBody</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResponse</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient_POSTAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient.POSTAsync%60%601(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L99">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_POSTAsync_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.POSTAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_POSTAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String_System_Boolean_System_Threading_CancellationToken_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.POSTAsync``1(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,System.Boolean,System.Threading.CancellationToken)">POSTAsync&lt;TResponse&gt;(ICrudService, string, bool, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;TResponse&gt; POSTAsync&lt;TResponse&gt;(ICrudService service, string url, bool removeAuthHeaderOnRedirect, CancellationToken ct = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">removeAuthHeaderOnRedirect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;TResponse&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResponse</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient_POSTAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient.POSTAsync%60%601(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2C%60%600%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L91">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_POSTAsync_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.POSTAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_POSTAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_System_Boolean_System_Threading_CancellationToken_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.POSTAsync``1(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,``0,System.Boolean,System.Threading.CancellationToken)">POSTAsync&lt;TBody&gt;(ICrudService, string, TBody, bool, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;RESTResponse&gt; POSTAsync&lt;TBody&gt;(ICrudService service, string url, TBody body, bool removeAuthHeaderOnRedirect, CancellationToken ct = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TBody</span></td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">removeAuthHeaderOnRedirect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTResponse.html">RESTResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TBody</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient_POSTAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient.POSTAsync%60%602(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2C%60%600%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L83">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_POSTAsync_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.POSTAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_POSTAsync__2_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_System_Boolean_System_Threading_CancellationToken_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.POSTAsync``2(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,``0,System.Boolean,System.Threading.CancellationToken)">POSTAsync&lt;TBody, TResponse&gt;(ICrudService, string, TBody, bool, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;TResponse&gt; POSTAsync&lt;TBody, TResponse&gt;(ICrudService service, string url, TBody body, bool removeAuthHeaderOnRedirect, CancellationToken ct = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TBody</span></td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">removeAuthHeaderOnRedirect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;TResponse&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TBody</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResponse</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient_PUTAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient.PUTAsync%60%601(Glitch9.IO.Networking.RESTApi.ICrudService%2CSystem.String%2C%60%600%2CSystem.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L129">View Source</a>
+  </span>
+  <a id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_PUTAsync_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.PUTAsync*"></a>
+  <h4 id="Glitch9_AIDevKit_Microsoft_Graph_GraphClient_PUTAsync__1_Glitch9_IO_Networking_RESTApi_ICrudService_System_String___0_System_Boolean_System_Threading_CancellationToken_" data-uid="Glitch9.AIDevKit.Microsoft.Graph.GraphClient.PUTAsync``1(Glitch9.IO.Networking.RESTApi.ICrudService,System.String,``0,System.Boolean,System.Threading.CancellationToken)">PUTAsync&lt;TBody&gt;(ICrudService, string, TBody, bool, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask&lt;RESTResponse&gt; PUTAsync&lt;TBody&gt;(ICrudService service, string url, TBody body, bool removeAuthHeaderOnRedirect, CancellationToken ct = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Glitch9.IO.Networking.RESTApi.ICrudService.html">ICrudService</a></td>
+        <td><span class="parametername">service</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TBody</span></td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">removeAuthHeaderOnRedirect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UniTask</span>&lt;<a class="xref" href="Glitch9.IO.Networking.RESTApi.RESTResponse.html">RESTResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TBody</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.IApiClient.html">IApiClient</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrEmpty__1___0_">ArrayExtensions.ToArrayOrEmpty&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.ArrayExtensions.html#Glitch9_ArrayExtensions_ToArrayOrNull__1___0_">ArrayExtensions.ToArrayOrNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDelta__1___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.ToDelta&lt;T&gt;(T, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToDone__1___0_System_String_System_Int32_System_String_">EventExtensions.ToDone&lt;T&gt;(T, string, int, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_ToEvent__1___0_">EventExtensions.ToEvent&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.EventExtensions.html#Glitch9_EventExtensions_UpcastDelta__2___0_System_String_System_Int32_System_String_System_Boolean_">EventExtensions.UpcastDelta&lt;T1, T2&gt;(T1, string, int, string, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.FallbackExtensions.html#Glitch9_FallbackExtensions_IsOr__2___0___1_">FallbackExtensions.IsOr&lt;TParent, TChild&gt;(TParent, TChild)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.IO.Networking.RESTApi.ResponseCastingExtensions.html#Glitch9_IO_Networking_RESTApi_ResponseCastingExtensions_GetResult__1___0_">ResponseCastingExtensions.GetResult&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Glitch9.SystemExtensions.html#Glitch9_SystemExtensions_GetName_System_Object_">SystemExtensions.GetName(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/new/main/apiSpec/new?filename=Glitch9_AIDevKit_Microsoft_Graph_GraphClient.md&amp;value=---%0Auid%3A%20Glitch9.AIDevKit.Microsoft.Graph.GraphClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Glitch9Inc/Unity.AIDevKit/blob/main/AIDevKit.Enterprise/Runtime/Providers/Microsoft.Graph/Client/GraphClient.cs/#L28" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      AI DevKit Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
