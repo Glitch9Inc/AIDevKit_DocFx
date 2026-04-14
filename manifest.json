@@ -10904,10 +10904,40 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/Anthropic_logo.svg.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Anthropic_logo.svg.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/anthropic_logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/anthropic_logo.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/cover.png",
       "output": {
         "resource": {
           "relative_path": "images/cover.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/d_anthropic_logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/d_anthropic_logo.svg"
         }
       },
       "version": ""
@@ -10938,6 +10968,16 @@
       "output": {
         "resource": {
           "relative_path": "images/d_logo_openai.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/d_logo_openrouter.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/d_logo_openrouter.png"
         }
       },
       "version": ""
